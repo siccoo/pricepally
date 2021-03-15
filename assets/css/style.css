@@ -350,15 +350,6 @@ a.red-bg:hover {
 .pally-inner h6 {
   font-weight: 600;
 }
-/* .brown-btn {
-  border: 1px solid #B3561B;
-  background: transparent;
-  color: #B3561B;
-  border-radius: 5px;
-  font-weight: 700;
-  padding: 4px 12px;
-  height: 32px;
-} */
 .inner-head h5 {
   font-weight: 700;
   color: #333;
@@ -412,8 +403,6 @@ a.red-bg:hover {
     left: 0;
 
 }
-
-
 .brown-btn {
   display: block;
   position: relative;
@@ -421,20 +410,14 @@ a.red-bg:hover {
   -moz-osx-font-smoothing: grayscale;
   border-radius: 5px;
   background-color: transparent;
-
   border: 1px solid #B3561B;
   color: #B3561B;
   font-weight: 700;
   padding: 4px 12px;
   height: 32px;
+  font-size: 14px;
 
 }
-/* .brown-btn:focus {
-	outline: none;
-}
-.brown-btn > span {
-	vertical-align: middle;
-} */
 .btn-effects {
 	-webkit-transition: border-color 0.4s, color 0.4s;
 	transition: border-color 0.4s, color 0.4s;
@@ -471,10 +454,6 @@ a.red-bg:hover {
 	color: #fff;
 	border-color: #b3561b;
 }
-/* .btn-effects.button--inverted:hover {
-	color: #b3561b;
-	border-color: #fff;
-} */
 .btn-effects:hover::before {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -485,4 +464,36 @@ a.red-bg:hover {
   padding: 8px 8px 0 8px;
 }
 /* ------ BUTTON-HOVER-EFFECTS-CSS-END ------ */
+.select-bg {
+  margin:42px 0 0 0;
+}
+.select-bg .form-control {
+  border:none;
+  border-radius: 0;
+  font-size: 15px;
+  color: #262626;  
+  font-weight: 700;
+  cursor: pointer;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  
+}
+.food-items-bg .border-bottom {
+  border-bottom: 1px solid #dee2e6!important;
+  margin: -6px 0 0 0;
+}
+.select-bg li {
+  border: 2px solid #efeded;
+  border-bottom: none;
+}
 /* ----- FOOD-ITEMS_SECTION_CSS_END ------- */
+/* ------ DOWNLOAD-WRAPPER-SECTION-START ------ */
+.download-wrapper{
+  background: linear-gradient(245.89deg, #FAB814 82.02%, #D6A01B 100.91%, #DAA218 100.91%);
+  height: 479px;
+  padding: 80px 0 0 0;
+}
+
+/* ------ DOWNLOAD-WRAPPER-SECTION-END ------ */
