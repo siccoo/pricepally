@@ -495,5 +495,41 @@ a.red-bg:hover {
   height: 479px;
   padding: 80px 0 0 0;
 }
-
+.download-content li {
+  width: 40%;
+}
+.download-content img {
+  width: 98%;
+}
+.download-content {
+  padding: 180px 0 0 0;
+}
+.download-content h3 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #262626;
+}
 /* ------ DOWNLOAD-WRAPPER-SECTION-END ------ */
+/* ------ DOWNLOAD-BOTTOM-SECTION-START ------ */
+.download-bottom-bg{
+  background: linear-gradient(180deg, #B3751B 0%, #9B6415 100%);
+  color: #fff;
+}
+.icon {
+  width: 65px;
+  height: 65px;
+  object-fit: scale-down;
+}
+.download-bottom-bg {
+  background: linear-gradient(180deg, #B3751B 0%, #9B6415 100%);
+  color: #fff;
+  padding: 20px 0;
+}
+.download-bottom-bg h4 {
+  font-size: 20px;
+}
+.download-bottom-bg p {
+  color: #FDE1B8;
+  font-size: 18px;
+}
+/* ------ DOWNLOAD-BOTTOM-SECTION-END ------ */
