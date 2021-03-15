@@ -50,3 +50,31 @@ $('.owl-carousel').owlCarousel({
   })
 
   /*------ CATOGERIES-SLIDER-JS-END -------*/
+
+  /*------ PRODUCTS-DETAIL-JS-START -------*/
+  $(".mini img").click(function(){  
+
+    $(".maxi").attr("src",$(this).attr("src").replace("120x100","500x300"));
+   
+   });
+  /*------ PRODUCTS-DETAIL-JS-END -------*/
+
+  var unit = 0;
+var total;
+// if user changes value in field
+$('.field').change(function() {
+  unit = this.value;
+});
+$('.add').click(function() {
+  unit++;
+  var $input = $(this).prevUntil('.sub');
+  $input.val(unit);
+  unit = unit;
+});
+$('.sub').click(function() {
+  if (unit > 0) {
+    unit--;
+    var $input = $(this).nextUntil('.add');
+    $input.val(unit);
+  }
+});
