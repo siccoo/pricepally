@@ -26,7 +26,7 @@ $(document).ready(function() {
 /*------ CATOGERIES-SLIDER-JS-START -------*/
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 0,
     nav: true,
     navText: [
         "<i class='material-icons'>west</i>",
@@ -38,14 +38,38 @@ $('.owl-carousel').owlCarousel({
         0: {
             items: 1
         },
-        50: {
-            items: 2
+        140: {
+            items: 3
         },
         1000: {
             items: 6
         }
     }
 })
+
+
+// $('.owl-carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     navText: [
+//         "<i class='material-icons'>west</i>",
+//         "<i class='material-icons'>east</i>"
+//     ],
+//     autoplay: true,
+//     autoplayHoverPause: true,
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         50: {
+//             items: 2
+//         },
+//         1000: {
+//             items: 6
+//         }
+//     }
+// })
 
 /*------ CATOGERIES-SLIDER-JS-END -------*/
 
@@ -81,106 +105,149 @@ $('.sub').click(function() {
 
 /*------ PLUS-MINUS-BUTTON-JS-END -------*/
 
-/*------ SEARCH-BAR-LIST-JS-START -------*/
+// ****** RATING-JS-START ********//
+$(document).ready(function() {
+    $('.stars li').on('mouseover', function() {
+        var onStar = parseInt($(this).data('value'), 10);
+        $(this).parent().children('li.star').each(function(e) {
+            if (e < onStar) {
+                $(this).addClass('hover');
+            } else {
+                $(this).removeClass('hover');
+            }
+        });
 
-/*------ SEARCH-BAR-LIST-JS-END -------*/
+    }).on('mouseout', function() {
+        $(this).parent().children('li.star').each(function(e) {
+            $(this).removeClass('hover');
+        });
+    });
+
+
+    /* 2. Action to perform on click */
+    $('.stars li').on('click', function() {
+        var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+        var stars = $(this).parent().children('li.smallstar');
+
+        for (i = 0; i < stars.length; i++) {
+            $(stars[i]).removeClass('starselected');
+        }
+
+        for (i = 0; i < onStar; i++) {
+            $(stars[i]).addClass('starselected');
+        }
+
+        // JUST RESPONSE (Not needed)
+        var ratingValue = parseInt($('.stars li.starselected').last().data('value'), 10);
+        var msg = "";
+        if (ratingValue > 1) {
+            msg = "" + ratingValue + " (5.0).";
+        } else {
+            msg = "" + ratingValue + " (5.0)";
+        }
+        responseMessage(msg);
+
+    });
+});
+
+function responseMessage(msg) {
+    $('.success-box').fadeIn(200);
+    $('.success-box div.text-message').html("<span>" + msg + "</span>");
+}
+// ****** RATING-JS-ENDS ********//
 /*------ MAIN-RATING-VIEW-LIST-JS-START -------*/
 var starClicked = false;
-
 $(function() {
 
-  $('.star').click(function() {
+    $('.star').click(function() {
 
-    $(this).children('.selected').addClass('is-animated');
-    $(this).children('.selected').addClass('pulse');
+        $(this).children('.selected').addClass('is-animated');
+        $(this).children('.selected').addClass('pulse');
 
-    var target = this;
+        var target = this;
 
-    setTimeout(function() {
-      $(target).children('.selected').removeClass('is-animated');
-      $(target).children('.selected').removeClass('pulse');
-    }, 1000);
+        setTimeout(function() {
+            $(target).children('.selected').removeClass('is-animated');
+            $(target).children('.selected').removeClass('pulse');
+        }, 1000);
 
-    starClicked = true;
-  })
+        starClicked = true;
+    })
 
-  $('.half').click(function() {
-    if (starClicked == true) {
-      setHalfStarState(this)
-    }
-    $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    $('.half').click(function() {
+        if (starClicked == true) {
+            setHalfStarState(this)
+        }
+        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-    $(this).closest('.rating-main').data('vote', $(this).data('value'));
-    calculateAverage()
-    console.log(parseInt($(this).data('value')));
+        $(this).closest('.rating-main').data('vote', $(this).data('value'));
+        calculateAverage()
+        console.log(parseInt($(this).data('value')));
 
-  })
+    })
 
-  $('.full').click(function() {
-    if (starClicked == true) {
-      setFullStarState(this)
-    }
-    $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    $('.full').click(function() {
+        if (starClicked == true) {
+            setFullStarState(this)
+        }
+        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-    $(this).find('js-average').text(parseInt($(this).data('value')));
+        $(this).find('js-average').text(parseInt($(this).data('value')));
 
-    $(this).closest('.rating-main').data('vote', $(this).data('value'));
-    calculateAverage()
+        $(this).closest('.rating-main').data('vote', $(this).data('value'));
+        calculateAverage()
 
-    console.log(parseInt($(this).data('value')));
-  })
+        console.log(parseInt($(this).data('value')));
+    })
 
-  $('.half').hover(function() {
-    if (starClicked == false) {
-      setHalfStarState(this)
-    }
+    $('.half').hover(function() {
+        if (starClicked == false) {
+            setHalfStarState(this)
+        }
 
-  })
+    })
 
-  $('.full').hover(function() {
-    if (starClicked == false) {
-      setFullStarState(this)
-    }
-  })
+    $('.full').hover(function() {
+        if (starClicked == false) {
+            setFullStarState(this)
+        }
+    })
 
 })
 
 function updateStarState(target) {
-  $(target).parent().prevAll().addClass('animate');
-  $(target).parent().prevAll().children().addClass('star-colour');
+    $(target).parent().prevAll().addClass('animate');
+    $(target).parent().prevAll().children().addClass('star-colour');
 
-  $(target).parent().nextAll().removeClass('animate');
-  $(target).parent().nextAll().children().removeClass('star-colour');
+    $(target).parent().nextAll().removeClass('animate');
+    $(target).parent().nextAll().children().removeClass('star-colour');
 }
 
 function setHalfStarState(target) {
-  $(target).addClass('star-colour');
-  $(target).siblings('.full').removeClass('star-colour');
-  updateStarState(target)
+    $(target).addClass('star-colour');
+    $(target).siblings('.full').removeClass('star-colour');
+    updateStarState(target)
 }
 
 function setFullStarState(target) {
-  $(target).addClass('star-colour');
-  $(target).parent().addClass('animate');
-  $(target).siblings('.half').addClass('star-colour');
+    $(target).addClass('star-colour');
+    $(target).parent().addClass('animate');
+    $(target).siblings('.half').addClass('star-colour');
 
-  updateStarState(target)
+    updateStarState(target)
 }
 
 function calculateAverage() {
-  var average = 0
+    var average = 0
 
-  $('.rating-main').each(function() {
-    average += $(this).data('vote')
-  })
+    $('.rating-main').each(function() {
+        average += $(this).data('vote')
+    })
 
-  $('.js-average').text((average/ $('.rating-main').length).toFixed(1))
+    $('.js-average').text((average / $('.rating-main').length).toFixed(1))
 }
 
 /*------ MAIN-RATING-VIEW-LIST-JS-END -------*/
-
-
-
 //*** PROGRESS-BAR--JS-START ***//
 
 var delay = 500;
