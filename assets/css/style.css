@@ -208,10 +208,11 @@ span.yellow_cir {
     overflow-x: hidden;
     position: absolute;
     width: 100%;
-    background: #f3f3f3;
+    background: #ffffff;
     z-index: 1;
-    border-radius: 0;
     padding: 10px;
+   border-radius: 0px 0px 5px 5px;
+
 }
 
 .seaarch-img {
@@ -647,8 +648,6 @@ a.red-bg:hover {
     font-weight: 900;
     color: #262626;
 }
-
-
 /* ------ DOWNLOAD-WRAPPER-SECTION-END ------ */
 
 
@@ -760,22 +759,6 @@ h5.white-head {
     padding: 40px 0;
 }
 
-
-/* .simple-gallery {
-  width: 408px;
-  display: block;
-  margin: auto;
-  margin-top: 50px;
-  box-shadow: 5px 20px 60px 10px Gray;
-} */
-
-
-/* 
-img {
-  border-top: 1px solid Gainsboro;
-  border-left: 1px solid Gainsboro;
-} */
-
 .mini img {
     width: 120px;
     height: 100px;
@@ -844,8 +827,188 @@ img {
     background: #FCFCFC;
     width: 50%;
 }
+div#review {
+    padding: 0 0 40px 0;
+}
+.scrollspy-example {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+  }
+  .scrool-bar {
+    border: 1px solid #E0E0E0;
+    background: transparent;
+    border-radius: 5px;
+}
+.scrool-bar  .nav-link.active, .scrool-bar  .show>.nav-link{
+background-color: #FFF1E8;
+}
+.scrool-bar .nav-link {
+    color: #262626;
+}
+.rating {
+    position: relative;
+    text-align: left;
+}
+  
+  .hidden {
+    opacity: 0;
+  }
+  .star {
+    display: inline-block;
+    margin: 2px;
+    font-size: 18px;
+    color: #C4C4C4;
+    position: relative;
+    top: 60px;
+    bottom: 0;
+    cursor: pointer;
+    left: -20px;
+}
+  .star.animate {
+    -webkit-animation: stretch-bounce 0.5s ease-in-out;
+  }
+  .star.hidden {
+    opacity: 0;
+  }
+  .rating-text {
+    padding: 0 0 0 26px;
+}
+  .full:before {
+    font-family: fontAwesome;
+    display: inline-block;
+    content: "";
+    position: relative;
+    float: right;
+    z-index: 2;
+  }
+  
+  .half:before {
+    font-family: fontAwesome;
+    content: "";
+    position: absolute;
+    float: left;
+    z-index: 3;
+  }
+  
+  .star-colour {
+    color: #ffd700;
+  }
+  
+  @-webkit-keyframes stretch-bounce {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.5);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+    }
+    75% {
+      -webkit-transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  .selected:before {
+    font-family: fontAwesome;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  .selected.pulse:before {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+  .selected.is-animated:before {
+    transition: 1s ease-out;
+  }
+  
+  .score {
+    color: #262626;
+    margin: -60px 0 0 0;
+    text-align: left;
+    font-size: 18px;
+}
+.score-rating {
+    top: -5px;
+    position: relative;
+    font-size: 70px;
+    font-weight: 800;
+}
+.total {
+    vertical-align: sub;
+    top: 0px;
+    position: relative;
+    font-size: 18px;
+    text-align: left;
+}
+  .average {
+    font-family: arial;
+    font-size: 20px;
+    color: indianred;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .average .score-average {
+    padding-top: 30px;
+  }
 
 
+  
+.progress {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    background: #B3751B;
+}
+.progress {
+    background-color: #CCCCCC;
+    border-radius: 20px;
+    height: 12px;
+}
+.progress-bar-width {
+    width: 85%;
+}
+.review-text h6 {
+    color: #262626;
+    margin-bottom: 2px;
+}
+
+section.rating-widget {
+    position: relative;
+    width: 30%;
+    margin: 0 0 0 0;
+}
+li.start-clr {
+    width: 16%;
+}
+.products-inner .success-box {
+    left: 70%;
+}
+.reviews-bg .reviews-inner .success-box {
+    left: 72%;
+}
+.reviews-from .pink-btn {
+    background: #B3751B;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 12px 0 0;
+}
 /* ====== PRODUCTS-DETAIL-PAGE-CSS-END ====== */
 
 

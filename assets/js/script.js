@@ -57,7 +57,7 @@ $(".mini img").click(function() {
 });
 /*------ PRODUCTS-DETAIL-JS-END -------*/
 /*------ PLUS-MINUS-BUTTON-JS-START -------*/
-var unit = 0;
+var unit = 1;
 var total;
 // if user changes value in field
 $('.field').change(function() {
@@ -77,7 +77,125 @@ $('.sub').click(function() {
     }
 });
 
+
+
 /*------ PLUS-MINUS-BUTTON-JS-END -------*/
+
 /*------ SEARCH-BAR-LIST-JS-START -------*/
 
 /*------ SEARCH-BAR-LIST-JS-END -------*/
+/*------ MAIN-RATING-VIEW-LIST-JS-START -------*/
+var starClicked = false;
+
+$(function() {
+
+  $('.star').click(function() {
+
+    $(this).children('.selected').addClass('is-animated');
+    $(this).children('.selected').addClass('pulse');
+
+    var target = this;
+
+    setTimeout(function() {
+      $(target).children('.selected').removeClass('is-animated');
+      $(target).children('.selected').removeClass('pulse');
+    }, 1000);
+
+    starClicked = true;
+  })
+
+  $('.half').click(function() {
+    if (starClicked == true) {
+      setHalfStarState(this)
+    }
+    $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+
+    $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    calculateAverage()
+    console.log(parseInt($(this).data('value')));
+
+  })
+
+  $('.full').click(function() {
+    if (starClicked == true) {
+      setFullStarState(this)
+    }
+    $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+
+    $(this).find('js-average').text(parseInt($(this).data('value')));
+
+    $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    calculateAverage()
+
+    console.log(parseInt($(this).data('value')));
+  })
+
+  $('.half').hover(function() {
+    if (starClicked == false) {
+      setHalfStarState(this)
+    }
+
+  })
+
+  $('.full').hover(function() {
+    if (starClicked == false) {
+      setFullStarState(this)
+    }
+  })
+
+})
+
+function updateStarState(target) {
+  $(target).parent().prevAll().addClass('animate');
+  $(target).parent().prevAll().children().addClass('star-colour');
+
+  $(target).parent().nextAll().removeClass('animate');
+  $(target).parent().nextAll().children().removeClass('star-colour');
+}
+
+function setHalfStarState(target) {
+  $(target).addClass('star-colour');
+  $(target).siblings('.full').removeClass('star-colour');
+  updateStarState(target)
+}
+
+function setFullStarState(target) {
+  $(target).addClass('star-colour');
+  $(target).parent().addClass('animate');
+  $(target).siblings('.half').addClass('star-colour');
+
+  updateStarState(target)
+}
+
+function calculateAverage() {
+  var average = 0
+
+  $('.rating-main').each(function() {
+    average += $(this).data('vote')
+  })
+
+  $('.js-average').text((average/ $('.rating-main').length).toFixed(1))
+}
+
+/*------ MAIN-RATING-VIEW-LIST-JS-END -------*/
+
+
+
+//*** PROGRESS-BAR--JS-START ***//
+
+var delay = 500;
+$(".progress-bar").each(function(i) {
+    $(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
+
+    $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: delay,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now) + '%');
+        }
+    });
+});
+
+//*** PROGRESS-BAR--JS-END ***//
