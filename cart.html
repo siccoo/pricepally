@@ -173,24 +173,110 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h4 class="heading">Cart</h4>
-                        <div class="radiobuttons">
-                            <div class="rdio rdio-primary radio-inline">
-                                <input name="radio" value="1" id="cartlist1" type="radio">
-                                <label for="cartlist1">Lorem Ipsum is simply dummy text of the printing text.Lorem Ipsum is simply dummy text of the printing text.</label>
+                        <h4 class="heading mt-4 mb-3">Cart (2)</h4>
+                        <div class="cart-wrapper">
+                            <div class="row border-bottom mb-3">
+                                <div class="col-lg-4">
+                                    <h6 class="text-uppercase  text-muted">Product</h6>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h6 class="text-uppercase text-muted">Quanity</h6>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h6 class="text-uppercase text-muted">Price</h6>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h6 class="text-uppercase text-muted" >Total</h6>
+                                </div>
                             </div>
-                            <div class="rdio rdio-primary radio-inline">
-                                <input name="radio" value="2" id="cartlist2" type="radio">
-                                <label for="cartlist2">Lorem Ipsum is simply dummy text of the printing text.</label>
+                            <div class="row">
+                                <div class="col-lg-4">                                    
+                                   <a href="#">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-inline-block  align-middle"><img class="cart-img" src="assets/images/search-img1.jpg" alt=""></li>
+                                            <li class="d-inline-block pl-2 align-middle"><h6>Tuwo Rice</h6></li>
+                                        </ul>
+                                   </a> 
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="addbutton-bg">
+                                        <button type="button" id="sub" class=sub><span class="material-icons">
+                                            remove
+                                            </span></button>
+                                        <input type="text" id="1" value=1 class=field>
+                                        <button type="button" id="add" class=add><span class="material-icons">
+                                            add
+                                            </span></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="text-center pt-3">
+                                        <h6>₦ 45,000</h6>
+                                    </div>                                    
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <ul class="list-unstyled text-center mb-0">
+                                        <li class="d-inline-block"><h6 class="pt-3">₦ 45,000</h6></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="rdio rdio-primary radio-inline">
-                                <input name="radio" value="2" id="cartlist3" type="radio">
-                                <label for="cartlist3">Lorem Ipsum is simply dummy text of the printing text.</label>
+                            <hr class="border-bottom">
+                            <div class="row">
+                                <div class="col-lg-4">   
+                                    <a href="#">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-inline-block align-middle"><img class="cart-img" src="assets/images/search-img2.jpg" alt=""></li>
+                                            <li class="d-inline-block pl-2 align-middle"><h6 >Irish Potato (5kg)</h6>
+                                                <ul class="list-unstyled pallylist-bg ">
+                                                    <li class="d-inline-block pally-left">
+                                                        <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                                    </li>
+                                                    <li class="d-inline-block pally-left">
+                                                        <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
+                                                    </li>
+                                                    <li class="d-inline-block pally-left">
+                                                        <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
+                                                    </li>
+                                                    <li class="d-inline-block pally-left">
+                                                        <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </li>
+                                           
+                                        </ul>
+                                    </a>                                 
+                                   
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="addbutton-bg">
+                                        <button type="button" id="sub" class=sub><span class="material-icons">
+                                            remove
+                                            </span></button>
+                                        <input type="text" id="1" value=1 class=field>
+                                        <button type="button" id="add" class=add><span class="material-icons">
+                                            add
+                                            </span></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="text-center pt-3">
+                                        <h6>₦ 45,000</h6>
+                                    </div>                                    
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <ul class="list-unstyled text-center mb-0">
+                                        <li class="d-inline-block"><h6 class="pt-3">₦ 45,000</h6></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="col-lg-5 checkout-wrapper">
-                        <h4>Checkout</h4>
+                        <h4  class="checkout-head font-weight-bold mb-4">Checkout</h4>
                         <div class="row">
                             <div class="col-lg-4 border-right">
                                 <div class="checktop-text ">
@@ -211,6 +297,66 @@
                                     <h2>₦100,000</h2>
                                 </div>
                             </div>
+                        </div>
+                        <hr class="border-bottom">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h5 class="small-head mb-3">DELIVERY TYPE</h5>
+                                <div class="radiobuttons">
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="1" id="deliverytlist1" type="radio">
+                                        <label for="deliverytlist1">Normal delivery</label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="2" id="deliverytlist2" type="radio">
+                                        <label for="deliverytlist2">Pally delivery (free delivery for 3 or more combined orders)</label>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-bottom">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="small-head mb-3 text-uppercase">delivery address</h5>
+                            </div>
+                            <div class="col-lg-6">
+                               <div class="selectadd-bg">
+                                    <h6 class="light-brown text-uppercase pointer"class="btn btn-primary" data-toggle="modal" data-target=".bd-selectadd-modal-lg"> select another address</h6>
+                               </div> 
+                            </div>
+                        </div>
+                        <p class="">1, Tinubu street, Victoria Island, Lagos.</p>
+                        <hr class="border-bottom">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="small-head mb-3 text-uppercase">DELIVERY Date</h5>
+                            </div>
+                            <div class="col-lg-6">
+                                <h6 class="light-brown text-uppercase pointer" data-toggle="modal" data-target="#selectdateModal">check free delivery date</h6>
+                            </div>
+                        </div>
+                        <p>Thursday, 18th June 2020</p>
+                        <div class="row radiobuttons mb-3">
+                            <div class="col-lg-6">
+                                <div class="rdio rdio-primary radio-inline">
+                                    <input name="radio" value="1" id="morningradio" type="radio">
+                                    <label for="morningradio">Morning (10AM to 1PM)</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="rdio rdio-primary radio-inline">
+                                    <input name="radio" value="2" id="eveningradio" type="radio">
+                                    <label for="eveningradio">Evening (4PM to 8PM)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group delivery-border">
+                            <label >Optional Delivery Note/Order Instructions</label>
+                            <textarea class="form-control bg-transparent" rows="5" placeholder="Type something..."></textarea>
+                          </div>
+                        <div class="checkout-btn m-auto text-center">
+                            <button type="button" class="yellow-bg text-uppercase">checkout</button>
                         </div>
                     </div>
                 </div>
@@ -282,14 +428,128 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
+
+    <!------ -SELECTED-ADDRESS-MODAL-START ------>
+    <div class="modal fade bd-selectadd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content pb-3">
+            <div class="modal-header">
+                <div class="d-flex justify-content-start">
+                    <h5 class="modal-title" >
+                        Manage Address
+                    </h5>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="pointer newadress text-uppercase brown-btn  text-uppercase btn-effects ">Add new address</button>
+                </div>
+                
+            </div>
+            <div class="modal-body">
+                <div class="selectadd-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-inline-block "><div class="rdio rdio-primary radio-inline ">
+                                    <input name="radio" value="1" id="homeadd" type="radio" >
+                                    <label for="homeadd"><h6 class="mb-1">Home Address</h6>
+                                    <p class="mb-0 text-muted">1, Tinubu Johnson street, Ketu, Lagos</p>
+                                    <p class="mb-0 text-muted">+2348106506979</p>
+                                    <p class="mb-0 text-muted">jadentega@gmail.com</p>
+                                </label>
+                                </div></li>
+                                <li class="d-inline-block pl-5 align-top">  
+                                    <div class="edit-text ">
+                                        <a href="#" class="brown-text text-right">Edit</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-inline-block "><div class="rdio rdio-primary radio-inline ">
+                                    <input name="radio" value="1" id="officeadd" type="radio">
+                                    <label for="officeadd"><h6 class="mb-1">Office Address</h6>
+                                    <p class="mb-0 text-muted">1, Tinubu Johnson street, Ketu, Lagos</p>
+                                    <p class="mb-0 text-muted">+2348106506979</p>
+                                    <p class="mb-0 text-muted">jadentega@gmail.com</p>
+                                </label>
+                                </div></li>
+                                <li class="d-inline-block pl-5 align-top">  
+                                    <div class="edit-text ">
+                                        <a href="#" class="brown-text text-right">Edit</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-inline-block "><div class="rdio rdio-primary radio-inline ">
+                                    <input name="radio" value="1" id="officeadd1" type="radio">
+                                    <label for="officeadd1"><h6 class="mb-1">Office Address</h6>
+                                    <p class="mb-0 text-muted">1, Tinubu Johnson street, Ketu, Lagos</p>
+                                    <p class="mb-0 text-muted">+2348106506979</p>
+                                    <p class="mb-0 text-muted">jadentega@gmail.com</p>
+                                </label>
+                                </div></li>
+                                <li class="d-inline-block pl-5 align-top">  
+                                    <div class="edit-text ">
+                                        <a href="#" class="brown-text text-right">Edit</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+            <div class="useadd-bg m-auto">
+                <div class="">
+                    <button type="button" class="yellow-bg text-uppercase">use address</button>
+                </div>
+                <div class="addclose text-center mt-2">
+                    <small  class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!------ SELECTED-ADDRESS-MODAL-END ------>
+
+    <!------ FREE-DELIVERY-DATE-MODAL-START ------>   
+  <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="p-4">
+          <h5 class="modal-title" id="selectdateModalLabel">Free Delivery Dates</h5>
+          <p>Select your location and get your order delivered for free</p>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+       <div class="chossedate-bg m-auto" >
+                <div class="">
+                    <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+                </div>
+                <div class="addclose text-center mt-2">
+                    <small  class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <!------ FREE-DELIVERY-DATE-MODAL-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
     <script src='assets/js/owl.carousel.jquery.js'></script>
     <script src='assets/js/owl.carousel.min.js'></script>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

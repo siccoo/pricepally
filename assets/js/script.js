@@ -24,52 +24,28 @@ $(document).ready(function() {
 /* ------ dropdown-menu-js-end ------ */
 /*------ fixed-header-js-end ------ */
 /*------ CATOGERIES-SLIDER-JS-START -------*/
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 0,
+ $('.owl-carousel').owlCarousel({
+     loop: true,
+     margin: 10,
     nav: true,
     navText: [
         "<i class='material-icons'>west</i>",
-        "<i class='material-icons'>east</i>"
-    ],
-    autoplay: true,
+         "<i class='material-icons'>east</i>"
+     ],
+     autoplay: true,
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
-        },
-        140: {
-            items: 3
-        },
-        1000: {
-            items: 6
-        }
-    }
-})
-
-
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     navText: [
-//         "<i class='material-icons'>west</i>",
-//         "<i class='material-icons'>east</i>"
-//     ],
-//     autoplay: true,
-//     autoplayHoverPause: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         50: {
-//             items: 2
-//         },
-//         1000: {
-//             items: 6
-//         }
-//     }
-// })
+             items: 1
+       },
+         50: {
+            items: 2
+         },
+         1000: {
+             items: 6
+         }
+     }
+ })
 
 /*------ CATOGERIES-SLIDER-JS-END -------*/
 
@@ -266,3 +242,17 @@ $(".progress-bar").each(function(i) {
 });
 
 //*** PROGRESS-BAR--JS-END ***//
+//*** SMILAR-PRODUCTS-SLIDER-JS-START ***/
+
+$(document).ready(function() {
+    $('#similarSlider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause:true
+
+    });
+});
+
+//*** SMILAR-PRODUCTS-SLIDER-JS-END ***/
+
