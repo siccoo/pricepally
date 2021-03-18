@@ -264,9 +264,36 @@ $(document).ready(function() {
 //     $('#applycouponeModal').modal('show');  
 // });
 
-$("#deepakcheckoutpayButton").on( "click", function() {
-    alert("Deepak Show");
+$(document.getElementById("deepakcheckpayeModal")).on("click",function(){
+    console.log('Close fired');
+    var x = document.getElementById("displaycheckoutdislog");
+    console.log(x.style.display);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    
 });
+
+$(document.getElementById("applycouponButtonClick")).on("click",function(){
+    console.log('check fired');
+    var x = document.getElementById("applycouponeButton");
+    console.log(x.style.display);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    
+});
+
+
+
+
+// $("deepakcheckpayeModal").on( "click", function() {
+//     alert("Deepak Show");
+// });
 
 // $("#checkpayeModal").on( "click", function() {
 //     var checkoutDialog=document.getElementById('checkpayeModalDialog');
