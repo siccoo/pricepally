@@ -264,10 +264,8 @@ $(document).ready(function() {
 //     $('#applycouponeModal').modal('show');  
 // });
 
-$(document.getElementById("deepakcheckpayeModal")).on("click",function(){
-    console.log('Close fired');
-    var x = document.getElementById("displaycheckoutdislog");
-    console.log(x.style.display);
+$(document.getElementById("checkpayeModal")).on("click",function(){
+   var x = document.getElementById("checkoutcontent");   
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
@@ -276,10 +274,9 @@ $(document.getElementById("deepakcheckpayeModal")).on("click",function(){
     
 });
 
-$(document.getElementById("applycouponButtonClick")).on("click",function(){
-    console.log('check fired');
+$(document.getElementById("applycouponButtonClick")).on("click",function(){   
     var x = document.getElementById("applycouponeButton");
-    console.log(x.style.display);
+   
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {

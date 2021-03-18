@@ -1625,6 +1625,12 @@ li.start-clr {
 .brown-text{
     color: #572B00;
 }
+#checkoutcontent {
+    display: none;
+}
+div#applycouponeButton {
+    display: none;
+}
 /* ====== CART-PAGE-CSS-END ====== */
 
 
