@@ -217,7 +217,7 @@
                                 <div class="col-lg-3 ">
                                     <ul class="list-unstyled text-center mb-0">
                                         <li class="d-inline-block"><h6 class="pt-3">₦ 45,000</h6></li>
-                                        <li class="d-inline-block text-danger delete-icon pl-3"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@
                                 <div class="col-lg-3 ">
                                     <ul class="list-unstyled text-center mb-0">
                                         <li class="d-inline-block"><h6 class="pt-3">₦ 45,000</h6></li>
-                                        <li class="d-inline-block text-danger delete-icon pl-3"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -356,7 +356,7 @@
                             <textarea class="form-control bg-transparent" rows="5" placeholder="Type something..."></textarea>
                           </div>
                         <div class="checkout-btn m-auto text-center">
-                            <button type="button" class="yellow-bg text-uppercase">checkout</button>
+                            <button type="button" class="yellow-bg text-uppercase"  data-toggle="modal" data-target="#checkpayeModal">checkout</button>
                         </div>
                     </div>
                 </div>
@@ -441,8 +441,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <button type="button" class="pointer newadress text-uppercase brown-btn  text-uppercase btn-effects ">Add new address</button>
-                </div>
-                
+                </div>                
             </div>
             <div class="modal-body">
                 <div class="selectadd-content">
@@ -508,7 +507,7 @@
                 
                 </div>
             </div>
-            <div class="useadd-bg m-auto">
+            <div class="modal-w m-auto">
                 <div class="">
                     <button type="button" class="yellow-bg text-uppercase">use address</button>
                 </div>
@@ -522,28 +521,160 @@
     <!------ SELECTED-ADDRESS-MODAL-END ------>
 
     <!------ FREE-DELIVERY-DATE-MODAL-START ------>   
-  <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="p-4">
-          <h5 class="modal-title" id="selectdateModalLabel">Free Delivery Dates</h5>
-          <p>Select your location and get your order delivered for free</p>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-       <div class="chossedate-bg m-auto" >
-                <div class="">
-                    <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+    <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="p-4 ">
+            <h5 class="modal-title">Free Delivery Dates</h5>
+            <p>Select your location and get your order delivered for free</p>
+            </div>
+            <div class="modal-body pl-4 pt-0 pr-4">
+                <div class="rdio rdio-primary radio-inline mb-4">
+                    <input name="radio" value="2" id="dateradio1" type="radio">
+                    <label for="dateradio1">
+                        <h6 class="mb-1">7th March 2021</h6>
+                        <p>Lekki and its environs</p>
+                    </label>
                 </div>
-                <div class="addclose text-center mt-2">
+                <div class="rdio rdio-primary radio-inline mb-4">
+                    <input name="radio" value="2" id="dateradio2" type="radio">
+                    <label for="dateradio2">
+                        <h6 class="mb-1">27th March 2021</h6>
+                        <p>Ajah and its environs</p>
+                    </label>
+                </div>
+                <div class="rdio rdio-primary radio-inline mb-5">
+                    <input name="radio" value="2" id="dateradio3" type="radio">
+                    <label for="dateradio3">
+                        <h6 class="mb-1">5th April 2021</h6>
+                        <p>Ikeja and its environs</p>
+                    </label>
+                </div>
+            </div>
+        <div class="modal-w m-auto mt-4 mb-3" >
+                    <div class="mb-3">
+                        <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+                    </div>
+                    <div class="addclose text-center mt-2 mb-4">
+                        <small  class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <!------ FREE-DELIVERY-DATE-MODAL-END ------>
+
+    <!------ CHECKOUT-PAYMENT-MODAL-START ------>
+    <div class="modal fade" id="checkpayeModal" tabindex="-1" role="dialog" aria-labelledby="checkpayeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="p-4 ">
+            <h5 class="modal-title">Payment</h5>
+            </div>
+            <div class="modal-body pt-0 pb-4 pl-4 pr-4">
+                <div class="box-shadow p-3 mb-3">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <p class="mb-2">Shipping</p>
+                          <p class="mb-2">Total</p>
+                      </div>
+                      <div class="col-lg-6 text-right">
+                        <p class="mb-1">N1,000</p>
+                        <h5 class="mb-1">N100,000</h5>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="check-bg mb-2">
+                    <label class="pay-check pointer">
+                        <input type="checkbox">Pay some amount from my wallet
+                        <span class="check_box_ex"></span>
+                    </label>
+                 </div> 
+                 <div class="form-group">
+                    <label class="text-mute small-label">Enter amount to deduct from wallet</label>
+                    <input type="email" class="form-control"  placeholder="20,000">
+                  </div>
+                </div>
+                <div class="box-shadow p-3 mb-3">
+                    <div class="row mt-1" data-toggle="modal" data-target="#applycouponeModal">
+                        <div class="col-lg-6">
+                            <h6 class="mb-0">Apply Coupon</h6>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <span class="material-icons ">
+                                east
+                                </span>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="coupon-bg alert alert-success alert-dismissible fade show mb-3" role="alert">
+                    <p class="mb-0">Coupon Applied Successfully</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="box-shadow p-3 mb-3">
+                    <h6 class="text-uppercase text-secondary mb-3">payment method</h6>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="directbnk" type="radio">
+                        <label for="directbnk">
+                            Direct Bank Transfer
+                        </label>
+                    </div>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="paystack" type="radio">
+                        <label for="paystack">
+                            Paystack
+                        </label>
+                    </div>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="paylater" type="radio">
+                        <label for="paylater">
+                            Buy now, pay later
+                        </label>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="modal-w m-auto mt-4 mb-3" >
+                <div class="mb-3">
+                    <button type="button" class="yellow-bg text-uppercase">PROCEED TO PAY</button>
+                </div>
+                <div class="addclose text-center mt-2 mb-4">
                     <small  class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
                 </div>
             </div>
-      </div>
+        </div>
+        </div>
     </div>
-  </div>
-  <!------ FREE-DELIVERY-DATE-MODAL-END ------>
+    
+    <!------ CHECKOUT-PAYMENT-MODAL-END ------>
+    <!------  APPLY-COUPON-MODAL-START ------->
+    <div class="modal fade" id="applycouponeModal" tabindex="-1" role="dialog" aria-labelledby="applycouponeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <ul class="list-unstyled p-3">
+               <li> <span class="material-icons">
+                west
+                </span></li>
+                <li><h5 class="modal-title">Coupon</h5></li>
+           </ul>
+            <div class="modal-body pl-4 pt-0 pr-4">
+                
+            </div>
+        <div class="modal-w m-auto mt-4 mb-3" >
+                    <div class="mb-3">
+                        <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+                    </div>
+                    <div class="addclose text-center mt-2 mb-4">
+                        <small  class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+
+    
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
