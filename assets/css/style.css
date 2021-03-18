@@ -1616,8 +1616,15 @@ li.start-clr {
     color: #104B29;
     box-shadow: 0 1px 5px 0px hsl(0deg 0% 0% / 16%);
 }
-
-    
+.brown-clr{
+    color: #B3561B;
+}
+.w-85{
+    width: 86%;
+} 
+.brown-text{
+    color: #572B00;
+}
 /* ====== CART-PAGE-CSS-END ====== */
 
 

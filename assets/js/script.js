@@ -245,7 +245,7 @@ $(".progress-bar").each(function(i) {
 //*** SMILAR-PRODUCTS-SLIDER-JS-START ***/
 
 $(document).ready(function() {
-    $('#similarSlider') .multislider({
+    $('#similarSlider').multislider({
         interval: 4000,
         slideAll: true,
         duration: 1000,
@@ -255,11 +255,21 @@ $(document).ready(function() {
 });
 
 //*** SMILAR-PRODUCTS-SLIDER-JS-END ***/
-//set button id on click to hide first modal
-$("#proceedpay").on( "click", function() {
-    $('#checkpayeModal').modal('hide');  
+
+// $("#deepakapplycouponeModal").on( "click", function() {
+//     $('#checkpayeModal').modal('hide');  
+// });
+// //trigger next modal
+// $("#deepakapplycouponeModal").on( "click", function() {
+//     $('#applycouponeModal').modal('show');  
+// });
+
+$("#deepakcheckoutpayButton").on( "click", function() {
+    alert("Deepak Show");
 });
-//trigger next modal
-$("#proceedpay").on( "click", function() {
-    $('#applycouponeModal').modal('show');  
-});
+
+// $("#checkpayeModal").on( "click", function() {
+//     var checkoutDialog=document.getElementById('checkpayeModalDialog');
+//     checkoutDialog.hidden=true;
+//     alert("Deepak Show");
+// });
