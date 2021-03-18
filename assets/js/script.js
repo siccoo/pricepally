@@ -24,28 +24,28 @@ $(document).ready(function() {
 /* ------ dropdown-menu-js-end ------ */
 /*------ fixed-header-js-end ------ */
 /*------ CATOGERIES-SLIDER-JS-START -------*/
- $('.owl-carousel').owlCarousel({
-     loop: true,
-     margin: 10,
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
     nav: true,
     navText: [
         "<i class='material-icons'>west</i>",
-         "<i class='material-icons'>east</i>"
-     ],
-     autoplay: true,
+        "<i class='material-icons'>east</i>"
+    ],
+    autoplay: true,
     autoplayHoverPause: true,
     responsive: {
         0: {
-             items: 1
-       },
-         50: {
+            items: 1
+        },
+        50: {
             items: 2
-         },
-         1000: {
-             items: 6
-         }
-     }
- })
+        },
+        1000: {
+            items: 6
+        }
+    }
+})
 
 /*------ CATOGERIES-SLIDER-JS-END -------*/
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
         interval: 4000,
         slideAll: true,
         duration: 1000,
-        hoverPause:true
+        hoverPause: true
 
     });
 });
@@ -264,26 +264,26 @@ $(document).ready(function() {
 //     $('#applycouponeModal').modal('show');  
 // });
 
-$(document.getElementById("checkpayeModal")).on("click",function(){
-   var x = document.getElementById("checkoutcontent");   
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    
-});
+// $(document.getElementById("checkpayeModal")).on("click",function(){
+//    var x = document.getElementById("checkoutcontent");   
+//       if (x.style.display === "none") {
+//         x.style.display = "block";
+//       } else {
+//         x.style.display = "none";
+//       }
 
-$(document.getElementById("applycouponButtonClick")).on("click",function(){   
-    var x = document.getElementById("applycouponeButton");
-   
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    
-});
+// });
+
+// $(document.getElementById("applycouponButtonClick")).on("click",function(){   
+//     var x = document.getElementById("applycouponeButton");
+
+//       if (x.style.display === "none") {
+//         x.style.display = "block";
+//       } else {
+//         x.style.display = "none";
+//       }
+
+// });
 
 
 
