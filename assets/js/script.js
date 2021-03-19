@@ -254,46 +254,63 @@ $(document).ready(function() {
     });
 });
 
+
 //*** SMILAR-PRODUCTS-SLIDER-JS-END ***/
 
-// $("#deepakapplycouponeModal").on( "click", function() {
-//     $('#checkpayeModal').modal('hide');  
-// });
-// //trigger next modal
-// $("#deepakapplycouponeModal").on( "click", function() {
-//     $('#applycouponeModal').modal('show');  
-// });
+//***CART-MODAL-JS-START ***/
+$("body").on("click",".applycouponmodal",function(e){
+   
+    jQuery.noConflict();
+    $('#checkpayeModal').modal('hide');
+    $('#applycouponopnmodal').modal('show');
+});
+$("body").on("click",".back-arrow",function(e){
 
-// $(document.getElementById("checkpayeModal")).on("click",function(){
-//    var x = document.getElementById("checkoutcontent");   
-//       if (x.style.display === "none") {
-//         x.style.display = "block";
-//       } else {
-//         x.style.display = "none";
-//       }
-
-// });
-
-// $(document.getElementById("applycouponButtonClick")).on("click",function(){   
-//     var x = document.getElementById("applycouponeButton");
-
-//       if (x.style.display === "none") {
-//         x.style.display = "block";
-//       } else {
-//         x.style.display = "none";
-//       }
-
-// });
+jQuery.noConflict();
+$('#checkpayeModal').modal('show');
+$('#applycouponopnmodal').modal('hide');
+});
 
 
+$("body").on("click",".directbankbtn",function(e){
+   
+    jQuery.noConflict();
+    $('#checkpayeModal').modal('hide');
+    $('#directbankopnmodal').modal('show');
+});
+$("body").on("click",".bnkback-arrow",function(e){
 
+    jQuery.noConflict();
+    $('#checkpayeModal').modal('show');
+    $('#directbankopnmodal').modal('hide');
+    });
+    $("body").on("click",".purchase-btn",function(e){
+   
+        jQuery.noConflict();
+        $('#directbankopnmodal').modal('hide');
+        $('#purchaseopnmodal').modal('show');
+    });
+    
+    $("body").on("click",".bnkback-arrow",function(e){
+    
+        jQuery.noConflict();
+        $('#directbankopnmodal').modal('show');
+        $('#purchaseopnmodal').modal('hide');
+});   
+//***CART-MODAL-JS-END ***/
 
-// $("deepakcheckpayeModal").on( "click", function() {
-//     alert("Deepak Show");
-// });
+// **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//
+$("body").on("click",".unavailable-btn",function(e){
+   
+    jQuery.noConflict();
+    $('#modal-right').modal('hide');
+    $('#unavailable-modal').modal('show');
+});
+$("body").on("click",".order-bk",function(e){
 
-// $("#checkpayeModal").on( "click", function() {
-//     var checkoutDialog=document.getElementById('checkpayeModalDialog');
-//     checkoutDialog.hidden=true;
-//     alert("Deepak Show");
-// });
+jQuery.noConflict();
+$('#modal-right').modal('show');
+$('#unavailable-modal').modal('hide');
+});
+ 
+// **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//

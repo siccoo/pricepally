@@ -192,12 +192,15 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <a href="#">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="d-inline-block  align-middle"><img class="cart-img" src="assets/images/search-img1.jpg" alt=""></li>
-                                            <li class="d-inline-block pl-2 align-middle">
-                                                <h6>Tuwo Rice</h6>
-                                            </li>
-                                        </ul>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img class="cart-img" src="assets/images/search-img1.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <h6 class="mt-3">Tuwo Rice</h6>
+                                            </div>
+                                        </div>
+                                       
                                     </a>
                                 </div>
                                 <div class="col-lg-3">
@@ -229,9 +232,11 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <a href="#">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="d-inline-block align-middle"><img class="cart-img" src="assets/images/search-img2.jpg" alt=""></li>
-                                            <li class="d-inline-block pl-2 align-middle">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img class="cart-img" src="assets/images/search-img2.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
                                                 <h6>Irish Potato (5kg)</h6>
                                                 <ul class="list-unstyled pallylist-bg ">
                                                     <li class="d-inline-block pally-left">
@@ -248,10 +253,11 @@
                                                     </li>
 
                                                 </ul>
-                                            </li>
-
-                                        </ul>
+                                            </div>
+                                        </div>
+                                       
                                     </a>
+                                   
 
                                 </div>
                                 <div class="col-lg-3">
@@ -584,7 +590,7 @@
         </div>
         <!------ FREE-DELIVERY-DATE-MODAL-END ------>
         <!------ CHECKOUT-PAYMENT-MODAL-START ------>
-        <div class="modal fade" id="checkpayeModal" tabindex="-1" role="dialog" aria-labelledby="checkpayeModalLabel" aria-hidden="true">
+        <div class="modal fade" id="checkpayeModal" >
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="p-4 ">
@@ -615,9 +621,9 @@
                             </div>
                         </div>
                         <div class="box-shadow pr-3 pl-3 pb-2 pt-3 mb-3 pointer">
-                            <div class="row mt-1" data-toggle="modal" data-target="#applycouponeModal">
+                            <div class="row mt-1 applycouponmodal" >
                                 <div class="col-lg-6">
-                                    <h6 class="mb-0">Apply Coupon</h6>
+                                    <h6 class="mb-0">Apply coupon</h6>
                                 </div>
                                 <div class="col-lg-6 text-right">
                                     <span class="material-icons ">east</span>
@@ -625,14 +631,14 @@
                             </div>
                         </div>
                         <div class="coupon-bg alert alert-success alert-dismissible fade show mb-3" role="alert">
-                            <p class="mb-0">Coupon Applied Successfully</p>
+                            <p class="mb-0">coupon Applied Successfully</p>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="box-shadow p-3 mb-3">
                             <h6 class="text-uppercase text-secondary mb-3">payment method</h6>
-                            <div class="rdio rdio-primary radio-inline mb-4">
+                            <div class="rdio rdio-primary radio-inline mb-4 directbankbtn" >
                                 <input name="radio" value="2" id="directbnk" type="radio">
                                 <label for="directbnk">
                                     Direct Bank Transfer
@@ -665,21 +671,21 @@
             </div>
         </div>
         <!------ CHECKOUT-PAYMENT-MODAL-END ------>
-        <!------  APPLY-COUPON-MODAL-START ------->
-        <div class="modal fade" id="applycouponeModal" tabindex="-1" role="dialog" aria-labelledby="applycouponeModalLabel" aria-hidden="true">
+        <!------  APPLY-coupon-MODAL-START ------->
+        <div class="modal fade" id="applycouponopnmodal"  >
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <ul class="list-unstyled p-3 coupon-head">
-                        <li class="d-inline-block"> <span class="material-icons s-icon">
+                    <ul class="list-unstyled p-3 coupon-head back-arrow pointer">
+                        <li class="d-inline-block "> <span class="material-icons s-icon">
                         west
                     </span></li>
-                        <li class="d-inline-block align-top pl-2"><b>Coupon</b></li>
+                        <li class="d-inline-block align-top pl-2"><b>coupon</b></li>
                     </ul>
                     <div class="modal-body pl-4 pt-0 pr-4">
                         <ul class="list-unstyled mb-4">
                             <li class="d-inline-block w-85 pr-2">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter Coupon code">
+                                    <input type="email" class="form-control" placeholder="Enter coupon code">
                                 </div>
                             </li>
                             <li class="d-inline-block">
@@ -714,7 +720,77 @@
                 </div>
             </div>
         </div>
-        <!------  APPLY-COUPON-MODAL-END ------->
+        <!------  APPLY-coupon-MODAL-END ------->
+
+        <!------  DIRECT-BANK-TRANSFER-MODAL-START ------->
+        <div class="modal fade" id="directbankopnmodal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <ul class="list-unstyled p-3 coupon-head bnkback-arrow pointer">
+                        <li class="d-inline-block "> <span class="material-icons s-icon">
+                        west
+                    </span></li>
+                        <li class="d-inline-block align-top pl-2"><b>Bank Transfer</b></li>
+                    </ul>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                       
+                        <div class="box-shadow mb-3 p-3 bank-content">
+                            <h6 class="mb-3"><small class="pr-2">Account Number:</small><b class="big-text">0000000000</b></h6>
+                            <h6 class="mb-3"><small class="pr-2">Account Name:</small><b class="big-text">Pricepally</b></h6>
+                            <h6 class="mb-3"><small class="pr-2">Bank:</small><b class="big-text">XYZ Bank</b></h6>                           
+                        </div>
+                        <p>Your order will be processed once payment is confirmed on this end.</p>                       
+                    </div>
+                      
+                    <div class="modal-w m-auto mt-4 mb-3">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase purchase-btn">Order Now</button>
+                        </div>
+                       
+                        <div class="addclose text-center mt-2 mb-4">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!------ DIRECT-BANK-TRANSFER-END ------->
+
+         <!------ PURCHASE-SUCCESSFULL-MODAL-START ------->
+         <div class="modal fade" id="purchaseopnmodal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-body p-4 text-center">
+                        <div class="text-center m-auto">
+                            <img class="purchase-img mb-3" src="assets/images/shopping-bag.png" alt="shopping-bag">
+                        </div>
+                        <h4>Purchase Successful</h4>
+                        <p>View your purchase in the order section</p>                       
+                    </div>
+                      
+                    <div class="modal-w m-auto mt-4 mb-3">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase">VIEW YOUR ORDERS</button>
+                        </div>
+                        <div class="mb-3">
+                            <div class="shopping-bg text-center">
+                                <a href="#" >
+                                    <button type="button" class="shopping-btn text-uppercase brown-btn btn-effects ">
+                                        CONTINUE SHOPPING
+                                    </button>
+                                   
+                                </a>
+                            </div>
+                        </div>
+                        <div class="addclose text-center mt-2 mb-4">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------ PURCHASE-SUCCESSFULL-MODAL-END ------->
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
