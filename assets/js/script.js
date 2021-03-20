@@ -313,4 +313,24 @@ $('#modal-right').modal('show');
 $('#unavailable-modal').modal('hide');
 });
  
+
 // **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//
+
+// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+$("body").on("click",".viewdetail-btn",function(e){
+   
+    jQuery.noConflict();
+    $('#modal-right').modal('hide');
+    $('#viewdetails-modal').modal('show');
+});
+$("body").on("click",".details-back",function(e){
+
+jQuery.noConflict();
+$('#modal-right').modal('show');
+$('#viewdetails-modal').modal('hide');
+});
+ 
+
+// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+
+

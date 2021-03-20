@@ -376,7 +376,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <a href="#">
-                                    <small class="brown-clr text-uppercase">View Details</small>
+                                    <small class="brown-clr text-uppercase viewdetail-btn">View Details</small>
                                 </a>
                             </div>
                         </div>
@@ -399,7 +399,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <a href="#">
-                                    <small class="brown-clr text-uppercase">View Details</small>
+                                    <small class="brown-clr text-uppercase ">View Details</small>
                                 </a>
                             </div>
                         </div>
@@ -470,7 +470,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <a href="#">
-                                    <small class="brown-clr text-uppercase">View Details</small>
+                                    <small class="brown-clr text-uppercase ">View Details</small>
                                 </a>
                             </div>
                         </div>
@@ -543,6 +543,63 @@
             </div> 
         </div> 
         <!------ ITEM-UNAVAILABLE-MODAL-END  ------>
+        
+          <!------ VIEW-DETAILS-MODAL-START  ------>
+          <div id="viewdetails-modal" class="modal fixed-right " >
+            <div class="modal-dialog modal-dialog-aside" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Order Summary</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ordersummary-modal">
+                    <ul class="list-unstyled   details-back pointer">
+                        <li class="d-inline-block "> <span class="material-icons s-icon">
+                        west
+                    </span></li>
+                        <li class="d-inline-block align-top pl-2"><b>Details</b></li>
+                    </ul>
+                    <h6 class="text-uppercase light-grey mb-3">share</h6>
+                   <div class="row grey-border m-2">
+                        <div class="col-lg-10">
+                            <p class="mb-0">https://pricepally.com/hsbBS32rn</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="material-icons text-right">
+                                content_copy
+                                </span>
+                        </div>
+                   </div>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="waituntilrdio" type="radio">
+                        <label for="waituntilrdio">
+                            <h6 class="mb-1">Wait until Tomorrow</h6>
+                        </label>
+                    </div>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="refundrdio" type="radio">
+                        <label for="refundrdio">
+                            <h6 class="mb-1">Request a Refund</h6>
+                        </label>
+                    </div>
+                    <div class="rdio rdio-primary radio-inline mb-4">
+                        <input name="radio" value="2" id="walletrdio" type="radio">
+                        <label for="walletrdio">
+                            <h6 class="mb-1">Refund to Wallet</h6>
+                        </label>
+                    </div>
+                    <div class="modal-w text-center">
+                        <button type="button" class="yellow-bg text-uppercase">Done</button> 
+                    </div>
+                    
+                </div>
+                
+                </div>
+            </div> 
+        </div> 
+        <!------ VIEW-DETAILS-MODAL-END  ------>
 
     </main>
     <script src="assets/js/jquery.min.js"></script>
