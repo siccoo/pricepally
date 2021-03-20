@@ -1787,7 +1787,7 @@ li.start-clr {
     font-size: 14px;
     font-weight: 500;
 }
-#modal-right, #unavailable-modal {
+#modal-right, #unavailable-modal, #viewdetails-modal, #trackorder-modal {
     padding-right: 0 !important;
     top: 70px;
     height: 606px;
@@ -1806,6 +1806,91 @@ li.start-clr {
     border-radius: 5px;
     padding: 8px 0 0 0;
     font-size: 14px;
+}
+.pally-list {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: scale-down;
+}
+
+
+.StepProgress {
+  position: relative;
+  list-style: none;
+}
+.StepProgress::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    width: 5px;
+    height: 170px;
+    background: #E0E0E0;
+    border-radius: 5px;
+}
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+    color: #E0E0E0;
+}
+.StepProgress-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+.StepProgress-item::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -32px;
+    height: 100%;
+    width: 10px;
+}
+.StepProgress-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -38px;
+    width: 18px;
+    height: 18px;
+    border:4px solid #CCC;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.StepProgress-item.activeplace::before {
+  border-left: 5px solid #B3561B;
+}
+.StepProgress-item.activeplace::after {
+    content: "";
+    color: #FFF;
+    text-align: center;
+    border: 4px solid #B3561B;
+    background-color: #ffffff;
+}
+.StepProgress-item.current::before {
+  border-left: 2px solid #B3561B;
+}
+.StepProgress-item.current::after {
+  padding-top: 1px;
+  width: 19px;
+  height: 18px;
+  top: -4px;
+  left: -40px;
+  font-size: 14px;
+  text-align: center;
+  color: #B3561B;
+  border: 2px solid #B3561B;
+  background-color: white;
+}
+.StepProgress strong {
+  display: block;
+}
+.StepProgress-item.activeplace {
+    color: #000;
+}
+.fixed-right .close span {
+    padding: 10px 20px;
 }
 /* ====== ORDERS-PAGE-CSS-END ====== */
 

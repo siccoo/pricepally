@@ -333,4 +333,13 @@ $('#viewdetails-modal').modal('hide');
 
 // **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
 
+// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+$("body").on("click",".track-btn",function(e){
+   
+    jQuery.noConflict();
+    $('#modal-right').modal('hide');
+    $('#trackorder-modal').modal('show');
+});
 
+
+// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//

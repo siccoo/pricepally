@@ -256,6 +256,7 @@
                         <td class="brown-clr text-uppercase">ORDER SUMMARY</td>
                         <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
                       </tr>
+                      
                     </tbody>
                   </table>               
             </div>
@@ -337,7 +338,7 @@
                 </div>
                 <div class="modal-body ordersummary-modal">
                     <ul class="list-unstyled ">
-                        <li class="d-inline-block pr-3 text-uppercase"><a href="#" class="brown-clr">Track Order</a></li>
+                        <li class="d-inline-block pr-3 text-uppercase"><a href="#" class="brown-clr track-btn">Track Order</a></li>
                         <li class="d-inline-block  text-uppercase"><a href="cart.html" class="brown-clr">Reorder</a></li>
                     </ul>
                     <div class="alert-warning p-2 mb-4 alert-bg" role="alert">Pricepally Nigeria Ltd   |  2034799567   |   First bank of Nigeria
@@ -543,9 +544,9 @@
             </div> 
         </div> 
         <!------ ITEM-UNAVAILABLE-MODAL-END  ------>
-        
-          <!------ VIEW-DETAILS-MODAL-START  ------>
-          <div id="viewdetails-modal" class="modal fixed-right " >
+
+        <!------ VIEW-DETAILS-MODAL-START  ------>
+        <div id="viewdetails-modal" class="modal fixed-right " >
             <div class="modal-dialog modal-dialog-aside" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -562,44 +563,111 @@
                         <li class="d-inline-block align-top pl-2"><b>Details</b></li>
                     </ul>
                     <h6 class="text-uppercase light-grey mb-3">share</h6>
-                   <div class="row grey-border m-2">
+                   <div class="row grey-border m-1">
                         <div class="col-lg-10">
                             <p class="mb-0">https://pricepally.com/hsbBS32rn</p>
                         </div>
-                        <div class="col-lg-2">
-                            <span class="material-icons text-right">
+                        <div class="col-lg-2  text-right">
+                            <span class="material-icons">
                                 content_copy
                                 </span>
                         </div>
                    </div>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="waituntilrdio" type="radio">
-                        <label for="waituntilrdio">
-                            <h6 class="mb-1">Wait until Tomorrow</h6>
-                        </label>
-                    </div>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="refundrdio" type="radio">
-                        <label for="refundrdio">
-                            <h6 class="mb-1">Request a Refund</h6>
-                        </label>
-                    </div>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="walletrdio" type="radio">
-                        <label for="walletrdio">
-                            <h6 class="mb-1">Refund to Wallet</h6>
-                        </label>
-                    </div>
-                    <div class="modal-w text-center">
-                        <button type="button" class="yellow-bg text-uppercase">Done</button> 
-                    </div>
-                    
+                   <h6 class="text-uppercase light-grey mb-3 mt-4">People in this pally</h6>
+                   <div class="row mb-4">
+                       <div class="col-lg-2">
+                            <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
+                       </div>
+                       <div class="col-lg-4 pl-0 align-self-center">
+                           <h6 class="">Thelma Dike</h6>
+                       </div>
+                       <div class="col-lg-6 text-right align-self-center">
+                        <small class="text-uppercase text-success">paid</small>
+                       </div>
+                   </div>
+                   <div class="row mb-4">
+                        <div class="col-lg-2">
+                            <img class="pally-list" src="assets/images/list-img2.jpg" alt="list-img1">
+                        </div>
+                        <div class="col-lg-4 pl-0 align-self-center">
+                            <h6 >Maurice Dickson</h6>
+                        </div>
+                        <div class="col-lg-6 text-right align-self-center">
+                            <small class="text-uppercase text-success ">paid</small>
+                        </div>
+                    </div>   
+                    <div class="row mb-4">
+                        <div class="col-lg-2">
+                            <img class="pally-list" src="assets/images/list-img3.jpg" alt="list-img1">
+                        </div>
+                        <div class="col-lg-4 pl-0 align-self-center">
+                            <h6 class="">Thelma Dike</h6>
+                        </div>
+                        <div class="col-lg-6 text-right align-self-center">
+                            <small class="text-uppercase text-danger ">NOT PAID</small>
+                        </div>
+                    </div> 
+                    <div class="row mb-4">
+                        <div class="col-lg-2">
+                            <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
+                        </div>
+                        <div class="col-lg-4 pl-0 align-self-center">
+                            <h6 class="">Maurice Dickson</h6>
+                        </div>
+                        <div class="col-lg-6 text-right align-self-center">
+                            <small class="text-uppercase text-danger  ">NOT PAID</small>
+                        </div>
+                    </div>                  
                 </div>
                 
                 </div>
             </div> 
         </div> 
         <!------ VIEW-DETAILS-MODAL-END  ------>
+
+        <!------ TRACK-ORDER-MODAL-START  ------>
+        <div id="trackorder-modal" class="modal fixed-right " >
+            <div class="modal-dialog modal-dialog-aside" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tracking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ordersummary-modal">
+                    <h6 class="text-uppercase light-grey mb-3">TRACKING NUMBER: UV25435HG74</h6>
+                    <div class="row border-bottom">
+                        <div class="col-lg-6">
+                            <ul class="StepProgress">
+                                <li class="StepProgress-item activeplace">Order placed</li>                              
+                                <li class="StepProgress-item activeplace">Order confirmed</li>
+                                <li class="StepProgress-item">Order enroute</li>
+                                <li class="StepProgress-item">Successful Delivery</li>
+                            </ul>     
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <ul class="stepsdate list-unstyled">
+                                <li class="stepsdate-item light-grey mb-3">14-06-2020   |   11:26AM</li>                              
+                                <li class="stepsdate-item light-grey">14-06-2020   |   12:02PM</li>
+                            </ul>  
+                        </div>
+                    </div>  
+                    <div class="tracker-text border-bottom mt-4">
+                        <h6 class="text-uppercase light-grey mb-2">DELIVERY ADDRESS</h6>
+                        <p class="text-muted mb-0">1, Tinubu Johnson street, Ketu, Lagos</p>
+                        <p class="text-muted">+2348106506979</p>
+                    </div>  
+                    <div class="tracker-text border-bottom mt-4 mb-4">
+                        <h6 class="text-uppercase light-grey mb-2">DELIVERY date</h6>
+                        <p class="text-muted">Thursday, 18th June 2020</p>
+                    </div>                      
+                </div>
+                
+                </div>
+            </div> 
+        </div> 
+        <!------ TRACK-ORDER-MODAL-END  ------>
 
     </main>
     <script src="assets/js/jquery.min.js"></script>
