@@ -1276,26 +1276,29 @@ li.start-clr {
 
 @media (max-width: 767px) {
     #similarSlider,
-    #similarSlider1 {
+    #folloersSlider, #followingSlider {
         border-color: transparent;
     }
 }
 
 #similarSlider .MS-content,
-#similarSlider1 .MS-content {
+#folloersSlider .MS-content, #followingSlider .MS-content {
     overflow: hidden;
     white-space: nowrap;
 }
 
 @media (max-width: 767px) {
     #similarSlider .MS-content,
-    #similarSlider1 .MS-content {
+    #folloersSlider .MS-content, #followingSlider .MS-content {
         margin: 0;
     }
     #similarSlider .MS-controls .MS-left,
-    #similarSlider1 .MS-controls .MS-left,
+    #folloersSlider .MS-controls .MS-left,
+    #followingSlider .MS-controls .MS-left,
+
     #similarSlider .MS-controls .MS-right,
-    #similarSlider1 .MS-controls .MS-right {
+    #folloersSlider .MS-controls .MS-right,
+    #followingSlider .MS-controls .MS-right{
         width: 30px !important;
         height: 30px !important;
         font-size: 20px !important;
@@ -1310,7 +1313,8 @@ li.start-clr {
 }
 
 #similarSlider .MS-content .item,
-#similarSlider1 .MS-content .item {
+#folloersSlider .MS-content .item, 
+ #followingSlider .MS-content .item{
     display: inline-block;
     height: 100%;
     overflow: hidden;
@@ -1323,35 +1327,42 @@ li.start-clr {
 
 @media (max-width: 1199px) {
     #similarSlider .MS-content .item,
-    #similarSlider1 .MS-content .item {
+    #folloersSlider .MS-content .item, #followingSlider  .MS-content{
         width: 28%;
     }
 }
 
 @media (max-width: 991px) {
     #similarSlider .MS-content .item,
-    #similarSlider1 .MS-content .item {
+    #folloersSlider .MS-content .item, 
+    #followingSlider .MS-content .item {
         width: 45%;
     }
 }
 
 @media (max-width: 767px) {
     #similarSlider .MS-content .item,
-    #similarSlider1 .MS-content .item {
+    #folloersSlider .MS-content .item,
+    #followingSlider  .MS-content .item {
         width: 100%;
         margin: 0;
     }
 }
 
 #similarSlider .MS-controls button:hover,
-#similarSlider1 .MS-controls button:hover {
+#folloersSlider .MS-controls button:hover,
+#followingSlider  .MS-controls button:hover{
     cursor: pointer;
 }
 
 #similarSlider .MS-controls .MS-left,
-#similarSlider1 .MS-controls .MS-left,
+#folloersSlider .MS-controls .MS-left,
+#followingSlider .MS-controls .MS-left,
+
 #similarSlider .MS-controls .MS-right,
-#similarSlider1 .MS-controls .MS-right {
+#folloersSlider .MS-controls .MS-right,
+#followingSlider .MS-controls .MS-right
+{
     margin-top: -33px;
     position: absolute;
     top: 50%;
@@ -1365,9 +1376,13 @@ li.start-clr {
 }
 
 #similarSlider .MS-controls .MS-left i,
-#similarSlider1 .MS-controls .MS-left i,
+#folloersSlider .MS-controls .MS-left i,
+#followingSlider .MS-controls .MS-left i,
+
 #similarSlider .MS-controls .MS-right i,
-#similarSlider1 .MS-controls .MS-right i {
+#folloersSlider .MS-controls .MS-right i,
+#followingSlider .MS-controls .MS-right i
+{
     font-size: 28px;
     line-height: 46px;
     text-align: center;
@@ -1376,25 +1391,41 @@ li.start-clr {
 }
 
 #similarSlider .MS-controls .MS-left,
-#similarSlider1 .MS-controls .MS-left {
+#folloersSlider .MS-controls .MS-left,
+#followingSlider  .MS-controls .MS-left
+
+{
     left: -360px;
+}
+#followingSlider  .MS-controls .MS-left
+
+{
+    left: -400px;
+}
+#followingSlider .MS-controls .MS-right {
+    right: -490px;
 }
 
 @media (max-width: 991px) {
     #similarSlider .MS-controls .MS-left,
-    #similarSlider1 .MS-controls .MS-left {
+    #folloersSlider .MS-controls .MS-left,
+    #followingSlider .MS-controls .MS-left
+    {
         left: -2px;
     }
 }
 
 #similarSlider .MS-controls .MS-right,
-#similarSlider1 .MS-controls .MS-right {
+#folloersSlider .MS-controls .MS-right
+{
     right: -432px;
 }
 
 @media (max-width: 991px) {
     #similarSlider .MS-controls .MS-right,
-    #similarSlider1 .MS-controls .MS-right {
+    #folloersSlider .MS-controls .MS-right,
+    #followingSlider .MS-controls .MS-right
+    {
         right: -2px;
     }
 }
@@ -1759,7 +1790,7 @@ li.start-clr {
     font-weight: 400;
 }
 .orders-wrapper {
-    height: 60vh;
+    margin-bottom: 288px;
 }
 .modal .modal-dialog-aside{
 	width: 500px;
@@ -1787,7 +1818,7 @@ li.start-clr {
     font-size: 14px;
     font-weight: 500;
 }
-#modal-right, #unavailable-modal, #viewdetails-modal, #trackorder-modal {
+#modal-right, #unavailable-modal, #viewdetails-modal, #trackorder-modal, #editprofile, #addnewaddress {
     padding-right: 0 !important;
     top: 70px;
     height: 606px;
@@ -1913,3 +1944,257 @@ li.start-clr {
 
 
 /* ====== MAKE-LIST-PAGE-CSS-START ====== */
+/* ====== MY-ACCOUNT-PAGE-CSS-START ====== */
+/* ------- PROFILE-PAGE-CSS-START ------- */
+.sidebar {
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    border-radius: 3px;
+}
+.sidebar .active {
+    background: #FFF1E8;
+}
+.sidebar li {
+    padding:12px 0 4px 10px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.sidebar li:hover  {
+    background: #FFF1E8;
+}
+.sidebar .active a{
+    color:#B3561B;
+}
+.sidebar li:hover a {
+color:#B3561B;
+}
+.user-img {
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    border-radius: 50%;
+}
+
+.follow-img {
+    width: 70px;
+    height: 70px;
+    object-fit: scale-down;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 48%);
+}
+.follow-btn.text-uppercase {
+    background: #fff;
+    border: none;
+    color: #B3561B;
+    border-radius: 5px;
+    padding: 8px 14px;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 16%);
+}
+.followers-inner {
+    padding: 14px 10px 10px 10px;
+}
+#my-followers .MS-controls .MS-left, #folloersSlider .MS-controls .MS-left {
+    left: -397px;
+}
+#my-followers .MS-controls .MS-right, #folloersSlider .MS-controls .MS-right {
+    right: -490px;
+}
+#my-followers .MS-content .item, #folloersSlider .MS-content .item, 
+#my-following .MS-content .item {
+    background: #FCFCFC;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+#my-followers .MS-controls .MS-left, #my-followers .MS-controls .MS-right {
+    margin-top: -33px;
+    position: absolute;
+    top: -51%;
+    color: #4F4F4F;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+} 
+.profile-wrapper {
+    margin: 20px 0;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: scale-down;
+    background: #fff;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 30%);
+}
+.file-upload {
+    display: none;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 72px;
+}
+
+.edit-image{
+    position: absolute;
+    top:66%;
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    left: 54%;
+}
+.edit-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+.phone-list li:first-child {
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+.list-unstyled.phone-list, .editpro-form .form-control, .input-group{
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+.phone-list select {
+    border: none;
+    background: transparent;
+}
+.phone-list input.form-control {
+    box-shadow: none;
+    background: transparent;
+}
+.phone-list input.form-control {
+    border: none;
+}
+select:focus {
+    outline: none;
+}
+.update-profile button.yellow-bg {
+    width: 400px;
+}
+.editpro-form .form-group {
+    width: 400px;
+}
+.editprofile-modal {
+    padding: 30px;
+}
+/* ------- PROFILE-PAGE-CSS-END ------- */
+/* ------- MANGE-ADDRESS-PAGE-CSS-START------- */    
+.address-check {
+    position: relative;
+    color: #222;
+    padding-left: 18px;
+}
+.address-check input {
+    opacity: 0;
+}
+.address-check input:checked~.check_box_ex::before {
+    transform: scale(1);
+}
+
+.address-check input:checked~.check_box_ex::after {
+    transform: rotate(45deg) scale(1);
+}
+.address-wrapper li {
+    color: #4F4F4F;
+}
+.address-wrapper {
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    padding: 12px 12px 0 16px;
+    height: 234px;
+}
+.address-wrapper.active{
+    border: 1px solid  #B3561B;
+}
+.address-wrapper.add-new {
+    padding: 80px 0 0 0;
+}
+.add-new span.material-icons {
+    font-size: 40px;
+}
+.address-wrapper.add-new a {
+    color: #4F4F4F;
+}
+.mangeadd-wrapper {
+    height: 57vh;
+}
+/*------- MANGE-ADDRESS-PAGE-CSS-END ------- */
+/* ------- CHANGE-PASSWORD-PAGE-CSS-START ------- */
+.changepass-wrapper input {
+    border: none;
+}
+.changepass-wrapper span.brown-clr {
+    font-size: 14px;
+    padding: 10px 6px 10px 10px;
+}
+.changepass-wrapper label {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.update-password button.yellow-bg {
+    width: 400px;
+}
+.changepass-wrapper {
+    height: 40vh;
+}
+/* ------- CHANGE-PASSWORD-PAGE-CSS-END ------- */
+/* ------- MY-FOLLOWERS-PAGE-CSS-START ------- */
+.myfollowers{
+    background: #FCFCFC;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 10px
+}
+.page-item.disabled .page-link {
+   
+    border: none;
+}
+.page-item:last-child .page-link {
+    border: none;
+}
+.border-bg {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    margin: 2px;
+}
+.border-bg li:first-child {
+    background: #FFF1E8;
+    padding: 10px 14px;
+}
+.border-bg li:last-child {
+    padding: 4px 12px;
+}
+.pagination-bg .page-link {
+    color: #333333;
+}
+.pagination-bg .page-link:hover {
+    color: #333333;
+    background-color: transparent;
+}
+.pagination-bg .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
+.pagination-bg span {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.follower-icon span{
+    vertical-align: bottom;
+}
+a.follower-icon:hover {
+    color: #262626;
+}
+/* ------- MY-FOLLOWERS-PAGE-CSS-END ------- */
+/* ====== MY-ACCOUNT-PAGE-CSS-END ====== */

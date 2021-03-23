@@ -343,3 +343,58 @@ $("body").on("click",".track-btn",function(e){
 
 
 // **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+
+
+//*** FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
+
+$(document).ready(function() {
+    $('#folloersSlider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
+$(document).ready(function() {
+    $('#followingSlider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
+
+
+
+//*** FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
+
+
+//*** EDIT-PROFILE-JS-START ***/
+$(document).ready(function() {
+
+    
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+    
+    $(".upload-button").on('click', function() {
+       $(".file-upload").click();
+    });
+});
+
+//*** EDIT-PROFILE-JS-END ***/
