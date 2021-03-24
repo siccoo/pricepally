@@ -2234,6 +2234,9 @@ a.follower-icon:hover {
     border-radius: 50%;
     box-shadow: 0 0px 2px hsl(0deg 0% 0% / 63%);
 }
+.Notifications-wrapper {
+    margin: 0 0 100px 0;
+}
 /* -------- NOTIFICATION-PAGE-CSS-END -------- */
 /* ------- REFER AND EARN-PAGE-CSS-START -------- */
 .refer-wrapper {
@@ -2279,5 +2282,77 @@ a.follower-icon:hover {
 /* ------- SAAVED-PRODUCTS-CSS-END ------- */
 /* ------- FREQ-OUESTIONS-PAGE-CSS-START ------ */
 
+
+[data-toggle=collapse].collapsed i:before {
+  content: "";
+}
+
+#accordion .card-header {
+  margin-bottom: 8px;
+}
+#accordion .accordion-title {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    background-color: #fff;
+    color: #262626;
+}
+#accordion .accordion-title i {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  right: 0;
+  top: 0;
+ 
+  text-align: center;
+}
+.accordion-bg .card {
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 0;
+    padding: 10px 4px;
+}
+#accordion .accordion-body {
+    padding: 0;
+}
+#accordion .accordion-body ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#accordion .accordion-body li {
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+#accordion .accordion-body li:before {
+  content: "";
+  padding-right: 5px;
+  font-family: "Flaticon";
+  font-size: 16px;
+  font-style: normal;
+}
+#accordion .accordion-body p {
+    padding: 0;
+    color: #4F4F4F;
+}
+.accordion-bg {
+    margin: 0 0 100px 0;
+}
   /* ------- FREQ-OUESTIONS-PAGE-CSS-END ------ */
 /* ======= WALLET-PAGE-CSS-END ======= */
+/* ======= LOGIN-PAGE-CSS-START ====== */
+.logslider-content h5 {
+    color: #333333;
+}
+.logslider-content P {
+    color: #4F4F4f;
+}
+/* ======= LOGIN-PAGE-CSS-END ====== */
