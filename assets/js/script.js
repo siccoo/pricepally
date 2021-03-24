@@ -365,12 +365,7 @@ $(document).ready(function() {
 
     });
 });
-
-
-
 //*** FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
-
-
 //*** EDIT-PROFILE-JS-START ***/
 $(document).ready(function() {
 
@@ -398,3 +393,7 @@ $(document).ready(function() {
 });
 
 //*** EDIT-PROFILE-JS-END ***/
+
+//*** ACCORDIAN-JS-START *** */
+
+//*** ACCORDIAN-JS-END *** */
