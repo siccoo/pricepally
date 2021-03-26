@@ -411,15 +411,78 @@ span.yellow_cir {
 
 
 /* ----- CATEGORIES_SECTION_CSS_START ------- */
+#categoiresSlider .MS-content .item
+ {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    border-right: none;
+    width: 16%;
+    margin: 0 20px 0 0;
+}
+#categoires-bg .MS-controls .MS-left {
+    left: -524px;
+}
+#categoires-bg .MS-controls .MS-right {
+    right: -638px;
+}
+/* #categoires-bg .MS-content .item {
+    background: #FCFCFC;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+} */
+#categoires-bg .MS-controls .MS-left,
+#categoires-bg .MS-controls .MS-right {
+    position: absolute;
+    color: #4F4F4F;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+    border: none;
+    top: 20px;
+} 
+/* #categoiresSlider .MS-controls {
+    position: absolute;
+    margin-top: -72px;
+    top: 0;
+    z-index: 1;
+    left: 45%;
+    bottom: 68%;
+} */
+#categoiresSlider .MS-controls button:hover{
+    cursor: pointer;
+}
 
+
+#categoiresSlider .MS-controls .MS-left i,
+
+#categoiresSlider .MS-controls .MS-right i
+{
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2px 0 0 2px;
+}
+#categoires-bg {
+    position: relative;
+}
+/* #categoiresSlider .MS-controls .MS-left {
+    left: -470px;
+}
+#categoiresSlider .MS-controls .MS-right {
+    right: -676px;
+} */
+
+/* 
 .carousel-wrap {
     width: 100%;
     position: relative;
 }
-
-
-/* fix blank or flashing items on carousel */
-
 .smilar-carousel .item {
     position: relative;
     z-index: 100;
@@ -437,10 +500,6 @@ span.yellow_cir {
 .similarproducts-bg .pally-inner {
     min-width: 256px;
 }
-
-
-/* end fix */
-
 .owl-nav>div {
     margin-top: -33px;
     position: absolute;
@@ -572,14 +631,138 @@ a.catories_inner {
     min-width: 240px;
     min-height: 200px;
     object-fit: cover;
-}
+} */
 
 
 /* ----- CATEGORIES_SECTION_CSS_END ------- */
 
 
 /* ----- FOOD-ITEMS_SECTION_CSS_START ------- */
-
+.dgrey-clr {
+    font-size: 14px;
+    color: #4F4F4F;
+}
+/* ------ PROGRESS-BAR-CSS-START ------ */
+@-webkit-keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-moz-keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-webkit-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-moz-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }  
+  .stat-bar {
+    background-color: #E0E0E0;
+    height: 8px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 5px;
+    margin-left: 0;
+}
+  .stat-bar:last-child {
+    margin-bottom: 0;
+  }
+  
+  .stat-bar-rating {
+    border-radius: 4px;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    text-indent: -9999px;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .preorder-progress > .stat-bar-rating {
+    background: #219653;
+}
+  .stat-2 > .stat-bar-rating {
+    background-image: -webkit-linear-gradient(bottom, #b8f123 0%, #b8f123 47%, #79a602 50%, #79a602 100%);
+    background-image: linear-gradient(to bottom, #b8f123 0%, #b8f123 47%, #79a602 50%, #79a602 100%);
+  }
+  
+  .stat-3 > .stat-bar-rating {
+    background-image: -webkit-linear-gradient(bottom, #00c5ff 0%, #00c5ff 47%, #0383a9 50%, #0383a9 100%);
+    background-image: linear-gradient(to bottom, #00c5ff 0%, #00c5ff 47%, #0383a9 50%, #0383a9 100%);
+  }
+  
+  .stat-bar-rating {
+    visibility: hidden;
+    width: 0;
+    -webkit-animation: animate-width;
+    -moz-animation: animate-width;
+    animation: animate-width;
+    animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -webkit-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -moz-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  .stat-bar:nth-of-type(1) .stat-bar-rating {
+    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
+  }
+  .stat-bar:nth-of-type(2) .stat-bar-rating {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  .stat-bar:nth-of-type(3) .stat-bar-rating {
+    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+  }
+/* ------ PROGRESS-BAR-CSS-END ------ */
+.text-red{
+    color: #D70000;
+    font-size: 14px;
+}
 .food-items-bg .nav-tabs {
     border-bottom: none;
 }
@@ -619,16 +802,6 @@ a.catories_inner {
     font-weight: 700;
     text-decoration: none;
 }
-
-
-/* .green-bg {
-    background: #F7FCF9;
-    font-size: 14px;
-    color: #0DA54E;
-    padding: 6px 14px;
-    font-weight: 700;
-    text-decoration: none;
-} */
 
 .pallylist-bg img.list-img {
     width: 30px;
@@ -829,7 +1002,14 @@ a.red-bg:hover {
 
 /* ----- FOOD-ITEMS_SECTION_CSS_END ------- */
 
-
+/* ----- PARTNER & MEDIA-SECTION-CSS-START ----- */
+.media-wrapper {
+    background: #FAFAFA;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+/* ----- PARTNER & MEDIA-SECTION-CSS-END ----- */
 /* ------ DOWNLOAD-WRAPPER-SECTION-START ------ */
 
 .download-wrapper {
@@ -966,8 +1146,13 @@ h5.white-head {
 .listing_select .select-bg .form-control {
     border-bottom: 1px solid #ced4da;
 }
-
-
+.foodstuff-wrapper .select-bg {
+    margin: 0;
+}
+.foodstuff-wrapper .select-bg li {
+    border: 2px solid #efeded;
+    border-bottom: 2px solid #efeded;
+}
 /* ======   LISTING-PAGE-CSS-END ====== */
 
 
@@ -1276,29 +1461,41 @@ li.start-clr {
 
 @media (max-width: 767px) {
     #similarSlider,
-    #folloersSlider, #followingSlider {
+    #folloersSlider, #followingSlider,
+     #mediaSlider, #categoiresSlider{
         border-color: transparent;
     }
 }
 
 #similarSlider .MS-content,
-#folloersSlider .MS-content, #followingSlider .MS-content {
+#folloersSlider .MS-content,
+#followingSlider .MS-content,
+#mediaSlider .MS-content,
+#categoiresSlider .MS-content{
     overflow: hidden;
     white-space: nowrap;
 }
 
 @media (max-width: 767px) {
     #similarSlider .MS-content,
-    #folloersSlider .MS-content, #followingSlider .MS-content {
+    #folloersSlider .MS-content,
+    #followingSlider .MS-content,
+    #mediaSlider .MS-content,
+    #categoiresSlider .MS-content {
         margin: 0;
     }
     #similarSlider .MS-controls .MS-left,
     #folloersSlider .MS-controls .MS-left,
     #followingSlider .MS-controls .MS-left,
+    #mediaSlider .MS-controls .MS-left,
+    #categoiresSlider .MS-controls .MS-left,
 
     #similarSlider .MS-controls .MS-right,
     #folloersSlider .MS-controls .MS-right,
-    #followingSlider .MS-controls .MS-right{
+    #followingSlider .MS-controls .MS-right,
+    #mediaSlider .MS-controls .MS-right,
+    #categoiresSlider .MS-controls .MS-right
+    {
         width: 30px !important;
         height: 30px !important;
         font-size: 20px !important;
@@ -1314,7 +1511,8 @@ li.start-clr {
 
 #similarSlider .MS-content .item,
 #folloersSlider .MS-content .item, 
- #followingSlider .MS-content .item{
+ #followingSlider .MS-content .item
+ {
     display: inline-block;
     height: 100%;
     overflow: hidden;
@@ -1322,6 +1520,17 @@ li.start-clr {
     vertical-align: top;
     border-right: none;
     width: 42%;
+    margin: 0 20px 0 0;
+}
+#mediaSlider .MS-content .item
+ {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    border-right: none;
+    width: 30%;
     margin: 0 20px 0 0;
 }
 
@@ -1733,16 +1942,19 @@ li.start-clr {
     color: #104B29;
     box-shadow: 0 1px 5px 0px hsl(0deg 0% 0% / 16%);
 }
-
-.brown-clr {
-    color: #B3561B !important;
-}
-
 .w-85 {
     width: 86%;
 }
-
+.brown-clr{
+    color: #B3561B !important;
+}
 .brown-text {
+    color: #B3561B !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.darkbrown-text {
     color: #572B00;
 }
 .big-text {
@@ -1944,6 +2156,7 @@ li.start-clr {
 
 
 /* ====== MAKE-LIST-PAGE-CSS-START ====== */
+
 /* ====== MY-ACCOUNT-PAGE-CSS-START ====== */
 /* ------- PROFILE-PAGE-CSS-START ------- */
 .sidebar {
@@ -1999,13 +2212,15 @@ color:#B3561B;
 #my-followers .MS-controls .MS-right, #folloersSlider .MS-controls .MS-right {
     right: -490px;
 }
-#my-followers .MS-content .item, #folloersSlider .MS-content .item, 
+#my-followers .MS-content .item, 
+#folloersSlider .MS-content .item, 
 #my-following .MS-content .item {
     background: #FCFCFC;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
 }
-#my-followers .MS-controls .MS-left, #my-followers .MS-controls .MS-right {
+#my-followers .MS-controls .MS-left, 
+#my-followers .MS-controls .MS-right {
     margin-top: -33px;
     position: absolute;
     top: -51%;
@@ -2130,18 +2345,18 @@ select:focus {
 }
 /*------- MANGE-ADDRESS-PAGE-CSS-END ------- */
 /* ------- CHANGE-PASSWORD-PAGE-CSS-START ------- */
-.changepass-wrapper input {
+.changepass-wrapper input, .login-content input {
     border: none;
 }
-.changepass-wrapper span.brown-clr {
+.changepass-wrapper span.brown-clr, .login-content span.brown-clr {
     font-size: 14px;
     padding: 10px 6px 10px 10px;
 }
-.changepass-wrapper label {
+.changepass-wrapper label, .login-content label{
     font-size: 14px;
     margin-bottom: 0;
 }
-.update-password button.yellow-bg {
+.update-password button.yellow-bg, .login-bg  button.yellow-bg {
     width: 400px;
 }
 .changepass-wrapper {
@@ -2355,4 +2570,97 @@ a.follower-icon:hover {
 .logslider-content P {
     color: #4F4F4f;
 }
+.logslider-content {
+    margin:30px auto 36px;
+    width: 30%;
+}
+.login-wrapper .carousel-indicators {
+    top: 98%;
+}
+.login-wrapper  .carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 22px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color:#E0E0E0;
+    background-clip: padding-box;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 20px;
+}
+.login-wrapper  .carousel-indicators .active {
+    background: #FAB814 !important;
+    opacity: 1 !important;
+    width: 28px !important;
+    height: 10px;
+}
+.login-content {
+    background: #FCFCFC;
+    padding: 60px;
+    height: 100vh;
+}
+.forgot-text {
+    font-size: 14px;
+    color: #B3561B;
+}
+.loginwith-text {
+    background: #fcfcfc;
+    width: 30%;
+    text-align: center;
+    margin: -26px 0 auto 135px;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+.login-w {
+    width: 400px;
+}
+.social-btn {
+    border: 1px solid;
+    border-radius: 5px;
+}
+.google-btn {
+    padding: 10px 27px;
+    color: #FF1B1B;
+    border-color: #FF1B1B;
+}
+.fb-btn {
+    padding: 10px 17px;
+    color: #475993;
+    border-color: #475993;
+}
+.apple-btn{
+    padding: 10px 27px;
+    color:#333333;
+    border-color:#333333;
+}
+.google-btn:hover {
+   
+    background: #FF1B1B;   
+}
+.social-btn:hover{
+    transition: all .3s ease;
+    color: #fff;
+}
+.fb-btn:hover {   
+    background: #475993;   
+}
+.apple-btn:hover{
+    background:#333333;
+}
+.signup-bg .login-content {
+    position: fixed;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 /* ======= LOGIN-PAGE-CSS-END ====== */
+
+
+

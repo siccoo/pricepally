@@ -15,9 +15,141 @@
 
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
     <style>
-        .modal-backdrop {  
-        background-color: transparent;
+     
+@media (max-width: 767px) {
+    #categoriesSlider,
+    #categoriesSlider1 {
+        border-color: transparent;
     }
+}
+
+#categoriesSlider .MS-content,
+#categoriesSlider1 .MS-content {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    #categoriesSlider .MS-content,
+    #categoriesSlider1 .MS-content {
+        margin: 0;
+    }
+    #categoriesSlider .MS-controls .MS-left,
+    #categoriesSlider1 .MS-controls .MS-left,
+    #categoriesSlider .MS-controls .MS-right,
+    #categoriesSlider1 .MS-controls .MS-right {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 20px !important;
+        line-height: 0;
+    }
+    .MS-controls {
+        width: 100%;
+        margin-bottom: 19px;
+        margin-top: -58px !important;
+        right: 0px !important;
+    }
+ 
+}
+#categoriesSlider .MS-content .item, #categoriesSlider1 .MS-content .item {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    border-right: none;
+    width: 14.8%;
+    margin: 0 20px 0 0;
+}
+
+@media (max-width: 1199px) {
+    #categoriesSlider .MS-content .item,
+    #categoriesSlider1 .MS-content .item {
+        width: 28%;
+    }
+}
+
+@media (max-width: 991px) {
+    #categoriesSlider .MS-content .item,
+    #categoriesSlider1 .MS-content .item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    #categoriesSlider .MS-content .item,
+    #categoriesSlider1 .MS-content .item {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+#categoriesSlider .MS-controls button:hover,
+#categoriesSlider1 .MS-controls button:hover {
+    cursor: pointer;
+}
+
+#categoriesSlider .MS-controls .MS-left,
+#categoriesSlider1 .MS-controls .MS-left,
+#categoriesSlider .MS-controls .MS-right,
+#categoriesSlider1 .MS-controls .MS-right {
+    margin-top: -33px;
+    position: absolute;
+    top: -51%;
+    color: #4F4F4F;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+    border: none;
+}
+
+#categoriesSlider .MS-controls .MS-left,
+#categoriesSlider1 .MS-controls .MS-left {
+    left: -518px;
+}
+
+@media (max-width: 991px) {
+    #categoriesSlider .MS-controls .MS-left,
+    #categoriesSlider1 .MS-controls .MS-left {
+        left: -2px;
+    }
+}
+
+#categoriesSlider .MS-controls .MS-right,
+#categoriesSlider1 .MS-controls .MS-right {
+    right:-638px;
+}
+
+@media (max-width: 991px) {
+    #categoriesSlider .MS-controls .MS-right,
+    #categoriesSlider1 .MS-controls .MS-right {
+        right: -2px;
+    }
+}
+
+.MS-controls {
+    position: absolute;
+    margin-top: -72px;
+    top:122%;
+    z-index: 1;
+    left: 45%;
+}
+
+#categoriesSlider p {
+    white-space: normal;
+}
+#categoriesSlider .MS-controls .MS-right i,
+#categoriesSlider .MS-controls .MS-left i
+{
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2px 0 0 2px;
+}
+
     </style>
 </head>
 
@@ -171,87 +303,125 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ PROFILE-SECTION-START ------>
-        <section class="profile-wrapper mt-4">
+        <!------ SLIDER-SECTION-START ------>
+        <section class="categoires_wrapper mb-3">
             <div class="container">
-                <h2>My Account</h2>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="sidebar">
-                           <ul class="list-unstyled">
-                               <li>
-                                    <a href="my_account_profile.html">
-                                        <span class="material-icons-outlined">
-                                            account_circle
-                                        </span>
-                                        <span class="align-top">Profile</span>
-                                    </a>
-                                </li>
-                                <li >
-                                    <a href="mange-address.html">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span>
-                                        <span class="align-top">Manage Address</span>
-                                     </a>
-                                 </li>
-                                 <li class="active">
-                                    <a href="change-password.html">
-                                        <span class="material-icons-outlined">
-                                            lock
-                                            </span>
-                                         <span class="align-top">Change Password</span>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)">
-                                        <span class="material-icons-outlined">
-                                        login
-                                        </span>
-                                        <span class="align-top">Logout</span>
-                                    </a>
-                                 </li>
-                           </ul>
-
-                        </div>
+                    <div class="col-lg-6">
+                        <h4 class="heading">Categories</h4>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="changepass-wrapper">
-                            <h6>Change Password</h6>   
-                            <form>
-                               <div class="row">
-                                   <div class="col-md-6 col-lg-6 mb-4">                                       
-                                        <label >Current Password</label>
-                                        <div class="input-group">
-                                            <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
-                                            <span class="brown-clr">SHOW</span>
-                                        </div>
-                                   </div>
-                                   <div class="col-md-6 col-lg-6 mb-4">                                       
-                                        <label >New Password</label>
-                                        <div class="input-group">
-                                            <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
-                                            <span class="brown-clr">SHOW</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6 mb-4">                                       
-                                        <label >Confirm New Password</label>
-                                        <div class="input-group">
-                                            <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
-                                            <span class="brown-clr">SHOW</span>
-                                        </div>
-                                    </div>
-                               </div>
-                               <div class="update-password text-center mt-5">
-                                <button type="button" class="yellow-bg text-uppercase">Update Password</button>
+                    <div class="col-lg-6 text-right">
+                        <a href="#" class="text-uppercase brown-text ">View All</a>
+                    </div>
+                </div>
+                 <div class="row justify-content-center">
+                    <div class="col-12 col-lg-12">
+                        <div id="categoriesSlider" class="dvslider">
+                            <div class="MS-controls">
+                                            <button class="MS-left"><i class='material-icons'>west</i></button>
+                                            <button class="MS-right"><i class='material-icons'>east</i></button>
                             </div>
-                            </form>                        
+                            <div class="MS-content">
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/foodstuff-img.png">                    
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/packfood_img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/fruits-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/meat-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/oils-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/soup-img.png">
+                                    </div>
+                                </a>
+                                
+
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/foodstuff-img.png">                    
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/packfood_img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/fruits-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/meat-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/oils-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/soup-img.png">
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/foodstuff-img.png">                    
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/packfood_img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/fruits-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/meat-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/oils-img.png">
+                                    </div>
+                                </a>
+                                <a href="#" class="catories_inner">
+                                    <div class="item">
+                                        <img src="assets/images/soup-img.png">
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!------ PROFILE-SECTION-END ------>
+        <!------ SLIDER--SECTION-END ------>
         <!------ FOOTER-SECTION-START ------>
         <footer class="ml-2 mr-2 footer-wrapper">
             <div class="container">
@@ -316,16 +486,97 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
-       
+        <!------ PROFILE-MODAL-START ------>
+        <div id="editprofile" class="modal fixed-right " tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-aside" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body editprofile-modal">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="">
+                                <img class="profile-pic" src="assets/images/profile_img.jpg" alt="profile-img">
+                         
+                              </div>
+                              <div class="edit-image pointer">
+                                <img class="carmeraedit upload-button" src="assets/images/Camera edit.png" alt="carmeraedit">
+                               
+                                 <input class="file-upload" type="file" accept="image/*"/>
+                              </div>
+                        </div>
+                     </div>
+                     <form class="editpro-form">
+                        <div class="form-group">
+                          <label>First Name</label>
+                          <input type="text" class="form-control" placeholder="Tega">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Jaden">
+                        </div>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" placeholder="Jaden Tega">
+                        </div>
+                        <div class="form-group">
+                            <label>Business Name</label>
+                            <input type="text" class="form-control" placeholder="JadenGrafix">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Jadentega@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <ul class="list-unstyled phone-list">
+                                <li class="d-inline-block"> 
+                                    <select>
+                                        <option value="234">+234</option>
+                                    </select>
+                                </li>
+                                <li class="d-inline-block"> <input type="text" class="form-control" name="phone" id="phone" value="345345345345" placeholder="e.g(987653212)"></li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label>Cooperative ID</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="update-profile">
+                            <button type="button" class="yellow-bg text-uppercase">Update Profile</button>
+                        </div>
+                      </form>
+                </div>
+                
+                </div>
+            </div> 
+        </div> 
+        <!------ PROFILE-MODAL-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src='assets/js/owl.carousel.jquery.js'></script>
-    <script src='assets/js/owl.carousel.min.js'></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/multislider.js"></script>
+
+     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#categoriesSlider').multislider({
+       interval: 4000,
+        slideAll: true,
+        duration: 1000,
+      hoverPause:true
+
+    });
+    
+   
+ });
+    </script>
 </body>
 
 </html>
