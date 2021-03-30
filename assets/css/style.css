@@ -796,13 +796,19 @@ a.catories_inner {
 
 .red-bg {
     background: #FDF2F2;
+     color: #FF0000;
+  
+}
+.green-bg, .red-bg{
     font-size: 14px;
-    color: #FF0000;
     padding: 6px 14px;
     font-weight: 700;
     text-decoration: none;
 }
-
+.green-bg {
+   background-color: #EAF6EF;
+   color: #0DA54E;
+}
 .pallylist-bg img.list-img {
     width: 30px;
     height: 30px;
@@ -825,7 +831,9 @@ a.catories_inner {
     color: #333333;
     min-height: 480px;
 }
-
+.recommended-bg .pally-inner {
+    min-height: 400px;
+}
 .inner-head {
     font-weight: 700;
     color: #262626;
@@ -968,7 +976,9 @@ a.red-bg:hover {
     padding: 8px 8px 0 8px;
 }
 
-
+.recommended-bg .rating-widget {
+    width: 80%;
+}
 /* ------ BUTTON-HOVER-EFFECTS-CSS-END ------ */
 
 .select-bg {
