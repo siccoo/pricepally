@@ -979,12 +979,57 @@ a.red-bg:hover {
 .recommended-bg .rating-widget {
     width: 80%;
 }
+.btneffects-bg{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+.border-btneffects {
+    display: block;
+    position: relative;
+    z-index: 1;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #B3561B;
+    color: #B3561B;
+    font-weight: 700;
+    padding: 4px 12px;
+    height: 46px;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s;
+}
+.border-btneffects:hover:before {
+    top: 0;
+    left: 0;
+}
+
+.border-btneffects:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    background: #B3561B;
+    transition: all .5s;
+    z-index: -1;
+}
+
+ .border-btneffects:hover {
+    color: white;
+} 
+
 /* ------ BUTTON-HOVER-EFFECTS-CSS-END ------ */
 
 .select-bg {
     margin: 42px 0 0 0;
 }
-
 .select-bg .form-control {
     border: none;
     border-radius: 0;
@@ -1693,8 +1738,108 @@ li.start-clr {
     width: 56%;
 }
 
+.progress-bar-width .preorder-progress > .stat-bar-rating {
+    background: #b3751b;
+}
+.reset-btn button.yellow-bg{
+    width: 418px;
+}
+#resetModal .modal-content {
+    padding: 24px;
+    background: #FCFCFC;
+}
+.addclose {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px hsl(0deg 0% 0% / 6%);
+}
+.addclose  span{
+    font-weight: 700;
+}
 
 /* ====== PRODUCTS-DETAIL-PAGE-CSS-END ====== */
+/* =======  PALLY-PRODUCTS-DETAILS-PAGE-CSS-START ====== */
+.pallyfriends-bg{
+    background: #FCFCFC;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 4px
+}
+.pally-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px hsl(0deg 0% 0% / 20%);
+}
+.pally-frnds .col-lg-4.mb-3 {
+    padding: 0 0 0 12px;
+}
+.pally-frnds {
+    width: 80%;
+}
+#splitbill {
+    display: block;
+}
+div#paymyself {
+    display: none;
+}
+.pally-box input.form-control {
+    width: 20%;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    height: 50px;
+}
+.pallysplit-content select.form-control {
+    border: 1px solid #E0E0E0;
+    height: 48px;
+    border-radius: 10px;
+}
+.pally-w .yellow-bg, .addclose  {
+    width: 400px;
+}
+div#pallyorderModal .modal-content {
+    width: 90%;
+    margin: 0 auto;
+}
+div#pallyorderModal label {
+    font-size: 14px;
+    color: #4F4F4F;
+    margin-bottom: 4px;
+}
+div#pallyorderModal .addbutton-bg {
+    width: 36%;
+    margin: 0;
+}
+.gotocart-btn, .cartsuessfull-bg .addclose {
+    width: 100%;
+    height: 46px;
+}
+.cartsuessfull-bg .modal-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.small-text {
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.aleadypally-content .btneffects-bg {
+    width: 60%;
+}
+.aleadypally-content .addclose {
+    width: 60%;
+    margin: 0 auto;
+}
+.existpallybg .modal-dialog {
+    max-width: 800px;
+}
+.list-view {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+/* =======  PALLY-PRODUCTS-DETAILS-PAGE-CSS-END ====== */
 
 
 /* ====== CART-PAGE-CSS-START ====== */

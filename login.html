@@ -19,6 +19,7 @@
 
 <body>
     <main >
+      <!----- LOGIN-PAGE-SECTION-START ------>
        <section class="login-wrapper ">
            <div class="container-fluid">
                <div class="row">
@@ -89,7 +90,7 @@
                                 <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
                                 <span class="brown-clr">SHOW</span>
                             </div>
-                            <span class="float-right forgot-text">Forgot Password ?</span>
+                            <span class="float-right forgot-text pointer" data-toggle="modal" data-target="#resetModal">Forgot Password ?</span>
                           <div class="login-bg mt-5 mb-5">
                             <button type="button" class="yellow-bg text-uppercase">Login</button>
                           </div>
@@ -121,6 +122,37 @@
                </div>
            </div>
        </section>
+       <!----- LOGIN-PAGE-SECTION-END ------>
+       <div class="modal fade" id="resetModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <b>Reset Password Request</b>
+                    
+                </div>
+                <div class="modal-body pt-0">
+                  <p>Enter your username or email to reset your password</p>   
+                  <form>
+                    <label>Email or Username</label>
+                        <div class="input-group mb-4">
+                            <input type="text"  class="form-control" />                                 
+                        </div>
+                  </form>                             
+                </div>
+                  
+                <div class="reset-btn m-auto mt-4 mb-3 text-center">                       
+                    <div class="mb-3">
+                        <button type="button" class="yellow-bg text-uppercase add-btn">SEND RESET LINK</button>
+                    </div>
+                    <p class="mb-2">Already have an account? <span class="brown-clr pointer">Sign In</span></p> 
+                    <p>Don’t have an account?  <span class="brown-clr pointer">Create a new account</span></p>                        
+                    <div class="addclose text-center mt-2 mb-4">
+                        <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

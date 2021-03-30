@@ -213,7 +213,7 @@
                             <h4 class="mb-3 mt-1 font-weight-bold">N7,500 <small>per slot (3 available slots)</small></h4>
                             <hr class="bottom-border">
                             <div class="button-wrapper mt-4 mb-4">
-                                <a href="#" class="yellow-btn">SELECT ORDER TYPE</a>
+                                <a href="#" class="yellow-btn"  data-toggle="modal" data-target="#pallyorderModal">SELECT ORDER TYPE</a>
                             </div>
                             <div class="share-text">
                                 <small>Share this product</small>
@@ -236,14 +236,54 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 " data-spy="scroll" data-target="#spy">
-                        <div id="descrption" class="mb-3">
-
-                            <h5 class="grey-text">DESCRIPTION</h5>
+                        <div id="descrption" class="mb-2">
+                            <h5 class="grey-text text-uppercase">DESCRIPTION</h5>
                             <hr class="border-bottom mt-1">
                             <p>Honey "oloyin" beans are also brown beans but sweeter when cooked. You can buy an 100kg bag and share it with friends and family, a bag contains at least 26 paint buckets, so it is real value for your money, a huge discount
                                 off instead of buying retail. We select the best grain of honey beans and package to deliver to your doorstep within 24 hour after you ORDER. NO WAITING!</p>
                         </div>
-
+                        <div id="pallyfriends" class="mb-3">
+                            <h5 class="grey-text text-uppercase">PALLY FRIENDS</h5>
+                            <hr class="border-bottom mt-1">
+                                <div class="row pally-frnds">
+                                    <div class="col-md-4 col-lg-4 mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg ">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Thelma Dike</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4  mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4  mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4  mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Thelma Dike</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4  mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4  mb-3">
+                                        <div class="d-flex align-content-between  pallyfriends-bg">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <div id="review" class="mb-3">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -612,7 +652,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div id="similar-products" class="similarproducts-bg mb-3">
+                        <div id="similar-products" class="similarproducts-bg mb-3" >
                             <h5 class="grey-text">SIMILAR PRODUCTS</h5>
                             <hr class="border-bottom">
                             <div id="similarSlider" class="dvslider">
@@ -665,7 +705,7 @@
                                                     </div>
                                                 </section>                                               
                                                 <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects "  >SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -1085,6 +1125,7 @@
                         <div class="sticky-sidebar">
                             <ul class="nav  flex-column scrool-bar ">
                                 <li class="nav-item"><a class="nav-link active" href="#scroll1">Overview</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#pallyfriends">Pally Friends</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#descrption">Description</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#review">Customer Review</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#similar-products">Similar Products</a></li>
@@ -1139,7 +1180,7 @@
                                         </div>
                                     </section> 
                                         <a href="#">
-                                            <button type="button" class="brown-btn  text-uppercase btn-effects ">Select Order Type</button>
+                                            <button type="button" class="brown-btn  text-uppercase btn-effects " data-toggle="modal" data-target="#alreadypallyModal">Select Order Type</button>
                                         </a>
                                     </div>
         
@@ -1215,6 +1256,283 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
+        <!------ORDER-TYPE-PALLY-MODAL-START ------>
+        <div class="modal fade" id="pallyorderModal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <p class="small-text mb-2">Selec Order Type</p>
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <form>
+                            <div class="form-group">
+                               <ul class="list-unstyled">
+                                   <li class="d-inline-block pr-2">
+                                        <div class="rdio rdio-primary radio-inline mb-4 " >
+                                            <input name="radio"  value="2" id="pallysplit-btn" type="radio" onclick="myFunction()" name="carttype" checked>
+                                            <label for="pallysplit-btn">
+                                                Pally (Split Bill)
+                                            </label>                                   
+                                        </div>
+                                   </li>
+                                   <li class="d-inline-block">
+                                        <div class="rdio rdio-primary radio-inline mb-4 " >
+                                            <input name="radio" value="normal" id="paymyself-btn" type="radio" onclick="myFunction()" name="carttype" >
+                                            <label for="paymyself-btn">
+                                                Pay by myself
+                                            </label>
+                                        </div>
+                                   </li>
+                               </ul>                         
+                               
+                            </div>
+                            <div class="pallysplit-content" id="splitbill">
+                                <div class="pally-box form-group">
+                                    <label>Maximum of 5 people to pally with</label>
+                                    <input type="text" class="form-control" placeholder="1"></input>
+                                </div>
+                                <div class="form-group">
+                                    <label >Select Preference attribute</label>
+                                    <select class="form-control" >
+                                        <option>None</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>                                
+                            </div>
+                            <div class="myself-content" id="paymyself">
+                                <div class="form-group">
+                                    <label>Select Preference attribute</label>
+                                    <select class="form-control" >
+                                        <option>None</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <td class="qty-width align-middle">
+                                    <label>Quantity</label>
+                                    <div class="addbutton-bg">
+                                        
+                                        <button type="button" id="sub" class="sub"><span class="material-icons">
+                                                remove
+                                        </span></button>
+                                        <input type="text" id="add" value="1" class="field">
+                                        <button type="button" id="add" class="add"><span class="material-icons">
+                                                add
+                                        </span></button>
+                                    </div>
+                                </td>
+
+                            </div>
+                           
+                        </form>
+                    </div>                      
+                    <div class="pally-w m-auto mt-4 mb-3 text-center">    
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase add-btn cartsussefullbtn" id="cartsusessfull" >ADD TO CART</button>
+                        </div>                       
+                        <div class="addclose text-center mt-2 mb-4">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!------ ORDER-TYPE-PALLY-MODAL-START ------>
+        <!------ CART-SUSESSFULL-SECTION-START ------>
+        <div class="modal fade cartsuessfull-bg" id="cartsuessfullopnmodal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  
+                    <div class="modal-body p-4 text-center">
+                       <img class="check-icon mb-3" src="assets/images/cart-check.png" alt="cart-check">
+                       <p>Item added to cart successfully</p>     
+                       <div class="d-flex align-content-between flex-wrap copy-bg pointe mb-4 pointer">
+                             <p class="mb-0">https://pricepally.com/signup?referra...</p>
+                            <div class="ml-auto  align-self-center">
+                                <span class="material-icons">content_copy</span>
+                            </div>
+                        </div> 
+                        <div class="btneffects-bg text-center mb-3">
+                            <a href="#">
+                                <button typ="button" class="border-btneffects text-uppercase "> 
+                                    CONTINUE SHOPPING
+                                </button>
+                            </a>
+                        </div>   
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase gotocart-btn">GO TO CART</button>
+                        </div>
+                        <div class="m-auto mb-3">                        
+                            <div class="addclose text-center  mb-3">
+                                <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                            </div>
+                        </div>     
+                    </div>
+                      
+                    
+                </div>
+            </div>
+        </div> 
+        <!------ CART-SUSESSFULL-SECTION-END ------>
+        <!------ PALLIES-ALREADY-EXIST-MODAL-START ------>
+         <div class="modal fade" id="alreadypallyModal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <p class="small-text mb-2">Select Order Type</p>
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <form>
+                            <div class="form-group mb-1">
+                                
+                               <ul class="list-unstyled mb-0">
+                                   <li class="d-inline-block pr-2">
+                                    <div class="rdio rdio-primary radio-inline mb-4">
+                                        <input name="radio" value="2" id="pallyrdio" type="radio" checked>
+                                        <label for="pallyrdio">
+                                            <h6 class="mb-1">Pally (Split Bill)</h6>
+                                        </label>
+                                    </div>
+                                   </li>
+                                   <li class="d-inline-block">
+                                    <div class="rdio rdio-primary radio-inline mb-4">
+                                        <input name="radio" value="2" id="paymyselfrdio" type="radio">
+                                        <label for="paymyselfrdio">
+                                            <h6 class="mb-1">Pay by myself</h6>
+                                        </label>
+                                    </div>
+                                   </li>
+                               </ul>                         
+                               
+                            </div>
+                            <div class="aleadypally-content text-center">
+                                <b>2 pallies already exist for this product </b>
+                                <p>Will you like to view them?</p>
+                                <div class="btneffects-bg">
+                                    <button type="button" class="border-btneffects text-uppercase existpally-btn" >YES, I WANT TO VIEW THEM</button>
+                                </div>
+                                <div class="addclose text-center mt-3">
+                                    <small class="brown-text  text-uppercase pointer" data-dismiss="modal">NO, I WANT TO CREATE MINE</small>
+                                </div>
+                            </div>
+                           
+                        </form>
+                    </div>                      
+                   
+                </div>
+            </div>
+        </div> 
+        <!------ PALLIES-ALREADY-EXIST-MODAL-END ------>
+        
+         <!------ PALLIES-ALREADY-EXIST-MODAL-START ------>
+         <div class="modal fade existpallybg" id="existpallyModal"  >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-2 border-0">
+                        <ul class="list-unstyled mb-0  existbck-arrow pointer">
+                            <li class="d-inline-block "> <span class="material-icons s-icon">
+                            west
+                        </span></li>
+                            <li class="d-inline-block align-top pl-2"><b>Existing Pally</b></li>
+                        </ul>
+                      
+                    </div>
+                   
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="pally-inner content">
+                                    <a href="#">
+                                        <div class="heart-icon">
+                                            <span class="material-icons">
+                                                favorite_border
+                                                </span>
+                                        </div>
+                                        <img class="mb-3 product-img" src="assets/images/Product-img1.png" alt="Product-img1">
+                                    </a>
+                                    <div class="pally-content">
+                                        <a href="#" class="inner-head">
+                                            <h5 class="mb-3 ">Titus 20kg (Full Carton) </h5>
+                                        </a>
+                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                        <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
+                                        <h6 class="mb-3">Time left: 68:50:52</h6>
+                                        <ul class="list-unstyled pallylist-bg">
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <small>2 slots left</small>
+                                            </li>
+                                        </ul>
+                                        <a href="#">
+                                            <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="pally-inner content">
+                                    <a href="#">
+                                        <div class="heart-icon">
+                                            <span class="material-icons">
+                                                favorite_border
+                                                </span>
+                                        </div>
+                                        <img class="mb-3 product-img" src="assets/images/Product-img2.png" alt="Product-img1">
+                                    </a>
+                                    <div class="pally-content">
+                                        <a href="#" class="inner-head">
+                                            <h5 class="mb-3 ">Croaker Fish (Full Carton) </h5>
+                                        </a>
+                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                        <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
+                                        <h6 class="mb-3">Time left: 68:50:52</h6>
+                                        <ul class="list-unstyled pallylist-bg">
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
+                                            </li>
+                                            <li class="d-inline-block pally-left">
+                                                <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <small>2 slots left</small>
+                                            </li>
+                                        </ul>
+                                        <a href="#">
+                                            <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>                      
+                   
+                </div>
+            </div>
+        </div> 
+        <!------ PALLIES-ALREADY-EXIST-MODAL-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -1222,7 +1540,9 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
+    <script>
 
+    </script>
 </body>
 
 </html>

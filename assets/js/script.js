@@ -259,41 +259,29 @@ $(document).ready(function() {
 
 //***CART-MODAL-JS-START ***/
 $("body").on("click",".applycouponmodal",function(e){
-   
-    jQuery.noConflict();
     $('#checkpayeModal').modal('hide');
     $('#applycouponopnmodal').modal('show');
 });
 $("body").on("click",".back-arrow",function(e){
-
-jQuery.noConflict();
 $('#checkpayeModal').modal('show');
 $('#applycouponopnmodal').modal('hide');
 });
 
 
 $("body").on("click",".directbankbtn",function(e){
-   
-    jQuery.noConflict();
     $('#checkpayeModal').modal('hide');
     $('#directbankopnmodal').modal('show');
 });
 $("body").on("click",".bnkback-arrow",function(e){
-
-    jQuery.noConflict();
     $('#checkpayeModal').modal('show');
     $('#directbankopnmodal').modal('hide');
     });
     $("body").on("click",".purchase-btn",function(e){
-   
-        jQuery.noConflict();
         $('#directbankopnmodal').modal('hide');
         $('#purchaseopnmodal').modal('show');
     });
     
     $("body").on("click",".bnkback-arrow",function(e){
-    
-        jQuery.noConflict();
         $('#directbankopnmodal').modal('show');
         $('#purchaseopnmodal').modal('hide');
 });   
@@ -302,13 +290,11 @@ $("body").on("click",".bnkback-arrow",function(e){
 // **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//
 $("body").on("click",".unavailable-btn",function(e){
    
-    jQuery.noConflict();
     $('#modal-right').modal('hide');
     $('#unavailable-modal').modal('show');
 });
 $("body").on("click",".order-bk",function(e){
 
-jQuery.noConflict();
 $('#modal-right').modal('show');
 $('#unavailable-modal').modal('hide');
 });
@@ -319,13 +305,11 @@ $('#unavailable-modal').modal('hide');
 // **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
 $("body").on("click",".viewdetail-btn",function(e){
    
-    jQuery.noConflict();
     $('#modal-right').modal('hide');
     $('#viewdetails-modal').modal('show');
 });
 $("body").on("click",".details-back",function(e){
 
-jQuery.noConflict();
 $('#modal-right').modal('show');
 $('#viewdetails-modal').modal('hide');
 });
@@ -336,7 +320,6 @@ $('#viewdetails-modal').modal('hide');
 // **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
 $("body").on("click",".track-btn",function(e){
    
-    jQuery.noConflict();
     $('#modal-right').modal('hide');
     $('#trackorder-modal').modal('show');
 });
@@ -413,4 +396,34 @@ $(document).ready(function() {
 });
 
 //*** EDIT-PROFILE-JS-END ***/
+
+// *** PALLY-SELECT-ORDER-MODAL-JS-START ***/
+function myFunction() {
+    var splitbill = document.getElementById("splitbill");
+    var paymyself = document.getElementById("paymyself");
+
+    var select = document.getElementById("pallysplit-btn").checked;
+    if (select) {
+        splitbill.style.display = "block";
+        paymyself.style.display = "none";
+    } else {
+        splitbill.style.display = "none";
+        paymyself.style.display = "block";
+    }
+}
+$("body").on("click",".cartsussefullbtn",function(e){
+    $('#pallyorderModal').modal('hide');
+    $('#cartsuessfullopnmodal').modal('show');
+});
+
+$("body").on("click",".existpally-btn",function(e){
+    $('#alreadypallyModal').modal('hide');
+    $('#existpallyModal').modal('show');
+});
+$("body").on("click",".existbck-arrow",function(e){
+
+    $('#alreadypallyModal').modal('show');
+    $('#existpallyModal').modal('hide');
+    });
+// *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
 
