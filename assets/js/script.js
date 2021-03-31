@@ -427,3 +427,74 @@ $("body").on("click",".existbck-arrow",function(e){
     });
 // *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
 
+
+
+
+
+// *** MAKE-LIST-MODAL-JS-START ***//
+
+$("body").on("click",".applycouponmodal",function(e){
+    $('#makelistcheckeModal').modal('hide');
+    $('#applycouponopnmodal').modal('show');
+});
+$("body").on("click",".back-arrow",function(e){
+$('#makelistcheckeModal').modal('show');
+$('#applycouponopnmodal').modal('hide');
+});
+
+
+$("body").on("click",".directbankbtn",function(e){
+    $('#makelistcheckeModal').modal('hide');
+    $('#directbankopnmodal').modal('show');
+});
+$("body").on("click",".bnkback-arrow",function(e){
+    $('#makelistcheckeModal').modal('show');
+    $('#directbankopnmodal').modal('hide');
+    });
+    $("body").on("click",".purchase-btn",function(e){
+        $('#directbankopnmodal').modal('hide');
+        $('#purchaseopnmodal').modal('show');
+    });
+    
+    $("body").on("click",".bnkback-arrow",function(e){
+        $('#directbankopnmodal').modal('show');
+        $('#purchaseopnmodal').modal('hide');
+});   
+
+// *** MAKE-LIST-MODAL-JS-END ***//
+//*** PRODUCTS-DETAILS-SIDEBAR-JS-START ***/
+
+        $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 430) {
+        $(".sticky-sidebar").addClass("fixedsidebar-header");
+    } else {
+        $(".sticky-sidebar").removeClass("fixedsidebar-header");
+    }
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1445) {
+        $(".sticky-sidebar").removeClass("fixedsidebar-header");
+        $(".sticky-sidebar").addClass("removefixed-header");
+
+    } else {
+        $(".sticky-sidebar").removeClass("removefixed-header");
+    }
+});
+
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+    $('.sidebar-scroll').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('.navigation a.active').removeClass('active');
+                    $('.navigation a').eq(i).addClass('active');
+            }
+    });
+}).scroll();
+
+//*** PRODUCTS-DETAILS-SIDEBAR-JS-END ***/
