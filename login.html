@@ -99,50 +99,42 @@
                             <p>OR LOGIN WITH</p>
                           </div>
                           <!------ SOCIAL-DESKTOP-VIEW-START ------>
-                          <div class="d-flex mt-3 social-desktop-view">
-                            <div class="p-1  align-self-center">
-                              <a href="#" class="google-btn social-btn">
-                                  <i class="fa fa-google" aria-hidden="true"></i> Google
-                              </a>
-                            </div>
-                            <div class="p-1 align-self-center">
-                              <a href="#" class="fb-btn social-btn">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook
-                              </a>                             
-                            </div>
-                            <div class="p-1 align-self-center">
-                              <a href="#" class="apple-btn social-btn">
-                                <i class="fa fa-apple" aria-hidden="true"></i> Apple
-                             </a>
-                            </div>                      
-                          </div>
+                          <ul class="social-desktop-view list-unstyled social-view">
+                            <a href="#" class="">
+                              <li class="googleicon d-inline-block social-btn"><i class="fa fa-google" aria-hidden="true"  id="social-styleview"></i>GOOGLE </li>
+                            </a>
+                            <a href="#" class="">
+                              <li class="facebookicon d-inline-block social-btn"><i class="fa fa-facebook-official" aria-hidden="true"  id="social-styleview"></i> FACEBOOK </li>
+                            </a>
+                            <a href="#" class="">
+                              <li class="appleicon d-inline-block social-btn"><i class="fa fa-apple" aria-hidden="true"  id="social-styleview"></i> APPLE</li>
+                            </a>                           
+                          </ul>                          
                           <!------ SOCIAL-DESKTOP-VIEW-END ------>
-                          <!------ SOCIAL-MOBILE-VIEW-START ------>
-                          <div class="social-mobile-view">
-                            <ul class="list-unstyled">
-                                <li class="mb-4">
-                                  <a href="#" class="google-btn social-btn">
-                                      <i class="fa fa-google" aria-hidden="true"></i> LOGIN WITH GOOGLE
-                                  </a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="#" class="fb-btn social-btn">
-                                      <i class="fa fa-facebook-official" aria-hidden="true"></i> LOGIN WITH FACEBOOK
-                                    </a> 
-                                </li>
-                                <li class="mb-4">
-                                  <a href="#" class="apple-btn social-btn">
-                                    <i class="fa fa-apple" aria-hidden="true"></i> LOGIN WITH APPLE
-                                  </a>
-                                </li>
-                            </ul>
-                            
-                                                
-                          </div>
+                          <!------ SOCIAL-MOBILE-VIEW-START ------>                          
+                          <ul class="social-mobile-view list-unstyled social-view">
+                            <a href="#" class="">
+                              <li class="googleicon social-btn"><i class="fa fa-google" aria-hidden="true"  id="social-styleview"></i>LOGIN WITH GOOGLE </li>
+                            </a>
+                            <a href="#" class="">
+                              <li class="facebookicon social-btn"><i class="fa fa-facebook-official" aria-hidden="true"  id="social-styleview"></i>LOGIN WITH FACEBOOK </li>
+                            </a>
+                            <a href="#" class="">
+                              <li class="appleicon social-btn"><i class="fa fa-apple" aria-hidden="true"  id="social-styleview"></i>LOGIN WITH APPLE</li>
+                            </a>
+                           
+                          </ul>
                           <!------ SOCIAL-MOBILE-VIEW-END ------>
+                          <!------ MOBILE-VIEW-CONTENT-START ------->
+                          <div class="continueguest-wrapper text-center">
+                              <p class="grey-text">Don’t have an account? <a href="signup.html" class="brown-text">Create a new account</a></p>
+                              <a href="#">
+                                <button class="guest-btn text-uppercase">Continue as a Guest</button>
+                              </a>
+                          </div>
+                          <!------ MOBILE-VIEW-CONTENT-END ------->
                      </form> 
-                    </div>                
-                      
+                    </div>  
                    </div>
                </div>
            </div>
@@ -162,19 +154,20 @@
                         <div class="input-group mb-4">
                             <input type="text"  class="form-control" />                                 
                         </div>
-                  </form>                             
-                </div>
-                  
-                <div class="reset-btn m-auto mt-4 mb-3 text-center">                       
+                  </form> 
+                  <div class="reset-btn m-auto mt-4 mb-3 text-center">                       
                     <div class="mb-3">
                         <button type="button" class="yellow-bg text-uppercase add-btn">SEND RESET LINK</button>
                     </div>
                     <p class="mb-2">Already have an account? <span class="brown-clr pointer">Sign In</span></p> 
                     <p>Don’t have an account?  <span class="brown-clr pointer">Create a new account</span></p>                        
-                    <div class="addclose text-center mt-2 mb-4">
+                    <div class="addclose text-center mt-2 mb-3">
                         <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
                     </div>
+                </div>                            
                 </div>
+                  
+                
             </div>
         </div>
     </div> 

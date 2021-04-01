@@ -124,8 +124,41 @@ button:focus {
 	outline: 1px dotted transparent;
 	outline: transparent;
 }
+.viewall-btn {
+    background: #fff;
+    box-shadow: 0 0 9px 1px hsl(0deg 0% 0% / 5%);
+    padding: 6px 10px;
+    border-radius: 5px;
+	font-weight: 600 !important;
+}
 
-
+.modal.modal-full .modal-content {
+	border-radius: 0;
+	border: none;
+  }
+  
+  
+  /* Full Screen */
+  
+  .modal.modal-full .modal-dialog {
+	position: fixed;
+	margin: auto;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+  }
+  
+  .modal.modal-full .modal-content {
+	height: 100%;
+	overflow-y: auto;
+  }
+  
+  .modal.modal-full .close-modal {
+	position: fixed;
+	top: 0;
+	right: 3rem;
+  }
+  
 /* ------ COMMAN-CSS-END ------- */
 
 
@@ -369,11 +402,17 @@ span.yellow_cir {
 
 
 /* ----- HERO_SECTION_CSS_START ------- */
-
+.mobilehero-view{
+	display: none;
+}
 .hero_wrapper {
 	padding: 40px 0;
 }
-
+#categoiresSlider .MS-content .item img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
 .hero_wrapper .carousel-indicators li {
 	width: 12px;
 	height: 12px;
@@ -409,13 +448,14 @@ span.yellow_cir {
 	font-size: 18px;
 	font-weight: 400;
 }
-
-
 /* ----- HERO_SECTION_CSS_END ------- */
-
-
 /* ----- CATEGORIES_SECTION_CSS_START ------- */
-
+.mobilefoodTab-view {
+    display: none;
+}
+.foodmobile-view{
+	display: none;
+}
 #categoiresSlider .MS-content .item {
 	display: inline-block;
 	height: 100%;
@@ -678,7 +718,15 @@ span.yellow_cir {
 	background-color: #EAF6EF;
 	color: #0DA54E;
 }
-
+.green-bg:hover {
+    color: #0DA54E;
+}
+.red-bg:hover{
+	color: #FF0000;
+}
+.simhead {
+    font-size: 16px;
+}
 .pallylist-bg img.list-img {
 	width: 30px;
 	height: 30px;
@@ -727,14 +775,12 @@ a.red-bg:hover {
 }
 
 .product-img {
-	border-radius: 5px;
-	width: 100%;
-	min-width: 200px;
-	min-height: 200px;
-	object-fit: fill;
+    max-width: 260px;
+    max-height: 190px;
+    object-fit: scale-down;
+    width: 100%;
+    box-shadow: 0 0 1px 1px hsl(0deg 0% 0% / 5%);
 }
-
-
 /* ------ BUTTON-HOVER-EFFECTS-CSS-START ------ */
 
 .load-bg.text-center {
@@ -747,7 +793,7 @@ a.red-bg:hover {
 
 .load-more {
 	color: #B3561B;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	background: transparent;
 	border: none;
@@ -948,10 +994,14 @@ a.red-bg:hover {
 
 
 /* ------ DOWNLOAD-WRAPPER-SECTION-START ------ */
-
+.download-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
 .download-wrapper {
 	background: linear-gradient(245.89deg, #FAB814 82.02%, #D6A01B 100.91%, #DAA218 100.91%);
-	height: 479px;
+	height: auto;
 	padding: 80px 0 0 0;
 }
 
@@ -964,16 +1014,14 @@ a.red-bg:hover {
 }
 
 .download-content {
-	padding: 160px 0 0 0;
+	padding: 150px 0 0 0;
 }
 
 .download-content h3 {
-	font-size: 36px;
-	font-weight: 900;
-	color: #262626;
+    font-size: 34px;
+    font-weight: 900;
+    color: #262626;
 }
-
-
 /* ------ DOWNLOAD-WRAPPER-SECTION-END ------ */
 
 
@@ -1623,10 +1671,9 @@ li.start-clr {
 	background: #b3751b;
 }
 
-.reset-btn button.yellow-bg {
+.reset-btn button.yellow-bg, .reset-btn .addclose {
 	width: 418px;
 }
-
 #resetModal .modal-content {
 	padding: 24px;
 	background: #FCFCFC;
@@ -2696,7 +2743,9 @@ select:focus {
 
 
 /* ------- CHANGE-PASSWORD-PAGE-CSS-START ------- */
-
+.continueguest-wrapper {
+    display: none;
+}
 .changepass-wrapper input,
 .login-content input {
 	border: none;
@@ -2986,6 +3035,42 @@ a.follower-icon:hover {
 
 
 /* ======= LOGIN-PAGE-CSS-START ====== */
+.social-view .social-btn {
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
+    background: transparent;
+}
+.social-btn i {
+    padding: 0 6px 0 0;
+}
+.social-view .social-btn:hover #social-styleview{
+  position: relative;
+  animation: svga 1s ;
+}
+@-webkit-keyframes svga
+{
+  100% {transform: rotateY(360deg);}
+}
+
+ .facebookicon {
+	padding: 10px 17px;
+    border-color: #3a5795;
+    color: #3a5795;
+}
+ .googleicon{
+    border-color: #FF1B1B;
+    color:  #FF1B1B;
+	padding: 10px 22px;
+} 
+.appleicon{
+     border-color: #333333;
+    color:  #333333;
+	padding: 10px 24px;
+}
 .social-mobile-view {
     display: none !important;
 }
@@ -3056,37 +3141,12 @@ a.follower-icon:hover {
 	width: 400px;
 }
 
-.social-btn {
-	border: 1px solid;
-	border-radius: 5px;
-}
 
-.google-btn {
-	padding: 10px 27px;
-	color: #FF1B1B;
-	border-color: #FF1B1B;
-}
 
-.fb-btn {
-	padding: 10px 17px;
-	color: #475993;
-	border-color: #475993;
-}
-
-.apple-btn {
-	padding: 10px 27px;
-	color: #333333;
-	border-color: #333333;
-}
-
-.google-btn:hover {
-	background: #FF1B1B;
-}
-
-.social-btn:hover {
+/* .social-btn:hover {
 	transition: all .3s ease;
 	color: #fff;
-}
+} */
 
 .fb-btn:hover {
 	background: #475993;
@@ -3107,24 +3167,144 @@ a.follower-icon:hover {
 /* ======= LOGIN-PAGE-CSS-END ====== */
 
 /* ======= RESPOSNIVE-STYLE-CSS-START ======= */
-
-/* ------- LOGIN-PAGE-CSS-START ------- */
+@media (max-width:1440px){
+	.logslider-content {
+		margin: 30px auto 36px;
+		width: 40%;
+	}
+}
+@media (max-width:1199.98px){
+	.logslider-content {
+		width:60%;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 6px 2px;
+	}
+	.box-outline {
+		height: 135px;
+		padding: 30px 0 0 0;
+	}
+	#categoires-bg .MS-controls .MS-left {
+		left: -450px;
+	}
+	#categoires-bg .MS-controls .MS-right {
+		right: -536px;
+	}
+	.foodtabs a {
+		font-size: 16px;
+	}
+	.select-bg li {
+		width: 32%;
+	}
+	.select-bg {
+		margin: 38px 0 0 0;
+	}
+	.inner-head h5, .pally-inner h5{
+		font-size: 16px;
+	}
+	.pally-inner {
+		min-height: 410px;
+	}
+	.download-content {
+		padding: 100px 0 0 0;
+	}
+	.download-content h3 {
+		font-size: 28px;
+	}
+	.saerch-bar {
+		width: 100%;
+	}
+	.search-container input {
+		width: 74%;
+	}
+}
 @media (max-width:991.98px){
     .login-w {
         max-width: 400px;
         margin: 0 auto;
     }
+	div#loginslider {
+		display: none;
+	}
+	.login-wrapper, .signup-bg {
+		background: #FCFCFC;
+	}
+	.webhero-view {
+		display: none;
+	}
+	.mobilehero-view{
+		display: block;
+	}
+	.MS-controls{
+		display: none;
+	}
+	#categoiresSlider .MS-content .item {
+		width: 22.8%;
+	}
+	.select-bg {
+		margin: 38px 0 0 0;
+		display: none;
+	}
+	.web-head{
+		display: none;
+	}
+	.foodmobile-view{
+		display: block;
+	}
+	.fillter-modal-bg .select-bg {
+		display: block;
+	}
+	.select-bg li {
+		width: 50%;
+		margin: 20px auto;
+		border-bottom: 2px solid #efeded;
+	}	
+	.fillter-modal-bg .btneffects-bg {
+		width: 42%;
+	}  
+	.webfoodTab-view {
+		display: none;
+	}
+	.mobilefoodTab-view {
+		display: block;
+	}
+	.product-img {
+		max-height: 240px;
+		width: 300px;
+		height: 100%;
+		max-width: 160px;
+	}
+	.pally-inner {
+		min-height: auto;
+	}
+	.recommended-bg .pally-inner {
+		min-height: auto;
+	}
+	.recommended-bg .product-img, .preorder-bg   .product-img{
+		max-height: 170px;
+		width: 300px;
+		max-width: 122px;
+	}
 }
 @media (max-width:767.98px){
-div#loginslider {
-    display: none;
-    
+
 }
-.login-wrapper, .signup-bg {
-    background: #FCFCFC;
+@media(max-width:570px){
+	.reset-btn button.yellow-bg, .reset-btn .addclose {
+		width: 100%;
+	}
+	.select-bg li {
+		width: 80%;
+	}
+	.fillter-modal-bg .btneffects-bg {
+		width: 56%;
+	}  
 }
-}
+
 @media (max-width:510px){
+	.login-w button.brown-btn {
+		display: none;
+	}
     .login-w {
         max-width: 100%;
         margin: 0 auto;
@@ -3137,8 +3317,68 @@ div#loginslider {
     }
     .social-mobile-view {
         display: block !important;
-		text-align: center;
     }
+	.social-btn {
+		width: 100%;
+		background: transparent;
+	}
+	.social-btn i {
+		font-size: 28px;
+		padding: 0 8px 0 0;
+	}
+	.login-content {
+		padding: 16px;
+	}
 	
+	.social-view .social-btn {
+		padding: 10px 0px 10px 80px;
+		margin-bottom: 10px;
+	}
+	.guest-btn.text-uppercase {
+		background: #fff;
+		border: none;
+		border-radius: 5px;
+		color: #B3561B;
+		padding: 10px;
+		box-shadow: 0 0 2px hsl(0deg 0% 0% / 4%);
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.continueguest-wrapper {
+		display: block;
+	}
+	#categoiresSlider .MS-content .item {
+		width: 28.8%;
+	}
+}
+@media(max-width:420px){
+	.reset-btn p {
+		font-size: 14px;
+	}
+	
+}
+@media (max-width:380px){
+	.loginwith-text {
+		width: 32%;
+		margin: -26px 0 auto 118px;
+	}
+	#resetModal .modal-content {
+		padding: 10px;
+	}
+}
+@media (max-width:360px){
+	.social-view .social-btn {
+		padding: 10px 0px 10px 40px;
+	}
+	.continueguest-wrapper p.grey-text {
+		font-size: 14px;
+	}
+	.loginwith-text {		
+		width: 38%;
+		margin: -26px 0 auto 94px;
+	}
+	#resetModal .modal-content {
+		padding: 0;
+	}
 }
 /* ======= RESPOSNIVE-STYLE-CSS-ENDS ======= */
