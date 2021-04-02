@@ -6,7 +6,6 @@ $(window).on('scroll', function() {
         $('.start-header').removeClass('sticky-bg');
     }
 })
-
 /* ------ dropdown-menu-js-start ------ */
 $(document).ready(function() {
     //the trigger on hover when cursor directed to this class
@@ -22,6 +21,26 @@ $(document).ready(function() {
 });
 
 /* ------ dropdown-menu-js-end ------ */
+/* ------ MOBILE-HEADER-JS-START ----- */
+$(window).on('scroll', function() {
+    if ($(window).scrollTop()) {
+        $('.mobile-search').addClass('sticky-bg');
+    } else {
+        $('.mobile-search').removeClass('sticky-bg');
+    }
+})
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 469) {
+        
+        $(".fixed-food").addClass('foodsticky-bg');
+    } else {
+        $(".fixed-food").removeClass('foodsticky-bg');
+    }
+});
+/* ------ MOBILE-HEADER-JS-END ----- */
 /*------ fixed-header-js-end ------ */
 /*------ PRODUCTS-DETAIL-JS-START -------*/
 $(".mini img").click(function() {
