@@ -40,6 +40,9 @@ $(window).scroll(function() {
         $(".fixed-food").removeClass('foodsticky-bg');
     }
 });
+
+
+
 /* ------ MOBILE-HEADER-JS-END ----- */
 /*------ fixed-header-js-end ------ */
 /*------ PRODUCTS-DETAIL-JS-START -------*/

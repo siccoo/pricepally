@@ -139,7 +139,6 @@
             </header>
         </div>
         <!------ DESKTOP-HEADER-SECTION-END  ------>
-     
         <!------ MOBILE-HEADER-SECTION-START ------>
         <section class="mobile-header">
             <div class="container">
@@ -2700,7 +2699,7 @@
                             </span></p>
                         <p class="mb-0">Order</p>
                     </a></div>
-                    <div class="mobile-icon" onclick="myFunction()">
+                    <div class="mobile-icon" data-toggle="modal" data-target="#moreModal">
                         <a href="#"  class="nav-link" >
                             <p class="mb-0 more_ic"><span class="material-icons">
                                 more_horiz
@@ -2711,9 +2710,9 @@
             </div> 
         </footer>
        <!------ MORE-MODAL-START ------>
-       <div id="myDIV">
-           <div class="container">
-            <div class="moremodal-bg">
+        <div class="modal moremodal-bottom fade moremodal-bg" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModal" >
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="moremodal-header">
                     <div class="container">
                         <div class="d-flex">
@@ -2737,7 +2736,7 @@
                         </div>
                     </div>                    
                 </div>
-                <div class="p-4">
+                <div class="modal-body">
                     <ul class="list-unstyled">
                         <li class="more-outline mb-3">
                             <a href="make_list.html">
@@ -2796,7 +2795,7 @@
                         </li>
                         <li class="more-outline mb-3">
                             <a href="#"> 
-                                <span class="material-icons-outlined align-middle" >
+                                <span class="material-icons-outlined align-middle">
                                     privacy_tip
                                 </span>   
                             <span class="morelist-text pl-2">Privacy Policy</span>
@@ -2804,10 +2803,10 @@
                         </li>
                         <li class="more-outline mb-3">
                             <a href="#"> 
-                                <span class="material-icons-outlined align-middle  rotate-ic">
+                                <span class="material-icons-outlined align-middle ">
                                     note
                                     </span>  
-                                <span class="morelist-text pl-2">Terms & Conditions</span>
+                            <span class="morelist-text pl-2">Terms & Conditions</span>
                              </a>
                         </li>
                         <li class="more-outline mb-3">
@@ -2822,10 +2821,9 @@
                 </div>
                
             </div>
-           </div>
-        
-       </div>
-       <!------ MORE-MODAL-END ------>
+            </div>
+        </div>
+         <!------ MORE-MODAL-END ------>
         <!------ MOBILE-FOOTER-CSS-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
@@ -2834,17 +2832,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
-    <script>
-        function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "block") {
-        x.style.display = "none";
-        } else {
-        x.style.display = "block";
-        }
-    }
- 
-    </script>
 </body>
 
 </html>
