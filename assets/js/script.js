@@ -40,9 +40,15 @@ $(window).scroll(function() {
         $(".fixed-food").removeClass('foodsticky-bg');
     }
 });
-
-
-
+/*------ LISTING-HEADER-JS-START ------ */
+$(window).on('scroll', function() {
+    if ($(window).scrollTop()) {
+        $('.mobile-list-header').addClass('sticky-bg');
+    } else {
+        $('.mobile-list-header').removeClass('sticky-bg');
+    }
+})
+/*------ LISTING-HEADER-JS-END ------ */
 /* ------ MOBILE-HEADER-JS-END ----- */
 /*------ fixed-header-js-end ------ */
 /*------ PRODUCTS-DETAIL-JS-START -------*/
@@ -75,9 +81,9 @@ $('.sub').click(function() {
 
 
 
-/*------ PLUS-MINUS-BUTTON-JS-END -------*/
+/* ------ PLUS-MINUS-BUTTON-JS-END -------*/
 
-// ****** RATING-JS-START ********//
+/* ------ RATING-JS-START -------*/
 $(document).ready(function() {
     $('.stars li').on('mouseover', function() {
         var onStar = parseInt($(this).data('value'), 10);
@@ -126,7 +132,7 @@ function responseMessage(msg) {
     $('.success-box').fadeIn(200);
     $('.success-box div.text-message').html("<span>" + msg + "</span>");
 }
-// ****** RATING-JS-ENDS ********//
+/*------ RATING-JS-ENDS -------*/
 /*------ MAIN-RATING-VIEW-LIST-JS-START -------*/
 var starClicked = false;
 $(function() {
@@ -220,7 +226,7 @@ function calculateAverage() {
 }
 
 /*------ MAIN-RATING-VIEW-LIST-JS-END -------*/
-//*** PROGRESS-BAR--JS-START ***//
+/*------ PROGRESS-BAR--JS-START -------*/
 
 var delay = 500;
 $(".progress-bar").each(function(i) {
@@ -237,8 +243,8 @@ $(".progress-bar").each(function(i) {
     });
 });
 
-//*** PROGRESS-BAR--JS-END ***//
-//*** SMILAR-PRODUCTS-SLIDER-JS-START ***/
+/*------ PROGRESS-BAR--JS-END -------*/
+/*------ SMILAR-PRODUCTS-SLIDER-JS-START ***/
 
 $(document).ready(function() {
     $('#similarSlider').multislider({
@@ -251,9 +257,9 @@ $(document).ready(function() {
 });
 
 
-//*** SMILAR-PRODUCTS-SLIDER-JS-END ***/
+/*------ SMILAR-PRODUCTS-SLIDER-JS-END ------*/
 
-//***CART-MODAL-JS-START ***/
+/*------CART-MODAL-JS-START ------*/
 $("body").on("click",".applycouponmodal",function(e){
     $('#checkpayeModal').modal('hide');
     $('#applycouponopnmodal').modal('show');
@@ -281,9 +287,9 @@ $("body").on("click",".bnkback-arrow",function(e){
         $('#directbankopnmodal').modal('show');
         $('#purchaseopnmodal').modal('hide');
 });   
-//***CART-MODAL-JS-END ***/
+/*------ CART-MODAL-JS-END ------*/
 
-// **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//
+/*------  ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ------*/
 $("body").on("click",".unavailable-btn",function(e){
    
     $('#modal-right').modal('hide');
@@ -296,9 +302,9 @@ $('#unavailable-modal').modal('hide');
 });
  
 
-// **** ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ****//
+/*------  ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ------*/
 
-// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+/*------  ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 $("body").on("click",".viewdetail-btn",function(e){
    
     $('#modal-right').modal('hide');
@@ -311,9 +317,9 @@ $('#viewdetails-modal').modal('hide');
 });
  
 
-// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+/*------  ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 
-// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+/*------  ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 $("body").on("click",".track-btn",function(e){
    
     $('#modal-right').modal('hide');
@@ -321,10 +327,10 @@ $("body").on("click",".track-btn",function(e){
 });
 
 
-// **** ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ****//
+/*------ ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 
 
-//*** FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
+/*------ FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
 
 $(document).ready(function() {
     $('#folloersSlider').multislider({
@@ -364,8 +370,8 @@ $(document).ready(function() {
 
     });
 });
-//*** FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
-//*** EDIT-PROFILE-JS-START ***/
+/*------ FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
+/*------ EDIT-PROFILE-JS-START ***/
 $(document).ready(function() {
 
     
@@ -391,7 +397,7 @@ $(document).ready(function() {
     });
 });
 
-//*** EDIT-PROFILE-JS-END ***/
+/*------ EDIT-PROFILE-JS-END ***/
 
 // *** PALLY-SELECT-ORDER-MODAL-JS-START ***/
 function myFunction() {
@@ -422,12 +428,7 @@ $("body").on("click",".existbck-arrow",function(e){
     $('#existpallyModal').modal('hide');
     });
 // *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
-
-
-
-
-
-// *** MAKE-LIST-MODAL-JS-START ***//
+// *** MAKE-LIST-MODAL-JS-START -------*/
 
 $("body").on("click",".applycouponmodal",function(e){
     $('#makelistcheckeModal').modal('hide');
@@ -457,8 +458,8 @@ $("body").on("click",".bnkback-arrow",function(e){
         $('#purchaseopnmodal').modal('hide');
 });   
 
-// *** MAKE-LIST-MODAL-JS-END ***//
-//*** PRODUCTS-DETAILS-SIDEBAR-JS-START ***/
+// *** MAKE-LIST-MODAL-JS-END -------*/
+/*------ PRODUCTS-DETAILS-SIDEBAR-JS-START ***/
 
         $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
@@ -493,4 +494,31 @@ $(window).scroll(function() {
     });
 }).scroll();
 
-//*** PRODUCTS-DETAILS-SIDEBAR-JS-END ***/
+/*------ PRODUCTS-DETAILS-SIDEBAR-JS-END ***/
+
+/*------ FOOTER-ACTIVE-CLASS-ADD-JS-START ***/
+$(document).ready(function(){
+    $('.mobile-footer .mobile-icon a').click(function(){
+      $('.mobile-icon a').removeClass("active");
+      $(this).addClass("active");
+  });
+  });
+/*------ FOOTER-ACTIVE-CLASS-ADD-JS-END ***/
+/*------ MORE-ICON-CLICK-MODAL-JS-START -------*/ 
+  function myFunction() {
+    var x = document.getElementById("moreModal-wrapper");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+}
+/*------ MORE-ICON-CLICK-MODAL-JS-END -------*/ 
+/*------ LISTING-SLIDER-ACTIVE-ADD-JS-START -------*/ 
+$(document).ready(function(){
+    $('.listingslider .MS-content .item').click(function(){
+      $('.MS-content .item').removeClass("active");
+      $(this).addClass("active");
+  });
+  });
+/*------ LISTING-SLIDER-ACTIVE-ADD-JS-END -------*/ 
