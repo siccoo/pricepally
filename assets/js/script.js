@@ -255,6 +255,15 @@ $(document).ready(function() {
 
     });
 });
+$(document).ready(function() {
+    $('#similarSlider1').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
 
 
 /*------ SMILAR-PRODUCTS-SLIDER-JS-END ------*/

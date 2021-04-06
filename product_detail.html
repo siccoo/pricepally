@@ -9,7 +9,6 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
     <link href="assets/css/style.css" rel="stylesheet">
-
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
 
 
@@ -43,8 +42,6 @@
                                         </div>
                                     </li>
                                 </ul>
-
-
                             </div>
                             <div class="col-8 col-sm-8 col-md-8">
                                 <nav class="navbar navbar-expand-md navbar-light  float-right text-center">
@@ -166,10 +163,43 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ PRODUCT-DETAILS-SECTION-START ------>
-        <section class="proddetails-wrapper">
+         <!------ MOBILE-DETAILS-HEADER-SECTION-START ------>
+         <section class="mobile-list-header d-block d-lg-none">
             <div class="container">
-                <div class="product-breadcrumb">
+                <div class="d-flex mb-3">
+                    <div class="justify-content-start">
+                        <a href="index.html">
+                            <span>
+                                <i class='material-icons align-middle'>west</i>
+                            </span> 
+                            <span>Beans Oloyin - Ori...</span>
+                        </a>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-inline-block align-top">
+                                <p>
+                                    <span class="material-icons">
+                                        search
+                                        </span>
+                            </p></li>
+                            <li  class="d-inline-block align-top" >
+                                <p class="mb-0"> <span class="material-icons-outlined pr-2">
+                                    shopping_cart
+                                    </span>
+                            </li>
+                        </ul>
+                      
+                     
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!------ MOBILE-DETAILS-HEADER-SECTION-END ------>
+       <!------ PRODUCT-DETAILS-SECTION-START ------>
+       <section class="proddetails-wrapper">
+            <div class="container">
+                <div class="product-breadcrumb d-none d-lg-block">
                     <ol class="breadcrumb ">
                         <li class="breadcrumb-item"><a class="black-text" href="#">Home <i class="fa fa-angle-right " aria-hidden="true"></i></a></li>
                         <li class="breadcrumb-item"><a class="black-text" href="#">Category <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
@@ -178,7 +208,7 @@
                     </ol>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-12  col-lg-6">
                         <div class="simple-gallery">
                             <img class="maxi" src="assets/images/Product-img1.jpg">
                             <div class="mini">
@@ -188,9 +218,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-12  col-lg-6">
                         <div class="prodetails-content">
-
                             <small>Item #1574933778</small>
                             <div class="row">
                                 <div class="col-lg-10">
@@ -222,11 +251,11 @@
                                     </section>
                                 </div>
                                 <div class="col-lg-2">
-                                    <div class="detil-heart">
+                                    <div class="detil-heart d-none d-lg-block">
                                         <a href="#">
                                             <span class="material-icons">
                                                 favorite_border
-                                                </span>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -234,11 +263,13 @@
                             <hr class="bottom-border">
                             <a href="#" class="grey-bg">-10% | Off Season</a>
                             <h4 class="mb-3 mt-1 font-weight-bold">₦46,500.00 <small>per bag of 100kg</small></h4>
-                            <hr class="bottom-border">
-                            <div class="button-wrapper mt-4 mb-4">
-                                <a href="#" class="yellow-btn">SELECT ORDER TYPE</a>
+                            <hr class="bottom-border d-none d-lg-block">
+                            <div class="button-wrapper mt-5 mb-4 d-none d-lg-block">
+                                <a href="#">
+                                    <button type="button" class="yellow-btn text-uppercase">Select Order Type</button>
+                                </a>
                             </div>
-                            <div class="share-text">
+                            <div class="share-text d-none d-lg-block">
                                 <small>Share this product</small>
                                 <ul class="list-unstyled">
                                     <li class="d-inline-block">
@@ -255,7 +286,6 @@
         </section>
         <!------ PRODUCT-DETAILS-SECTION-END ------>
         <!------ PRODUUCTS-MAIN-CONTENT-SECTION-START ------>
-        
         <section class="prod-sidebar-wrapper mb-4">
             <div class="container">
                 <div class="row">
@@ -270,16 +300,16 @@
 
                         <div id="review" class="mb-3 sidebar-scroll">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-6 col-md-6 col-lg-6">
                                     <h5 class="grey-text">CUSTOMER REVIEW (21)</h5>
                                 </div>
-                                <div class="col-lg-6 ">
+                                <div class="col-6 col-md-6 col-lg-6 ">
                                     <a href="#" class="text-uppercase brown-text float-right">WRITE REVIEW</a>
                                 </div>
                             </div>
                             <hr class="border-bottom mt-1">
                             <div class="row">
-                                <div class="col-lg-3 rating-view">
+                                <div class="col-12 col-lg-3 rating-view">
                                     <div class="rating-main" data-vote="0">
                                         <div class="mainstar hidden">
                                             <span class="full" data-value="0"></span>
@@ -331,7 +361,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-lg-9">
+                                <div class="col-12 col-lg-9">
                                     <div class="progress-bar-wrapper">
                                         <ul class="list-unstyled mb-0">
                                             <li class="d-inline-block"><span>5 Star</span></li>
@@ -383,7 +413,7 @@
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -392,7 +422,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -420,11 +449,16 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -433,7 +467,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -461,11 +494,16 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -474,7 +512,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -502,11 +539,16 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -515,7 +557,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -543,11 +584,16 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -556,7 +602,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -584,11 +629,16 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 d-none d-lg-block">
                                     <div class="review-text">
                                         <h6>Jude </h6>
                                         <p class="grey-text"> 14-06-2020</p>
@@ -597,7 +647,6 @@
                                 <div class="col-lg-8">
                                     <div class="review-text">
                                         <section class='rating-widget'>
-                                            <!-- Rating Stars Box -->
                                             <div class='rating-stars'>
                                                 <ul class='stars'>
                                                     <li class='smallstar' title='Poor' data-value='1'>
@@ -625,6 +674,101 @@
                                     </div>
 
 
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="border-bottom">
+                            <div class="row">
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="review-text">
+                                        <h6>Jude </h6>
+                                        <p class="grey-text"> 14-06-2020</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="review-text">
+                                        <section class='rating-widget'>
+                                            <div class='rating-stars'>
+                                                <ul class='stars'>
+                                                    <li class='smallstar' title='Poor' data-value='1'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Fair' data-value='2'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Good' data-value='3'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Excellent' data-value='4'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='WOW!!!' data-value='5'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='success-box'>
+                                                <div class='text-message'></div>
+                                            </div>
+                                        </section>
+                                        <h6>I love it. The delivery was quite slow. </h6>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="border-bottom">
+                            <div class="row">
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="review-text">
+                                        <h6>Jude </h6>
+                                        <p class="grey-text"> 14-06-2020</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="review-text">
+                                        <section class='rating-widget'>
+                                            <div class='rating-stars'>
+                                                <ul class='stars'>
+                                                    <li class='smallstar' title='Poor' data-value='1'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Fair' data-value='2'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Good' data-value='3'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='Excellent' data-value='4'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='smallstar' title='WOW!!!' data-value='5'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='success-box'>
+                                                <div class='text-message'></div>
+                                            </div>
+                                        </section>
+                                        <h6>I love it. The delivery was quite slow. </h6>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-4 d-block d-lg-none">
+                                    <div class="review-text mt-1">
+                                       <p class="grey-text mb-0">Jude | 14-06-2020</p>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="border-bottom">
@@ -636,7 +780,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div id="similar-products" class="similarproducts-bg mb-3 sidebar-scroll">
+                        <div id="similar-products" class="similarproducts-bg mb-3 sidebar-scroll d-none d-lg-block">
                             <h5 class="grey-text">SIMILAR PRODUCTS</h5>
                             <hr class="border-bottom">
                             <div id="similarSlider" class="dvslider">
@@ -647,148 +791,141 @@
                                 <div class="MS-content">
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#" >
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Irish Potato (5kg)</h5>
+                                                    <h5 class="mb-2">Irish Potato (5kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2"  src="assets/images/smiproduct2.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct2.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Ofada Rice (50kg)</h5>
+                                                    <h5 class="mb-2">Ofada Rice (50kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="yellow-bg  text-uppercase ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Sombo Pepper - Grade A(...
-                                                    </h5>
+                                                    <h5 class="mb-2">Sombo Pepper - Grade A(... </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -796,153 +933,141 @@
 
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#" >
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct2.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Irish Potato (5kg)</h5>
+                                                    <h5 class="mb-2">Irish Potato (5kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
-                                                        </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct2.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Ofada Rice (50kg)</h5>
+                                                    <h5 class="mb-2">Ofada Rice (50kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Sombo Pepper - Grade A(...
-                                                    </h5>
+                                                    <h5 class="mb-2">Sombo Pepper - Grade A(... </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -950,162 +1075,151 @@
 
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#" >
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
-                                                        </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Irish Potato (5kg)</h5>
+                                                    <h5 class="mb-2">Irish Potato (5kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct2.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Ofada Rice (50kg)</h5>
+                                                    <h5 class="mb-2">Ofada Rice (50kg) </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="simproducts-inner">
-                                            <a href="#">
-                                                <div class="heart-icon">
-                                                    <span class="material-icons">
-                                                        favorite_border
+                                            <div class="simproducts-img-bg mb-3">
+                                                <a href="#">
+                                                    <div class="heart-icon">
+                                                        <span class="material-icons">favorite_border
                                                         </span>
-                                                </div>
-                                                <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="smiproduct1.jpg">
-                                            </a>
+                                                    </div>
+                                                    <img class="simprod-img mb-2" src="assets/images/smiproduct3.jpg" alt="Product-img1">
+                                                </a>
+                                            </div>
                                             <div class="pally-content">
                                                 <a href="#" class="inner-head">
-                                                    <h5 class="mb-2 ">Sombo Pepper - Grade A(...
-                                                    </h5>
+                                                    <h5 class="mb-2">Sombo Pepper - Grade A(... </h5>
                                                 </a>
-                                                <div class="p-1 alert-success mb-0 w-50 rounded" role="alert">
-                                                    <p class="alert-heading mb-0">↑9% | In Season</p>
-                                                </div>
-                                                <h5 class="mb-2 mt-2 font-weight-bold simhead">N73,000 <s>(N78,000)</s></h5>
-                                                <section class='rating-widget mb-2'>
-                                                    <!-- Rating Stars Box -->
-                                                    <div class='rating-stars'>
-                                                        <ul class='stars'>
-                                                            <li class='smallstar' title='Poor' data-value='1'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Fair' data-value='2'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Good' data-value='3'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='Excellent' data-value='4'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
-                                                            <li class='smallstar' title='WOW!!!' data-value='5'>
-                                                                <i class='fa fa-star fa-fw'></i>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='success-box'>
-                                                        <div class='text-message'></div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
                                                     </div>
-                                                </section>                                               
-                                                <a href="#" class="mb-2">
-                                                    <button type="button" class="brown-btn  text-uppercase btn-effects ">SELECT ORDER TYPE</button>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
+                                 
                                 </div>
                             </div> 
-                        </div>
+                        </div>                       
                     </div>
-                    <div class="col-lg-4  navigation" id="sidebarnav-scroll">
+                    <div class="col-lg-4  navigation d-non d-lg-block" id="sidebarnav-scroll">
                         <div class="sticky-sidebar">
                             <ul class="nav  flex-column scrool-bar">
                                 <li class="nav-item"><a class="navigation__link nav-link active" href="#overview">Overview</a></li>
@@ -1177,9 +1291,141 @@
                 </div>
             </div>
         </section>
-        <!------ PRODUUCTS-MAIN-CONTENT-SECTION-END ------>
+         <!------ MOBILE-VIEW-SMILAR-PRODUCTS-SECTION-START ------>
+         <div class="mobile-viewproducts">
+            <div class="container">                    
+                 <div id="similar-products1" class="similarproducts-bg mb-3 d-lg-none d-block">
+                    <h5 class="grey-text">SIMILAR PRODUCTS</h5>
+                    <hr class="border-bottom">
+                    <div id="similarSlider1" class="dvslider">                            
+                        <div class="MS-content">
+                            <div class="item">
+                                <div class="simproducts-inner">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-start">
+                                            <div class="pally-inner">
+                                             <div class="simproducts-img-bg  mb-2 pointer">
+                                                 <a href="#">
+                                                     <div class="heart-icon">
+                                                         <span class="material-icons">
+                                                             favorite_border
+                                                             </span>
+                                                     </div>
+                                                     <img class="simprod-img mb-2" src="assets/images/smiproduct1.jpg" alt="Product-img1">
+                                                 </a>
+                                             </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class=" ml-4 justify-content-end">
+                                            <div class="pally-content">
+                                                <a href="#" class="inner-head">
+                                                    <h5 class="mb-2">Irish Potato (5kg) </h5>
+                                                </a>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
+                                                    </div>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="simproducts-inner">
+                                    <div class="d-flex ">
+                                        <div class=" justify-content-start">
+                                            <div class="pally-inner">
+                                             <div class="simproducts-img-bg  mb-2 pointer">
+                                                 <a href="#">
+                                                     <div class="heart-icon">
+                                                         <span class="material-icons">
+                                                             favorite_border
+                                                             </span>
+                                                     </div>
+                                                     <img class="simprod-img mb-2" src="assets/images/smiproduct2.jpg" alt="Product-img1">
+                                                 </a>
+                                             </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class=" ml-4 justify-content-end">
+                                            <div class="pally-content">
+                                                <a href="#" class="inner-head">
+                                                    <h5 class="mb-2">Ofada Rice (50kg) </h5>
+                                                </a>
+                                                <a href="#" class="green-bg">↑3% | In Season</a>
+                                                <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000 <s>(₦78,000)</s></h5>        
+                                                <section class="rating-widget mb-2">
+                                                    <div class="rating-stars">
+                                                        <ul class="stars">
+                                                            <li class="smallstar" title="Poor" data-value="1">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Fair" data-value="2">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Good" data-value="3">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="Excellent" data-value="4">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                            <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                <i class="fa fa-star fa-fw"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="success-box">
+                                                        <div class="text-message"><span>5 (5.0).</span></div>
+                                                    </div>
+                                                </section>
+                                                <a href="#">
+                                                    <button type="button" class="brown-btn  text-uppercase btn-effects">SELECT ORDER TYPE</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div> 
+                </div>
+               
+            </div>
+        </div>
+        <!------ MOBILE-VIEW-SMILAR-PRODUCTS-SECTION-END ------>
+        <!------ PRODUUCTS-MAIN-CONTENT-SECTION-END ------>       
         <!------ FOOTER-SECTION-START ------>
-        <footer class="ml-2 mr-2 footer-wrapper">
+        <footer class="ml-2 mr-2 footer-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -1242,6 +1488,181 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
+         <!------ SELECT-ORDER-BTN-FIXED-START ------>
+         <section class="select-order d-block d-lg-none">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <div class="justify-content-start">
+                        <a href="#">
+                            <span class="material-icons">
+                                favorite_border
+                                </span>
+                        </a>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <div class="button-wrapper ">
+                            <a href="#">
+                                <button type="button" class="yellow-btn text-uppercase ">Select Order Type</button>
+                            </a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------ SELECT-ORDER-BTN-FIXED-END ------>
+        <!------ MOBILE-FOOTER-CSS-START ------>
+        <footer class="d-block d-lg-none mobile-footer">
+            <div class="container">
+                <div class="d-flex text-center justify-content-center">
+                    <div class="mobile-icon"> <a class="nav-link active" href="index.html">
+                        <p class="mb-0"><i class="material-icons-outlined">home</i></p>
+                        <p class="mb-0">Home</p>
+                    </a></div>
+                    <div class="mobile-icon">  <a class="nav-link" href="javascript:void(0)">
+                        <p class="mb-0"><span class="material-icons">
+                                people_outline
+                            </span></p>
+                        <p class="mb-0">Users</p>
+                    </a></div>
+                    <div class="mobile-icon">  <a class="nav-link" href="cart.html">
+                        <p class="mb-0"><span class="material-icons-outlined">
+                                shopping_cart
+                            </span></p>
+                        <p class="mb-0">Cart</p>
+                    </a></div>                    
+                    <div class="mobile-icon"><a class="nav-link" href="orders.html">
+                        <p class="mb-0"><span class="material-icons-outlined">
+                                shopping_bag
+                            </span></p>
+                        <p class="mb-0">Order</p>
+                    </a></div>
+                    <div class="mobile-icon" onclick="myFunction()">
+                        <a href="#"  class="nav-link" >
+                            <p class="mb-0 more_ic"><span class="material-icons">
+                                more_horiz
+                            </span></p>
+                            <p class="mb-0">More </p>
+                        </a>
+                    </div>
+            </div> 
+        </footer>
+       <!------ MORE-MODAL-START ------>
+       <div id="moreModal-wrapper" >
+           <div class="container">
+            <div class="moremodal-bg">
+                <div class="moremodal-header">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="w-50 justify-content-start">
+                                <div class="p-1  ">
+                                    <h5 class="mb-0 morehead">₦GN 24,500</h5>
+                                    <p class="mb-0 more-phr">Wallet Balance</p>
+                                </div>
+                                <hr class="more-border">
+                                <div class="p-1">
+                                    <h6 class="mb-0 morehead">₦GN 1,000</h6>
+                                    <p class="mb-0 more-phr">Pending Balance</p>
+                                </div>
+                               
+                            </div>
+                            <div class="ml-auto justify-content-end align-self-center">
+                                <a href="#">
+                                    <button class="yellow-bg text-uppercase">Go to wallet</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="p-4">
+                    <ul class="list-unstyled ">
+                        <li class="more-outline mb-3">
+                            <a href="make_list.html">
+                                <span class="material-icons-round align-middle">
+                                    format_list_bulleted
+                                </span>
+                                <span class="morelist-text pl-2">Make a List</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="refer_earn.html">
+                                <span class="material-icons align-middle">
+                                    share
+                                </span>
+                                <span class="morelist-text pl-2">Refer and Earn</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="saved-products.html">
+                                <span class="material-icons align-middle">
+                                    favorite_border
+                                </span>
+                                <span class="morelist-text pl-2">Saved Products</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="notification.html">  
+                                 <span class="material-icons  align-middle">
+                                notifications_none
+                                </span>
+                                 <span class="morelist-text pl-2">Notifications</span>
+                                <span class="yellow_cir float-right">2</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                 <span class="material-icons align-middle">
+                                settings_cell</span>
+                                </span class="morelist-text pl-2">Contact Admin</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#"> 
+                                <span class="material-icons  align-middle">
+                                error_outline</span>
+                            <span class="morelist-text pl-2">Frequently Asked Questions</span>
+                             </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#"> 
+                                <span class="material-icons-outlined align-middle rotate-ic">
+                                    repeat
+                                    </span>
+                            <span class="morelist-text pl-2">Return Policy</span>
+                             </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#"> 
+                                <span class="material-icons-outlined align-middle" >
+                                    privacy_tip
+                                </span>   
+                            <span class="morelist-text pl-2">Privacy Policy</span>
+                             </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#"> 
+                                <span class="material-icons-outlined align-middle  rotate-ic">
+                                    note
+                                    </span>  
+                                <span class="morelist-text pl-2">Terms & Conditions</span>
+                             </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#"> 
+                                <span class="material-icons-outlined  align-middle">
+                                    login
+                                    </span>  
+                            <span class="morelist-text pl-2">Logout</span>
+                             </a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+           </div>
+        
+       </div>
+       <!------ MORE-MODAL-END ------>
+        <!------ MOBILE-FOOTER-CSS-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
