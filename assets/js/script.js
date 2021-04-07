@@ -531,3 +531,37 @@ $(document).ready(function(){
   });
   });
 /*------ LISTING-SLIDER-ACTIVE-ADD-JS-END -------*/ 
+
+/*------ CART-MOBILE-MODAL-JS-START ------*/
+
+$("body").on("click",".Mobile-address-btn",function(e){
+    $('#checkout-bottom_modal').modal('hide');
+    $('#Mobile-address-Modalopn').modal('show');
+});
+
+
+$("body").on("click",".Mobile-date-btn",function(e){
+    $('#checkout-bottom_modal').modal('hide');
+    $('#Mobile-date-Modalopn').modal('show');
+});
+
+$("body").on("click"," .mobile-directbankbtn",function(e){
+    $('#checkout-bottom_modal').modal('hide');
+    $('#Mobile-direct-Modalopn').modal('show');
+});
+
+$("body").on("click"," .Mobordernow-btn",function(e){
+    $('#Mobile-direct-Modalopn').modal('hide');
+    $('#Mobile-processing-Modalopn').modal('show');
+});
+
+$("body").on("click"," .Mobileapply-coupon",function(e){
+    $('#checkout-bottom_modal').modal('hide');
+    $('#Mobile-couponapply-Modalopn').modal('show');
+});
+
+$("body").on("click"," .Mobdone-btn",function(e){
+    $('#checkout-bottom_modal').modal('hide');
+    $('#Mobile-successfull-Modalopn').modal('show');
+});
+/*------ CART-MOBILE-MODAL-JS-END ------*/

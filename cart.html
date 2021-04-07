@@ -8,11 +8,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
-
-    <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>
-
     <link href="assets/css/style.css" rel="stylesheet">
-
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
 
 </head>
@@ -39,7 +35,8 @@
                                                     <span class="material-icons">
                                                         search
                                                     </span>
-                                                    <input type="text" placeholder="Search Food Items or Users" name="search">
+                                                    <input type="text" placeholder="Search Food Items or Users"
+                                                        name="search">
                                                 </div>
                                             </form>
                                         </div>
@@ -95,23 +92,27 @@
                                                             </span> Wallet </a>
                                                     </li>
                                                     <li class="nav-item pl-4 pl-md-0 ml-0 ">
-                                                        <a href="notification.html" class="nav-link"> <span class="material-icons">
+                                                        <a href="notification.html" class="nav-link"> <span
+                                                                class="material-icons">
                                                                 notifications</span> Notifications
                                                             <span class="yellow_cir float-right">2</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item pl-4 pl-md-0 ml-0 ">
-                                                        <a href="refer_earn.html" class="nav-link"> <span class="material-icons">
+                                                        <a href="refer_earn.html" class="nav-link"> <span
+                                                                class="material-icons">
                                                                 share
                                                             </span> Refer and Earn </a>
                                                     </li>
                                                     <li class="nav-item pl-4 pl-md-0 ml-0 ">
-                                                        <a href="saved-products.html" class="nav-link"> <span class="material-icons">
+                                                        <a href="saved-products.html" class="nav-link"> <span
+                                                                class="material-icons">
                                                                 favorite_border
                                                             </span>Saved Products </a>
                                                     </li>
                                                     <li class="nav-item pl-4 pl-md-0 ml-0 ">
-                                                        <a href="Freq-Quest.html" class="nav-link"> <span class="material-icons">
+                                                        <a href="Freq-Quest.html" class="nav-link"> <span
+                                                                class="material-icons">
                                                                 error_outline
                                                             </span>Frequently Asked Questions </a>
                                                     </li>
@@ -143,11 +144,39 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ CART-SECTION-START ------>
-        <section class="cart-wrapper">
+        <!------ MOBILE-DETAILS-HEADER-SECTION-START ------>
+        <section class="mobile-list-header d-block d-lg-none">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <div class="justify-content-start">
+                        <a href="cart.html">
+                            <h4 class="mb-0">Cart</h4>
+                        </a>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-inline-block text-danger delete-icon pr-4 pointer">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </li>
+                            <li class="d-inline-block align-top">
+                                <p>
+                                    <span class="material-icons">
+                                        search
+                                    </span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-DETAILS-HEADER-SECTION-END ------>
+        <!------ WEB-VIEW-CART-SECTION-START ------>
+        <section class="cart-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-md-7 col-lg-7">
                         <h4 class="heading mt-4 mb-3">Cart (2)</h4>
                         <div class="cart-wrapper">
                             <div class="row border-bottom mb-3">
@@ -175,18 +204,17 @@
                                                 <h6 class="mt-3">Tuwo Rice</h6>
                                             </div>
                                         </div>
-                                       
                                     </a>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="addbutton-bg">
-                                        <button type="button" id="sub" class=sub><span class="material-icons">
+                                        <span id="sub" class="sub mb-0"><span class="material-icons">
                                                 remove
-                                            </span></button>
+                                            </span></span>
                                         <input type="text" id="1" value=1 class=field>
-                                        <button type="button" id="add" class=add><span class="material-icons">
+                                        <span id="add" class="add  mb-0"><span class="material-icons">
                                                 add
-                                            </span></button>
+                                            </span></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-2">
@@ -199,7 +227,8 @@
                                         <li class="d-inline-block">
                                             <h6 class="pt-3">₦ 45,000</h6>
                                         </li>
-                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i
+                                                class="fa fa-trash-o" aria-hidden="true"></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -215,35 +244,37 @@
                                                 <h6>Irish Potato (5kg)</h6>
                                                 <ul class="list-unstyled pallylist-bg ">
                                                     <li class="d-inline-block pally-left">
-                                                        <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                                        <img class="list-img" src="assets/images/list-img1.jpg"
+                                                            alt="list-img1">
                                                     </li>
                                                     <li class="d-inline-block pally-left">
-                                                        <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
+                                                        <img class="list-img" src="assets/images/list-img3.jpg"
+                                                            alt="list-img2">
                                                     </li>
                                                     <li class="d-inline-block pally-left">
-                                                        <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
+                                                        <img class="list-img" src="assets/images/list-img3.jpg"
+                                                            alt="list-img3">
                                                     </li>
                                                     <li class="d-inline-block pally-left">
-                                                        <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
+                                                        <img class="list-img" src="assets/images/list-img1.jpg"
+                                                            alt="list-img1">
                                                     </li>
 
                                                 </ul>
                                             </div>
                                         </div>
-                                       
                                     </a>
-                                   
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="addbutton-bg">
-                                        <button type="button" id="sub" class=sub><span class="material-icons">
+                                        <span id="sub" class="sub mb-0"><span class="material-icons">
                                                 remove
-                                            </span></button>
+                                            </span></span>
                                         <input type="text" id="1" value=1 class=field>
-                                        <button type="button" id="add" class=add><span class="material-icons">
+                                        <span id="add" class="add  mb-0"><span class="material-icons">
                                                 add
-                                            </span></button>
+                                            </span></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-2">
@@ -256,14 +287,15 @@
                                         <li class="d-inline-block">
                                             <h6 class="pt-3">₦ 45,000</h6>
                                         </li>
-                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i class="fa fa-trash-o" aria-hidden="true"></i></li>
+                                        <li class="d-inline-block text-danger delete-icon pl-3 pointer"><i
+                                                class="fa fa-trash-o" aria-hidden="true"></i></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-lg-5 checkout-wrapper">
+                    <div class="col-md-5 col-lg-5 checkout-wrapper">
                         <h4 class="checkout-head font-weight-bold mb-4">Checkout</h4>
                         <div class="row">
                             <div class="col-lg-4 border-right">
@@ -310,19 +342,24 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="selectadd-bg">
-                                    <h6 class="light-brown text-uppercase pointer" class="btn btn-primary" data-toggle="modal" data-target=".bd-selectadd-modal-lg"> select another address
+                                    <h6 class="light-brown text-uppercase pointer" class="btn btn-primary"
+                                        data-toggle="modal" data-target=".bd-selectadd-modal-lg"> select another address
                                     </h6>
                                 </div>
                             </div>
                         </div>
-                        <p class="">1, Tinubu street, Victoria Island, Lagos.</p>
+                        <h5>Home Address</h5>
+                        <p class="mb-1">1, Tinubu street, Victoria Island, Lagos.</p>
+                        <p>+2348106506979
+                        </p>
                         <hr class="border-bottom">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h5 class="small-head mb-3 text-uppercase">DELIVERY Date</h5>
                             </div>
                             <div class="col-lg-6">
-                                <h6 class="light-brown text-uppercase pointer" data-toggle="modal" data-target="#selectdateModal">check free delivery date</h6>
+                                <h6 class="light-brown text-uppercase pointer" data-toggle="modal"
+                                    data-target="#selectdateModal">check free delivery date</h6>
                             </div>
                         </div>
                         <p>Thursday, 18th June 2020</p>
@@ -342,20 +379,101 @@
                         </div>
                         <div class="form-group delivery-border">
                             <label>Optional Delivery Note/Order Instructions</label>
-                            <textarea class="form-control bg-transparent" rows="5" placeholder="Type something..."></textarea>
+                            <textarea class="form-control bg-transparent" rows="5"
+                                placeholder="Type something..."></textarea>
                         </div>
                         <div class="checkout-btn m-auto text-center">
-                            <button type="button" class="yellow-bg text-uppercase" data-toggle="modal" data-target="#checkpayeModal">checkout</button>
+                            <button type="button" class="yellow-bg text-uppercase" data-toggle="modal"
+                                data-target="#checkpayeModal">checkout</button>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
+        <!------ WEB-VIEW-CART-SECTION-END ------>
+        <!------ CART-MOBILE-VIEW-SECTION-START ------>
+        <section class="mobilecart-wrapper d-block d-lg-none">
+            <div class="container">
+                <div class="d-flex mb-3 mt-4">
+                    <div class="justify-content-start">
+                        <a href="#">
+                            <div class="d-flex ">
+                                <div class="pr-2 ">
+                                    <img class="cart-img" src="assets/images/search-img1.jpg" alt="">
+                                </div>
+                                <div class=" ">
+                                    <h6 >Tuwo Rice</h6>
+                                    <div class="addbutton-bg">
+                                        <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                remove
+                                            </span></span>
+                                        <input type="text" id="1" value=1 class=field>
+                                        <span id="add" class="add  mb-0"><span class="material-icons">
+                                                add
+                                            </span></span>
+                                    </div>
+                                </div>
+                            </div>               
+                        </a>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <h6 class="pt-3">₦90,000</h6>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex mb-3 mt-4 ">
+                    <div class="justify-content-start">
+                        <a href="#">
+                            <div class="d-flex ">
+                                <div class="pr-2 ">
+                                    <img class="cart-img" src="assets/images/search-img2.jpg" alt="">
 
-        <!------ CART-SECTION-END ------>
+                                </div>
+                                <div class="">
+                                    <h6 >Irish Potato (5kg)</h6>
+                                    <ul class="list-unstyled pallylist-bg ">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+
+                                    </ul>
+                                    <div class="addbutton-bg">
+                                        <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                remove
+                                            </span></span>
+                                        <input type="text" id="1" value=1 class=field>
+                                        <span id="add" class="add  mb-0"><span class="material-icons">
+                                                add
+                                            </span></span>
+                                    </div>
+                                </div>
+                            </div>               
+                        </a>
+                       
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <h6 class="pt-3">₦90,000</h6>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <!------ CART-MOBILE-VIEW-SECTION-END ------>
         <!------ FOOTER-SECTION-START ------>
-        <footer class="ml-2 mr-2 footer-wrapper">
+        <footer class="ml-2 mr-2 footer-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -418,9 +536,9 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
-
         <!------ SELECTED-ADDRESS-MODAL-START ------>
-        <div class="modal fade bd-selectadd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal fade bd-selectadd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content pb-3">
                     <div class="modal-header">
@@ -430,7 +548,8 @@
                             </h5>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <button type="button" class="pointer newadress text-uppercase brown-btn  text-uppercase btn-effects ">Add new
+                            <button type="button"
+                                class="pointer newadress text-uppercase brown-btn  text-uppercase btn-effects ">Add new
                                 address</button>
                         </div>
                     </div>
@@ -521,7 +640,8 @@
         <!------ SELECTED-ADDRESS-MODAL-END ------>
 
         <!------ FREE-DELIVERY-DATE-MODAL-START ------>
-        <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
+        <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="p-4 ">
@@ -564,7 +684,7 @@
         </div>
         <!------ FREE-DELIVERY-DATE-MODAL-END ------>
         <!------ CHECKOUT-PAYMENT-MODAL-START ------>
-        <div class="modal fade" id="checkpayeModal" >
+        <div class="modal fade" id="checkpayeModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="p-4 ">
@@ -575,11 +695,15 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <p class="mb-2">Shipping</p>
-                                    <p class="mb-2">Total</p>
+                                    <p class="mb-2">Coupon</p>
+                                    <p class="mb-2">Wallet</p>
+                                    <strong class="mb-2">Total</strong>
                                 </div>
                                 <div class="col-lg-6 text-right">
-                                    <p class="mb-1">N1,000</p>
-                                    <h5 class="mb-1">N100,000</h5>
+                                    <p class="mb-1">₦1,000</p>
+                                    <p class="mb-1">-₦1,800</p>
+                                    <p class="mb-1">-₦20,000</p>
+                                    <h5 class="mb-1">₦79,200</h5>
                                 </div>
                             </div>
                             <hr>
@@ -595,7 +719,7 @@
                             </div>
                         </div>
                         <div class="box-shadow pr-3 pl-3 pb-2 pt-3 mb-3 pointer">
-                            <div class="row mt-1 applycouponmodal" >
+                            <div class="row mt-1 applycouponmodal">
                                 <div class="col-lg-6">
                                     <h6 class="mb-0">Apply coupon</h6>
                                 </div>
@@ -605,14 +729,14 @@
                             </div>
                         </div>
                         <div class="coupon-bg alert alert-success alert-dismissible fade show mb-3" role="alert">
-                            <p class="mb-0">coupon Applied Successfully</p>
+                            <p class="mb-0">Coupon Applied Successfully</p>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="box-shadow p-3 mb-3">
                             <h6 class="text-uppercase text-secondary mb-3">payment method</h6>
-                            <div class="rdio rdio-primary radio-inline mb-4 directbankbtn" >
+                            <div class="rdio rdio-primary radio-inline mb-4 directbankbtn">
                                 <input name="radio" value="2" id="directbnk" type="radio">
                                 <label for="directbnk">
                                     Direct Bank Transfer
@@ -646,13 +770,13 @@
         </div>
         <!------ CHECKOUT-PAYMENT-MODAL-END ------>
         <!------  APPLY-coupon-MODAL-START ------->
-        <div class="modal fade" id="applycouponopnmodal"  >
+        <div class="modal fade" id="applycouponopnmodal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <ul class="list-unstyled p-3 coupon-head back-arrow pointer">
                         <li class="d-inline-block "> <span class="material-icons s-icon">
-                        west
-                    </span></li>
+                                west
+                            </span></li>
                         <li class="d-inline-block align-top pl-2"><b>coupon</b></li>
                     </ul>
                     <div class="modal-body pl-4 pt-0 pr-4">
@@ -697,63 +821,65 @@
         <!------  APPLY-coupon-MODAL-END ------->
 
         <!------  DIRECT-BANK-TRANSFER-MODAL-START ------->
-        <div class="modal fade" id="directbankopnmodal"  >
+        <div class="modal fade" id="directbankopnmodal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <ul class="list-unstyled p-3 coupon-head bnkback-arrow pointer">
                         <li class="d-inline-block "> <span class="material-icons s-icon">
-                        west
-                    </span></li>
+                                west
+                            </span></li>
                         <li class="d-inline-block align-top pl-2"><b>Bank Transfer</b></li>
                     </ul>
                     <div class="modal-body pl-4 pt-0 pr-4">
-                       
+
                         <div class="box-shadow mb-3 p-3 bank-content">
-                            <h6 class="mb-3"><small class="pr-2">Account Number:</small><b class="big-text">0000000000</b></h6>
-                            <h6 class="mb-3"><small class="pr-2">Account Name:</small><b class="big-text">Pricepally</b></h6>
-                            <h6 class="mb-3"><small class="pr-2">Bank:</small><b class="big-text">XYZ Bank</b></h6>                           
+                            <h6 class="mb-3"><small class="pr-2">Account Number:</small><b
+                                    class="big-text">0000000000</b></h6>
+                            <h6 class="mb-3"><small class="pr-2">Account Name:</small><b class="big-text">Pricepally</b>
+                            </h6>
+                            <h6 class="mb-3"><small class="pr-2">Bank:</small><b class="big-text">XYZ Bank</b></h6>
                         </div>
-                        <p>Your order will be processed once payment is confirmed on this end.</p>                       
+                        <p>Your order will be processed once payment is confirmed on this end.</p>
                     </div>
-                      
+
                     <div class="modal-w m-auto mt-4 mb-3">
                         <div class="mb-3">
                             <button type="button" class="yellow-bg text-uppercase purchase-btn">Order Now</button>
                         </div>
-                       
+
                         <div class="addclose text-center mt-2 mb-4">
                             <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <!------ DIRECT-BANK-TRANSFER-END ------->
 
-         <!------ PURCHASE-SUCCESSFULL-MODAL-START ------->
-         <div class="modal fade" id="purchaseopnmodal"  >
+        <!------ PURCHASE-SUCCESSFULL-MODAL-START ------->
+        <div class="modal fade" id="purchaseopnmodal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    
+
                     <div class="modal-body p-4 text-center">
                         <div class="text-center m-auto">
                             <img class="purchase-img mb-3" src="assets/images/shopping-bag.png" alt="shopping-bag">
                         </div>
                         <h4>Purchase Successful</h4>
-                        <p>View your purchase in the order section</p>                       
+                        <p>View your purchase in the order section</p>
                     </div>
-                      
+
                     <div class="modal-w m-auto mt-4 mb-3">
                         <div class="mb-3">
                             <button type="button" class="yellow-bg text-uppercase">VIEW YOUR ORDERS</button>
                         </div>
                         <div class="mb-3">
                             <div class="shopping-bg text-center">
-                                <a href="#" >
+                                <a href="#">
                                     <button type="button" class="shopping-btn text-uppercase brown-btn btn-effects ">
                                         CONTINUE SHOPPING
                                     </button>
-                                   
+
                                 </a>
                             </div>
                         </div>
@@ -765,6 +891,575 @@
             </div>
         </div>
         <!------ PURCHASE-SUCCESSFULL-MODAL-END ------->
+        <!------ CHECKOUT-FIXED-FOOTER-START ------>
+        <div class="postion">
+            <section class="checkout-footer d-lg-none d-block">
+                <div class="container">
+                    <div class="d-flex mb-3">
+                        <div class="justify-content-start">
+                           <p class="mb-0">Shipping: ₦1,000</p>
+                        </div>
+                        <div class=" ml-auto justify-content-end">
+                            <h6 class="mb-0">Total:  ₦100,000</h6>
+                        </div>
+                    </div>
+                    <div class="checkout-btn m-auto text-center ">
+                        <button type="button" class="yellow-bg text-uppercase mb-2"data-toggle="modal" data-target="#checkout-bottom_modal" >checkout</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+        <!------ CHECKOUT-FIXED-FOOTER-END ------>
+        <!------ MOBILE-FOOTER-START ------>
+        <footer class="d-block d-lg-none mobile-footer">
+            <div class="container">
+                <div class="d-flex text-center justify-content-center">
+                    <div class="mobile-icon"> <a class="nav-link active" href="index.html">
+                            <p class="mb-0"><i class="material-icons-outlined">home</i></p>
+                            <p class="mb-0">Home</p>
+                        </a></div>
+                    <div class="mobile-icon"> <a class="nav-link" href="javascript:void(0)">
+                            <p class="mb-0"><span class="material-icons">
+                                    people_outline
+                                </span></p>
+                            <p class="mb-0">Users</p>
+                        </a></div>
+                    <div class="mobile-icon"> <a class="nav-link" href="cart.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_cart
+                                </span></p>
+                            <p class="mb-0">Cart</p>
+                        </a></div>
+                    <div class="mobile-icon"><a class="nav-link" href="orders.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_bag
+                                </span></p>
+                            <p class="mb-0">Order</p>
+                        </a></div>
+                    <div class="mobile-icon" onclick="myFunction()">
+                        <a href="#" class="nav-link">
+                            <p class="mb-0 more_ic"><span class="material-icons">
+                                    more_horiz
+                                </span></p>
+                            <p class="mb-0">More </p>
+                        </a>
+                    </div>
+                </div>
+        </footer>
+        <!------ MORE-MODAL-START ------>
+        <div id="moreModal-wrapper">
+            <div class="container">
+                <div class="moremodal-bg">
+                    <div class="moremodal-header">
+                        <div class="container">
+                            <div class="d-flex">
+                                <div class="w-50 justify-content-start">
+                                    <div class="p-1  ">
+                                        <h5 class="mb-0 morehead">₦GN 24,500</h5>
+                                        <p class="mb-0 more-phr">Wallet Balance</p>
+                                    </div>
+                                    <hr class="more-border">
+                                    <div class="p-1">
+                                        <h6 class="mb-0 morehead">₦GN 1,000</h6>
+                                        <p class="mb-0 more-phr">Pending Balance</p>
+                                    </div>
+
+                                </div>
+                                <div class="ml-auto justify-content-end align-self-center">
+                                    <a href="#">
+                                        <button class="yellow-bg text-uppercase">Go to wallet</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <ul class="list-unstyled ">
+                            <li class="more-outline mb-3">
+                                <a href="make_list.html">
+                                    <span class="material-icons-round align-middle">
+                                        format_list_bulleted
+                                    </span>
+                                    <span class="morelist-text pl-2">Make a List</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="refer_earn.html">
+                                    <span class="material-icons align-middle">
+                                        share
+                                    </span>
+                                    <span class="morelist-text pl-2">Refer and Earn</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="saved-products.html">
+                                    <span class="material-icons align-middle">
+                                        favorite_border
+                                    </span>
+                                    <span class="morelist-text pl-2">Saved Products</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="notification.html">
+                                    <span class="material-icons  align-middle">
+                                        notifications_none
+                                    </span>
+                                    <span class="morelist-text pl-2">Notifications</span>
+                                    <span class="yellow_cir float-right">2</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons align-middle">
+                                        settings_cell</span>
+                                    </span class="morelist-text pl-2">Contact Admin</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons  align-middle">
+                                        error_outline</span>
+                                    <span class="morelist-text pl-2">Frequently Asked Questions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle rotate-ic">
+                                        repeat
+                                    </span>
+                                    <span class="morelist-text pl-2">Return Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle">
+                                        privacy_tip
+                                    </span>
+                                    <span class="morelist-text pl-2">Privacy Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle  rotate-ic">
+                                        note
+                                    </span>
+                                    <span class="morelist-text pl-2">Terms & Conditions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined  align-middle">
+                                        login
+                                    </span>
+                                    <span class="morelist-text pl-2">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!------ MORE-MODAL-END ------>
+        <!------ MOBILE-FOOTER-END ------>
+        <div class="modal modal-bottom fade checkout-bottom" id="checkout-bottom_modal" tabindex="-1" role="dialog" aria-labelledby="checkout-bottom_modal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="chekcoutmodal-header">
+                    <a href="#" data-dismiss="modal" aria-label="Close">
+                        <h5  ><i class='material-icons align-top'>west</i> Checkout</h5>  
+                    </a> 
+                    <ul class="nav nav-tabs delivery-tabs" id="deliveryTab" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active" id="" data-toggle="tab" href="#delivery-address" role="tab" aria-controls="delivery-address" aria-selected="true">Delivery Address</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Payment</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="tab-content" id="deliveryTabContent">
+                        <div class="tab-pane fade show active delivery-address" id="delivery-address" role="tabpanel" aria-labelledby="delivery-address-tab">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h5 class="small-head ">DELIVERY TYPE</h5>
+                                    <div class="radiobuttons">
+                                        <div class="rdio rdio-primary radio-inline">
+                                            <input name="radio" value="1" id="delivery-add-list1" type="radio">
+                                            <label for="delivery-add-list1">Normal delivery</label>
+                                        </div>
+                                        <div class="rdio rdio-primary radio-inline">
+                                            <input name="radio" value="2" id="delivery-add-list2" type="radio">
+                                            <label for="delivery-add-list2">Pally delivery (free delivery for 3 or more combined
+                                                orders)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr >
+                            <div class="deliveradd-bg">
+                                <h5 class="small-head text-uppercase">delivery address</h5>
+                                 <h6>Home Address</h6>
+                                <p class="mb-1">1, Tinubu street, Victoria Island, Lagos.</p>
+                                <p>+2348106506979</p>   
+                                <div class="m-auto text-center">
+                                    <button type="button" class="white-btn text-uppercase Mobile-address-btn">Select another address</button>   
+                                </div>                                                 
+                            </div>
+                            <hr >
+                            <div class="deliverydate-bg">
+                                <h5 class="small-head text-uppercase">DELIVERY Date</h5>
+                                <p>Thursday, 18th June 2020</p>
+                                <div class="row radiobuttons mb-3">
+                                    <div class="col-lg-6">
+                                        <div class="rdio rdio-primary radio-inline">
+                                            <input name="radio" value="1" id="deliverydate1" type="radio">
+                                            <label for="deliverydate1">Morning (10AM to 1PM)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="rdio rdio-primary radio-inline">
+                                            <input name="radio" value="2" id="deliverydate2" type="radio">
+                                            <label for="deliverydate2">Evening (4PM to 8PM)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-auto text-center">
+                                    <button type="button" class="white-btn text-uppercase Mobile-date-btn">CHECK FREE DELIVERY DATE</button>   
+                                </div>  
+                                <hr>
+                                <div class="form-group delivery-border">
+                                    <label>Optional Delivery Note/Order Instructions</label>
+                                    <textarea class="form-control bg-transparent" rows="5"
+                                        placeholder="Type something..."></textarea>
+                                </div>
+                                <div class="m-auto text-center cartnext-btn">
+                                    <button type="button" class="yellow-btn text-uppercase">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade payment-bg" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                          <div class="mobile-payment-bg">
+                            <div class="box-shadow p-3 mb-3">
+                                <div class="d-flex mb-3">
+                                    <div class="justify-content-start">
+                                        <p class="mb-2">Shipping</p>
+                                        <p class="mb-2">Coupon</p>
+                                        <p class="mb-2">Wallet</p>
+                                        <strong class="mb-2">Total</strong>
+                                    </div>
+                                    <div class=" ml-auto justify-content-end">
+                                        <p class="mb-1">₦1,000</p>
+                                        <p class="mb-1">-₦1,800</p>
+                                        <p class="mb-1">-₦20,000</p>
+                                        <h5 class="mb-1">₦79,200</h5>
+                                    </div>
+                                </div> 
+                                <hr>
+                                <div class="check-bg mb-2">
+                                    <label class="pay-check pointer">
+                                        <input type="checkbox">Pay some amount from my wallet
+                                        <span class="check_box_ex"></span>
+                                    </label>
+                                </div>    
+                                <div class="form-group">
+                                    <label class="text-mute small-label">Enter amount to deduct from wallet</label>
+                                    <input type="email" class="form-control" placeholder="20,000">
+                                </div>                       
+                            </div>
+                           
+                            <div class="box-shadow pr-3 pl-3 pb-2 pt-3 mb-3 pointer Mobileapply-coupon">
+                                <div class="d-flex">
+                                    <div class="justfiy-content-start">
+                                        <h6 class="mb-0">Apply coupon</h6>
+                                    </div>
+                                    <div class="ml-auto justfiy-content-end">
+                                        <span class="material-icons ">east</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                                <div class="coupon-bg alert alert-success alert-dismissible fade show mb-3" role="alert">
+                                    <p class="mb-0">Coupon Applied Successfully</p>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="box-shadow p-3 mb-3">
+                                    <h6 class="text-uppercase  mb-3">payment method</h6>
+                                    <div class="rdio rdio-primary radio-inline mb-4 mobile-directbankbtn">
+                                        <input name="radio" value="2" id="Mobdirectbnk" type="radio">
+                                        <label for="Mobdirectbnk">
+                                            Direct Bank Transfer
+                                        </label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline mb-4">
+                                        <input name="radio" value="2" id="Mobpaystack" type="radio">
+                                        <label for="Mobpaystack">
+                                            Paystack
+                                        </label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline mb-4">
+                                        <input name="radio" value="2" id="Mobpaylater" type="radio">
+                                        <label for="Mobpaylater">
+                                            Buy now, pay later
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="m-auto text-center cartnext-btn">
+                                    <button type="button" class="yellow-btn text-uppercase">PROCEED TO PAY</button>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        <!------ CART-RESPSONIVE-MODAL-START ------>  
+        <!----- SELECT-ADDRESS-MODAL-MOBILE-VIEW-START------>
+        <div class="modal modal-bottom fade address-bottom" id="Mobile-address-Modalopn" >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content p-2">
+                <div class="d-flex mb-2 pr-2 pl-2 pt-4">
+                    <div class="justify-content-start">
+                       <h5>Manage Address</h5>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <button type="button" class="white-btn">ADD NEW ADDRESS</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="justify-content-start">
+                            <div class="rdio rdio-primary radio-inline ">
+                                <input name="radio" value="1" id="Mobhomeadd" type="radio">
+                                <label for="Mobhomeadd">
+                                    <h6 class="mb-1">Home Address</h6>
+                                    <p class="mb-0 ">1, Tinubu Johnson street, Ketu, Lagos</p>
+                                    <p class="mb-0 ">+2348106506979</p>
+                                    <p class="mb-0 ">jadentega@gmail.com</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ml-auto justify-content-end">
+                            <div class="edit-text ">
+                                <a href="#" class="brown-text text-right text-uppercase">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="justify-content-start">
+                            <div class="rdio rdio-primary radio-inline ">
+                                <input name="radio" value="1" id="Moboffadd" type="radio">
+                                <label for="Moboffadd">
+                                    <h6 class="mb-1">Office Address</h6>
+                                    <p class="mb-0 ">1, Tinubu Johnson street, Ketu, Lagos</p>
+                                    <p class="mb-0 ">+2348106506979</p>
+                                    <p class="mb-0 ">jadentega@gmail.com</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ml-auto justify-content-end">
+                            <div class="edit-text ">
+                                <a href="#" class="brown-text text-right text-uppercase">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-w m-auto text-center">                    
+                        <button type="button" class="yellow-bg text-uppercase">use address</button>                       
+                        <div class="addclose text-center mt-2">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!----- SELECT-ADDRESS-MODAL-MOBILE-VIEW-END------>
+        <!-----SELECT-DATE-MODAL-MOBILE-VIEW-START------>
+        <div class="modal modal-bottom fade date-bottom" id="Mobile-date-Modalopn" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="p-4 ">
+                        <h5 class="modal-title">Free Delivery Dates</h5>
+                        <p>Select your location and get your order delivered for free</p>
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="Mobdateradio1" type="radio">
+                            <label for="Mobdateradio1">
+                                <h6 class="mb-1">7th March 2021</h6>
+                                <p>Lekki and its environs</p>
+                            </label>
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="Mobdateradio2" type="radio">
+                            <label for="Mobdateradio2">
+                                <h6 class="mb-1">27th March 2021</h6>
+                                <p>Ajah and its environs</p>
+                            </label>
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-5">
+                            <input name="radio" value="2" id="Mobdateradio3" type="radio">
+                            <label for="Mobdateradio3">
+                                <h6 class="mb-1">5th April 2021</h6>
+                                <p>Ikeja and its environs</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-w m-auto mt-4 mb-3 text-center">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+                        </div>
+                        <div class="addclose text-center mt-2 mb-4">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!----- SELECT-DATE-MODAL-MOBILE-VIEW-END------>
+         <!----- DIRECT-BANK-TRANSFER-MODAL-MOBILE-VIEW-START------>
+         <div class="modal modal-bottom fade date-bottom" id="Mobile-direct-Modalopn" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body pl-3 pt-4 pr-3">
+                        <div class="border-design"></div>
+                        <div class="p-3 bank-content">
+                            <h6 class="mb-3"><small class="pr-2">Account Number:</small><b
+                                    class="big-text">0000000000</b></h6>
+                            <h6 class="mb-3"><small class="pr-2">Account Name:</small><b class="big-text">Pricepally</b>
+                            </h6>
+                            <h6 class="mb-3"><small class="pr-2">Bank:</small><b class="big-text">XYZ Bank</b></h6>
+                        </div>
+                    </div>
+                    <div class="modal-w m-auto mt-4 mb-3 text-center">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase Mobordernow-btn">order Now</button>
+                        </div>
+                       
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!----- DIRECT-BANK-TRANSFER-MODAL-MOBILE-VIEW-END------>
+        <!----- PROCESSING-MODAL-MOBILE-VIEW-START------>
+         <div class="modal modal-bottom fade date-bottom" id="Mobile-processing-Modalopn" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body pl-3 pt-4 pr-3">
+                        <div class="border-design"></div>
+                        <div class="p-3 bank-content">
+                            <p class="mb-0 text-center">Your order will be processed once payment is confirmed on this end.</p>
+                        </div>
+                    </div>
+                    <div class="modal-w m-auto mt-4 mb-3 text-center">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase Mobdone-btn">Done</button>
+                        </div>
+                       
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!----- PROCESSING-MODAL-MOBILE-VIEW-END------>
+        <!----- COUPON-MODAL-MOBILE-VIEW-START------>
+        <div class="modal modal-bottom fade couponapply-bottom" id="Mobile-couponapply-Modalopn" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="coupon-header p-3">
+                        <a href="#" data-dismiss="modal" aria-label="Close">
+                            <h5><i class="material-icons align-top">west</i> Coupon</h5>  
+                        </a>                        
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4 coupon-content">
+                       
+                        <div class="d-flex mb-3">
+                            <div class="justfiy-content-start w-100 pr-2">
+                                <div class="form-group ">
+                                    <input type="email" class="form-control" placeholder="Enter coupon code">
+                                </div>
+                            </div>
+                            <div class="ml-auto justify-content-end">
+                                <p class="brown-clr text-right pointer text-uppercase mb-0 mt-2">APPLY</p>
+                            </div>
+                        </div>
+                        <div class="d-flex box-shadow p-3 mb-3" >
+                            <div class="justfiy-content-start w-100 pr-2">
+                                <h6 class="mb-2 text-uppercase darkbrown-text"><b>Buyit2020</b></h6>
+                                <p class="mb-0 text-muted">Use this coupon to get 15% off your next two transactions</p>
+                            </div>
+                            <div class="ml-auto justify-content-end">
+                                <p class="brown-clr text-right pointer text-uppercase mb-0 mt-2">APPLY</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex box-shadow p-3 mb-3" >
+                            <div class="justfiy-content-start w-100 pr-2">
+                                <h6 class="mb-2 text-uppercase darkbrown-text"><b>Verveup</b></h6>
+                                <p class="mb-0 text-muted">Use this coupon to get 5% off your next five transactions</p>
+                            </div>
+                            <div class="ml-auto justify-content-end">
+                                <p class="brown-clr text-right pointer text-uppercase mb-0 mt-2">APPLY</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!----- COUPON-MODAL-MOBILE-VIEW-END------>
+         <!----- Successful-MODAL-MOBILE-VIEW-START------>
+         <div class="modal modal-bottom fade successfull-bottom" id="Mobile-successfull-Modalopn" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="successfull-header p-3 border-bottom">
+                        <div class="d-flex">
+                            <div class="justfiy-content-start">
+                                <a href="#" data-dismiss="modal" aria-label="Close">
+                                    <h5><i class="material-icons align-top">west</i></h5>  
+                                </a>
+                            </div>
+                            <div class="ml-auto justfiy-contnet-end">
+                                <span class="material-icons-outlined">
+                                    shopping_cart
+                                </span>
+                            </div>
+                        </div>
+                                              
+                    </div>
+                    <div class="modal-body p-4 text-center">
+                        <div class="text-center m-auto">
+                            <img class="purchase-img mb-3" src="assets/images/shopping-bag.png" alt="shopping-bag">
+                        </div>
+                        <h4>Purchase Successful</h4>
+                        <p>View your purchase in the order section</p>
+                        <div class="modal-w m-auto mt-4 mb-3 text-center">
+                            <div class="mb-3">
+                                <button type="button" class="yellow-bg text-uppercase">VIEW YOUR ORDERS</button>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <div class="shopping-bg text-center">
+                                    <a href="#">
+                                        <button type="button" class="shopping-btn text-uppercase brown-btn btn-effects  m-auto">
+                                            CONTINUE SHOPPING
+                                        </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!----- Successful-MODAL-MOBILE-VIEW-END------>
+        <!------ CART-RESPSONIVE-MODAL-END ------>  
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
