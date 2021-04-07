@@ -14,11 +14,11 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
-<style>
-    .modal-backdrop {  
-    background-color: transparent;
-}
-</style>
+    <style>
+        .modal-backdrop {
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
@@ -147,13 +147,33 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ ORDERS-SECTION-START ------>
-        <section class="orders-wrapper mt-4">
+        <!------ MOBILE-DETAILS-HEADER-SECTION-START ------>
+        <section class="mobile-list-header d-block d-lg-none">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <div class="justify-content-start">
+                        <a href="cart.html">
+                            <h4 class="mb-0">Orders</h4>
+                        </a>
+                    </div>
+                    <div class=" ml-auto justify-content-end">
+                        <p>
+                            <span class="material-icons">
+                                search
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-DETAILS-HEADER-SECTION-END ------>
+        <!------ WEB-VIEW-ORDERS-SECTION-START ------>
+        <section class="orders-wrapper mt-4 d-none d-lg-block">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-6">
                         <h3 class="heading  mb-3">Orders</h3>
-                        
+
                     </div>
                     <div class="col-lg-6">
                         <button type="text" class="yellow-bg float-right">CONTACT ADMIN</button>
@@ -161,86 +181,187 @@
                 </div>
                 <table class="table order-table">
                     <thead>
-                      <tr>
-                        <th scope="col ">Order Id</th>
-                        <th scope="col" >Order Time</th>
-                        <th scope="col">Products</th>
-                        <th scope="col" >STATUS</th>
-                        <th scope="col">TOTAL AMOUNT</th>
-                      </tr>
+                        <tr>
+                            <th scope="col ">Order Id</th>
+                            <th scope="col">Order Time</th>
+                            <th scope="col">Products</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">TOTAL AMOUNT</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td >543585693</td>
-                        <td>14-06-2020  |  12:03PM</td>
-                        <td>
-                            <div class="row">
-                                <div class="col-lg-2 pr-0">
-                                    <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+                        <tr>
+                            <td>543585693</td>
+                            <td>14-06-2020 | 12:03PM</td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="justify-content-start pr-2">
+                                        <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+                                    </div>
                                 </div>
-                                <div class="col-lg-10 pr-0">
-                                    <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+
+                            </td>
+                            <td class="text-uppercase text-center small-text pointer">
+                                <div class="alert-warning p-2 " role="alert">Pending
                                 </div>
-                            </div>
-                        </td>
-                        <td class="text-uppercase text-center small-text pointer">
-                            <div class="alert-warning p-2 " role="alert">Pending
-                          </div>
-                        </td>
-                        <td>N 90,000</td>
-                        <td class="brown-clr  pointer" data-toggle="modal" data-target="#modal-right">ORDER SUMMARY</td>
-                        <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
-                      </tr>
-                      <tr>
-                        <td >543585693</td>
-                        <td>14-06-2020  |  12:03PM</td>
-                        <td>
-                            <div class="row">
-                                <div class="col-lg-2 pr-0">
-                                    <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+                            </td>
+                            <td>N 90,000</td>
+                            <td class="brown-clr  pointer" data-toggle="modal" data-target="#modal-right">ORDER SUMMARY</td>
+                            <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
+                        </tr>
+                        <tr>
+                            <td>543585693</td>
+                            <td>14-06-2020 | 12:03PM</td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="justify-content-start pr-2">
+                                        <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+                                    </div>
                                 </div>
-                                <div class="col-lg-10 pr-0">
-                                    <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+                            </td>
+                            <td class="text-uppercase text-center small-text pointer">
+                                <div class="alert-success p-2 " role="alert">DELIVERED
                                 </div>
-                            </div>
-                        </td>
-                        <td class="text-uppercase text-center small-text pointer">
-                            <div class="alert-success p-2 " role="alert">DELIVERED
-                          </div>
-                        </td>
-                        <td>N 90,000</td>
-                        <td class="brown-clr">ORDER SUMMARY</td>
-                        <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
-                      </tr>
-                       <tr>
-                        <td >543585693</td>
-                        <td>14-06-2020  |  12:03PM</td>
-                        <td>
-                            <div class="row">
-                                <div class="col-lg-2 pr-0">
-                                    <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+                            </td>
+                            <td>N 90,000</td>
+                            <td class="brown-clr">ORDER SUMMARY</td>
+                            <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
+                        </tr>
+                        <tr>
+                            <td>543585693</td>
+                            <td>14-06-2020 | 12:03PM</td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="justify-content-start pr-2">
+                                        <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+                                    </div>
                                 </div>
-                                <div class="col-lg-10 pr-0">
-                                    <h6 class="mt-2">Tuwo Rice (50kg... +5 more</h6>
+                            </td>
+                            <td class="text-uppercase text-center small-text pointer">
+                                <div class="alert-success p-2 " role="alert">DELIVERED
                                 </div>
-                            </div>
-                        </td>
-                        <td class="text-uppercase text-center small-text pointer">
-                            <div class="alert-success p-2 " role="alert">DELIVERED
-                          </div>
-                        </td>
-                        <td>N 90,000</td>
-                        <td class="brown-clr text-uppercase">ORDER SUMMARY</td>
-                        <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
-                      </tr>
-                      
+                            </td>
+                            <td>N 90,000</td>
+                            <td class="brown-clr text-uppercase">ORDER SUMMARY</td>
+                            <td><a href="cart.html" class="brown-clr text-uppercase">Reorder</a></td>
+                        </tr>
+
                     </tbody>
-                  </table>               
+                </table>
             </div>
         </section>
-        <!------ ORDERS-SECTION-END ------>       
+        <!------  WEB-VIEW-ORDERS-SECTION-END ------>
+        <!------ MOBILE-VIEW-ORDERS-SECTION-START------>
+        <section class="orders-wrpper mt-4 ">
+            <div class="container">
+                <div class="d-flex warning-bg p-3 mb-3">
+                    <div class="justfiy-content-start pr-3">
+                        <p class="mb-1">Account Name:</p>
+                        <p class="mb-1">Account Number:</p>
+                        <p class="mb-1">Bank:</p>
+                    </div>
+                    <div class="justfiy-content-end">
+                        <p class="font-weight mb-1">Pricepally Nigeria Ltd</p>
+                        <p class="font-weight mb-1">2034799567</p>
+                        <p class="font-weight mb-1">First bank of Nigeria</p>
+                    </div>
+                </div>
+                <div class="box-shadow mb-3 p-3">
+                    <div class="d-flex">
+                        <div class="justfiy-content-start">
+                            <p class="mb-0 light-grey">Order ID: 543585693 </p>
+                            <p class="mb-0 light-grey">Order Time: 14-06-2020</p>
+                        </div>
+                        <div class="ml-auto justfiy-content-end">
+                            <p class="text-uppercase text-warning">Pending</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="justify-content-start pr-2">
+                            <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+
+                        </div>
+                        <div class="justify-content-end">
+                            <h6 class="mb-2">Tuwo Rice (50kg... +5 more</h6>
+                            <h6>₦75,000</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex pt-0 pr-2 pl-2">
+                        <div class="justfiy-content-start">
+                            <p class="brown-text text-uppercase">Order sumarry</p>
+                        </div>
+                        <div class="ml-auto justfiy-content-start">
+                            <p class="brown-text text-uppercase">View Tracking</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="text-uppercase brown-text">Reorder</p>
+                    </div>
+                </div>
+                <div class="box-shadow mb-3 p-3">
+                    <div class="d-flex">
+                        <div class="justfiy-content-start">
+                            <p class="mb-0 light-grey">Order ID: 543585693 </p>
+                            <p class="mb-0 light-grey">Order Time: 14-06-2020</p>
+                        </div>
+                        <div class="ml-auto justfiy-content-end">
+                            <p class="text-uppercase text-success">Delivered</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="justify-content-start pr-2">
+                            <img class="small-img" src="assets/images/search-img1.jpg" alt="search-img1">
+
+                        </div>
+                        <div class="justify-content-end">
+                            <h6 class="mb-2">Tuwo Rice (50kg... +5 more</h6>
+                            <h6>₦75,000</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex pt-0 pr-2 pl-2">
+                        <div class="justfiy-content-start">
+                            <p class="brown-text text-uppercase">Order sumarry</p>
+                        </div>
+                        <div class="ml-auto justfiy-content-start">
+                            <p class="brown-text text-uppercase">View Tracking</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="text-uppercase brown-text">Reorder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-VIEW-ORDERS-SECTION-END------>
+        <!------ ORDERS-FIXED-FOOTER-START ------>
+        <div class="postion">
+            <section class="orders-footer d-lg-none d-block">
+                <div class="container">
+                    <div class="checkout-btn m-auto text-center ">
+                        <button type="button" class="yellow-bg text-uppercase mb-2">Contact Admin</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!------ ORDERS-FIXED-FOOTER-END ------>
         <!------ FOOTER-SECTION-START ------>
-        <footer class="ml-2 mr-2 footer-wrapper">
+        <footer class="ml-2 mr-2 footer-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -307,36 +428,36 @@
         <div id="modal-right" class="modal fixed-right " tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-aside" role="document">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Order Summary</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Order Summary</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body ordersummary-modal">
-                    <ul class="list-unstyled ">
-                        <li class="d-inline-block pr-3 text-uppercase"><a href="#" class="brown-clr track-btn">Track Order</a></li>
-                        <li class="d-inline-block  text-uppercase"><a href="cart.html" class="brown-clr">Reorder</a></li>
-                    </ul>
-                    <div class="alert-warning p-2 mb-4 alert-bg" role="alert">Pricepally Nigeria Ltd   |  2034799567   |   First bank of Nigeria
                     </div>
-                   <div class="ordersum-text border-bottom">
-                        <h6 class="text-uppercase light-grey mb-2">Coupon used</h6>
-                        <p class="text-muted">VERVE200 (10% Discount)</p>
-                   </div>
-                   <div class="ordersum-text border-bottom mt-4">
-                        <h6 class="text-uppercase light-grey mb-2">DELIVERY ADDRESS</h6>
-                        <p class="text-muted mb-0">1, Tinubu Johnson street, Ketu, Lagos</p>
-                        <p class="text-muted">+2348106506979</p>
-                    </div>
-                    <div class="ordersum-text border-bottom mt-4 mb-4">
-                        <h6 class="text-uppercase light-grey mb-2">DELIVERY date</h6>
-                        <p class="text-muted">Thursday, 18th June 2020</p>
-                    </div>
-                    <div class="items-bg border-bottom">
-                        <h6 class="text-uppercase light-grey mb-3">Items</h6>
-                        <div class="row mb-3">
-                            <div class="col-lg-8">
+                    <div class="modal-body ordersummary-modal">
+                        <ul class="list-unstyled ">
+                            <li class="d-inline-block pr-3 text-uppercase"><a href="#" class="brown-clr track-btn">Track Order</a></li>
+                            <li class="d-inline-block  text-uppercase"><a href="cart.html" class="brown-clr">Reorder</a></li>
+                        </ul>
+                        <div class="alert-warning p-2 mb-4 alert-bg" role="alert">Pricepally Nigeria Ltd | 2034799567 | First bank of Nigeria
+                        </div>
+                        <div class="ordersum-text border-bottom">
+                            <h6 class="text-uppercase light-grey mb-2">Coupon used</h6>
+                            <p class="text-muted">VERVE200 (10% Discount)</p>
+                        </div>
+                        <div class="ordersum-text border-bottom mt-4">
+                            <h6 class="text-uppercase light-grey mb-2">DELIVERY ADDRESS</h6>
+                            <p class="text-muted mb-0">1, Tinubu Johnson street, Ketu, Lagos</p>
+                            <p class="text-muted">+2348106506979</p>
+                        </div>
+                        <div class="ordersum-text border-bottom mt-4 mb-4">
+                            <h6 class="text-uppercase light-grey mb-2">DELIVERY date</h6>
+                            <p class="text-muted">Thursday, 18th June 2020</p>
+                        </div>
+                        <div class="items-bg border-bottom">
+                            <h6 class="text-uppercase light-grey mb-3">Items</h6>
+                            <div class="row mb-3">
+                                <div class="col-lg-8">
                                     <div class="row">
                                         <div class="col-lg-3">
                                             <a href="#">
@@ -344,22 +465,22 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-9 pl-0">
-                                            <a href="#"> 
+                                            <a href="#">
                                                 <h6 class="mb-1">Tuwo Rice (50kg)</h6>
                                             </a>
                                             <h6 class="mb-0">₦7,500</h6>
                                             <small class="text-uppercase text-success">delivered</small>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <small class="brown-clr text-uppercase viewdetail-btn">View Details</small>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <small class="brown-clr text-uppercase viewdetail-btn">View Details</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-lg-8">
+                            <div class="row mb-3">
+                                <div class="col-lg-8">
                                     <div class="row">
                                         <div class="col-lg-3">
                                             <a href="#">
@@ -367,22 +488,22 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-9 pl-0">
-                                            <a href="#"> 
+                                            <a href="#">
                                                 <h6 class="mb-1">Tuwo Rice (50kg)</h6>
                                             </a>
                                             <h6 class="mb-0">₦7,500</h6>
                                             <small class="text-uppercase text-success">delivered</small>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <small class="brown-clr text-uppercase ">View Details</small>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <small class="brown-clr text-uppercase ">View Details</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-lg-8">
+                            <div class="row mb-3">
+                                <div class="col-lg-8">
                                     <div class="row">
                                         <div class="col-lg-3">
                                             <a href="#">
@@ -390,22 +511,22 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-9 pl-0">
-                                            <a href="#"> 
+                                            <a href="#">
                                                 <h6 class="mb-1">Tuwo Rice (50kg)</h6>
                                             </a>
                                             <h6 class="mb-0">₦7,500</h6>
                                             <small class="text-uppercase text-warning">PENDING</small>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <small class="brown-clr text-uppercase">View Details</small>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <small class="brown-clr text-uppercase">View Details</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-lg-8">
+                            <div class="row mb-3">
+                                <div class="col-lg-8">
                                     <div class="row">
                                         <div class="col-lg-3">
                                             <a href="#">
@@ -413,239 +534,398 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-9 pl-0">
-                                            <a href="#"> 
+                                            <a href="#">
                                                 <h6 class="mb-1">Tuwo Rice (50kg)</h6>
                                             </a>
                                             <h6 class="mb-0">₦7,500</h6>
                                             <small class="text-uppercase text-success">delivered</small>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <small class="brown-clr text-uppercase">View Details</small>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <small class="brown-clr text-uppercase">View Details</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-lg-8">
-                                <div class="row">
+                            <div class="row mb-3">
+                                <div class="col-lg-8">
+                                    <div class="row">
                                         <div class="col-lg-3">
                                             <a href="#">
                                                 <img class="order-img" src="assets/images/search-img1.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="col-lg-9 pl-0">
-                                            <a href="#"> 
+                                            <a href="#">
                                                 <h6 class="mb-1">Tuwo Rice (50kg)</h6>
                                             </a>
                                             <h6 class="mb-0">₦7,500</h6>
                                             <small class="text-uppercase text-danger mb-2">UNAVAILABLE</small>
                                             <button type="button" class="brown-btn  text-uppercase btn-effects unavailable-btn">TAKE ACTION</button>
                                         </div>
-                                </div>
+                                    </div>
 
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <small class="brown-clr text-uppercase ">View Details</small>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <small class="brown-clr text-uppercase ">View Details</small>
-                                </a>
+                        </div>
+                        <div class="order-total mt-3 mb-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h6 class="mb-2">Shipping</h6>
+                                    <h6 class="mb-2">Coupon Discount</h6>
+                                    <h6 class="mb-2">Wallet</h6>
+                                    <h4>Total</h4>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <h6 class="mb-2">₦3,000</h6>
+                                    <h6 class="mb-2">-₦1,800</h6>
+                                    <h6 class="mb-2">-₦20,000</h6>
+                                    <h4>-₦90,000</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="order-total mt-3 mb-3">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 class="mb-2">Shipping</h6>
-                                <h6 class="mb-2">Coupon Discount</h6>
-                                <h6 class="mb-2">Wallet</h6>
-                                <h4 >Total</h4>
-                            </div>
-                            <div class="col-lg-6 text-right">
-                                <h6 class="mb-2">₦3,000</h6>
-                                <h6 class="mb-2">-₦1,800</h6>
-                                <h6 class="mb-2">-₦20,000</h6>
-                                <h4>-₦90,000</h4>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                
-                </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
         <!------ ORDER-SUMARRY-MODAL-END  ------>
 
-         <!------ ITEM-UNAVAILABLE-MODAL-START  ------>
-         <div id="unavailable-modal" class="modal fixed-right " >
+        <!------ ITEM-UNAVAILABLE-MODAL-START  ------>
+        <div id="unavailable-modal" class="modal fixed-right ">
             <div class="modal-dialog modal-dialog-aside" role="document">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Order Summary</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Order Summary</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body ordersummary-modal">
-                    <h4 class="pointer order-bk"><span class="material-icons s-icon">
+                    </div>
+                    <div class="modal-body ordersummary-modal">
+                        <h4 class="pointer order-bk"><span class="material-icons s-icon">
                         west
                     </span></h4>
-                    <h6 class="text-uppercase text-danger mb-2">Item UNAVAILABLE</h6>
-                    <p>This item is currently unavailable for delivery but it can be delivered in two days time.</p>
-                    <h6 class="text-uppercase light-grey mb-3">take action</h6>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="waituntilrdio" type="radio">
-                        <label for="waituntilrdio">
+                        <h6 class="text-uppercase text-danger mb-2">Item UNAVAILABLE</h6>
+                        <p>This item is currently unavailable for delivery but it can be delivered in two days time.</p>
+                        <h6 class="text-uppercase light-grey mb-3">take action</h6>
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="waituntilrdio" type="radio">
+                            <label for="waituntilrdio">
                             <h6 class="mb-1">Wait until Tomorrow</h6>
                         </label>
-                    </div>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="refundrdio" type="radio">
-                        <label for="refundrdio">
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="refundrdio" type="radio">
+                            <label for="refundrdio">
                             <h6 class="mb-1">Request a Refund</h6>
                         </label>
-                    </div>
-                    <div class="rdio rdio-primary radio-inline mb-4">
-                        <input name="radio" value="2" id="walletrdio" type="radio">
-                        <label for="walletrdio">
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="walletrdio" type="radio">
+                            <label for="walletrdio">
                             <h6 class="mb-1">Refund to Wallet</h6>
                         </label>
+                        </div>
+                        <div class="modal-w text-center">
+                            <button type="button" class="yellow-bg text-uppercase">Done</button>
+                        </div>
+
                     </div>
-                    <div class="modal-w text-center">
-                        <button type="button" class="yellow-bg text-uppercase">Done</button> 
-                    </div>
-                    
+
                 </div>
-                
-                </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
         <!------ ITEM-UNAVAILABLE-MODAL-END  ------>
 
         <!------ VIEW-DETAILS-MODAL-START  ------>
-        <div id="viewdetails-modal" class="modal fixed-right " >
+        <div id="viewdetails-modal" class="modal fixed-right ">
             <div class="modal-dialog modal-dialog-aside" role="document">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Order Summary</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Order Summary</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body ordersummary-modal">
-                    <ul class="list-unstyled   details-back pointer">
-                        <li class="d-inline-block "> <span class="material-icons s-icon">
+                    </div>
+                    <div class="modal-body ordersummary-modal">
+                        <ul class="list-unstyled   details-back pointer">
+                            <li class="d-inline-block "> <span class="material-icons s-icon">
                         west
                     </span></li>
-                        <li class="d-inline-block align-top pl-2"><b>Details</b></li>
-                    </ul>
-                    <h6 class="text-uppercase light-grey mb-3">share</h6>
-                   <div class="row grey-border m-1">
-                        <div class="col-lg-10">
-                            <p class="mb-0">https://pricepally.com/hsbBS32rn</p>
-                        </div>
-                        <div class="col-lg-2  text-right">
-                            <span class="material-icons">
+                            <li class="d-inline-block align-top pl-2"><b>Details</b></li>
+                        </ul>
+                        <h6 class="text-uppercase light-grey mb-3">share</h6>
+                        <div class="row grey-border m-1">
+                            <div class="col-lg-10">
+                                <p class="mb-0">https://pricepally.com/hsbBS32rn</p>
+                            </div>
+                            <div class="col-lg-2  text-right">
+                                <span class="material-icons">
                                 content_copy
                                 </span>
+                            </div>
                         </div>
-                   </div>
-                   <h6 class="text-uppercase light-grey mb-3 mt-4">People in this pally</h6>
-                   <div class="row mb-4">
-                       <div class="col-lg-2">
-                            <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
-                       </div>
-                       <div class="col-lg-4 pl-0 align-self-center">
-                           <h6 class="">Thelma Dike</h6>
-                       </div>
-                       <div class="col-lg-6 text-right align-self-center">
-                        <small class="text-uppercase text-success">paid</small>
-                       </div>
-                   </div>
-                   <div class="row mb-4">
-                        <div class="col-lg-2">
-                            <img class="pally-list" src="assets/images/list-img2.jpg" alt="list-img1">
+                        <h6 class="text-uppercase light-grey mb-3 mt-4">People in this pally</h6>
+                        <div class="row mb-4">
+                            <div class="col-lg-2">
+                                <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
+                            </div>
+                            <div class="col-lg-4 pl-0 align-self-center">
+                                <h6 class="">Thelma Dike</h6>
+                            </div>
+                            <div class="col-lg-6 text-right align-self-center">
+                                <small class="text-uppercase text-success">paid</small>
+                            </div>
                         </div>
-                        <div class="col-lg-4 pl-0 align-self-center">
-                            <h6 >Maurice Dickson</h6>
+                        <div class="row mb-4">
+                            <div class="col-lg-2">
+                                <img class="pally-list" src="assets/images/list-img2.jpg" alt="list-img1">
+                            </div>
+                            <div class="col-lg-4 pl-0 align-self-center">
+                                <h6>Maurice Dickson</h6>
+                            </div>
+                            <div class="col-lg-6 text-right align-self-center">
+                                <small class="text-uppercase text-success ">paid</small>
+                            </div>
                         </div>
-                        <div class="col-lg-6 text-right align-self-center">
-                            <small class="text-uppercase text-success ">paid</small>
+                        <div class="row mb-4">
+                            <div class="col-lg-2">
+                                <img class="pally-list" src="assets/images/list-img3.jpg" alt="list-img1">
+                            </div>
+                            <div class="col-lg-4 pl-0 align-self-center">
+                                <h6 class="">Thelma Dike</h6>
+                            </div>
+                            <div class="col-lg-6 text-right align-self-center">
+                                <small class="text-uppercase text-danger ">NOT PAID</small>
+                            </div>
                         </div>
-                    </div>   
-                    <div class="row mb-4">
-                        <div class="col-lg-2">
-                            <img class="pally-list" src="assets/images/list-img3.jpg" alt="list-img1">
+                        <div class="row mb-4">
+                            <div class="col-lg-2">
+                                <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
+                            </div>
+                            <div class="col-lg-4 pl-0 align-self-center">
+                                <h6 class="">Maurice Dickson</h6>
+                            </div>
+                            <div class="col-lg-6 text-right align-self-center">
+                                <small class="text-uppercase text-danger  ">NOT PAID</small>
+                            </div>
                         </div>
-                        <div class="col-lg-4 pl-0 align-self-center">
-                            <h6 class="">Thelma Dike</h6>
-                        </div>
-                        <div class="col-lg-6 text-right align-self-center">
-                            <small class="text-uppercase text-danger ">NOT PAID</small>
-                        </div>
-                    </div> 
-                    <div class="row mb-4">
-                        <div class="col-lg-2">
-                            <img class="pally-list" src="assets/images/list-img1.jpg" alt="list-img1">
-                        </div>
-                        <div class="col-lg-4 pl-0 align-self-center">
-                            <h6 class="">Maurice Dickson</h6>
-                        </div>
-                        <div class="col-lg-6 text-right align-self-center">
-                            <small class="text-uppercase text-danger  ">NOT PAID</small>
-                        </div>
-                    </div>                  
-                </div>
-                
-                </div>
-            </div> 
-        </div> 
-        <!------ VIEW-DETAILS-MODAL-END  ------>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <!------ VIEW-DETAILS-MODAL-END  ------>
         <!------ TRACK-ORDER-MODAL-START  ------>
-        <div id="trackorder-modal" class="modal fixed-right " >
+        <div id="trackorder-modal" class="modal fixed-right ">
             <div class="modal-dialog modal-dialog-aside" role="document">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Tracking</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tracking</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body ordersummary-modal">
-                    <h6 class="text-uppercase light-grey mb-3">TRACKING NUMBER: UV25435HG74</h6>
-                    <div class="row border-bottom">
-                        <div class="col-lg-6">
-                            <ul class="StepProgress">
-                                <li class="StepProgress-item activeplace">Order placed</li>                              
-                                <li class="StepProgress-item activeplace">Order confirmed</li>
-                                <li class="StepProgress-item">Order enroute</li>
-                                <li class="StepProgress-item">Successful Delivery</li>
-                            </ul>     
+                    </div>
+                    <div class="modal-body ordersummary-modal">
+                        <h6 class="text-uppercase light-grey mb-3">TRACKING NUMBER: UV25435HG74</h6>
+                        <div class="row border-bottom">
+                            <div class="col-lg-6">
+                                <ul class="StepProgress">
+                                    <li class="StepProgress-item activeplace">Order placed</li>
+                                    <li class="StepProgress-item activeplace">Order confirmed</li>
+                                    <li class="StepProgress-item">Order enroute</li>
+                                    <li class="StepProgress-item">Successful Delivery</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <ul class="stepsdate list-unstyled">
+                                    <li class="stepsdate-item light-grey mb-3">14-06-2020 | 11:26AM</li>
+                                    <li class="stepsdate-item light-grey">14-06-2020 | 12:02PM</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-6 text-right">
-                            <ul class="stepsdate list-unstyled">
-                                <li class="stepsdate-item light-grey mb-3">14-06-2020   |   11:26AM</li>                              
-                                <li class="stepsdate-item light-grey">14-06-2020   |   12:02PM</li>
-                            </ul>  
+                        <div class="tracker-text border-bottom mt-4">
+                            <h6 class="text-uppercase light-grey mb-2">DELIVERY ADDRESS</h6>
+                            <p class="text-muted mb-0">1, Tinubu Johnson street, Ketu, Lagos</p>
+                            <p class="text-muted">+2348106506979</p>
                         </div>
-                    </div>  
-                    <div class="tracker-text border-bottom mt-4">
-                        <h6 class="text-uppercase light-grey mb-2">DELIVERY ADDRESS</h6>
-                        <p class="text-muted mb-0">1, Tinubu Johnson street, Ketu, Lagos</p>
-                        <p class="text-muted">+2348106506979</p>
-                    </div>  
-                    <div class="tracker-text border-bottom mt-4 mb-4">
-                        <h6 class="text-uppercase light-grey mb-2">DELIVERY date</h6>
-                        <p class="text-muted">Thursday, 18th June 2020</p>
-                    </div>                      
-                </div>
-                
-                </div>
-            </div> 
-        </div> 
-        <!------ TRACK-ORDER-MODAL-END  ------>
+                        <div class="tracker-text border-bottom mt-4 mb-4">
+                            <h6 class="text-uppercase light-grey mb-2">DELIVERY date</h6>
+                            <p class="text-muted">Thursday, 18th June 2020</p>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <!------ TRACK-ORDER-MODAL-END  ------>
+        <!------ MOBILE-FOOTER-START ------>
+        <footer class="d-block d-lg-none mobile-footer">
+            <div class="container">
+                <div class="d-flex text-center justify-content-center">
+                    <div class="mobile-icon">
+                        <a class="nav-link " href="index.html">
+                            <p class="mb-0"><i class="material-icons-outlined">home</i></p>
+                            <p class="mb-0">Home</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <p class="mb-0"><span class="material-icons">
+                                    people_outline
+                                </span></p>
+                            <p class="mb-0">Users</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link" href="cart.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_cart
+                                </span></p>
+                            <p class="mb-0">Cart</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link active" href="orders.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_bag
+                                </span></p>
+                            <p class="mb-0">Order</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon" onclick="myFunction()">
+                        <a href="#" class="nav-link">
+                            <p class="mb-0 more_ic"><span class="material-icons">
+                                    more_horiz
+                                </span></p>
+                            <p class="mb-0">More </p>
+                        </a>
+                    </div>
+                </div>
+        </footer>
+        <!------ MORE-MODAL-START ------>
+        <div id="moreModal-wrapper">
+            <div class="container">
+                <div class="moremodal-bg">
+                    <div class="moremodal-header">
+                        <div class="container">
+                            <div class="d-flex">
+                                <div class="w-50 justify-content-start">
+                                    <div class="p-1  ">
+                                        <h5 class="mb-0 morehead">₦GN 24,500</h5>
+                                        <p class="mb-0 more-phr">Wallet Balance</p>
+                                    </div>
+                                    <hr class="more-border">
+                                    <div class="p-1">
+                                        <h6 class="mb-0 morehead">₦GN 1,000</h6>
+                                        <p class="mb-0 more-phr">Pending Balance</p>
+                                    </div>
+
+                                </div>
+                                <div class="ml-auto justify-content-end align-self-center">
+                                    <a href="#">
+                                        <button class="yellow-bg text-uppercase">Go to wallet</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <ul class="list-unstyled ">
+                            <li class="more-outline mb-3">
+                                <a href="make_list.html">
+                                    <span class="material-icons-round align-middle">
+                                        format_list_bulleted
+                                    </span>
+                                    <span class="morelist-text pl-2">Make a List</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="refer_earn.html">
+                                    <span class="material-icons align-middle">
+                                        share
+                                    </span>
+                                    <span class="morelist-text pl-2">Refer and Earn</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="saved-products.html">
+                                    <span class="material-icons align-middle">
+                                        favorite_border
+                                    </span>
+                                    <span class="morelist-text pl-2">Saved Products</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="notification.html">
+                                    <span class="material-icons  align-middle">
+                                        notifications_none
+                                    </span>
+                                    <span class="morelist-text pl-2">Notifications</span>
+                                    <span class="yellow_cir float-right">2</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons align-middle">
+                                        settings_cell</span>
+                                    </span class="morelist-text pl-2">Contact Admin</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons  align-middle">
+                                        error_outline</span>
+                                    <span class="morelist-text pl-2">Frequently Asked Questions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle rotate-ic">
+                                        repeat
+                                    </span>
+                                    <span class="morelist-text pl-2">Return Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle">
+                                        privacy_tip
+                                    </span>
+                                    <span class="morelist-text pl-2">Privacy Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle  rotate-ic">
+                                        note
+                                    </span>
+                                    <span class="morelist-text pl-2">Terms & Conditions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined  align-middle">
+                                        login
+                                    </span>
+                                    <span class="morelist-text pl-2">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!------ MORE-MODAL-END ------>
+        <!------ MOBILE-FOOTER-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
