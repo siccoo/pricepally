@@ -108,9 +108,12 @@ body {
 .ordersummary-modal .alert-warning {
     color: #262626;
 }
+
 .dark-grey {
     color: #4F4F4F;
 }
+
+
 /* ------ COMMAN-CSS-START ------- */
 
 .pointer {
@@ -1535,24 +1538,30 @@ section.rating-widget {
 .rating-stars ul>li.smallstar.starselected>i.fa {
     color: #FAB814;
 }
+
 .rating-stars ul>li.smallstar>i.fa {
     font-size: 16px;
     color: #ccc;
 }
+
 .rating-stars ul>li.smallstar.starselected>span {
     color: #FAB814;
 }
+
 .rating-stars ul>li.smallstar>span {
     font-size: 20px;
     color: #ccc;
 }
+
 .review-content .rating-stars ul>li.smallstar>span {
     font-size: 50px;
 }
+
 .review-content .success-box {
     left: 72%;
     font-size: 38px;
 }
+
 .rating-stars ul {
     list-style-type: none;
     padding: 0;
@@ -1903,16 +1912,20 @@ li.start-clr {
 
 
 /* =======  PALLY-PRODUCTS-DETAILS-PAGE-CSS-START ====== */
+
 .review-content .fa-fw {
     width: 1.28571429em !important;
 }
+
 .fa-fw {
     text-align: center;
     width: 20px !important;
 }
+
 .review-content section.rating-widget {
     width: 100%;
 }
+
 .owl-nav {
     display: none;
 }
@@ -1921,6 +1934,7 @@ li.start-clr {
     color: #4F4F4F;
     font-size: 14px;
 }
+
 .pallyfriends-bg {
     background: #FCFCFC;
     border: 1px solid #BDBDBD;
@@ -2361,11 +2375,16 @@ div#pallyorderModal .addbutton-bg {
 
 
 /* ====== ORDERS-PAGE-CSS-START ====== */
-.items-bg .text-success, .items-bg .text-warning, .items-bg .text-danger,
-.order-sum-content .text-success, .order-sum-content  .text-warning, .order-sum-content .text-danger
-{
+
+.items-bg .text-success,
+.items-bg .text-warning,
+.items-bg .text-danger,
+.order-sum-content .text-success,
+.order-sum-content .text-warning,
+.order-sum-content .text-danger {
     font-weight: 500;
 }
+
 .order-table td {
     vertical-align: middle;
     color: #262626;
@@ -3108,7 +3127,8 @@ a.follower-icon:hover {
     padding: 12px;
 }
 
-.wallet-bg p {
+.wallet-bg p,
+.mobile-wallet-bg p {
     color: #FEF1D2;
     font-size: 14px;
 }
@@ -3573,10 +3593,29 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .wallet-border {
+        border: 1px solid #BDBDBD;
+        background: #FCFCFC;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .wallet-border h6 {
+        font-weight: 400;
+    }
+    .wallet-mobile-view {
+        margin: 0 0 100px 0;
+    }
+    .mobile-wallet-bg {
+        background-image: url(../images/MobWallet.png);
+        background-size: 100% 100%;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+    }
     .review-content .success-box {
         left: 38%;
     }
-    .greysmall-head{
+    .greysmall-head {
         color: #828282;
         font-size: 14px;
     }
@@ -3584,7 +3623,6 @@ a.follower-icon:hover {
         color: #4F4F4F;
         font-size: 14px;
     }
-    
     .orders-wrpper {
         padding: 0 0 180px 0;
     }
@@ -3942,11 +3980,6 @@ a.follower-icon:hover {
     .modal.booknow-modal-bottom.fade .modal-dialog {
         bottom: -100%;
     }
-
-    
-
-
-
     /* Full Screen */
     .modal.modal-full .modal-dialog {
         position: fixed;
@@ -3977,11 +4010,9 @@ a.follower-icon:hover {
     .modal.modal-right.xs .modal-body {
         padding: 15px;
     }
-    
     /* ------ PRE-MODAL-MOBILE-VIEW-CSS-END ----- */
     /* ----- REVIEW-MOBILE-VIEW-CSS-START ------ */
-   
-     /* ----- REVIEW-MOBILE-VIEW-CSS-END ------ */
+    /* ----- REVIEW-MOBILE-VIEW-CSS-END ------ */
     /* ------ MORE-POPUP-MOBILE-VIEW-CSS-START ------ */
     #moreModal-wrapper {
         display: none;
@@ -4127,8 +4158,9 @@ a.follower-icon:hover {
         height: auto;
     }
     .modal.modal-bottom .checkout-bottom .modal-content,
-    .successfull-bottom .modal-content, 
-    .order-sum-bottom .modal-content, .viewdetail-bottom .modal-content {
+    .successfull-bottom .modal-content,
+    .order-sum-bottom .modal-content,
+    .viewdetail-bottom .modal-content {
         height: 100vh !important;
     }
     .modal.modal-bottom .modal-content {
@@ -4140,8 +4172,10 @@ a.follower-icon:hover {
         padding: 15px 15px;
     }
     .address-bottom .modal-content,
-    .date-bottom .modal-content, .takeaction-bottom .modal-content, 
-    .viewtracking-bottom .modal-content, .review-bottom-modal .modal-content{
+    .date-bottom .modal-content,
+    .takeaction-bottom .modal-content,
+    .viewtracking-bottom .modal-content,
+    .review-bottom-modal .modal-content {
         border-radius: 20px 20px 5px 5px !important;
     }
     /* Bottom */
@@ -4169,7 +4203,6 @@ a.follower-icon:hover {
         padding: 16px 22px;
         height: 60px;
     }
-
     .chekcoutmodal-header .nav-tabs {
         border-bottom: none;
         margin: 10px 0 0 0;
@@ -4647,7 +4680,8 @@ a.follower-icon:hover {
     .review-text .success-box {
         left: 38%;
     }
-    .order-sum-content .pl-3, .px-3 {
+    .order-sum-content .pl-3,
+    .px-3 {
         padding-left: 0.5rem!important;
     }
 }
@@ -4711,7 +4745,8 @@ a.follower-icon:hover {
     .review-content .rating-stars ul>li.smallstar>span {
         font-size: 32px;
     }
-    .order-sum-content .pl-4, .px-4 {
+    .order-sum-content .pl-4,
+    .px-4 {
         padding-left: .5rem!important;
     }
     .successfull-bottom .modal-w .yellow-bg,
