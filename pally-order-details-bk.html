@@ -10,7 +10,7 @@
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
-
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 
 </head>
 
@@ -276,7 +276,7 @@
                             <hr class="bottom-border d-none d-lg-block">
                             <div class="button-wrapper mt-4 mb-4 d-none d-lg-block">
                                 <a href="#">
-                                    <button type="button" class="yellow-btn text-uppercase">Select Order Type</button>
+                                    <button type="button" class="yellow-btn text-uppercase" data-toggle="modal" data-target="#pallyorderModal">Select Order Type</button>
                                 </a>
                             </div>
                             <div class="share-text d-none d-lg-block">
@@ -307,14 +307,59 @@
                             <p>Honey "oloyin" beans are also brown beans but sweeter when cooked. You can buy an 100kg bag and share it with friends and family, a bag contains at least 26 paint buckets, so it is real value for your money, a huge discount
                                 off instead of buying retail. We select the best grain of honey beans and package to deliver to your doorstep within 24 hour after you ORDER. NO WAITING!</p>
                         </div>
-
+                        <div id="pallyfriends" class="mb-3 sidebar-scroll">
+                            <h5 class="grey-text text-uppercase">PALLY FRIENDS</h5>
+                            <hr class="border-bottom mt-1">
+                            <div class="pally-frnds">
+                                <div class="owl-carousel owl-theme">  
+                                    <div class="item">      
+                                             <div class="d-flex align-content-between  pallyfriends-bg mb-3">
+                                                <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                                <div class="p-0 align-self-center"><p class="mb-0">Thelma Dike</p></div>
+                                            </div>
+    
+                                            <div class="d-flex align-content-between  pallyfriends-bg mb-3" >
+                                                <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                                <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                            </div>     
+                                      </div>
+                                  
+                                      <div class="item">      
+                                      <div class="d-flex align-content-between  pallyfriends-bg mb-3">
+                                                <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                                <div class="p-0 align-self-center"><p class="mb-0">Thelma Dike</p></div>
+                                            </div>
+                                            
+                                            <div class="d-flex align-content-between  pallyfriends-bg mb-3">
+                                                <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                                <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                            </div>       
+                                      </div>
+                                  
+                                      <div class="item">      
+                                        <div class="d-flex align-content-between  pallyfriends-bg mb-3">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Thelma Dike</p></div>
+                                        </div>
+                                        
+                                        <div class="d-flex align-content-between  pallyfriends-bg mb-3">
+                                            <div class="p-1"><img class="pally-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                            <div class="p-0 align-self-center"><p class="mb-0">Maurice Dickson</p></div>
+                                        </div>       
+                                      </div>
+                                  
+                                     
+                                
+                                </div>
+                            </div>
+                        </div>
                         <div id="review" class="mb-3 sidebar-scroll">
                             <div class="row">
                                 <div class="col-6 col-md-6 col-lg-6">
                                     <h5 class="grey-text">CUSTOMER REVIEW (21)</h5>
                                 </div>
                                 <div class="col-6 col-md-6 col-lg-6 ">
-                                    <a href="#" class="text-uppercase brown-text float-right">WRITE REVIEW</a>
+                                    <a href="#" class="text-uppercase brown-text float-right" data-toggle="modal" data-target="#reviewModal">WRITE REVIEW</a>
                                 </div>
                             </div>
                             <hr class="border-bottom mt-1">
@@ -1404,6 +1449,7 @@
                             <ul class="nav  flex-column scrool-bar">
                                 <li class="nav-item"><a class="navigation__link nav-link active" href="#overview">Overview</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#descrption">Description</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#pallyfriends">Pally Friends</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#review">Customer Review</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#similar-products">Similar Products</a></li>
                             </ul>
@@ -1876,6 +1922,65 @@
        </div>
        <!------ MORE-MODAL-END ------>
         <!------ MOBILE-FOOTER-CSS-END ------>
+        <!----- REVIEW-MODAL-START ------>
+        <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               
+                <div class="modal-body review-content">
+                    <div class="form-group">
+                        <label class="dark-grey mb-1">Write Your Review</label>
+                        <textarea class="form-control bg-transparent" rows="5" ></textarea>
+                    </div>
+                    <label class="dark-grey mb-1">Rate the Product</label>
+                    <section class="rating-widget">
+                      
+                        <div class="rating-stars">
+                            <ul class="stars">
+                                <li class="smallstar" title="Poor" data-value="1">
+                                    <span class="material-icons fa-fw">
+                                        star_rate
+                                        </span>
+                                </li>
+                                <li class="smallstar" title="Fair" data-value="2">
+                                    <span class="material-icons fa-fw">
+                                        star_rate
+                                        </span>
+                                </li>
+                                <li class="smallstar" title="Good" data-value="3">
+                                    <span class="material-icons fa-fw">
+                                        star_rate
+                                        </span>
+                                </li>
+                                <li class="smallstar" title="Excellent" data-value="4">
+                                    <span class="material-icons fa-fw">
+                                        star_rate
+                                        </span>
+                                </li>
+                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                      <span class="material-icons fa-fw">
+                                        star_rate
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="success-box">
+                            <div class="text-message"></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-w m-auto mt-4 mb-3">
+                    <div class="mb-3">
+                        <button type="button" class="yellow-bg text-uppercase">Proceed Your Review</button>
+                    </div>
+                    <div class="addclose text-center mt-2 mb-4">
+                        <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!----- REVIEW-MODAL-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -1883,5 +1988,25 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>   
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+   autoplay:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        800:{
+            items:3
+        },
+        14000:{
+            items:4
+        }
+    }
+})
+    </script>
 </body>
 </html>
