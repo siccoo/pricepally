@@ -843,7 +843,7 @@ a.red-bg:hover {
 
 .products-img-wrapper {
     width: 100%;
-    height: 180px;
+    height: 100%;
     box-shadow: 0 0 1px 1px hsl(0deg 0% 0% / 5%);
     border-radius: 5px;
 }
@@ -942,10 +942,6 @@ a.red-bg:hover {
     border-radius: 2px;
 }
 
-.btn-effects.button--inverted::before {
-    background: #7986CB;
-}
-
 .btn-effects,
 .btn-effects::before {
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -953,7 +949,7 @@ a.red-bg:hover {
 }
 
 .btn-effects:hover {
-    color: #fff;
+    color: #fff !important;
     border-color: #b3561b;
 }
 
@@ -1961,10 +1957,15 @@ li.start-clr {
     display: block;
 }
 
-div#paymyself {
+#paymyself {
     display: none;
 }
-
+#Mobsplitbill{
+    display: block;
+}
+#Mobpaymyself {
+    display: none;
+}
 .pally-box input.form-control {
     width: 20%;
     border-radius: 12px;
@@ -2208,11 +2209,13 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .shopping-btn {
-    height: 40px;
-    font-weight: 500;
-    color: #B3751B;
+    height: 44px;
+    font-weight: 600;
+    color: #B3561B !important;
 }
-
+.existpallybg .pally-content {
+    margin: 50px 0 0 0;
+}
 .cart-img,
 .order-img {
     width: 60px;
@@ -3197,13 +3200,12 @@ a.follower-icon:hover {
 
 .copy-bg {
     background: #fcfcfc;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
+    border: 2px solid #AAAAAA;
+    border-radius: 5px;
     padding: 12px 12px 4px 12px;
     color: #4F4F4F;
     box-shadow: 0 0 1px 1px #00000012;
 }
-
 .refer-inner {
     border: 1px solid #E0E0E0;
     padding: 30px 60px;
@@ -3593,6 +3595,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .cartsucessfull-bottom-modal .modal-w .yellow-bg, .shopping-btn, .addclose {
+        width: 100% !important;
+    }
+    div#Mobpaymyself {
+        display: none;
+    }
     .wallet-border {
         border: 1px solid #BDBDBD;
         background: #FCFCFC;
@@ -3723,6 +3731,10 @@ a.follower-icon:hover {
     }
     .product-img {
         height: 100%;
+        width: 100%;
+    }
+    .Mobviewexistpally-bottom-modal .product-img {
+        height: 200px;
         width: 100%;
     }
     .pally-inner {
@@ -4011,8 +4023,6 @@ a.follower-icon:hover {
         padding: 15px;
     }
     /* ------ PRE-MODAL-MOBILE-VIEW-CSS-END ----- */
-    /* ----- REVIEW-MOBILE-VIEW-CSS-START ------ */
-    /* ----- REVIEW-MOBILE-VIEW-CSS-END ------ */
     /* ------ MORE-POPUP-MOBILE-VIEW-CSS-START ------ */
     #moreModal-wrapper {
         display: none;
@@ -4140,6 +4150,10 @@ a.follower-icon:hover {
         width: 70%;
         margin: 0;
     }
+    .myself-content .addbutton-bg {
+        width: 20%;
+        margin: 0;
+    }
     .modal.modal-bottom .modal-dialog {
         -webkit-transform: translate3d(0%, 0, 0);
         -ms-transform: translate3d(0%, 0, 0);
@@ -4160,9 +4174,11 @@ a.follower-icon:hover {
     .modal.modal-bottom .checkout-bottom .modal-content,
     .successfull-bottom .modal-content,
     .order-sum-bottom .modal-content,
-    .viewdetail-bottom .modal-content {
+    .viewdetail-bottom .modal-content, 
+    .modal.modal-bottom .Mobviewexistpally-bottom-modal .modal-content {
         height: 100vh !important;
     }
+    
     .modal.modal-bottom .modal-content {
         height: auto;
         overflow-y: auto;
@@ -4175,7 +4191,11 @@ a.follower-icon:hover {
     .date-bottom .modal-content,
     .takeaction-bottom .modal-content,
     .viewtracking-bottom .modal-content,
-    .review-bottom-modal .modal-content {
+    .review-bottom-modal .modal-content, 
+    .select-bottom-modal .modal-content, 
+    .cartsucessfull-bottom-modal  .modal-content,
+    .Mobexistpally-bottom-modal .modal-content, 
+    .Mobviewexistpally-bottom-modal .modal-content {
         border-radius: 20px 20px 5px 5px !important;
     }
     /* Bottom */
@@ -4240,6 +4260,12 @@ a.follower-icon:hover {
         width: 30%;
         margin: 0 auto;
     }
+    .aleadypally-content .btneffects-bg {
+        width: 100%;
+    }
+    .modal-w .yellow-bg, .shopping-btn {
+        width: 100%;
+    }
 }
 
 @media (max-width:840px) {
@@ -4274,6 +4300,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:767.98px) {
+    .myself-content .addbutton-bg {
+        width: 22%;
+    }
     .select-order {
         bottom: 9%;
     }
@@ -4358,6 +4387,16 @@ a.follower-icon:hover {
 }
 
 @media (max-width:660px) {
+    .Mobviewexistpally-bottom-modal .justify-content-start {
+        width: 30%;
+    }
+    .Mobviewexistpally-bottom-modal .product-img {
+        height: 100%;
+        width: 100%;
+    }
+    .myself-content .addbutton-bg {
+        width: 26%;
+    }
     .review-content .success-box {
         left: 54%;
     }
@@ -4371,6 +4410,9 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
+    .myself-content .addbutton-bg {
+        width: 30%;
+    }
     .review-content .success-box {
         left: 62%;
     }
@@ -4412,6 +4454,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:530px) {
+    .myself-content .addbutton-bg {
+        width: 34%;
+    }
     .review-content .rating-stars ul>li.smallstar>span {
         font-size: 34px;
     }
@@ -4542,6 +4587,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:460px) {
+    .myself-content .addbutton-bg {
+        width: 40%;
+    }
     .foodtabs .nav-link {
         padding: 8px 20px;
     }
@@ -4558,6 +4606,15 @@ a.follower-icon:hover {
 }
 
 @media(max-width:430px) {
+    .Mobviewexistpally-bottom-modal .justify-content-start {
+        width: 40%;
+    }
+    .cartsucessfull-bottom-modal .modal-body.p-4 {
+        padding: 10px !important;
+    }
+    .pally-w .yellow-bg, .addclose {
+        width: 360px;
+    }
     .review-content .success-box {
         left: 66%;
     }
@@ -4593,6 +4650,10 @@ a.follower-icon:hover {
 }
 
 @media (max-width:390px) {
+    
+    .myself-content .addbutton-bg {
+        width: 42%;
+    }
     .successfull-bottom .modal-w .yellow-bg,
     .shopping-btn {
         width: 320px;
@@ -4661,6 +4722,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:375px) {
+    .pally-w .yellow-bg, .addclose {
+        width: 320px;
+    }
     .sidebar-scroll .grey-text {
         font-size: 14px;
     }
@@ -4687,6 +4751,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:360px) {
+    .myself-content .addbutton-bg {
+        width: 44%;
+    }
     .address-bottom .modal-w .yellow-bg,
     .address-bottom .addclose,
     .date-bottom .modal-w .yellow-bg,
@@ -4742,6 +4809,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:330px) {
+    .pally-w .yellow-bg, .addclose {
+        width: 280px;
+    }
+    .myself-content .addbutton-bg {
+        width: 50%;
+    }
     .review-content .rating-stars ul>li.smallstar>span {
         font-size: 32px;
     }

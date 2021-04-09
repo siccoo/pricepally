@@ -298,6 +298,12 @@ $("body").on("click", ".bnkback-arrow", function(e) {
     $('#directbankopnmodal').modal('show');
     $('#purchaseopnmodal').modal('hide');
 });
+
+$("body").on("click", ".cartsussefullbtn", function(e) {
+    $('#pallyorderModal').modal('hide');
+    $('#cartsucessModalopn').modal('show');
+});
+
 /*------ CART-MODAL-JS-END ------*/
 
 /*------  ORDER (TRACK-ACTION-CLICK-MODAL)-MODAL-JS-START ------*/
@@ -565,18 +571,33 @@ $("body").on("click", ".Mobviewdetail-btn", function(e) {
     $('#Viewdetail-Modalopn').modal('show');
 });
 
-$("body").on("click", ".Mobviewtracking-btn", function(e) {
-    $('#order-sum_modal').modal('hide');
-    $('#viewtracking-Modalopn').modal('show');
-});
 
-$("body").on("click", ".Mobreview-btn", function(e) {
-    $('#order-sum_modal').modal('hide');
-    $('#viewtracking-Modalopn').modal('show');
-});
+
+
 
 /*------ ORDERS-MOBILE-MODAL-JS-END ------*/
+/*------ PALLY-DETAILS-MOBILE-VIEW-MODAL-JS-START ------*/
+$("body").on("click", ".Mobcartsussefullbtn", function(e) {
+    $('#Mobselect-bottom').modal('hide');
+    $('#Mobcartsuccessfull-Modalopn').modal('show');
+});
 
+$("body").on("click", ".Mobcartsussefullbtn", function(e) {
+    $('#Mobselect-bottom').modal('hide');
+    $('#Mobcartsuccessfull-Modalopn').modal('show');
+});
+
+$("body").on("click", ".Mobexistpally-btn", function(e) {
+    $('#Mobcartsuccessfull-Modalopn').modal('hide');
+    $('#Mobexistpally-Modalopn').modal('show');
+});
+
+$("body").on("click", ".Mobviewexistpally-btn", function(e) {
+    $('#Mobexistpally-Modalopn').modal('hide');
+    $('#Mobviewexistpally-Modalopn').modal('show');
+});
+
+/*------ PALLY-DETAILS-MOBILE-VIEW-MODAL-JS-END ------*/
 // *** PALLY-SELECT-ORDER-MODAL-JS-START ***/
 function myFunction() {
     var splitbill = document.getElementById("splitbill");
@@ -592,4 +613,21 @@ function myFunction() {
     }
 }
 
+
+
 // *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
+
+
+function myFunctionMob() {
+    var Mobsplitbill = document.getElementById("Mobsplitbill");
+    var Mobsplitbill = document.getElementById("Mobpaymyself");
+
+    var select = document.getElementById("Mobpallysplit-btn").checked;
+    if (select) {
+        Mobsplitbill.style.display = "block";
+        Mobpaymyself.style.display = "none";
+    } else {
+        Mobsplitbill.style.display = "none";
+        Mobpaymyself.style.display = "block";
+    }
+}
