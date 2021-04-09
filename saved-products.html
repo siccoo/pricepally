@@ -171,8 +171,19 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ SAVED-PRODUCTS-SECTION-START ------>
-        <section class="saveproducts-wrapper">
+         <!------ MOBILE-HEADER-SECTION-START ------>
+         <section class="mobile-header d-block d-lg-none sticky-bg ">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <a href="#">
+                        <i class='material-icons pr-2'>west</i> <span class="align-top">Saved Products</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-HEADER-SECTION-END ------>
+        <!------ WEB-VIEW-SAVED-PRODUCTS-SECTION-START ------>
+        <section class="saveproducts-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 mt-4">
@@ -232,403 +243,497 @@
                     </div>
                     <div class="col-lg-9">
                         <h4 class="mt-4 mb-4">Saved Products</h4>
-                        <ul class="nav foodtabs" id="foodTab" role="tablist">
+                        <ul class="nav nav-tabs foodtabs" id="foodTab" role="tablist">
                             <li class="nav-item ">
-                                <a class="nav-link active" id="pally-tab" data-toggle="tab" href="#pally" role="tab" aria-controls="pally" aria-selected="true">Pally Deals</a>
+                                <a class="nav-link active" id="" data-toggle="tab" href="#pally" role="tab"
+                                    aria-controls="pally" aria-selected="true">Pally Deals</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="recommended-tab" data-toggle="tab" href="#recommended" role="tab" aria-controls="recommended" aria-selected="false">Recommended</a>
+                                <a class="nav-link" id="recommended-tab" data-toggle="tab" href="#recommended"
+                                    role="tab" aria-controls="recommended" aria-selected="false">Recommended</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pre-orders-tab" data-toggle="tab" href="#pre-orders" role="tab" aria-controls="pre-orders" aria-selected="false">Pre Orders</a>
+                                <a class="nav-link" id="pre-orders-tab" data-toggle="tab" href="#pre-orders" role="tab"
+                                    aria-controls="pre-orders" aria-selected="false">Pre Orders</a>
                             </li>
                         </ul>
 
                         <div class="col-lg-12">
                             <div class="tab-content" id="foodTabContent">
-                                <div class="tab-pane fade show active" id="pally" role="tabpanel" aria-labelledby="pally-tab">
-                                   
-                                    <div class="row mt-4">
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner content">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                <div class="tab-pane fade show active" id="pally" role="tabpanel"
+                                    aria-labelledby="pally-tab">
+                                    <h6 class="inner-head mb-3 mt-3">16 Available Deals</h6>
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner ">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="product_detail.html">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons red-clr">
+                                                                    favorite
+                                                                    </span>
+                                                            </div>
+                                                            <img class=" product-img mb-3"
+                                                                src="assets/images/Product-img1.jpg" alt="Product-img1">
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img1.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Titus 20kg (Full Carton) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">Titus 20kg (Full Carton) </h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                                                slot (3 available slots)</small></h5>
+                                                        <h6 class="mb-3">Time left: 68:50:52</h6>
+                                                        <ul class="list-unstyled pallylist-bg">
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img2">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img3">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block">
+                                                                <small>2 slots left</small>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">BUY
+                                                                SLOT</button>
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner content">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner ">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons red-clr">
+                                                                    favorite
+                                                                    </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img"
+                                                                src="assets/images/Product-img2.png" alt="Product-img1">
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img2.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Croaker Fish (Full Carton) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">Croaker Fish (Full Carton) </h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                                                slot (3 available slots)</small></h5>
+                                                        <h6 class="mb-3">Time left: 68:50:52</h6>
+                                                        <ul class="list-unstyled pallylist-bg">
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img2">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img3">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block">
+                                                                <small>2 slots left</small>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">BUY
+                                                                SLOT</button>
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons red-clr">
+                                                                    favorite
+                                                                    </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img"
+                                                                src="assets/images/Product-img3.png" alt="Product-img1">
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img3.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">White Onions (40kg)</h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                                <div class="tab-pane fade" id="recommended" role="tabpanel" aria-labelledby="recommended-tab">
-                                   
-                                    <div class="row mt-4">
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">White Onions (40kg)</h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                                                slot (3 available slots)</small></h5>
+                                                        <h6 class="mb-3">Time left: 68:50:52</h6>
+                                                        <ul class="list-unstyled pallylist-bg">
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img2">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img3.jpg"
+                                                                    alt="list-img3">
+                                                            </li>
+                                                            <li class="d-inline-block pally-left">
+                                                                <img class="list-img" src="assets/images/list-img1.jpg"
+                                                                    alt="list-img1">
+                                                            </li>
+                                                            <li class="d-inline-block">
+                                                                <small>2 slots left</small>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">BUY
+                                                                SLOT</button>
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img5.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Soya Beans (Paint Bucket) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
-                                                    </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img6.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Soya Beans (100kg) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
                                                 </div>
-    
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
-                                                    </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img7.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Tuwo Rice (50kg)</h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
-    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pre-orders" role="tabpanel" aria-labelledby="pre-orders-tab">                                  
-                                    <div class="row mt-4">
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                <div class="tab-pane fade recommended-bg" id="recommended" role="tabpanel"
+                                    aria-labelledby="recommended-tab">
+                                    <h6 class="inner-head mb-3 mt-3">16 Available Deals</h6>
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner ">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img"
+                                                                src="assets/images/Product-img5.png" alt="Product-img1">
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img5.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Soya Beans (Paint Bucket) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">Irish Potato (5kg) </h5>
+                                                        </a>
+                                                        <a href="#" class="green-bg">↑3% | In Season</a>
+                                                        <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                                            <s>(₦78,000)</s></h5>
+                                                        <section class='rating-widget mb-2'>
+                                                            <div class="rating-stars">
+                                                                <ul class="stars">
+                                                                    <li class="smallstar" title="Poor" data-value="1">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Fair" data-value="2">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Good" data-value="3">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Excellent" data-value="4">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class='success-box'>
+                                                                <div class='text-message'></div>
+                                                            </div>
+                                                        </section>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                                                TYPE</button>
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img"
+                                                                src="assets/images/Product-img6.png" alt="Product-img6">
+                                                        </a>
+                                                    </div>
+    
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">Soya Beans (100kg)</h5>
+                                                        </a>
+                                                        <a href="#" class="green-bg">↑3% | In Season</a>
+                                                        <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                                            <s>(₦78,000)</s></h5>
+                                                        <section class='rating-widget mb-2'>
+                                                            <div class="rating-stars">
+                                                                <ul class="stars">
+                                                                    <li class="smallstar" title="Poor" data-value="1">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Fair" data-value="2">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Good" data-value="3">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Excellent" data-value="4">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class='success-box'>
+                                                                <div class='text-message'></div>
+                                                            </div>
+                                                        </section>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                                                TYPE</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img"
+                                                                src="assets/images/Product-img3.png" alt="Product-img1">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3 ">White Onions (40kg)</h5>
+                                                        </a>
+                                                        <a href="#" class="green-bg">↑3% | In Season</a>
+                                                        <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                                            <s>(₦78,000)</s></h5>
+                                                        <section class='rating-widget mb-2'>
+                                                            <!-- Rating Stars Box -->
+                                                            <div class="rating-stars">
+                                                                <ul class="stars">
+                                                                    <li class="smallstar" title="Poor" data-value="1">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Fair" data-value="2">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Good" data-value="3">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="Excellent" data-value="4">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="smallstar" title="WOW!!!" data-value="5">
+                                                                        <span class="material-icons fa-fw">
+                                                                            star_rate
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class='success-box'>
+                                                                <div class='text-message'></div>
+                                                            </div>
+                                                        </section>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                                                TYPE</button>
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade preorder-bg" id="pre-orders" role="tabpanel"
+                                    aria-labelledby="pre-orders-tab">
+                                    <h6 class="inner-head mb-3 mt-3">3 Available Deals</h6>
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img" src="assets/images/Pre-order1.png"
+                                                                alt="Pre-order1">
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img6.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Soya Beans (100kg) </h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
-                                                </div>
     
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4">
-                                            <div class="pally-inner">
-                                                <a href="#">
-                                                    <div class="heart-icon">
-                                                        <span class="material-icons">
-                                                            favorite_border
-                                                            </span>
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3">Strawberries</h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg</h6>
+                                                        <p class="text-red mb-2">1kg of 50kg left</p>
+                                                        <div class="preorder-progress stat-bar mb-2">
+                                                            <span class="stat-bar-rating" role="stat-bar"
+                                                                style="width: 80%;">80%</span>
+                                                        </div>
+                                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects "
+                                                                data-toggle="modal" data-target="#preorderModal">Book
+                                                                Now</button>
+                                                        </a>
                                                     </div>
-                                                    <img class="mb-3 product-img" src="assets/images/Product-img7.png" alt="Product-img1">
-                                                </a>
-                                                <div class="pally-content">
-                                                    <a href="#" class="inner-head">
-                                                        <h5 class="mb-3 ">Tuwo Rice (50kg)</h5>
-                                                    </a>
-                                                    <a href="#" class="red-bg">↑9% | In Season</a>
-                                                    <h5 class="mb-3 mt-3 font-weight-bold">₦7,500 <small>per slot (3 available slots)</small></h5>
-                                                    <h6 class="mb-3">Time left: 68:50:52</h6>
-                                                    <ul class="list-unstyled pallylist-bg">
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img2">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img3.jpg" alt="list-img3">
-                                                        </li>
-                                                        <li class="d-inline-block pally-left">
-                                                            <img class="list-img" src="assets/images/list-img1.jpg" alt="list-img1">
-                                                        </li>
-                                                        <li class="d-inline-block">
-                                                            <small>2 slots left</small>
-                                                        </li>
-                                                    </ul>
-                                                    <a href="#">
-                                                        <button type="button" class="brown-btn  text-uppercase btn-effects ">BUY SLOT</button>
-                                                    </a>
+    
                                                 </div>
-    
                                             </div>
-                                        </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img" src="assets/images/Pre-order2.png"
+                                                                alt="Pre-order2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3">Strawberries</h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg</h6>
+                                                        <p class="text-red mb-2">1kg of 50kg left</p>
+                                                        <div class="preorder-progress stat-bar mb-2">
+                                                            <span class="stat-bar-rating" role="stat-bar"
+                                                                style="width: 30%;">30%</span>
+                                                        </div>
+                                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                                        <a href="#">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">Book
+                                                                Now</button>
+                                                        </a>
+                                                    </div>
     
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="pally-inner">
+                                                    <div class="products-img-wrapper  mb-3 pointer">
+                                                        <a href="#">
+                                                            <div class="heart-icon">
+                                                                <span class="material-icons">
+                                                                    favorite_border
+                                                                </span>
+                                                            </div>
+                                                            <img class="mb-3 product-img" src="assets/images/Pre-order3.png"
+                                                                alt="Product-img3">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pally-content">
+                                                        <a href="#" class="inner-head">
+                                                            <h5 class="mb-3">Strawberries</h5>
+                                                        </a>
+                                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg</h6>
+                                                        <p class="text-red mb-2 text-uppercase">Closed</p>
+                                                        <div class="preorder-progress stat-bar mb-2">
+                                                            <span class="stat-bar-rating" role="stat-bar"
+                                                                style="width: 100%;">100%</span>
+                                                        </div>
+                                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                                        <a href="#" class="closed-opacity">
+                                                            <button type="button"
+                                                                class="brown-btn  text-uppercase btn-effects ">Book
+                                                                Now</button>
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -637,7 +742,1026 @@
                 </div>
             </div>
         </section>
-        <!------ SAVED-PRODUCTS-SECTION-END ------>
+        <!------ WEB-VIEW-SAVED-PRODUCTS-SECTION-END ------>
+        <!------ MOBILE-VIEW-SAVED-PRODUCTS-SECTION-START ------>
+        <section class="saveproducts-wrapper d-block d-lg-none">
+            <div class="container">
+                <ul class="nav nav-tabs foodtabs" id="foodTab" role="tablist">
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="" data-toggle="tab" href="#mobile-pally" role="tab"
+                            aria-controls="mobilepally" aria-selected="true">Pally Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="mobile-recommended-tab" data-toggle="tab"
+                            href="#mobile-recommended" role="tab" aria-controls="mobile-recommended"
+                            aria-selected="false">Recommended</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="mobile-pre-orders-tab" data-toggle="tab"
+                            href="#mobile-pre-orders" role="tab" aria-controls="mobile-pre-orders"
+                            aria-selected="false">Pre Orders</a>
+                    </li>
+                </ul>
+                <div class="tab-content mobiletabcontent" id="foodTabContent">
+                    <div class="tab-pane fade show active pally-bg" id="mobile-pally" role="tabpanel"
+                        aria-labelledby="mobile-pally-tab">
+                        <h6 class="inner-head mb-3 mt-3">16 Available Deals</h6>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="product_detail.html">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img1.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Titus 20kg (Full Carton) </h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner content">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img2.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Croaker Fish (Full Carton)</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner content">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img3.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">White Onions (40kg)</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img4.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Guinea Corn Red (Paint bu...</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img5.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Soya Beans (Paint Bucket)</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img6.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Soya Beans (100kg)</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img7.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Tuwo Rice (50kg)</h5>
+                                    </a>
+                                    <a href="#" class="red-bg">↑9% | In Season</a>
+                                    <h5 class="mb-3 mt-3 font-weight-bold simhead">₦7,500 <small>per
+                                            slot (3 available slots)</small></h5>
+                                    <h6 class="mb-3">Time left: 68:50:52</h6>
+                                    <ul class="list-unstyled pallylist-bg">
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img2">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img3.jpg"
+                                                alt="list-img3">
+                                        </li>
+                                        <li class="d-inline-block pally-left">
+                                            <img class="list-img" src="assets/images/list-img1.jpg"
+                                                alt="list-img1">
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <small>2 slots left</small>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">BUY
+                                            SLOT</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade recommended-bg" id="mobile-recommended" role="tabpanel"
+                        aria-labelledby="mobile-recommended-tab">
+                        <h6 class="inner-head mb-3 mt-3">16 Available Deals</h6>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img5.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Titus 20kg (Full Carton) </h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img2.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Croaker Fish (Full Carton)</h5>
+                                    </a>
+
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img3.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">White Onions (40kg)</h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img4.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Guinea Corn Red (Paint bu...</h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img5.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Soya Beans (Paint Bucket)</h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img6.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Soya Beans (100kg)</h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class=" justify-content-start">
+                                <div class="pally-inner">
+                                    <div class="products-img-wrapper  mb-2 pointer">
+                                        <a href="#">
+                                            <div class="heart-icon">
+                                                <span class="material-icons">
+                                                    favorite_border
+                                                </span>
+                                            </div>
+                                            <img class="product-img"
+                                                src="assets/images/MProducts-img7.png"
+                                                alt="Product-img1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ml-4 justify-content-end">
+                                <div class="pally-content">
+                                    <a href="#" class="inner-head">
+                                        <h5 class="mb-3 ">Tuwo Rice (50kg)</h5>
+                                    </a>
+                                    <a href="#" class="green-bg">↑3% | In Season</a>
+                                    <h5 class="mb-2 mt-3 font-weight-bold simhead">₦73,000
+                                        <s>(₦78,000)</s></h5>
+                                    <section class='rating-widget mb-2'>
+                                        <div class="rating-stars">
+                                            <ul class="stars">
+                                                <li class="smallstar" title="Poor" data-value="1">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Fair" data-value="2">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Good" data-value="3">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="Excellent" data-value="4">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                                <li class="smallstar" title="WOW!!!" data-value="5">
+                                                    <span class="material-icons fa-fw">
+                                                        star_rate
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='success-box'>
+                                            <div class='text-message'></div>
+                                        </div>
+                                    </section>
+                                    <a href="#">
+                                        <button type="button"
+                                            class="brown-btn  text-uppercase btn-effects ">SELECT ORDER
+                                            TYPE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade preorder-bg" id="mobile-pre-orders" role="tabpanel"
+                        aria-labelledby="mobile-pre-orders-tab">
+                        <h6 class="inner-head mb-3 mt-3">3 Available Deals</h6>
+                        <div class="">
+                            <div class="d-flex mb-4">
+                                <div class=" justify-content-start">
+                                    <div class="pally-inner">
+                                        <div class="products-img-wrapper  mb-2 pointer">
+                                            <a href="#">
+                                                <div class="heart-icon">
+                                                    <span class="material-icons">
+                                                        favorite_border
+                                                    </span>
+                                                </div>
+                                                <img class="mb-3 product-img"
+                                                    src="assets/images/MPre-order1.png"
+                                                    alt="Pre-order1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-4 justify-content-end">
+                                    <div class="pally-content">
+
+                                        <a href="#" class="inner-head">
+                                            <h5 class="mb-3">Strawberries</h5>
+                                        </a>
+                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg
+                                        </h6>
+                                        <p class="text-red mb-2">1kg of 50kg left</p>
+                                        <div class="preorder-progress stat-bar mb-2">
+                                            <span class="stat-bar-rating" role="stat-bar"
+                                                style="width: 80%;">80%</span>
+                                        </div>
+                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                        <a href="#">
+                                            <button type="button"
+                                                class="brown-btn  text-uppercase btn-effects "
+                                                data-toggle="modal" data-target="#booknowModal">Book
+                                                Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class=" justify-content-start">
+                                    <div class="pally-inner">
+                                        <div class="products-img-wrapper  mb-2 pointer">
+                                            <a href="#">
+                                                <div class="heart-icon">
+                                                    <span class="material-icons">
+                                                        favorite_border
+                                                    </span>
+                                                </div>
+                                                <img class="mb-3 product-img"
+                                                    src="assets/images/MPre-order2.png"
+                                                    alt="Pre-order1">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class=" ml-4 justify-content-end">
+                                    <div class="pally-content">
+                                        <a href="#" class="inner-head">
+                                            <h5 class="mb-3">Strawberries</h5>
+                                        </a>
+                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg
+                                        </h6>
+                                        <p class="text-red mb-2">1kg of 50kg left</p>
+                                        <div class="preorder-progress stat-bar mb-2">
+                                            <span class="stat-bar-rating" role="stat-bar"
+                                                style="width: 30%;">30%</span>
+                                        </div>
+                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                        <a href="#">
+                                            <button type="button"
+                                                class="brown-btn  text-uppercase btn-effects ">Book
+                                                Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class=" justify-content-start ">
+                                    <div class="pally-inner">
+                                        <div class="products-img-wrapper  mb-2 pointer">
+                                            <a href="#">
+                                                <div class="heart-icon">
+                                                    <span class="material-icons">
+                                                        favorite_border
+                                                    </span>
+                                                </div>
+                                                <img class="mb-3 product-img"
+                                                    src="assets/images/MPre-order2.png"
+                                                    alt="Pre-order1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-4 justify-content-end">
+                                    <div class="pally-content">
+                                        <a href="#" class="inner-head">
+                                            <h5 class="mb-3">Strawberries</h5>
+                                        </a>
+                                        <a href="#" class="red-bg">↑9% | In Season</a>
+                                        <h6 class="mb-2 mt-3 font-weight-bold simhead">₦7,500 per kg
+                                        </h6>
+                                        <p class="text-red mb-2">1kg of 50kg left</p>
+                                        <div class="preorder-progress stat-bar mb-2">
+                                            <span class="stat-bar-rating" role="stat-bar"
+                                                style="width: 100%;">100%</span>
+                                        </div>
+                                        <p class="mb-2 dgrey-clr">Delivery Date: July 23rd 2021</p>
+                                        <a href="#" class="closed-opacity">
+                                            <button type="button"
+                                                class="brown-btn  text-uppercase btn-effects ">Book
+                                                Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-VIEW-SAVED-PRODUCTS-SECTION-END ------>
         <!------ FOOTER-SECTION-START ------>
         <footer class="ml-2 mr-2 footer-wrapper">
             <div class="container">
