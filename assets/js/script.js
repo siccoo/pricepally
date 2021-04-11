@@ -1,12 +1,12 @@
 /*------ fixed-header-js-start ------ */
 $(window).on('scroll', function() {
-    if ($(window).scrollTop()) {
-        $('.start-header').addClass('sticky-bg');
-    } else {
-        $('.start-header').removeClass('sticky-bg');
-    }
-})
-/* ------ dropdown-menu-js-start ------ */
+        if ($(window).scrollTop()) {
+            $('.start-header').addClass('sticky-bg');
+        } else {
+            $('.start-header').removeClass('sticky-bg');
+        }
+    })
+    /* ------ dropdown-menu-js-start ------ */
 $(document).ready(function() {
     //the trigger on hover when cursor directed to this class
     $(".drop-menu li").hover(
@@ -42,19 +42,16 @@ $(window).scroll(function() {
 });
 /*------ LISTING-HEADER-JS-START ------ */
 $(window).on('scroll', function() {
-    if ($(window).scrollTop()) {
-        $('.mobile-list-header').addClass('sticky-bg');
-    } else {
-        $('.mobile-list-header').removeClass('sticky-bg');
-    }
-})
-
-
-
-/*------ LISTING-HEADER-JS-END ------ */
-/* ------ MOBILE-HEADER-JS-END ----- */
-/*------ fixed-header-js-end ------ */
-/*------ PRODUCTS-DETAIL-JS-START -------*/
+        if ($(window).scrollTop()) {
+            $('.mobile-list-header').addClass('sticky-bg');
+        } else {
+            $('.mobile-list-header').removeClass('sticky-bg');
+        }
+    })
+    /*------ LISTING-HEADER-JS-END ------ */
+    /* ------ MOBILE-HEADER-JS-END ----- */
+    /*------ fixed-header-js-end ------ */
+    /*------ PRODUCTS-DETAIL-JS-START -------*/
 $(".mini img").click(function() {
 
     $(".maxi").attr("src", $(this).attr("src").replace("120x100", "500x300"));

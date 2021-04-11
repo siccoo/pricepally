@@ -204,7 +204,8 @@ ul.nav-pills {
 }
 
 .start-header,
-.mobile-list-header, .mobile-header {
+.mobile-list-header,
+.mobile-header {
     transition: all 0.4s ease;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
 }
@@ -214,11 +215,13 @@ ul.nav-pills {
     height: 60px;
     padding: 16px 0 0 0;
 }
-.mobile-header{
+
+.mobile-header {
     background-color: #FBFBFB;
     height: 60px;
     padding: 16px 0 0 0;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #828282;
     transition: 0.4s;
@@ -751,9 +754,11 @@ span.yellow_cir {
     position: relative;
     float: left;
 }
-.saveproducts-wrapper .heart-icon  .red-clr{
+
+.saveproducts-wrapper .heart-icon .red-clr {
     color: #FF4747;
 }
+
 .heart-icon span.material-icons {
     position: absolute;
     color: #fff;
@@ -970,9 +975,11 @@ a.red-bg:hover {
     padding: 8px 8px 0 8px;
     color: #b3561b !important;
 }
+
 .saveproducts-wrapper .foodtabs .active {
     padding: .5rem 1rem;
 }
+
 .recommended-bg .rating-widget {
     width: 80%;
 }
@@ -1968,12 +1975,15 @@ li.start-clr {
 #paymyself {
     display: none;
 }
-#Mobsplitbill{
+
+#Mobsplitbill {
     display: block;
 }
+
 #Mobpaymyself {
     display: none;
 }
+
 .pally-box input.form-control {
     width: 20%;
     border-radius: 12px;
@@ -2221,9 +2231,11 @@ div#pallyorderModal .addbutton-bg {
     font-weight: 600;
     color: #B3561B !important;
 }
+
 .existpallybg .pally-content {
     margin: 50px 0 0 0;
 }
+
 .cart-img,
 .order-img {
     width: 60px;
@@ -3214,6 +3226,7 @@ a.follower-icon:hover {
     color: #4F4F4F;
     box-shadow: 0 0 1px 1px #00000012;
 }
+
 .refer-inner {
     border: 1px solid #E0E0E0;
     padding: 30px 60px;
@@ -3630,7 +3643,9 @@ a.follower-icon:hover {
     .notification-bg {
         margin: 90px 0 0 0;
     }
-    .cartsucessfull-bottom-modal .modal-w .yellow-bg, .shopping-btn, .addclose {
+    .cartsucessfull-bottom-modal .modal-w .yellow-bg,
+    .shopping-btn,
+    .addclose {
         width: 100% !important;
     }
     div#Mobpaymyself {
@@ -3790,7 +3805,7 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 32%;
+        width: 34%;
     }
     .success-box {
         left: 70%;
@@ -4217,11 +4232,10 @@ a.follower-icon:hover {
     .modal.modal-bottom .checkout-bottom .modal-content,
     .successfull-bottom .modal-content,
     .order-sum-bottom .modal-content,
-    .viewdetail-bottom .modal-content, 
+    .viewdetail-bottom .modal-content,
     .modal.modal-bottom .Mobviewexistpally-bottom-modal .modal-content {
         height: 100vh !important;
     }
-    
     .modal.modal-bottom .modal-content {
         height: auto;
         overflow-y: auto;
@@ -4234,10 +4248,10 @@ a.follower-icon:hover {
     .date-bottom .modal-content,
     .takeaction-bottom .modal-content,
     .viewtracking-bottom .modal-content,
-    .review-bottom-modal .modal-content, 
-    .select-bottom-modal .modal-content, 
-    .cartsucessfull-bottom-modal  .modal-content,
-    .Mobexistpally-bottom-modal .modal-content, 
+    .review-bottom-modal .modal-content,
+    .select-bottom-modal .modal-content,
+    .cartsucessfull-bottom-modal .modal-content,
+    .Mobexistpally-bottom-modal .modal-content,
     .Mobviewexistpally-bottom-modal .modal-content {
         border-radius: 20px 20px 5px 5px !important;
     }
@@ -4306,7 +4320,8 @@ a.follower-icon:hover {
     .aleadypally-content .btneffects-bg {
         width: 100%;
     }
-    .modal-w .yellow-bg, .shopping-btn {
+    .modal-w .yellow-bg,
+    .shopping-btn {
         width: 100%;
     }
     .mobile-header.sticky-bg {
@@ -4366,7 +4381,7 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 48%;
+        width: 50%;
     }
     .preorder-bg .justify-content-start {
         width: 30%;
@@ -4489,7 +4504,7 @@ a.follower-icon:hover {
         width: 56%;
     }
     .recommended-bg .rating-widget {
-        width: 50%;
+        width: 54%;
     }
     .foodtabs .nav-link {
         padding: 8px 34px;
@@ -4584,7 +4599,7 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 54%;
+        width: 58%;
     }
     .success-box {
         left: 70%;
@@ -4622,7 +4637,7 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 60%;
+        width: 68%;
     }
     .foodtabs .nav-link.active {
         padding: 4.6px 30px !important;
@@ -4661,7 +4676,12 @@ a.follower-icon:hover {
     .review-text .success-box {
         left: 30%;
     }
-   
+    .accordion-bg .card {
+        padding: 10px 0;
+    }
+    #accordion .accordion-title {
+        font-size: 14px;
+    }
 }
 
 @media(max-width:430px) {
@@ -4674,7 +4694,8 @@ a.follower-icon:hover {
     .cartsucessfull-bottom-modal .modal-body.p-4 {
         padding: 10px !important;
     }
-    .pally-w .yellow-bg, .addclose {
+    .pally-w .yellow-bg,
+    .addclose {
         width: 360px;
     }
     .review-content .success-box {
@@ -4688,7 +4709,7 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 70%;
+        width: 74%;
     }
     .heading {
         font-size: 18px;
@@ -4709,7 +4730,7 @@ a.follower-icon:hover {
     .progress-bar-width {
         width: 80%;
     }
-    .mobile-wallet-bg .follow-btn{       
+    .mobile-wallet-bg .follow-btn {
         padding: 6px 12px;
         font-size: 14px;
     }
@@ -4719,7 +4740,6 @@ a.follower-icon:hover {
     .copy-bg {
         padding: 6px;
     }
-    
     .myself-content .addbutton-bg {
         width: 42%;
     }
@@ -4794,10 +4814,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:375px) {
-    .copy-bg .pr-3, .px-3 {
+    .copy-bg .pr-3,
+    .px-3 {
         padding-right: .05rem!important;
     }
-    .pally-w .yellow-bg, .addclose {
+    .pally-w .yellow-bg,
+    .addclose {
         width: 320px;
     }
     .sidebar-scroll .grey-text {
@@ -4881,19 +4903,24 @@ a.follower-icon:hover {
     .load-bg.text-center {
         width: 330px;
     }
+    .saveproducts-wrapper .foodtabs .nav-link.active {
+        padding: .5rem 0.3rem !important;
+    }
 }
 
 @media (max-width:330px) {
     .wallet-border {
         padding: 8px;
     }
-    .wallet-border p{
+    .wallet-border p {
         font-size: 14px;
     }
-    .wallet-bg p, .mobile-wallet-bg p {
+    .wallet-bg p,
+    .mobile-wallet-bg p {
         font-size: 13px;
     }
-    .pally-w .yellow-bg, .addclose {
+    .pally-w .yellow-bg,
+    .addclose {
         width: 280px;
     }
     .myself-content .addbutton-bg {
@@ -4967,7 +4994,7 @@ a.follower-icon:hover {
         color: #ccc;
     }
     .success-box {
-        left: 58%;
+        left: 64%;
         font-size: 15px;
     }
     div#preorderModal .modal-w .yellow-bg,
