@@ -171,8 +171,19 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ PROFILE-SECTION-START ------>
-        <section class="profile-wrapper mt-4">
+        <!------ MOBILE-HEADER-SECTION-START ------>
+        <section class="mobile-list-header  d-block d-lg-none sticky-bg ">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <a href="#">
+                        <i class='material-icons pr-2'>west</i> <span class="align-top">Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-HEADER-SECTION-END ------>
+        <!------ WEB-VIEW-PROFILE-SECTION-START ------>
+        <section class="profile-wrapper mt-4  d-none d-lg-block">
             <div class="container">
                 <h2>My Account</h2>
                 <div class="row">
@@ -216,18 +227,16 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <ul class="list-unstyled">
-                            <li class="d-inline-block align-top pr-3">
+                        <div class="d-flex">
+                            <div class="pr-3">
                                 <img class="user-img pointer" src="assets/images/profile_img.jpg" alt="profile-img">
-                            </li>
-                            <li class="d-inline-block">
+                            </div>
+                            <div class="">
                                 <h4 class="mb-1">Jaden Tega</h4>
                                 <p class="mb-2 text-muted">Joined May 2019</p>
-                                <a href="#" class="brown-btn  text-uppercase btn-effects " data-toggle="modal" data-target="#editprofile">Edit profile</a>
-                            </li>
-                        </ul>
-                        
-                           
+                                <button  class="brown-btn  text-uppercase btn-effects mr-3" data-toggle="modal" data-target="#editprofile">Edit profile</button>
+                            </div>
+                        </div>
                         <hr class="border-bottom">
                         <div id="my-followers" class="followers-bg mb-5">
                             <div class="row mb-3">
@@ -442,9 +451,181 @@
                 </div>
             </div>
         </section>
-        <!------ PROFILE-SECTION-END ------>
+        <!------ WEB-VIEW-PROFILE-SECTION-END ------>
+        <!------ MOBILE-VIEW-PROFILE-SECTION-START ------>
+        <section class="Mobprofile-wrapper d-block d-lg-none mt-4">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="pr-3">
+                        <img class="user-img pointer" src="assets/images/profile_img.jpg" alt="profile-img">
+                    </div>
+                    <div class="mobileprofile-cocntent">
+                        <h4 class="mb-1">Jaden Tega</h4>
+                        <p class="mb-2 text-muted">Joined May 2019</p>
+                        <div class="btn-group">
+                            <button  class="brown-btn  text-uppercase btn-effects mr-3">Edit profile</button> 
+                            <button  class="brown-btn  text-uppercase btn-effects">More...</button>                             
+                        </div>
+                       
+                    </div>
+                </div>
+              
+            </div>
+            <hr class="border-bottom">
+            <div class="container">
+                <div id="my-followers" class="followers-bg mb-5 mt-5">
+                    <h5 class="grey-text">My Followers (345)</h5>
+                    <div id="MobfolloersSlider" class="dvslider">
+                        <div class="MS-controls">
+                           
+                            <button class="MS-right"><i class='material-icons'>east</i></button>
+                        </div>
+                        <div class="MS-content">
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div id="my-following" class="following-bg mb-5 mt-5">
+                    <h5 class="grey-text">My Following (194)</h5>
+                    <div id="MobfollowingSlider" class="dvslider">
+                        <div class="MS-controls">
+                            
+                            <button class="MS-right"><i class='material-icons'>east</i></button>
+                        </div>
+                        <div class="MS-content">
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers1.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Florence Jackson</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers2.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Guy Hawkins</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner text-center">   
+                                    <img class="follow-img mb-3" src="assets/images/followers3.jpg" alt="follwers-img1">
+                                    <h6 class="mb-3">Courtney Henry</h6>
+                                    <a href="my-followers.html" class="follow-btn text-uppercase">Follow </a>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-VIEW-PROFILE-SECTION-END ------>
         <!------ FOOTER-SECTION-START ------>
-        <footer class="ml-2 mr-2 footer-wrapper">
+        <footer class="ml-2 mr-2 footer-wrapper d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -507,6 +688,167 @@
             </div>
         </footer>
         <!------ FOOTER-SECTION-END ------>
+        <!------ MOBILE-FOOTER-CSS-START ------>
+        <footer class="d-block d-lg-none mobile-footer">
+            <div class="container">
+                <div class="d-flex text-center justify-content-center">
+                    <div class="mobile-icon">
+                        <a class="nav-link active" href="index.html">
+                            <p class="mb-0"><i class="material-icons-outlined">home</i></p>
+                            <p class="mb-0">Home</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <p class="mb-0"><span class="material-icons">
+                                    people_outline
+                                </span></p>
+                            <p class="mb-0">Users</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link" href="cart.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_cart
+                                </span></p>
+                            <p class="mb-0">Cart</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon">
+                        <a class="nav-link" href="orders.html">
+                            <p class="mb-0"><span class="material-icons-outlined">
+                                    shopping_bag
+                                </span></p>
+                            <p class="mb-0">Order</p>
+                        </a>
+                    </div>
+                    <div class="mobile-icon" onclick="myFunction()">
+                        <a href="#" class="nav-link">
+                            <p class="mb-0 more_ic"><span class="material-icons">
+                                    more_horiz
+                                </span></p>
+                            <p class="mb-0">More </p>
+                        </a>
+                    </div>
+                </div>
+        </footer>
+        <!------ MORE-MODAL-START ------>
+        <div id="moreModal-wrapper">
+            <div class="container">
+                <div class="moremodal-bg">
+                    <div class="moremodal-header">
+                        <div class="container">
+                            <div class="d-flex">
+                                <div class="w-50 justify-content-start">
+                                    <div class="p-1  ">
+                                        <h5 class="mb-0 morehead">₦GN 24,500</h5>
+                                        <p class="mb-0 more-phr">Wallet Balance</p>
+                                    </div>
+                                    <hr class="more-border">
+                                    <div class="p-1">
+                                        <h6 class="mb-0 morehead">₦GN 1,000</h6>
+                                        <p class="mb-0 more-phr">Pending Balance</p>
+                                    </div>
+
+                                </div>
+                                <div class="ml-auto justify-content-end align-self-center">
+                                    <a href="#">
+                                        <button class="yellow-bg text-uppercase">Go to wallet</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <ul class="list-unstyled ">
+                            <li class="more-outline mb-3">
+                                <a href="make_list.html">
+                                    <span class="material-icons-round align-middle">
+                                        format_list_bulleted
+                                    </span>
+                                    <span class="morelist-text pl-2">Make a List</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="refer_earn.html">
+                                    <span class="material-icons align-middle">
+                                        share
+                                    </span>
+                                    <span class="morelist-text pl-2">Refer and Earn</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="saved-products.html">
+                                    <span class="material-icons align-middle">
+                                        favorite_border
+                                    </span>
+                                    <span class="morelist-text pl-2">Saved Products</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="notification.html">
+                                    <span class="material-icons  align-middle">
+                                    notifications_none
+                                    </span>
+                                    <span class="morelist-text pl-2">Notifications</span>
+                                    <span class="yellow_cir float-right">2</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons align-middle">
+                                    settings_cell</span>
+                                    </span class="morelist-text pl-2">Contact Admin</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons  align-middle">
+                                    error_outline</span>
+                                    <span class="morelist-text pl-2">Frequently Asked Questions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle rotate-ic">
+                                        repeat
+                                        </span>
+                                    <span class="morelist-text pl-2">Return Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle">
+                                        privacy_tip
+                                    </span>
+                                    <span class="morelist-text pl-2">Privacy Policy</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined align-middle  rotate-ic">
+                                        note
+                                        </span>
+                                    <span class="morelist-text pl-2">Terms & Conditions</span>
+                                </a>
+                            </li>
+                            <li class="more-outline mb-3">
+                                <a href="#">
+                                    <span class="material-icons-outlined  align-middle">
+                                        login
+                                        </span>
+                                    <span class="morelist-text pl-2">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!------ MORE-MODAL-END ------>
+        <!------ MOBILE-FOOTER-CSS-END ------>
         <!------ PROFILE-MODAL-START ------>
         <div id="editprofile" class="modal fixed-right " tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-aside" role="document">
@@ -582,7 +924,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/multislider.js"></script>
+     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
 </body>
 

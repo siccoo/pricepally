@@ -1603,7 +1603,9 @@ li.start-clr {
     #folloersSlider,
     #followingSlider,
     #mediaSlider,
-    #categoiresSlider {
+    #categoiresSlider,
+    #MobfolloersSlider,
+    #MobfollowingSlider{
         border-color: transparent;
     }
 }
@@ -1612,7 +1614,9 @@ li.start-clr {
 #similarSlider1 .MS-content #folloersSlider .MS-content,
 #followingSlider .MS-content,
 #mediaSlider .MS-content,
-#categoiresSlider .MS-content {
+#categoiresSlider .MS-content, 
+#MobfolloersSlider .MS-content,
+#MobfollowingSlider .MS-content{
     overflow: hidden;
     white-space: nowrap;
 }
@@ -1623,7 +1627,9 @@ li.start-clr {
     #folloersSlider .MS-content,
     #followingSlider .MS-content,
     #mediaSlider .MS-content,
-    #categoiresSlider .MS-content {
+    #categoiresSlider .MS-content,
+    #MobfolloersSlider .MS-content,
+    #MobfollowingSlider .MS-content {
         margin: 0;
     }
     #similarSlider .MS-controls .MS-left,
@@ -1637,7 +1643,9 @@ li.start-clr {
     #folloersSlider .MS-controls .MS-right,
     #followingSlider .MS-controls .MS-right,
     #mediaSlider .MS-controls .MS-right,
-    #categoiresSlider .MS-controls .MS-right {
+    #categoiresSlider .MS-controls .MS-right,
+    #MobfolloersSlider  .MS-controls .MS-right,
+    #MobfollowingSlider .MS-controls .MS-right{
         width: 30px !important;
         height: 30px !important;
         font-size: 20px !important;
@@ -1653,7 +1661,9 @@ li.start-clr {
 
 #similarSlider .MS-content .item,
 #folloersSlider .MS-content .item,
-#followingSlider .MS-content .item {
+#followingSlider .MS-content .item, 
+#MobfolloersSlider .MS-content .item,
+#MobfollowingSlider .MS-content .item {
     display: inline-block;
     height: 100%;
     overflow: hidden;
@@ -1681,13 +1691,7 @@ li.start-clr {
 }
 
 @media (max-width: 1199px) {
-    /* #similarSlider .MS-content .item,
-	#folloersSlider .MS-content .item,
-	#followingSlider .MS-content {
-		width: 28%;
-	} */
-    #similarSlider .MS-content .item,
-    #followingSlider .MS-content {
+    #similarSlider .MS-content .item{
         width: 50%;
     }
 }
@@ -2784,185 +2788,187 @@ form.makelist-form {
 
 
 /* ------- PROFILE-PAGE-CSS-START ------- */
-
+ #folloersSlider .MS-content, #followingSlider .MS-content {
+    overflow: hidden;
+    white-space: nowrap;
+}
 .sidebar {
-    border: 1px solid #E0E0E0;
-    padding: 10px;
-    border-radius: 3px;
+	border: 1px solid #E0E0E0;
+	padding: 10px;
+	border-radius: 3px;
 }
 
 .sidebar .active {
-    background: #FFF1E8;
+	background: #FFF1E8;
 }
 
 .sidebar li {
-    padding: 12px 0 4px 10px;
-    border-bottom: 1px solid #F2F2F2;
+	padding: 12px 0 4px 10px;
+	border-bottom: 1px solid #F2F2F2;
 }
 
 .sidebar li:hover {
-    background: #FFF1E8;
+	background: #FFF1E8;
 }
 
 .sidebar .active a {
-    color: #B3561B;
+	color: #B3561B;
 }
 
 .sidebar li:hover a {
-    color: #B3561B;
+	color: #B3561B;
 }
 
 .user-img {
-    width: 80px;
-    height: 80px;
-    object-fit: scale-down;
-    border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	object-fit: scale-down;
+	border-radius: 50%;
 }
 
 .follow-img {
-    width: 70px;
-    height: 70px;
-    object-fit: scale-down;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 0 3px hsl(0deg 0% 0% / 48%);
+	width: 70px;
+	height: 70px;
+	object-fit: scale-down;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 0 3px hsl(0deg 0% 0% / 48%);
 }
 
 .follow-btn.text-uppercase {
-    background: #fff;
-    border: none;
-    color: #B3561B;
-    border-radius: 5px;
-    padding: 8px 14px;
-    box-shadow: 0 0 3px hsl(0deg 0% 0% / 16%);
+	background: #fff;
+	border: none;
+	color: #B3561B;
+	border-radius: 5px;
+	padding: 8px 14px;
+	box-shadow: 0 0 3px hsl(0deg 0% 0% / 16%);
 }
 
 .followers-inner {
-    padding: 14px 10px 10px 10px;
+	padding: 14px 10px 10px 10px;
 }
 
 #my-followers .MS-controls .MS-left,
 #folloersSlider .MS-controls .MS-left {
-    left: -397px;
+	left: -397px;
 }
 
 #my-followers .MS-controls .MS-right,
 #folloersSlider .MS-controls .MS-right {
-    right: -490px;
+	right: -490px;
 }
 
 #my-followers .MS-content .item,
 #folloersSlider .MS-content .item,
 #my-following .MS-content .item {
-    background: #FCFCFC;
-    border: 1px solid #BDBDBD;
-    border-radius: 5px;
+	background: #FCFCFC;
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
 }
 
 #my-followers .MS-controls .MS-left,
 #my-followers .MS-controls .MS-right {
-    margin-top: -33px;
-    position: absolute;
-    top: -51%;
-    color: #4F4F4F;
-    background: #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+	margin-top: -33px;
+	position: absolute;
+	top: -51%;
+	color: #4F4F4F;
+	background: #ffffff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 14px rgb(0 0 0 / 16%);
 }
 
 .profile-wrapper {
-    margin: 20px 0;
+	margin: 20px 0;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
-    display: block;
-    border-radius: 50%;
-    margin: 0 auto;
-    object-fit: scale-down;
-    background: #fff;
-    box-shadow: 0 0 3px hsl(0deg 0% 0% / 30%);
+	width: 120px;
+	height: 120px;
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+	object-fit: scale-down;
+	background: #fff;
+	box-shadow: 0 0 3px hsl(0deg 0% 0% / 30%);
 }
 
 .file-upload {
-    display: none;
+	display: none;
 }
 
 .circle {
-    border-radius: 1000px !important;
-    overflow: hidden;
-    width: 128px;
-    height: 128px;
-    border: 8px solid rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 72px;
+	border-radius: 1000px !important;
+	overflow: hidden;
+	width: 128px;
+	height: 128px;
+	border: 8px solid rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 72px;
 }
 
 .edit-image {
-    position: absolute;
-    top: 66%;
-    color: #666666;
-    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-    left: 54%;
+	position: absolute;
+	top: 66%;
+	color: #666666;
+	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+	left: 54%;
 }
 
 .edit-image:hover {
-    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
 
 .upload-button:hover {
-    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-    color: #999;
+	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+	color: #999;
 }
 
 .phone-list li:first-child {
-    padding: 0;
-    border-right: 1px solid #ccc;
+	padding: 0;
+	border-right: 1px solid #ccc;
 }
 
 .list-unstyled.phone-list,
 .editpro-form .form-control,
 .input-group {
-    border: 2px solid #AAAAAA;
-    border-radius: 4px;
+	border: 2px solid #AAAAAA;
+	border-radius: 4px;
 }
 
 .phone-list select {
-    border: none;
-    background: transparent;
+	border: none;
+	background: transparent;
 }
 
 .phone-list input.form-control {
-    box-shadow: none;
-    background: transparent;
+	box-shadow: none;
+	background: transparent;
 }
 
 .phone-list input.form-control {
-    border: none;
+	border: none;
 }
 
 select:focus {
-    outline: none;
+	outline: none;
 }
 
 .update-profile button.yellow-bg {
-    width: 400px;
+	width: 400px;
 }
 
 .editpro-form .form-group {
-    width: 400px;
+	width: 400px;
 }
 
 .editprofile-modal {
-    padding: 30px;
+	padding: 30px;
 }
 
 
 /* ------- PROFILE-PAGE-CSS-END ------- */
-
 
 /* ------- MANGE-ADDRESS-PAGE-CSS-START------- */
 
@@ -3323,6 +3329,70 @@ a.follower-icon:hover {
 }
 
 
+#Mobaccordion .card-header {
+    margin-bottom: 8px;
+}
+
+#Mobaccordion .accordion-title {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    background-color: #fff;
+    color: #262626;
+}
+
+#Mobaccordion .accordion-title i {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.accordion-bg .card {
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 0;
+    padding: 10px 4px;
+}
+
+#Mobaccordion .accordion-body {
+    padding: 0;
+}
+
+#Mobaccordion .accordion-body ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#Mobaccordion .accordion-body li {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+}
+
+#Mobaccordion .accordion-body li:before {
+    content: "";
+    padding-right: 5px;
+    font-family: "Flaticon";
+    font-size: 16px;
+    font-style: normal;
+}
+
+#Mobaccordion .accordion-body p {
+    padding: 0;
+    color: #4F4F4F;
+}
+
 /* ------- FREQ-OUESTIONS-PAGE-CSS-END ------ */
 
 
@@ -3480,6 +3550,18 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
+    #my-followers .MS-controls .MS-left,
+    #my-following .MS-controls .MS-left {
+        left: -335px;
+    }
+    #my-followers .MS-controls .MS-right, 
+    #my-following .MS-controls .MS-right {
+        right: -413px;
+    } 
+    #folloersSlider .MS-content .item,
+     #followingSlider .MS-content .item {     
+        width: 52%;
+    }
     .pally-frnds {
         width: 100%;
     }
@@ -3620,6 +3702,50 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    #MobfolloersSlider .MS-controls{
+        margin-top: -72px;
+        top: 40%;
+    }
+    
+    #MobfollowingSlider .MS-controls{
+        margin-top: -72px;
+        top: 76%;
+    }
+   
+    #MobfolloersSlider .MS-controls .MS-left, 
+    #MobfollowingSlider .MS-controls .MS-left{
+        display: none !important;
+    }
+    #MobfolloersSlider .MS-controls .MS-right, 
+    #MobfollowingSlider .MS-controls .MS-right{
+        margin-top: 0;
+        position: absolute;
+       
+        color: #4F4F4F;
+        background: transparent;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: none;
+        border: none;
+    }
+    #MobfollowingSlider .MS-controls .MS-right{
+        top: 0;
+    }
+    #MobfolloersSlider .MS-controls .MS-right{
+        top: 0;
+    }
+    #my-followers .MS-content .item, #folloersSlider .MS-content .item, #my-following .MS-content .item {      
+        padding: 16px 0;
+    }
+    #folloersSlider .MS-content .item, #followingSlider .MS-content .item, 
+    #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item{
+      
+        width: 48%;
+    }
+    .Mobprofile-wrapper {
+        background: #FCFCFC;
+    }
     .saveproducts-wrapper {
         margin: 66px 0 80px 0;
     }
@@ -3742,6 +3868,11 @@ a.follower-icon:hover {
         display: none;
     }
     .mobilehero-view {
+        display: block;
+    }
+    #my-followers .MS-controls, 
+    #MobfollowingSlider .MS-controls {
+       
         display: block;
     }
     .MS-controls {
@@ -4336,6 +4467,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:768px) {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+        right: -386px;
+    }
     .review-content .success-box {
         left: 46%;
     }
@@ -4361,6 +4495,18 @@ a.follower-icon:hover {
 }
 
 @media (max-width:767.98px) {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+        right: 18%;
+    }
+    #my-followers .MS-controls,
+    #my-following .MS-controls  {
+        left: 0%;
+    }
+    #MobfolloersSlider .MS-content .item, 
+    #MobfollowingSlider .MS-content .item {
+        width: 48%;
+        margin: 0 10px 0 0;
+    }
     .myself-content .addbutton-bg {
         width: 22%;
     }
@@ -4453,7 +4599,10 @@ a.follower-icon:hover {
     }
 }
 
-@media (max-width:660px) {
+@media (max-width:675px) {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+        right: 14%;
+    }
     .Mobviewexistpally-bottom-modal .justify-content-start {
         width: 30%;
     }
@@ -4477,6 +4626,9 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+        right: 8%;
+    }
     .myself-content .addbutton-bg {
         width: 30%;
     }
@@ -4610,6 +4762,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:494px) {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+        right: 6%;
+    }
     .refer-inner {
         padding: 0;
     }
@@ -4660,6 +4815,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:460px) {
+    #Mobaccordion .accordion-title {
+        font-size: 14px;
+    }
     .myself-content .addbutton-bg {
         width: 40%;
     }
@@ -4682,9 +4840,15 @@ a.follower-icon:hover {
     #accordion .accordion-title {
         font-size: 14px;
     }
+    #Mobaccordion .accordion-body p {
+        font-size: 14px;
+    }
 }
 
 @media(max-width:430px) {
+    #Mobaccordion .accordion-title i {
+        width: auto;
+    }
     .mobile-wallet-bg {
         padding: 10px 14px !important;
     }
@@ -4737,6 +4901,19 @@ a.follower-icon:hover {
 }
 
 @media (max-width:390px) {
+    #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item {
+        width: 49%;
+        margin: 0 4px 0 0;
+    }
+    #my-followers .MS-content .item, #folloersSlider .MS-content .item, #my-following .MS-content .item {
+        padding: 8px 4px;
+    }
+    #MobfolloersSlider .MS-controls {
+        top: 42%;
+    }
+    #MobfollowingSlider .MS-controls {
+        top: 78%;
+    }
     .copy-bg {
         padding: 6px;
     }
@@ -4848,6 +5025,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:360px) {
+    .Mobprofile-wrapper .brown-btn {
+        padding: 4px 8px;
+    }
     .myself-content .addbutton-bg {
         width: 44%;
     }

@@ -387,6 +387,28 @@ $(document).ready(function() {
 
     });
 });
+
+
+
+$(document).ready(function() {
+    $('#MobfolloersSlider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
+$(document).ready(function() {
+    $('#MobfollowingSlider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
+
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
 /*------ EDIT-PROFILE-JS-START ***/
 $(document).ready(function() {
