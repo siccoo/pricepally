@@ -1605,7 +1605,7 @@ li.start-clr {
     #mediaSlider,
     #categoiresSlider,
     #MobfolloersSlider,
-    #MobfollowingSlider{
+    #MobfollowingSlider {
         border-color: transparent;
     }
 }
@@ -1614,9 +1614,9 @@ li.start-clr {
 #similarSlider1 .MS-content #folloersSlider .MS-content,
 #followingSlider .MS-content,
 #mediaSlider .MS-content,
-#categoiresSlider .MS-content, 
+#categoiresSlider .MS-content,
 #MobfolloersSlider .MS-content,
-#MobfollowingSlider .MS-content{
+#MobfollowingSlider .MS-content {
     overflow: hidden;
     white-space: nowrap;
 }
@@ -1644,8 +1644,8 @@ li.start-clr {
     #followingSlider .MS-controls .MS-right,
     #mediaSlider .MS-controls .MS-right,
     #categoiresSlider .MS-controls .MS-right,
-    #MobfolloersSlider  .MS-controls .MS-right,
-    #MobfollowingSlider .MS-controls .MS-right{
+    #MobfolloersSlider .MS-controls .MS-right,
+    #MobfollowingSlider .MS-controls .MS-right {
         width: 30px !important;
         height: 30px !important;
         font-size: 20px !important;
@@ -1661,7 +1661,7 @@ li.start-clr {
 
 #similarSlider .MS-content .item,
 #folloersSlider .MS-content .item,
-#followingSlider .MS-content .item, 
+#followingSlider .MS-content .item,
 #MobfolloersSlider .MS-content .item,
 #MobfollowingSlider .MS-content .item {
     display: inline-block;
@@ -1691,7 +1691,7 @@ li.start-clr {
 }
 
 @media (max-width: 1199px) {
-    #similarSlider .MS-content .item{
+    #similarSlider .MS-content .item {
         width: 50%;
     }
 }
@@ -2264,7 +2264,9 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .checkout-bottom .modal-content,
-.couponapply-bottom .modal-content {
+.couponapply-bottom .modal-content,
+.profile-bottom .modal-content,
+.changepass-bottom .modal-content {
     background-color: #FCFCFC;
     height: 100vh !important;
 }
@@ -2788,187 +2790,191 @@ form.makelist-form {
 
 
 /* ------- PROFILE-PAGE-CSS-START ------- */
- #folloersSlider .MS-content, #followingSlider .MS-content {
+
+#folloersSlider .MS-content,
+#followingSlider .MS-content {
     overflow: hidden;
     white-space: nowrap;
 }
+
 .sidebar {
-	border: 1px solid #E0E0E0;
-	padding: 10px;
-	border-radius: 3px;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .sidebar .active {
-	background: #FFF1E8;
+    background: #FFF1E8;
 }
 
 .sidebar li {
-	padding: 12px 0 4px 10px;
-	border-bottom: 1px solid #F2F2F2;
+    padding: 12px 0 4px 10px;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .sidebar li:hover {
-	background: #FFF1E8;
+    background: #FFF1E8;
 }
 
 .sidebar .active a {
-	color: #B3561B;
+    color: #B3561B;
 }
 
 .sidebar li:hover a {
-	color: #B3561B;
+    color: #B3561B;
 }
 
 .user-img {
-	width: 80px;
-	height: 80px;
-	object-fit: scale-down;
-	border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    border-radius: 50%;
 }
 
 .follow-img {
-	width: 70px;
-	height: 70px;
-	object-fit: scale-down;
-	border-radius: 50%;
-	background: #fff;
-	box-shadow: 0 0 3px hsl(0deg 0% 0% / 48%);
+    width: 70px;
+    height: 70px;
+    object-fit: scale-down;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 48%);
 }
 
 .follow-btn.text-uppercase {
-	background: #fff;
-	border: none;
-	color: #B3561B;
-	border-radius: 5px;
-	padding: 8px 14px;
-	box-shadow: 0 0 3px hsl(0deg 0% 0% / 16%);
+    background: #fff;
+    border: none;
+    color: #B3561B;
+    border-radius: 5px;
+    padding: 8px 14px;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 16%);
 }
 
 .followers-inner {
-	padding: 14px 10px 10px 10px;
+    padding: 14px 10px 10px 10px;
 }
 
 #my-followers .MS-controls .MS-left,
 #folloersSlider .MS-controls .MS-left {
-	left: -397px;
+    left: -397px;
 }
 
 #my-followers .MS-controls .MS-right,
 #folloersSlider .MS-controls .MS-right {
-	right: -490px;
+    right: -490px;
 }
 
 #my-followers .MS-content .item,
 #folloersSlider .MS-content .item,
 #my-following .MS-content .item {
-	background: #FCFCFC;
-	border: 1px solid #BDBDBD;
-	border-radius: 5px;
+    background: #FCFCFC;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
 }
 
 #my-followers .MS-controls .MS-left,
 #my-followers .MS-controls .MS-right {
-	margin-top: -33px;
-	position: absolute;
-	top: -51%;
-	color: #4F4F4F;
-	background: #ffffff;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+    margin-top: -33px;
+    position: absolute;
+    top: -51%;
+    color: #4F4F4F;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
 }
 
 .profile-wrapper {
-	margin: 20px 0;
+    margin: 20px 0;
 }
 
 .profile-pic {
-	width: 120px;
-	height: 120px;
-	display: block;
-	border-radius: 50%;
-	margin: 0 auto;
-	object-fit: scale-down;
-	background: #fff;
-	box-shadow: 0 0 3px hsl(0deg 0% 0% / 30%);
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: scale-down;
+    background: #fff;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 30%);
 }
 
 .file-upload {
-	display: none;
+    display: none;
 }
 
 .circle {
-	border-radius: 1000px !important;
-	overflow: hidden;
-	width: 128px;
-	height: 128px;
-	border: 8px solid rgba(255, 255, 255, 0.7);
-	position: absolute;
-	top: 72px;
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 72px;
 }
 
 .edit-image {
-	position: absolute;
-	top: 66%;
-	color: #666666;
-	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-	left: 54%;
+    position: absolute;
+    top: 66%;
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    left: 54%;
 }
 
 .edit-image:hover {
-	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
 
 .upload-button:hover {
-	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-	color: #999;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    color: #999;
 }
 
 .phone-list li:first-child {
-	padding: 0;
-	border-right: 1px solid #ccc;
+    padding: 0;
+    border-right: 1px solid #ccc;
 }
 
 .list-unstyled.phone-list,
 .editpro-form .form-control,
 .input-group {
-	border: 2px solid #AAAAAA;
-	border-radius: 4px;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
 }
 
 .phone-list select {
-	border: none;
-	background: transparent;
+    border: none;
+    background: transparent;
 }
 
 .phone-list input.form-control {
-	box-shadow: none;
-	background: transparent;
+    box-shadow: none;
+    background: transparent;
 }
 
 .phone-list input.form-control {
-	border: none;
+    border: none;
 }
 
 select:focus {
-	outline: none;
+    outline: none;
 }
 
 .update-profile button.yellow-bg {
-	width: 400px;
+    width: 400px;
 }
 
 .editpro-form .form-group {
-	width: 400px;
+    width: 400px;
 }
 
 .editprofile-modal {
-	padding: 30px;
+    padding: 30px;
 }
 
 
 /* ------- PROFILE-PAGE-CSS-END ------- */
+
 
 /* ------- MANGE-ADDRESS-PAGE-CSS-START------- */
 
@@ -3328,7 +3334,6 @@ a.follower-icon:hover {
     margin: 0 0 100px 0;
 }
 
-
 #Mobaccordion .card-header {
     margin-bottom: 8px;
 }
@@ -3392,6 +3397,7 @@ a.follower-icon:hover {
     padding: 0;
     color: #4F4F4F;
 }
+
 
 /* ------- FREQ-OUESTIONS-PAGE-CSS-END ------ */
 
@@ -3554,12 +3560,12 @@ a.follower-icon:hover {
     #my-following .MS-controls .MS-left {
         left: -335px;
     }
-    #my-followers .MS-controls .MS-right, 
+    #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: -413px;
-    } 
+    }
     #folloersSlider .MS-content .item,
-     #followingSlider .MS-content .item {     
+    #followingSlider .MS-content .item {
         width: 52%;
     }
     .pally-frnds {
@@ -3702,25 +3708,22 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
-    #MobfolloersSlider .MS-controls{
+    #MobfolloersSlider .MS-controls {
         margin-top: -72px;
         top: 40%;
     }
-    
-    #MobfollowingSlider .MS-controls{
+    #MobfollowingSlider .MS-controls {
         margin-top: -72px;
         top: 76%;
     }
-   
-    #MobfolloersSlider .MS-controls .MS-left, 
-    #MobfollowingSlider .MS-controls .MS-left{
+    #MobfolloersSlider .MS-controls .MS-left,
+    #MobfollowingSlider .MS-controls .MS-left {
         display: none !important;
     }
-    #MobfolloersSlider .MS-controls .MS-right, 
-    #MobfollowingSlider .MS-controls .MS-right{
+    #MobfolloersSlider .MS-controls .MS-right,
+    #MobfollowingSlider .MS-controls .MS-right {
         margin-top: 0;
         position: absolute;
-       
         color: #4F4F4F;
         background: transparent;
         width: 50px;
@@ -3729,18 +3732,21 @@ a.follower-icon:hover {
         box-shadow: none;
         border: none;
     }
-    #MobfollowingSlider .MS-controls .MS-right{
+    #MobfollowingSlider .MS-controls .MS-right {
         top: 0;
     }
-    #MobfolloersSlider .MS-controls .MS-right{
+    #MobfolloersSlider .MS-controls .MS-right {
         top: 0;
     }
-    #my-followers .MS-content .item, #folloersSlider .MS-content .item, #my-following .MS-content .item {      
+    #my-followers .MS-content .item,
+    #folloersSlider .MS-content .item,
+    #my-following .MS-content .item {
         padding: 16px 0;
     }
-    #folloersSlider .MS-content .item, #followingSlider .MS-content .item, 
-    #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item{
-      
+    #folloersSlider .MS-content .item,
+    #followingSlider .MS-content .item,
+    #MobfolloersSlider .MS-content .item,
+    #MobfollowingSlider .MS-content .item {
         width: 48%;
     }
     .Mobprofile-wrapper {
@@ -3870,9 +3876,8 @@ a.follower-icon:hover {
     .mobilehero-view {
         display: block;
     }
-    #my-followers .MS-controls, 
+    #my-followers .MS-controls,
     #MobfollowingSlider .MS-controls {
-       
         display: block;
     }
     .MS-controls {
@@ -4458,6 +4463,15 @@ a.follower-icon:hover {
     .mobile-header.sticky-bg {
         z-index: auto;
     }
+    .editpro-form .form-group {
+        width: 100%;
+    }
+    .update-profile button.yellow-bg {
+        width: 100%;
+    }
+    .mobileprofile-content .dropdown-toggle::after {
+        display: none;
+    }
 }
 
 @media (max-width:840px) {
@@ -4467,7 +4481,8 @@ a.follower-icon:hover {
 }
 
 @media (max-width:768px) {
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: -386px;
     }
     .review-content .success-box {
@@ -4495,14 +4510,15 @@ a.follower-icon:hover {
 }
 
 @media (max-width:767.98px) {
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: 18%;
     }
     #my-followers .MS-controls,
-    #my-following .MS-controls  {
+    #my-following .MS-controls {
         left: 0%;
     }
-    #MobfolloersSlider .MS-content .item, 
+    #MobfolloersSlider .MS-content .item,
     #MobfollowingSlider .MS-content .item {
         width: 48%;
         margin: 0 10px 0 0;
@@ -4600,7 +4616,8 @@ a.follower-icon:hover {
 }
 
 @media (max-width:675px) {
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: 14%;
     }
     .Mobviewexistpally-bottom-modal .justify-content-start {
@@ -4626,7 +4643,8 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: 8%;
     }
     .myself-content .addbutton-bg {
@@ -4762,7 +4780,8 @@ a.follower-icon:hover {
 }
 
 @media (max-width:494px) {
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: 6%;
     }
     .refer-inner {
@@ -4901,11 +4920,14 @@ a.follower-icon:hover {
 }
 
 @media (max-width:390px) {
-    #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item {
+    #MobfolloersSlider .MS-content .item,
+    #MobfollowingSlider .MS-content .item {
         width: 49%;
         margin: 0 4px 0 0;
     }
-    #my-followers .MS-content .item, #folloersSlider .MS-content .item, #my-following .MS-content .item {
+    #my-followers .MS-content .item,
+    #folloersSlider .MS-content .item,
+    #my-following .MS-content .item {
         padding: 8px 4px;
     }
     #MobfolloersSlider .MS-controls {
