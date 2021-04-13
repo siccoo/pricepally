@@ -3038,12 +3038,12 @@ select:focus {
 }
 
 .changepass-wrapper input,
-.login-content input {
+.login-content input, .Mobprofile-wrapper input{
     border: none;
 }
 
 .changepass-wrapper span.brown-clr,
-.login-content span.brown-clr {
+.login-content span.brown-clr, .Mobprofile-wrapper .brown-clr{
     font-size: 14px;
     padding: 10px 6px 10px 10px;
 }
