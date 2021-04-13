@@ -3751,6 +3751,7 @@ a.follower-icon:hover {
     }
     .Mobprofile-wrapper {
         background: #FCFCFC;
+        height: 100vh;
     }
     .saveproducts-wrapper {
         margin: 66px 0 80px 0;
@@ -4471,6 +4472,13 @@ a.follower-icon:hover {
     }
     .mobileprofile-content .dropdown-toggle::after {
         display: none;
+    }
+    .address-wrapper.active {
+        border: none;
+    }
+    .address-wrapper {
+        border: none;
+        height: auto;
     }
 }
 
