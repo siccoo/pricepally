@@ -377,15 +377,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="load-bg text-center mb-5 d-none d-lg-block">
-                    <a href="#">
-                        <button typ="button" class="add-more text-uppercase ">
-                            ADD NEW ADDRESS
-                        </button>
-                    </a>
-                </div>
+               
             </div>
             <hr>
+            <div class="container">
+                <div class="text-center  d-block d-lg-none add-btn">
+                    <button typ="button" class="border-btneffects text-uppercase " data-toggle="modal" data-target="#address-bottom_modal">
+                        ADD NEW ADDRESS
+                    </button>
+                </div>
+            </div>
+            
         </section>
         <!------ MOBILE-VIEW-ADDRESS-SECTION-END ------>
         <!------ FOOTER-SECTION-START ------>
@@ -680,7 +682,71 @@
             </div>
         </div>
         <!------ ADD-NEW-ADDRESS-MODAL-END ------>
-
+        <!------ MOBILE-ADD-NEW-ADDRESS-MODAL-CSS-START ------>
+        <div class="modal modal-bottom fade address-bottom" id="address-bottom_modal" tabindex="-1" role="dialog" aria-labelledby="address-bottom_modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="profilemodal-header p-3">
+                        <a href="#" data-dismiss="modal" aria-label="Close">
+                            <h5><i class='material-icons align-top'>west</i> Add New Address</h5>
+                        </a>
+                    </div>
+                    <div class="modal-body addnewaddress-modal">
+                        <form class="editpro-form">
+                            <div class="form-group">
+                                <label>Label</label>
+                                <select class="form-control">
+                              <option>Select one</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <label>House Number / Office Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Street Address</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Directions / Landmark</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Nearby Location</label>
+                                <select class="form-control">
+                              <option>Abule Egba (Agbado Ijaye Rd.)</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Directions / Landmark</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <ul class="list-unstyled phone-list">
+                                    <li class="d-inline-block">
+                                        <select>
+                                        <option value="234">+234</option>
+                                    </select>
+                                    </li>
+                                    <li class="d-inline-block"> <input type="text" class="form-control" name="phone" id="phone" value="345345345345" placeholder="e.g(987653212)"></li>
+                                </ul>
+                            </div>
+                            <div class="update-profile">
+                                <button type="button" class="yellow-bg text-uppercase">save Address</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------ MOBILE-ADD-NEW-ADDRESS-MODAL-CSS-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

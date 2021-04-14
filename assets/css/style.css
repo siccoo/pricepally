@@ -204,8 +204,7 @@ ul.nav-pills {
 }
 
 .start-header,
-.mobile-list-header,
-.mobile-header {
+.mobile-list-header {
     transition: all 0.4s ease;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
 }
@@ -217,8 +216,6 @@ ul.nav-pills {
 }
 
 .mobile-header {
-    background-color: #FBFBFB;
-    height: 60px;
     padding: 16px 0 0 0;
 }
 
@@ -418,7 +415,11 @@ span.yellow_cir {
 .grey-text {
     color: #828282;
 }
-
+.mylist-wrapper .grey-text {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 400;
+}
 .seaarch-list {
     width: 40px;
     height: 40px;
@@ -2027,7 +2028,22 @@ div#pallyorderModal .addbutton-bg {
     width: 100%;
     height: 46px;
 }
-
+.date-picker input#datepicker {
+    border: none;
+}
+.date-picker ::placeholder {
+    color: #625300 !important;
+    opacity: 0.8;
+}
+.gj-datepicker-md [role=right-icon] {
+    right: 20% !important;
+    color: #B3561B;
+}
+.gj-picker-md {
+    color: #253342 !important;
+    border: none !important;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 16%);
+}
 .cartsuessfull-bg .modal-content {
     width: 90%;
     margin: 0 auto;
@@ -2266,7 +2282,8 @@ div#pallyorderModal .addbutton-bg {
 .checkout-bottom .modal-content,
 .couponapply-bottom .modal-content,
 .profile-bottom .modal-content,
-.changepass-bottom .modal-content {
+.changepass-bottom .modal-content,
+.address-bottom .modal-content{
     background-color: #FCFCFC;
     height: 100vh !important;
 }
@@ -2602,23 +2619,27 @@ div#pallyorderModal .addbutton-bg {
 
 /* ====== MAKE-LIST-PAGE-CSS-START ====== */
 
+.makelist-wrapper .breadcrumb  a {
+    color: #572B00;
+    font-weight: 400;
+}
+.makelist-wrapper .breadcrumb {
+    padding: 0;
+    background-color: transparent;
+}
 .makelist-wrapper {
     padding: 40px 0;
     position: relative;
 }
 
-.make-list li {
-    list-style: disc;
-    float: left;
-    padding: 0 22px 0 0;
-    font-size: 16px;
-}
 
-.make-list a {
+
+.making-list a {
     color: #572B00;
     font-weight: 400;
+    font-size: 16px;
+    padding: 0 7px 0 0;
 }
-
 .makelist-view {
     box-shadow: 0 1px 2px 0 hsl(0deg 0% 0% / 16%);
     border-radius: 0 0 5px 5px;
@@ -3558,6 +3579,19 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
+    form.makelist-form {
+        width: 100%;
+    }
+    .myfollowers {
+        padding: 0;
+    }
+    .follow-img {
+        width: 50px;
+        height: 50px;
+    }
+    .address-wrapper {
+    padding: 12px 12px 0 8px;
+}
     #my-followers .MS-controls .MS-left,
     #my-following .MS-controls .MS-left {
         left: -335px;
@@ -3710,13 +3744,37 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    
+    .making-list {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .making-list li:first-child {
+        width: 100%;
+    }
+    .making-list a{
+        font-size: 18px;
+    }
+    .share-btn {
+        margin: 20px auto;
+    }
+    .share-btn .yellow-bg {
+        width: 100%;
+    }
+    .follwers-wrapper {
+        height: 130vh;
+    }
+    .add-btn {
+        padding:  300px auto 0;
+    }
+    .Mobprofile-wrapper .border-btneffects {
+        z-index: 0;
+    }
     #MobfolloersSlider .MS-controls {
-        margin-top: -72px;
-        top: 40%;
+        top: 33%;
     }
     #MobfollowingSlider .MS-controls {
-        margin-top: -72px;
-        top: 76%;
+        top:63%;
     }
     #MobfolloersSlider .MS-controls .MS-left,
     #MobfollowingSlider .MS-controls .MS-left {
@@ -3758,12 +3816,6 @@ a.follower-icon:hover {
     .saveproducts-wrapper {
         margin: 66px 0 80px 0;
     }
-    /* .saveproducts-wrapper .justify-content-start {
-        width: 24%;
-    }
-    .saveproducts-wrapper .recommended-bg .justify-content-start {
-        width: 30%;
-    } */
     .refer-wrapper {
         background: none;
         margin: 100px 0 0 0;
@@ -4028,7 +4080,6 @@ a.follower-icon:hover {
         font-variant: normal;
         text-transform: none;
         line-height: 1;
-        /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -4122,6 +4173,14 @@ a.follower-icon:hover {
         height: 110px;
         padding: 10px 0 0 0;
         bottom: 10%;
+    }
+    .bottommake-list .making-list {
+        position: fixed;
+        z-index: 1;
+        bottom: 10%;
+        border-top: 1px solid #ccc;
+        width: 70%;
+        text-align: center;
     }
     .orders-footer {
         position: fixed;
@@ -4347,6 +4406,12 @@ a.follower-icon:hover {
         width: 70%;
         margin: 0;
     }
+    .mylist-wrapper .addbutton-bg {
+        width: 70%;
+        height: 46px;
+        padding: 8px 0 0 0;
+        margin: 0;
+    }
     .myself-content .addbutton-bg {
         width: 20%;
         margin: 0;
@@ -4391,7 +4456,8 @@ a.follower-icon:hover {
     .select-bottom-modal .modal-content,
     .cartsucessfull-bottom-modal .modal-content,
     .Mobexistpally-bottom-modal .modal-content,
-    .Mobviewexistpally-bottom-modal .modal-content {
+    .Mobviewexistpally-bottom-modal .modal-content, 
+    .sharelist-bottom  .modal-content{
         border-radius: 20px 20px 5px 5px !important;
     }
     /* Bottom */
@@ -4482,6 +4548,39 @@ a.follower-icon:hover {
         border: none;
         height: auto;
     }
+    .Mobmakelist-wrapper {
+        padding: 40px 0 100px;
+        height: auto;
+    }
+    .Mobmakelist-wrapper .list-img {
+        width: 60px;
+        height: 60px;
+    }
+    .mylist-wrapper {
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        border-top: 1px solid rgba(0,0,0,.1);
+        margin: 20px 0 0 0;
+    }
+    .mylist-btn {
+        padding: 60px 0 0 0;
+        margin: 0;
+    }
+    .make-list {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .make-list li {
+        padding: 0 30px 0 0;
+    }
+    .savemake-list ul {
+        margin: 0;
+        padding: 0;
+    }
+   
 }
 
 @media (max-width:840px) {
@@ -4491,6 +4590,7 @@ a.follower-icon:hover {
 }
 
 @media (max-width:768px) {
+   
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: -386px;
@@ -4517,9 +4617,20 @@ a.follower-icon:hover {
         width: 100%;
         padding: 14px;
     }
+    .bottommake-list .making-list {
+        width: 90%;
+    }
 }
 
 @media (max-width:767.98px) {
+   
+   
+    #my-followers .MS-controls{
+        top: 32%;
+    }
+    #my-following .MS-controls {
+        top: 62%;
+    }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: 18%;
@@ -4653,6 +4764,12 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
+    .make-list {
+        width: 100%;
+    }
+    .make-list li {
+        padding: 0 30px 0 30px;
+    }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: 8%;
@@ -4701,6 +4818,7 @@ a.follower-icon:hover {
 }
 
 @media (max-width:530px) {
+   
     .myself-content .addbutton-bg {
         width: 34%;
     }
@@ -4790,6 +4908,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:494px) {
+    .make-list li {
+        padding: 0 30px 0 0px;
+    }
+    .mylist-btn button.yellow-bg {
+        width: 100%;
+    }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: 6%;
@@ -4940,11 +5064,9 @@ a.follower-icon:hover {
     #my-following .MS-content .item {
         padding: 8px 4px;
     }
-    #MobfolloersSlider .MS-controls {
-        top: 42%;
-    }
+  
     #MobfollowingSlider .MS-controls {
-        top: 78%;
+        top: 60%;
     }
     .copy-bg {
         padding: 6px;
@@ -5118,6 +5240,19 @@ a.follower-icon:hover {
     .saveproducts-wrapper .foodtabs .nav-link.active {
         padding: .5rem 0.3rem !important;
     }
+    .myfollowers .p-2 {
+        padding: .2rem!important;
+    }
+    .myfollowers h6 {
+        font-size: 14px;
+    }
+    .follow-btn.text-uppercase {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .making-list a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width:330px) {
@@ -5233,6 +5368,10 @@ a.follower-icon:hover {
         width: 70px;
         height: 50px;
         margin: 10px 10px 0 0;
+    }
+    .copy-bg {
+        padding: 4px;
+        font-size: 14px;
     }
 }
 

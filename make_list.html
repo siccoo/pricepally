@@ -8,9 +8,6 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
-
-    <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>  
-
     <link href="assets/css/style.css" rel="stylesheet">
     
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" media="all">
@@ -154,101 +151,40 @@
             </header>
         </div>
         <!------ HEADER_SECTION_END  ------>
-        <!------ MAKE-LIST-SECTION-START ------>
-        <section class="makelist-wrapper"  id="wrapper">
+         <!------ MOBILE-VIEW-HEADER-START ------>
+         <section class="mobile-list-header d-block d-lg-none">
+            <div class="container">
+                <div class="d-flex mb-3">
+                    <a href="#">
+                        <i class="material-icons pr-2">west</i> <span class="align-top">Make a List</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-VIEW-HEADER-END ------>
+        <!------ WEB-VIEW-MAKE-LIST-SECTION-START ------>
+        <section class="makelist-wrapper d-none d-lg-block"  id="wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-5">
                         <h4 class="heading">Make a List</h4>
-                        <ul class="make-list p-0 mb-5">
-                            <li class="d-inline-block"><a href="#">How it works</a></li>
-                            <li ><a href="#">FAQs</a></li>
-                            <li ><a href="#">Terms & Privacy</a></li>
-                            <li><a href="#">View Your Lists</a></li>
+                        <ul class="p-0 making-list">
+                            <li class="d-inline-block  pb-2"><a href="saved-makelist.html">View Your Lists</a></li>
+                            <li class="d-inline-block  pb-2"><a href="#">• How it works</a></li>
+                            <li class="d-inline-block  pb-2"><a href="#">• Terms & Privacy</a></li>
+                            <li class="d-inline-block pb-2"><a href="#">•  FAQs</a></li>
                         </ul>
+                        <!-- <ul class="make-list p-0 mb-5">
+                            <li class="d-inline-block"><a href="saved-makelist.html">View Your Lists</a></li>
+                            <li ><a href="#">How it works</a></li>
+                            <li ><a href="#"></a></li>
+                            <li><a href="#">•  FAQs</a></li>
+                        </ul> -->
+                        
                        <form class="makelist-form">
                            <div class="form-group">
                                <label class="mb-1">Food Item</label>
-                               <input type="text" class="form-control" placeholder="Search for a food item">
-                                  <!-- <div class="makelist-view "  id="scrolling">
-                                    <div class="d-flex align-content-between mb-2">
-                                        <div class="p-1">
-                                            <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                        </div>
-                                        <div class="p-1 align-self-center">
-                                             <p class="mb-0"> Tuwo Rice (kg)</p>
-                                        </div>
-                                        <div class="ml-auto p-2 align-self-center">
-                                            <h6>₦5,000</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0"> Tuwo Rice (Full Bag)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦15,000</h6>
-                                         </div>
-                                     </div>
-                                     <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0"> Tuwo Rice (Half Bag)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦75,000</h6>
-                                         </div>
-                                     </div>
-                                     <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0">Tuwo Rice (Quarter Bag)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦5,000</h6>
-                                         </div>
-                                     </div>
-                                     <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0">Tuwo Rice (Paint Bucket)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦3,000</h6>
-                                         </div>
-                                     </div>
-                                     <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0">Tuwo Rice (Congo)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦1,000</h6>
-                                         </div>
-                                     </div>
-                                     <div class="d-flex align-content-between mb-2">
-                                         <div class="p-1">
-                                             <img class="list-view" src="assets/images/search-img1.jpg" alt="search-img1">
-                                         </div>
-                                         <div class="p-1 align-self-center">
-                                             <p class="mb-0">Tuwo Rice (Derica)</p>
-                                         </div>
-                                         <div class="ml-auto p-2 align-self-center">
-                                             <h6>₦5,00</h6>
-                                         </div>
-                                     </div>
-                                </div>   -->
+                               <input type="text" class="form-control" placeholder="Search for a food item">                                  
                            </div>
                            <div class="form-group">
                                <label class="mb-1">Select Preferred Attribute</label>
@@ -261,13 +197,13 @@
                                <div class="col-md-6 col-lg-6">
                                    <p class="mb-0 grey-text">Quantity</p>
                                    <div class="addbutton-bg">
-                                    <button type="button" id="sub" class="sub"><span class="material-icons">
+                                    <span id="sub" class="sub mb-0"><span class="material-icons">
                                             remove
-                                        </span></button>
-                                    <input type="text" id="1" value="1" class="field">
-                                    <button type="button" id="add" class="add"><span class="material-icons">
+                                        </span></span>
+                                    <input type="text" id="1" value=1 class=field>
+                                    <span id="add" class="add  mb-0"><span class="material-icons">
                                             add
-                                        </span></button>
+                                        </span></span>
                                 </div>
                                </div>
                                <div class="col-md-6 col-lg-6">
@@ -332,13 +268,13 @@
                                     <div class="d-flex">
                                         <div class="flex-fill">
                                             <div class="addbutton-bg">
-                                                <button type="button" id="sub" class=sub><span class="material-icons">
+                                                <span id="sub" class="sub mb-0"><span class="material-icons">
                                                         remove
-                                                    </span></button>
+                                                    </span></span>
                                                 <input type="text" id="1" value=1 class=field>
-                                                <button type="button" id="add" class=add><span class="material-icons">
+                                                <span id="add" class="add  mb-0"><span class="material-icons">
                                                         add
-                                                    </span></button>
+                                                    </span></span>
                                             </div>
                                         </div>
                                         <div class="flex-fill align-self-center">
@@ -374,13 +310,13 @@
                                     <div class="d-flex">
                                         <div class="flex-fill">
                                             <div class="addbutton-bg">
-                                                <button type="button" id="sub" class=sub><span class="material-icons">
+                                                <span id="sub" class="sub mb-0"><span class="material-icons">
                                                         remove
-                                                    </span></button>
+                                                    </span></span>
                                                 <input type="text" id="1" value=1 class=field>
-                                                <button type="button" id="add" class=add><span class="material-icons">
+                                                <span id="add" class="add  mb-0"><span class="material-icons">
                                                         add
-                                                    </span></button>
+                                                    </span></span>
                                             </div>
                                         </div>
                                         <div class="flex-fill align-self-center">
@@ -415,13 +351,13 @@
                                     <div class="d-flex">
                                         <div class="flex-fill">
                                             <div class="addbutton-bg">
-                                                <button type="button" id="sub" class=sub><span class="material-icons">
+                                                <span id="sub" class="sub mb-0"><span class="material-icons">
                                                         remove
-                                                    </span></button>
+                                                    </span></span>
                                                 <input type="text" id="1" value=1 class=field>
-                                                <button type="button" id="add" class=add><span class="material-icons">
+                                                <span id="add" class="add  mb-0"><span class="material-icons">
                                                         add
-                                                    </span></button>
+                                                    </span></span>
                                             </div>
                                         </div>
                                         <div class="flex-fill align-self-center">
@@ -444,70 +380,405 @@
                 </div>
             </div>
         </section>
-        <!------ MAKE-LIST-SECTION-END ------>
-        <!------ FOOTER-SECTION-START ------>
-        <footer class="ml-2 mr-2 footer-wrapper">
+        <!------ WEB-VIEW-MAKE-LIST-SECTION-END ------>
+        <!------ MOBILE-VIEW-MAKE-LIST-SECTION-START ------>
+        <section class="Mobmakelist-wrapper d-block d-lg-none" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h5>Categories</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Food Stuff</a></li>
-                                    <li><a href="#">Packaged Food</a></li>
-                                    <li><a href="#">Fruits & Nuts</a></li>
-                                    <li><a href="#">Meat, Poultry & Sea Food</a></li>
-                                    <li><a href="#">Oils & Spices</a></li>
-                                    <li><a href="#">Soup & Stew Ingredients</a></li>
-                                </ul>
+                    <div class="col-12 col-md-12">
+                       <form class="makelist-form">
+                           <div class="form-group">
+                               <label class="mb-1">Food Item</label>
+                               <input type="text" class="form-control" placeholder="Search for a food item">                                  
+                           </div>
+                           <div class="form-group">
+                               <label class="mb-1">Select Preferred Attribute</label>
+                               <select class="form-control">
+                                   <option>Choose an option</option>
+                                   <option>Choose an option 1</option>
+                               </select>
+                           </div>
+                           <div class="d-flex">
+                                <div class="justfiy-content-start">
+                                    <p class="mb-0 grey-text">Quantity</p>
+                                    <div class="addbutton-bg">
+                                        <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                remove
+                                            </span></span>
+                                        <input type="text" id="1" value=1 class=field>
+                                        <span id="add" class="add  mb-0">
+                                            <span class="material-icons">
+                                                add
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="justfiy-content-end">
+                                    <p class="mb-1 grey-text">Price</p>
+                                    <h3 class="font-weight-bold">₦0</h3>
+                                </div>
+                           </div>
+                           <div class="text-center mt-4">
+                            <button type="button" class=" brown-fillbtn text-uppercase">Add to list </button>
+                           </div>
+                           
+                       </form>
+                     
+                    </div>
+                    <hr>
+                    <div class="col-12 col-md-12">
+                        <div class="mylist-wrapper">
+                            <div class="d-flex mt-3">
+                                <div class="p-1">
+                                    <h4>My List</h4>
+                                    <p>Friends can add to this list when you share it with them.</p>
+                                </div>
+                                <div class="p-1 ml-auto">
+                                    <div class="share-ic">
+                                        <a href="#">
+                                            <span class="material-icons-outlined">
+                                                share
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <h5>Company</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Refer & Earn</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Make a List</a></li>
-                                    <li><a href="#">Help Center</a></li>
-                                </ul>
+                            <div class="d-flex mb-3 mt-4">
+                                <div class="justify-content-start">
+                                    <a href="#">
+                                        <div class="d-flex ">
+                                            <div class="pr-2 ">
+                                                <img class="list-img" src="assets/images/search-img1.jpg" alt="">
+                                            </div>
+                                            <div class=" ">
+                                                <h6>Tuwo Rice</h6>
+                                                <div class="addbutton-bg">
+                                                    <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                            remove
+                                                        </span></span>
+                                                    <input type="text" id="1" value="1" class="field">
+                                                    <span id="add" class="add  mb-0"><span class="material-icons">
+                                                            add
+                                                        </span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" ml-auto justify-content-end">
+                                    <h6 class="pt-3">₦90,000</h6>
+                                    <a href="#" class="text-danger delete-icon float-right">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <h5>Policy</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">COVID 19 Policy</a></li>
-                                    <li><a href="#">Return Policy</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">Partners & Media</a></li>
-                                </ul>
+                            <hr class="border-bottom border-top-0">     
+                            <div class="d-flex mb-3 mt-4">
+                                <div class="justify-content-start">
+                                    <a href="#">
+                                        <div class="d-flex ">
+                                            <div class="pr-2 ">
+                                                <img class="list-img" src="assets/images/search-img2.jpg" alt="">
+                                            </div>
+                                            <div class=" ">
+                                                <h6 class="mb-1">Irish Potato (kg)
+                                                    Bucket</h6>
+                                                <div class="addbutton-bg">
+                                                    <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                            remove
+                                                        </span></span>
+                                                    <input type="text" id="1" value="1" class="field">
+                                                    <span id="add" class="add  mb-0"><span class="material-icons">
+                                                            add
+                                                        </span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" ml-auto justify-content-end">
+                                    <h6 class="pt-3">₦90,000</h6>
+                                    <a href="#" class="text-danger delete-icon float-right">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>   
+                          
+                            <hr class="border-bottom border-top-0">  
+                            <div class="d-flex mb-3 mt-4">
+                                <div class="justify-content-start">
+                                    <a href="#">
+                                        <div class="d-flex ">
+                                            <div class="pr-2 ">
+                                                <img class="list-img" src="assets/images/search-img1.jpg" alt="">
+                                            </div>
+                                            <div class=" ">
+                                                <h6>Tuwo Rice</h6>
+                                                <div class="addbutton-bg">
+                                                    <span id="sub" class="sub mb-0"><span class="material-icons">
+                                                            remove
+                                                        </span></span>
+                                                    <input type="text" id="1" value="1" class="field">
+                                                    <span id="add" class="add  mb-0"><span class="material-icons">
+                                                            add
+                                                        </span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" ml-auto justify-content-end">
+                                    <h6 class="pt-3">₦90,000</h6>
+                                    <a href="#" class="text-danger delete-icon float-right">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="mylist-btn text-center">
+                                <p class="mb-0">Done compiling the list?</p>
+                                <button type="button" class="yellow-bg text-uppercase" >checkout</button>
+                            </div> 
+                            <hr>
+                            
+                            <ul class="p-0 making-list">
+                                <li class="d-inline-block  pb-2"><a href="saved-makelist.html">View Your Lists</a></li>
+                                <li class="d-inline-block  pb-2"><a href="#"> How it works</a></li>
+                                <li class="d-inline-block  pb-2"><a href="#">• Terms & Privacy</a></li>
+                                <li class="d-inline-block pb-2"><a href="#">•  FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!------ MOBILE-VIEW-MAKE-LIST-SECTION-END ------>
+       <!------ FOOTER-SECTION-START ------>
+       <footer class="ml-2 mr-2 footer-wrapper d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Categories</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Food Stuff</a></li>
+                                <li><a href="#">Packaged Food</a></li>
+                                <li><a href="#">Fruits & Nuts</a></li>
+                                <li><a href="#">Meat, Poultry & Sea Food</a></li>
+                                <li><a href="#">Oils & Spices</a></li>
+                                <li><a href="#">Soup & Stew Ingredients</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Refer & Earn</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Make a List</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Policy</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">COVID 19 Policy</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Partners & Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="white-head">Join our mailing list & receive exclusives</h5>
+                    <div class="input-group mb-3 join-bg">
+                        <input type="text" class="form-control" placeholder="Enter your email address">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Join List</span>
+                        </div>
+                    </div>
+                    <h6>Connect with us on</h6>
+                    <ul class="list-unstyled social-icons">
+                        <li class="d-inline-block">
+                            <a href="#"><img src="assets/images/fb-icon.png" alt="fb-icon">
+                            </a>
+                            <a href="#"><img src="assets/images/insta-icon.png" alt="insta-icon"></a>
+                            <a href="#"><img src="assets/images/twitter-icon.png" alt="twitter-icon"></a>
+                            <a href="#"><img src="assets/images/youtube-icon.png" alt="youtube-icon.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center"><small>© 2021 Pricepally All Rights Reserved </small></p>
+        </div>
+    </footer>
+    <!------ FOOTER-SECTION-END ------>
+    <!------ MOBILE-FOOTER-CSS-START ------>
+    <footer class="d-block d-lg-none mobile-footer">
+        <div class="container">
+            <div class="d-flex text-center justify-content-center">
+                <div class="mobile-icon">
+                    <a class="nav-link active" href="index.html">
+                        <p class="mb-0"><i class="material-icons-outlined">home</i></p>
+                        <p class="mb-0">Home</p>
+                    </a>
+                </div>
+                <div class="mobile-icon">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <p class="mb-0"><span class="material-icons">
+                                people_outline
+                            </span></p>
+                        <p class="mb-0">Users</p>
+                    </a>
+                </div>
+                <div class="mobile-icon">
+                    <a class="nav-link" href="cart.html">
+                        <p class="mb-0"><span class="material-icons-outlined">
+                                shopping_cart
+                            </span></p>
+                        <p class="mb-0">Cart</p>
+                    </a>
+                </div>
+                <div class="mobile-icon">
+                    <a class="nav-link" href="orders.html">
+                        <p class="mb-0"><span class="material-icons-outlined">
+                                shopping_bag
+                            </span></p>
+                        <p class="mb-0">Order</p>
+                    </a>
+                </div>
+                <div class="mobile-icon" onclick="myFunction()">
+                    <a href="#" class="nav-link">
+                        <p class="mb-0 more_ic"><span class="material-icons">
+                                more_horiz
+                            </span></p>
+                        <p class="mb-0">More </p>
+                    </a>
+                </div>
+            </div>
+    </footer>
+    <!------ MORE-MODAL-START ------>
+    <div id="moreModal-wrapper">
+        <div class="container">
+            <div class="moremodal-bg">
+                <div class="moremodal-header">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="w-50 justify-content-start">
+                                <div class="p-1  ">
+                                    <h5 class="mb-0 morehead">₦GN 24,500</h5>
+                                    <p class="mb-0 more-phr">Wallet Balance</p>
+                                </div>
+                                <hr class="more-border">
+                                <div class="p-1">
+                                    <h6 class="mb-0 morehead">₦GN 1,000</h6>
+                                    <p class="mb-0 more-phr">Pending Balance</p>
+                                </div>
+
+                            </div>
+                            <div class="ml-auto justify-content-end align-self-center">
+                                <a href="#">
+                                    <button class="yellow-bg text-uppercase">Go to wallet</button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <h5 class="white-head">Join our mailing list & receive exclusives</h5>
-                        <div class="input-group mb-3 join-bg">
-                            <input type="text" class="form-control" placeholder="Enter your email address"  >
-                            <div class="input-group-append">
-                              <span class="input-group-text">Join List</span>
-                            </div>
-                          </div>
-                          <h6>Connect with us on</h6>
-                          <ul class="list-unstyled social-icons">
-                              <li class="d-inline-block"><a href="#"><img src="assets/images/fb-icon.png" alt="fb-icon">
-                              </a>
-                              <a href="#"><img src="assets/images/insta-icon.png" alt="insta-icon"></a>
-                              <a href="#"><img src="assets/images/twitter-icon.png" alt="twitter-icon"></a>
-                              <a href="#"><img src="assets/images/youtube-icon.png" alt="youtube-icon.png"></a>
-                            </li>
-                          </ul>
-                    </div>
                 </div>
-                <p class="text-center"><small >© 2021 Pricepally All Rights Reserved </small></p>
+                <div class="p-4">
+                    <ul class="list-unstyled ">
+                        <li class="more-outline mb-3">
+                            <a href="make_list.html">
+                                <span class="material-icons-round align-middle">
+                                    format_list_bulleted
+                                </span>
+                                <span class="morelist-text pl-2">Make a List</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="refer_earn.html">
+                                <span class="material-icons align-middle">
+                                    share
+                                </span>
+                                <span class="morelist-text pl-2">Refer and Earn</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="saved-products.html">
+                                <span class="material-icons align-middle">
+                                    favorite_border
+                                </span>
+                                <span class="morelist-text pl-2">Saved Products</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="notification.html">
+                                <span class="material-icons  align-middle">
+                                notifications_none
+                                </span>
+                                <span class="morelist-text pl-2">Notifications</span>
+                                <span class="yellow_cir float-right">2</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons align-middle">
+                                settings_cell</span>
+                                </span class="morelist-text pl-2">Contact Admin</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons  align-middle">
+                                error_outline</span>
+                                <span class="morelist-text pl-2">Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons-outlined align-middle rotate-ic">
+                                    repeat
+                                    </span>
+                                <span class="morelist-text pl-2">Return Policy</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons-outlined align-middle">
+                                    privacy_tip
+                                </span>
+                                <span class="morelist-text pl-2">Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons-outlined align-middle  rotate-ic">
+                                    note
+                                    </span>
+                                <span class="morelist-text pl-2">Terms & Conditions</span>
+                            </a>
+                        </li>
+                        <li class="more-outline mb-3">
+                            <a href="#">
+                                <span class="material-icons-outlined  align-middle">
+                                    login
+                                    </span>
+                                <span class="morelist-text pl-2">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-        </footer>
-        <!------ FOOTER-SECTION-END ------>
+        </div>
+
+    </div>
+    <!------ MORE-MODAL-END ------>
+    <!------ MOBILE-FOOTER-CSS-END ------>
          <!------ MAKELISTCHECKOUT-PAYMENT-MODAL-START ------>
          <div class="modal fade makelistmodal-bg" id="makelistcheckeModal" >
             <div class="modal-dialog" role="document">
