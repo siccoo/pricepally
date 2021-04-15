@@ -2282,8 +2282,7 @@ div#pallyorderModal .addbutton-bg {
 .checkout-bottom .modal-content,
 .couponapply-bottom .modal-content,
 .profile-bottom .modal-content,
-.changepass-bottom .modal-content,
-.address-bottom .modal-content{
+.changepass-bottom .modal-content{
     background-color: #FCFCFC;
     height: 100vh !important;
 }
@@ -3744,7 +3743,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
-    
+    .mobile-icon span.yellow_cir {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 3px;
+    }
     .making-list {
         margin: 0 auto;
         text-align: center;
@@ -3814,11 +3818,11 @@ a.follower-icon:hover {
         height: 100vh;
     }
     .saveproducts-wrapper {
-        margin: 66px 0 80px 0;
+        margin: 20px 0 80px 0;
     }
     .refer-wrapper {
         background: none;
-        margin: 100px 0 0 0;
+        margin: 20px 0 0 0;
     }
     .refer-inner {
         box-shadow: none;
@@ -3828,7 +3832,7 @@ a.follower-icon:hover {
         background: #FCFCFC;
     }
     .notification-bg {
-        margin: 90px 0 0 0;
+        padding: 20px 0 0 0;
     }
     .cartsucessfull-bottom-modal .modal-w .yellow-bg,
     .shopping-btn,
@@ -4168,7 +4172,7 @@ a.follower-icon:hover {
         position: fixed;
         background: #FCFCFC;
         width: 100%;
-        z-index: 1;
+        z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
         height: 110px;
         padding: 10px 0 0 0;
@@ -4176,7 +4180,7 @@ a.follower-icon:hover {
     }
     .bottommake-list .making-list {
         position: fixed;
-        z-index: 1;
+        z-index: auto;
         bottom: 10%;
         border-top: 1px solid #ccc;
         width: 70%;
@@ -4624,7 +4628,9 @@ a.follower-icon:hover {
 
 @media (max-width:767.98px) {
    
-   
+    .checkout-footer {
+        bottom: 20%;
+    }
     #my-followers .MS-controls{
         top: 32%;
     }
@@ -4737,6 +4743,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:675px) {
+    .checkout-footer {
+        bottom: 22%;
+    }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: 14%;
@@ -4814,6 +4823,9 @@ a.follower-icon:hover {
     }
     .pally-bg .justify-content-start {
         width: 32%;
+    }
+    .checkout-footer {
+        bottom: 11%;
     }
 }
 
@@ -4999,6 +5011,9 @@ a.follower-icon:hover {
 }
 
 @media(max-width:430px) {
+    .select-order {
+        bottom: 8%;
+    }
     #Mobaccordion .accordion-title i {
         width: auto;
     }
@@ -5142,9 +5157,15 @@ a.follower-icon:hover {
     .mini img {
         width: 100px;
     }
+    .checkout-footer {
+        bottom: 13%;
+    }
 }
 
 @media (max-width:375px) {
+    .bottommake-list .making-list {
+        bottom: 13%;
+    }
     .copy-bg .pr-3,
     .px-3 {
         padding-right: .05rem!important;
@@ -5176,9 +5197,16 @@ a.follower-icon:hover {
     .px-3 {
         padding-left: 0.5rem!important;
     }
+   
 }
 
 @media (max-width:360px) {
+    .checkout-footer {
+        bottom: 14%;
+    }
+    .select-order {
+        bottom: 11%;
+    }
     .Mobprofile-wrapper .brown-btn {
         padding: 4px 8px;
     }
@@ -5256,6 +5284,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:330px) {
+    .bottommake-list .making-list {
+        bottom: 14%;
+    }
     .wallet-border {
         padding: 8px;
     }
@@ -5372,6 +5403,9 @@ a.follower-icon:hover {
     .copy-bg {
         padding: 4px;
         font-size: 14px;
+    }
+    .select-order {
+        bottom: 12.9%;
     }
 }
 

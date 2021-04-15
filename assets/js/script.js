@@ -31,6 +31,7 @@ $(window).on('scroll', function() {
     }
 })
 
+
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
