@@ -202,7 +202,10 @@ ul.nav-pills {
 .start-header {
     background-color: #ffffff;
 }
-
+.coupon-header, 
+.successfull-header {
+    height: 60px;
+}
 .start-header,
 .mobile-list-header {
     transition: all 0.4s ease;
@@ -2041,7 +2044,7 @@ div#pallyorderModal .addbutton-bg {
 }
 .date-picker ::placeholder {
     color: #625300 !important;
-    opacity: 0.8;
+    opacity: 1;
 }
 .gj-datepicker-md [role=right-icon] {
     right: 20% !important;
@@ -2116,14 +2119,22 @@ div#pallyorderModal .addbutton-bg {
 .rdio input[type="radio"] {
     opacity: 0;
 }
-
+.coupon-head span.material-icons.s-icon {
+    font-size: 22px;
+    color: #4F4F4F;
+}
 .rdio label {
     padding-left: 10px;
     cursor: pointer;
     margin: -26px 0 6px 20px;
     display: block;
+    font-size: 16px;
 }
-
+.delivery-border label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 14px;
+}
 .rdio label:before {
     width: 18px;
     height: 18px;
@@ -2202,8 +2213,8 @@ div#pallyorderModal .addbutton-bg {
     font-size: 16px;
     color: #625300;
     opacity: 0.6;
+    font-weight: 400;
 }
-
 .checkout-head {
     color: #625300;
 }
@@ -3751,6 +3762,24 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .search-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        box-shadow: 0 0 2px hsl(0deg 0% 0% / 16%);
+    }
+    .search-tabs {
+        border: none;
+        font-size: 16px;
+        padding: 0;
+    }
+    .search-modal-bg .tab-content {
+        padding: 120px 10px 0;
+    }
+    .search-header {
+        height: 100px;
+        padding: 16px 10px 0;
+    }  
     .select-bg .form-control {
         border: 1px solid #EFEDED;
     }
@@ -4175,7 +4204,7 @@ a.follower-icon:hover {
         position: fixed;
         background: #FBFBFB;
         width: 100%;
-        z-index: 1;
+        z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
         height: 78px;
         padding: 10px 0 0 0;
@@ -4213,7 +4242,7 @@ a.follower-icon:hover {
         position: fixed;
         background: #FCFCFC;
         width: 100%;
-        z-index: 1;
+        z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
         height: 74px;
         padding: 10px 0 0 0;
@@ -4310,6 +4339,7 @@ a.follower-icon:hover {
     #moreModal-wrapper {
         display: none;
         position: relative;
+        z-index: auto;
     }
     .moremodal-bg {
         position: fixed;
@@ -4319,7 +4349,6 @@ a.follower-icon:hover {
         left: 0;
         right: 0;
         padding: 0;
-        z-index: 9999;
         height: 90%;
         -webkit-transform: translate3d(0%, 0, 0);
         -ms-transform: translate3d(0%, 0, 0);
@@ -4505,13 +4534,16 @@ a.follower-icon:hover {
         background: #FBFBFB;
         box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
         padding: 22px 10px 0 10px;
+        height: 100px;
     }
     .ordersum-header, .Mobdetails-back {
         padding: 16px 22px;
         height: 60px;
     }
    
-    .chekcoutmodal-header .nav-tabs {
+    .chekcoutmodal-header .nav-tabs, 
+    .search-header .nav-tabs .nav-item
+     {
         border-bottom: none;
         margin: 10px 0 0 0;
     }
@@ -4526,7 +4558,8 @@ a.follower-icon:hover {
     .delivery-tabs a {
         color: #BDBDBD;
     }
-    .chekcoutmodal-header li.nav-item {
+    .chekcoutmodal-header li.nav-item,
+    .search-header .nav-tabs .nav-item{
         width: 50%;
         text-align: center;
     }
@@ -4795,6 +4828,9 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
+    .select-order {
+        bottom: 24%;
+    }
     .make-list {
         width: 100%;
     }
@@ -4942,6 +4978,10 @@ a.follower-icon:hover {
 }
 
 @media (max-width:494px) {
+    .address-bottom .white-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
     .make-list li {
         padding: 0 30px 0 0px;
     }
@@ -5308,6 +5348,10 @@ a.follower-icon:hover {
 }
 
 @media (max-width:330px) {
+    .address-bottom h5 {
+        font-size: 16px;
+        margin: 4px 0 0 0;
+    }
     .select-bottom-modal .modal-body {
         padding: 8px 10px !important;
     }
@@ -5352,7 +5396,8 @@ a.follower-icon:hover {
     .shopping-btn {
         width: 260px;
     }
-    .chekcoutmodal-header li.nav-item {
+    .chekcoutmodal-header li.nav-item,
+    .search-header .nav-tabs .nav-item {
         width: auto;
         text-align: center;
     }

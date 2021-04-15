@@ -73,7 +73,7 @@
                                                     <p class="mb-0"><span class="material-icons-outlined">
                                                             shopping_bag
                                                         </span></p>
-                                                    <p class="mb-0">Order</p>
+                                                    <p class="mb-0">Orders</p>
                                                 </a>
                                             </li>
                                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -154,7 +154,7 @@
 
             <div class="mobile-search">
                 <div class="container">
-                    <div class="search-container">
+                    <div class="search-container" data-toggle="modal" data-target="#search-modal">
                         <form>
                             <div class="saerch-bar">
                                 <span class="material-icons">
@@ -255,7 +255,7 @@
                             <h4 class="heading">Categories</h4>
                         </div>
                         <div class="col-6 col-md-6 col-lg-6 text-right">
-                            <a href="#" class="text-uppercase brown-text viewall-btn">View All</a>
+                            <a href="product_detail.html" class="text-uppercase brown-text viewall-btn">View All</a>
                         </div>
                     </div>
                     <div id="categoiresSlider" class="dvslider">
@@ -2829,7 +2829,7 @@
                             </div>
                             <div class="col-lg-9">
                                 <h4>Free Return</h4>
-                                <p>We are committed to serve you the best products</p>
+                                <p>We stand behind what we serve you</p>
                             </div>
                         </div>
                     </div>
@@ -3194,6 +3194,83 @@
         </div>
         <!------ MORE-MODAL-END ------>
         <!------ MOBILE-FOOTER-CSS-END ------>
+        <!------ MOBILE-SEARCH-BAR-MODAL-START ------>
+        <div class="modal modal-full fade search-modal-bg show" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-modal="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="search-header Mobheader-fixed">
+                    <div class="d-flex">
+                        <div class="justfiy-content-start">
+                            <a href="index.html">
+                                <h5 class="modal-title"><i class="material-icons align-top">west</i> <input type="text" placeholder="Search" class="search-tabs align-top"></h5>  
+                              </a> 
+                        </div>
+                        <div class="ml-auto justify-content-end">
+                            <ul class="list-unstyled mb-0">
+                                
+                                <li class="d-inline-block align-top" ><p class="mb-0" > <span class="material-icons  align-middle  pr-2">
+                                        filter_list
+                                    </span>Filter</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs delivery-tabs" id="deliveryTab" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active" id="" data-toggle="tab" href="#Mobfood-tab" role="tab" aria-controls="Mobfood-tab" aria-selected="true">Food Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Mobuser-tab" data-toggle="tab" href="#users" role="tab" aria-controls="payment" aria-selected="false">Users</a>
+                        </li>
+                    </ul>         
+                </div>
+                <div class="modal-body p-0">
+                    <div class="tab-content" id="deliveryTabContent">
+                        <div class="tab-pane fade show active Mobfood-tab" id="Mobfood-tab" role="tabpanel" aria-labelledby="Mobfood-tab-tab">
+                            <h6 class="mb-2">2 Results</h6>
+                            <div class="d-flex mb-4">
+                                <div class="justify-content-start pr-2">
+                                    <img class="search-img" src="assets/images/search-img1.jpg" alt="search-img1">
+        
+                                </div>
+                                <div class="justify-content-end">
+                                    <h6 class="mb-2">Tuwo Rice (50kg)</h6>
+                                    <h6>₦75,000</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="justify-content-start pr-2">
+                                    <img class="search-img" src="assets/images/search-img2.jpg" alt="search-img1">
+        
+                                </div>
+                                <div class="justify-content-end">
+                                    <h6 class="mb-2">Titus 20kg (Full Carton)
+                                    </h6>
+                                    <h6>₦75,000</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade payment-bg" id="users" role="tabpanel" aria-labelledby="Mobuser-tab">
+                            <h6 class="mb-2">3 Results</h6>
+                            <div class="d-flex align-content-between flex-wrap myfollowers mb-4">
+                                <div class="p-2"><img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                <div class="p-2 align-self-center"><h6>Florence Jackson</h6></div>
+                                <div class="ml-auto p-2 align-self-center"><a href="#" class="follow-btn text-uppercase">Follow
+                                </a></div>
+                            </div>
+                            <div class="d-flex align-content-between flex-wrap myfollowers mb-4">
+                                <div class="p-2"><img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></div>
+                                <div class="p-2 align-self-center"><h6>Florence Jackson</h6></div>
+                                <div class="ml-auto p-2 align-self-center"><a href="#" class="follow-btn text-uppercase">Follow
+                                </a></div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+              </div>
+            </div>
+        </div>
+        <!------ MOBILE-SEARCH-BAR-MODAL-END ------>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
