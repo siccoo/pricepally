@@ -208,7 +208,15 @@ ul.nav-pills {
     transition: all 0.4s ease;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
 }
-
+.Mobheader-fixed {
+    transition: all 0.4s ease;
+    box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #FBFBFB;
+    z-index: 1;
+}
 .mobile-list-header {
     background-color: #FBFBFB;
     height: 60px;
@@ -654,9 +662,8 @@ span.yellow_cir {
 
 .rating-view {
     position: relative;
-    z-index: 1;
+    z-index: auto;
 }
-
 .stat-bar-rating {
     border-radius: 4px;
     float: left;
@@ -1945,7 +1952,9 @@ li.start-clr {
 .owl-nav {
     display: none;
 }
-
+.owl-carousel {
+    z-index: auto !important;
+}
 .review-content .dark-grey {
     color: #4F4F4F;
     font-size: 14px;
@@ -1973,19 +1982,19 @@ li.start-clr {
     width: 80%;
 }
 
-#splitbill {
+div#splitbill {
     display: block;
 }
 
-#paymyself {
+div#paymyself {
     display: none;
 }
 
-#Mobsplitbill {
+div#Mobsplitbill {
     display: block;
 }
 
-#Mobpaymyself {
+div#Mobpaymyself {
     display: none;
 }
 
@@ -2020,9 +2029,8 @@ div#pallyorderModal label {
 
 div#pallyorderModal .addbutton-bg {
     width: 36%;
-    margin: 0;
+    margin: 0 0 16px 0;
 }
-
 .gotocart-btn,
 .cartsuessfull-bg .addclose {
     width: 100%;
@@ -3743,6 +3751,21 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .select-bg .form-control {
+        border: 1px solid #EFEDED;
+    }
+    .viewdetail-bottom .modal-body {
+        margin: 80px 0 0 0;
+    }
+    .order-sum-content {
+        margin: 80px 0 0 0;
+    }
+    .coupon-content {
+        margin: 12px 0 0 0;
+    }
+    .checkout-bottom .tab-content {
+        padding-top: 120px;
+    }
     .mobile-icon span.yellow_cir {
         width: 24px;
         height: 24px;
@@ -4296,7 +4319,7 @@ a.follower-icon:hover {
         left: 0;
         right: 0;
         padding: 0;
-        z-index: auto;
+        z-index: 9999;
         height: 90%;
         -webkit-transform: translate3d(0%, 0, 0);
         -ms-transform: translate3d(0%, 0, 0);
@@ -4418,7 +4441,7 @@ a.follower-icon:hover {
     }
     .myself-content .addbutton-bg {
         width: 20%;
-        margin: 0;
+        margin: 0 0 10px 0;
     }
     .modal.modal-bottom .modal-dialog {
         -webkit-transform: translate3d(0%, 0, 0);
@@ -4483,12 +4506,11 @@ a.follower-icon:hover {
         box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
         padding: 22px 10px 0 10px;
     }
-    .ordersum-header {
-        background: #FBFBFB;
-        box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
+    .ordersum-header, .Mobdetails-back {
         padding: 16px 22px;
         height: 60px;
     }
+   
     .chekcoutmodal-header .nav-tabs {
         border-bottom: none;
         margin: 10px 0 0 0;
@@ -4933,15 +4955,15 @@ a.follower-icon:hover {
     .refer-inner {
         padding: 0;
     }
-    .successfull-bottom .modal-w .yellow-bg,
+    /* .successfull-bottom .modal-w .yellow-bg,
     .shopping-btn {
         width: 340px;
-    }
+    } */
     .address-bottom .modal-w .yellow-bg,
     .address-bottom .addclose,
     .date-bottom .modal-w .yellow-bg,
     .date-bottom .modal-w .addclose {
-        width: 340px;
+        width: 100%;
         margin: 0 auto;
     }
     .cart-img {
@@ -5197,7 +5219,9 @@ a.follower-icon:hover {
     .px-3 {
         padding-left: 0.5rem!important;
     }
-   
+    .select-order {
+        bottom: 11%;
+    }
 }
 
 @media (max-width:360px) {
@@ -5284,6 +5308,16 @@ a.follower-icon:hover {
 }
 
 @media (max-width:330px) {
+    .select-bottom-modal .modal-body {
+        padding: 8px 10px !important;
+    }
+    #similarSlider1 .MS-content .item {
+        width: 98%;
+    }
+    .simproducts-inner .success-box {
+        left: 72%;
+        font-size: 14px;
+    }
     .bottommake-list .making-list {
         bottom: 14%;
     }
@@ -5305,7 +5339,10 @@ a.follower-icon:hover {
         width: 50%;
     }
     .review-content .rating-stars ul>li.smallstar>span {
-        font-size: 32px;
+        font-size: 28px;
+    }
+    .review-content .success-box {
+        font-size: 20px;
     }
     .order-sum-content .pl-4,
     .px-4 {

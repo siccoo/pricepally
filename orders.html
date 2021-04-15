@@ -301,10 +301,10 @@
                     <hr>
                     <div class="d-flex pt-0 pr-2 pl-2">
                         <div class="justfiy-content-start">
-                            <p class="brown-text text-uppercase" data-toggle="modal" data-target="#order-sum_modal">Order sumarry</p>
+                            <p class="brown-text text-uppercase mb-0" data-toggle="modal" data-target="#order-sum_modal">Order sumarry</p>
                         </div>
                         <div class="ml-auto justfiy-content-start">
-                            <p class="brown-text text-uppercase Mobviewtracking-btn">View Tracking</p>
+                            <p class="brown-text text-uppercase Mobviewtracking-btn mb-0">View Tracking</p>
                         </div>
                     </div>
                     <hr>
@@ -335,10 +335,10 @@
                     <hr>
                     <div class="d-flex pt-0 pr-2 pl-2">
                         <div class="justfiy-content-start">
-                            <p class="brown-text text-uppercase">Order sumarry</p>
+                            <p class="brown-text text-uppercase mb-0">Order sumarry</p>
                         </div>
                         <div class="ml-auto justfiy-content-start">
-                            <p class="brown-text text-uppercase">View Tracking</p>
+                            <p class="brown-text text-uppercase mb-0">View Tracking</p>
                         </div>
                     </div>
                     <hr>
@@ -914,7 +914,7 @@
         <div class="modal modal-bottom fade order-sum-bottom" id="order-sum_modal" tabindex="-1" role="dialog" aria-labelledby="order-sum_modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="ordersum-header">
+                    <div class="ordersum-header Mobheader-fixed">
                         <div class="d-flex">
                             <div class="justfiy-content-start">
                                 <a href="#" data-dismiss="modal" aria-label="Close">
@@ -1099,15 +1099,21 @@
          <!----- VIEW-DETAILS-MODAL-START ------>
          <div class="modal modal-bottom fade viewdetail-bottom" id="Viewdetail-Modalopn">
             <div class="modal-dialog" role="document">
-                <div class="modal-content pl-3 pr-3 pt-3">
-                    <ul class="list-unstyled   Mobdetails-back pointer" data-dismiss="modal" aria-label="Close">
-                        <li class="d-inline-block "> <span class="material-icons s-icon">
-                    west
-                    </span></li>
-                        <li class="d-inline-block align-top pl-2">
-                            <b>Details</b></li>
-                    </ul>
-                    <div class="modal-body p-0">
+                <div class="modal-content">
+                    <div class="Mobdetails-back Mobheader-fixed">
+                        <div class="d-flex">
+                            <div class="justfiy-content-start">
+                                <a href="#" data-dismiss="modal" aria-label="Close">
+                                    <h5><i class='material-icons align-top'>west</i> Details</h5>
+                                </a>
+                            </div>
+                            <div class="justfiy-content-end ml-auto">
+                                <span class="material-icons">share</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="modal-body p-3">
                         <h6 class="text-uppercase light-grey mb-2">share</h6>
                         <div class="d-flex  grey-border p-2 mb-4">
                             <div class="pt-1">

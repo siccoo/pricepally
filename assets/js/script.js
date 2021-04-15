@@ -7,6 +7,16 @@ $(window).on('scroll', function() {
             $('.start-header').removeClass('sticky-bg');
         }
     })
+
+
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop()) {
+            $('.Mobheader-fixed').addClass('sticky-bg');
+        } else {
+            $('.Mobheader-fixed').removeClass('sticky-bg');
+        }
+    })
+    
     /* ------ dropdown-menu-js-start ------ */
 $(document).ready(function() {
     //the trigger on hover when cursor directed to this class
@@ -586,6 +596,10 @@ $("body").on("click", ".Mobviewdetail-btn", function(e) {
     $('#Viewdetail-Modalopn').modal('show');
 });
 
+$("body").on("click", ".Mobviewtracking-btn", function(e) {
+    $('#order-sum_modal').modal('hide');
+    $('#viewtracking-Modalopn').modal('show');
+});
 
 
 
@@ -618,24 +632,20 @@ function myFunction() {
     var splitbill = document.getElementById("splitbill");
     var paymyself = document.getElementById("paymyself");
 
-    var select = document.getElementById("pallysplit-btn").checked;
-    if (select) {
-        splitbill.style.display = "block";
+     var select = document.getElementById("pallysplit-btn").checked;
+     if (select) {
+         splitbill.style.display = "block";
         paymyself.style.display = "none";
     } else {
         splitbill.style.display = "none";
         paymyself.style.display = "block";
     }
-}
+ }
 
 
-
-// *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
-
-
-function myFunctionMob() {
+function  myFunctionMob() {
     var Mobsplitbill = document.getElementById("Mobsplitbill");
-    var Mobsplitbill = document.getElementById("Mobpaymyself");
+    var Mobpaymyself = document.getElementById("Mobpaymyself");
 
     var select = document.getElementById("Mobpallysplit-btn").checked;
     if (select) {
@@ -646,13 +656,16 @@ function myFunctionMob() {
         Mobpaymyself.style.display = "block";
     }
 }
+// *** PALLY-SELECT-ORDER-MODAL-JS-END ***/
+
+
 /*------ MORE-ICON-CLICK-MODAL-JS-START -------*/
-function myFunction() {
-    var x = document.getElementById("moreModal-wrapper");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+ function myFunction() {
+     var x = document.getElementById("moreModal-wrapper");
+   if (x.style.display === "block") {
+         x.style.display = "none";
     } else {
-        x.style.display = "block";
-    }
-}
+       x.style.display = "block";
+     }
+ }
 /*------ MORE-ICON-CLICK-MODAL-JS-END -------*/

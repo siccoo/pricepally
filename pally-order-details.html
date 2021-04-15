@@ -1876,6 +1876,94 @@
             </section>
         </div>
         <!------ SELECT-ORDER-BTN-FIXED-END ------>
+           <!------ DETAILS-SELECT-ORDER-MODAL-START ------>
+        <div class="modal fade" id="pallyorderModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <p class="small-text mb-2">Selec Order Type</p>
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <form>
+                            <div class="form-group">
+                                <ul class="list-unstyled">
+                                    <li class="d-inline-block pr-2">
+                                        <div class="rdio rdio-primary radio-inline mb-4 ">
+                                            <input name="radio" value="2" id="pallysplit-btn" type="radio"
+                                                onclick="myFunction()" name="carttype" checked>
+                                            <label for="pallysplit-btn">
+                                                Pally (Split Bill)
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <div class="rdio rdio-primary radio-inline mb-4 ">
+                                            <input name="radio" value="normal" id="paymyself-btn" type="radio"
+                                                onclick="myFunction()" name="carttype">
+                                            <label for="paymyself-btn">
+                                                Pay by myself
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="pallysplit-content" id="splitbill">
+                                <div class="pally-box form-group">
+                                    <label>Maximum of 5 people to pally with</label>
+                                    <input type="text" class="form-control" placeholder="1"></input>
+                                </div>
+                                <div class="form-group">
+                                    <label>Select Preference attribute</label>
+                                    <select class="form-control">
+                                        <option>None</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="myself-content" id="paymyself">
+                                <div class="form-group">
+                                    <label>Select Preference attribute</label>
+                                    <select class="form-control">
+                                        <option>None</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <td class="qty-width align-middle">
+                                    <label>Quantity</label>
+                                    <div class="addbutton-bg">
+
+                                        <button type="button" id="sub" class="sub"><span class="material-icons">
+                                                remove
+                                            </span></button>
+                                        <input type="text" id="add" value="1" class="field">
+                                        <button type="button" id="add" class="add"><span class="material-icons">
+                                                add
+                                            </span></button>
+                                    </div>
+                                </td>
+
+                            </div>
+
+                        </form>
+                        <div class="modal-w m-auto mt-4 mb-3 text-center">
+                            <div class="mb-3">
+                                <button type="button" class="yellow-bg text-uppercase add-btn cartsussefullbtn">ADD TO
+                                    CART</button>
+                            </div>
+                            <div class="addclose text-center mt-2 mb-4">
+                                <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!------ MOBILE-FOOTER-CSS-START ------>
         <footer class="d-block d-lg-none mobile-footer">
             <div class="container">
@@ -2036,94 +2124,7 @@
 
         </div>
         <!------ MORE-MODAL-END ------>
-        <!------ DETAILS-SELECT-ORDER-MODAL-START ------>
-        <div class="modal fade" id="pallyorderModal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-0 pb-0">
-                        <p class="small-text mb-2">Selec Order Type</p>
-                    </div>
-                    <div class="modal-body pl-4 pt-0 pr-4">
-                        <form>
-                            <div class="form-group">
-                                <ul class="list-unstyled">
-                                    <li class="d-inline-block pr-2">
-                                        <div class="rdio rdio-primary radio-inline mb-4 ">
-                                            <input name="radio" value="2" id="pallysplit-btn" type="radio"
-                                                onclick="myFunction()" name="carttype" checked>
-                                            <label for="pallysplit-btn">
-                                                Pally (Split Bill)
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <div class="rdio rdio-primary radio-inline mb-4 ">
-                                            <input name="radio" value="normal" id="paymyself-btn" type="radio"
-                                                onclick="myFunction()" name="carttype">
-                                            <label for="paymyself-btn">
-                                                Pay by myself
-                                            </label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="pallysplit-content" id="splitbill">
-                                <div class="pally-box form-group">
-                                    <label>Maximum of 5 people to pally with</label>
-                                    <input type="text" class="form-control" placeholder="1"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label>Select Preference attribute</label>
-                                    <select class="form-control">
-                                        <option>None</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="myself-content" id="paymyself">
-                                <div class="form-group">
-                                    <label>Select Preference attribute</label>
-                                    <select class="form-control">
-                                        <option>None</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <td class="qty-width align-middle">
-                                    <label>Quantity</label>
-                                    <div class="addbutton-bg">
-
-                                        <button type="button" id="sub" class="sub"><span class="material-icons">
-                                                remove
-                                            </span></button>
-                                        <input type="text" id="add" value="1" class="field">
-                                        <button type="button" id="add" class="add"><span class="material-icons">
-                                                add
-                                            </span></button>
-                                    </div>
-                                </td>
-
-                            </div>
-
-                        </form>
-                        <div class="modal-w m-auto mt-4 mb-3 text-center">
-                            <div class="mb-3">
-                                <button type="button" class="yellow-bg text-uppercase add-btn cartsussefullbtn">ADD TO
-                                    CART</button>
-                            </div>
-                            <div class="addclose text-center mt-2 mb-4">
-                                <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+     
         <!------ CART-SUSESSFULL-SECTION-START ------>
         <div class="modal fade cartsuessfull-bg" id="cartsuessfullopnmodal">
             <div class="modal-dialog" role="document">
@@ -2475,7 +2476,7 @@
                                     <li class="d-inline-block">
                                         <div class="rdio rdio-primary radio-inline mb-4 ">
                                             <input name="radio" value="normal" id="Mobpaymyself-btn" type="radio"
-                                                onclick="myFunctionMob()" name="carttype">
+                                                onclick=" myFunctionMob()" name="carttype">
                                             <label for="Mobpaymyself-btn">
                                                 Pay by myself
                                             </label>
