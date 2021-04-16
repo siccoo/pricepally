@@ -1269,7 +1269,9 @@ h5.white-head {
 
 
 /* ====== PRODUCTS-DETAIL-PAGE-CSS-START ====== */
-
+.alreadypallyModal-bg .modal-body {
+    padding: 60px 0;
+}
 .proddetails-wrapper {
     padding: 40px 0;
 }
@@ -2271,9 +2273,9 @@ div#pallyorderModal .addbutton-bg {
     color: #B3561B !important;
 }
 
-.existpallybg .pally-content {
+/* .existpallybg .pally-content {
     margin: 50px 0 0 0;
-}
+} */
 
 .cart-img,
 .order-img {
@@ -2425,7 +2427,7 @@ div#pallyorderModal .addbutton-bg {
 
 .order-table .brown-clr {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .small-text .alert-success {
@@ -2452,8 +2454,8 @@ div#pallyorderModal .addbutton-bg {
 .order-table td {
     vertical-align: middle;
     color: #262626;
+    padding: .75rem 18px;
 }
-
 .order-table th {
     font-weight: 400;
     color: #828282;
