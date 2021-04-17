@@ -2303,7 +2303,7 @@ div#pallyorderModal .addbutton-bg {
 .checkout-bottom .modal-content,
 .couponapply-bottom .modal-content,
 .profile-bottom .modal-content,
-.changepass-bottom .modal-content, .address-bottom .modal-conten{
+.changepass-bottom .modal-content{
     background-color: #FCFCFC;
     height: 100vh !important;
 }
@@ -2471,7 +2471,7 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .orders-wrapper {
-    height: 60vh;
+    margin-bottom: 288px;
 }
 
 .modal .modal-dialog-aside {
@@ -2926,15 +2926,9 @@ form.makelist-form {
 }
 
 .profile-wrapper {
-    margin: 20px 0 0 0;
-    max-height: 100%;
+    margin: 20px 0;
 }
-#editprofile{
-    height: 60vh;
-}
-#addnewaddress {
-    height: 64vh;
-}
+
 .profile-pic {
     width: 120px;
     height: 120px;
@@ -3109,8 +3103,7 @@ select:focus {
 }
 
 .changepass-wrapper {
-    height: auto;
-    margin-bottom: 30px;
+    height: 40vh;
 }
 
 .reset-btn p,
@@ -3598,10 +3591,7 @@ a.follower-icon:hover {
 
 /* ======= RESPOSNIVE-STYLE-CSS-START ======= */
 
-@media (max-width:1460px) {
-    #editprofile {
-        height: 65vh;
-    }
+@media (max-width:1440px) {
     .logslider-content {
         margin: 30px auto 36px;
         width: 40%;
@@ -3609,12 +3599,6 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
-    #modal-right, #unavailable-modal, #viewdetails-modal, #trackorder-modal{
-        height: 62.6%;
-    }
-    #editprofile{
-        height: 60.6%;
-    }
     form.makelist-form {
         width: 100%;
     }
@@ -4512,9 +4496,6 @@ a.follower-icon:hover {
     .order-sum-bottom .modal-content,
     .viewdetail-bottom .modal-content,
     .modal.modal-bottom .Mobviewexistpally-bottom-modal .modal-content {
-        height: 100vh !important;
-    }
-    .address-bottom .modal-content {
         height: 100vh !important;
     }
     .modal.modal-bottom .modal-content {
