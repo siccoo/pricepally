@@ -1845,8 +1845,7 @@ li.start-clr {
 }
 
 .simhead {
-    font-size: 14px;
-    color: #828282;
+    color: #333333;
 }
 
 .simproducts-inner .success-box {
@@ -1940,7 +1939,9 @@ li.start-clr {
 
 
 /* =======  PALLY-PRODUCTS-DETAILS-PAGE-CSS-START ====== */
-
+.prodetails-content h4, .prodetails-content h4 small {
+    color: #262626;
+}
 .review-content .fa-fw {
     width: 1.28571429em !important;
 }
@@ -2471,9 +2472,9 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .orders-wrapper {
-    height: 60vh;
+    height: 100%;
+    margin: 0 0 140px 0;
 }
-
 .modal .modal-dialog-aside {
     width: 500px;
     max-width: 80%;
@@ -2508,17 +2509,19 @@ div#pallyorderModal .addbutton-bg {
     font-weight: 500;
 }
 
-#modal-right,
+
 #unavailable-modal,
 #viewdetails-modal,
 #trackorder-modal,
 #editprofile,
 #addnewaddress {
     padding-right: 0 !important;
-    top: 70px;
-    height: 606px;
+   
 }
-
+.ordersummary-main{
+    padding-right: 0 !important;
+   
+}
 .alert-bg {
     border-radius: 5px;
 }
@@ -2929,12 +2932,16 @@ form.makelist-form {
     margin: 20px 0 0 0;
     max-height: 100%;
 }
-#editprofile{
+.changepass-wrapper{
+    margin: 20px 0 60px 0;
+    max-height: 100%;
+}
+/* #editprofile{
     height: 60vh;
-}
-#addnewaddress {
+} */
+/* #addnewaddress {
     height: 64vh;
-}
+} */
 .profile-pic {
     width: 120px;
     height: 120px;
@@ -3599,9 +3606,9 @@ a.follower-icon:hover {
 /* ======= RESPOSNIVE-STYLE-CSS-START ======= */
 
 @media (max-width:1460px) {
-    #editprofile {
+    /* #editprofile {
         height: 65vh;
-    }
+    } */
     .logslider-content {
         margin: 30px auto 36px;
         width: 40%;
@@ -3609,12 +3616,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
-    #modal-right, #unavailable-modal, #viewdetails-modal, #trackorder-modal{
+    /* #unavailable-modal, #viewdetails-modal, #trackorder-modal{
         height: 62.6%;
     }
     #editprofile{
         height: 60.6%;
-    }
+    } */
     form.makelist-form {
         width: 100%;
     }
@@ -4224,9 +4231,9 @@ a.follower-icon:hover {
         width: 100%;
         z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        height: 78px;
+        height: 18%;
         padding: 10px 0 0 0;
-        bottom: 9.6%;
+        bottom: 0;
     }
     .mobile-footer {
         position: fixed;
@@ -4678,9 +4685,6 @@ a.follower-icon:hover {
     .review-content .success-box {
         left: 46%;
     }
-    .select-order {
-        bottom: 9.6%;
-    }
     .mobile-viewproducts .container {
         padding: 0 0 0 40px;
     }
@@ -4729,9 +4733,7 @@ a.follower-icon:hover {
     .myself-content .addbutton-bg {
         width: 22%;
     }
-    .select-order {
-        bottom: 9%;
-    }
+ 
     .yellow-btn {
         width: 300px;
     }
@@ -4819,6 +4821,7 @@ a.follower-icon:hover {
 }
 
 @media (max-width:675px) {
+
     .checkout-footer {
         bottom: 22%;
     }
@@ -4849,9 +4852,7 @@ a.follower-icon:hover {
 }
 
 @media(max-width:570px) {
-    .select-order {
-        bottom: 24%;
-    }
+    
     .make-list {
         width: 100%;
     }
@@ -5094,9 +5095,7 @@ a.follower-icon:hover {
 }
 
 @media(max-width:430px) {
-    .select-order {
-        bottom: 8%;
-    }
+   
     #Mobaccordion .accordion-title i {
         width: auto;
     }
@@ -5172,10 +5171,10 @@ a.follower-icon:hover {
     .myself-content .addbutton-bg {
         width: 42%;
     }
-    .successfull-bottom .modal-w .yellow-bg,
+    /* .successfull-bottom .modal-w .yellow-bg,
     .shopping-btn {
         width: 320px;
-    }
+    } */
     .review-text .success-box {
         left: 34%;
     }
@@ -5271,7 +5270,7 @@ a.follower-icon:hover {
         height: 70px;
     }
     .progress-bar-width {
-        width: 80%;
+        width: 76%;
     }
     .review-text .success-box {
         left: 38%;
@@ -5280,18 +5279,14 @@ a.follower-icon:hover {
     .px-3 {
         padding-left: 0.5rem!important;
     }
-    .select-order {
-        bottom: 11%;
-    }
+   
 }
 
 @media (max-width:360px) {
     .checkout-footer {
         bottom: 14%;
     }
-    .select-order {
-        bottom: 11%;
-    }
+  
     .Mobprofile-wrapper .brown-btn {
         padding: 4px 8px;
     }
@@ -5413,10 +5408,10 @@ a.follower-icon:hover {
     .px-4 {
         padding-left: .5rem!important;
     }
-    .successfull-bottom .modal-w .yellow-bg,
+    /* .successfull-bottom .modal-w .yellow-bg,
     .shopping-btn {
         width: 260px;
-    }
+    } */
     .chekcoutmodal-header li.nav-item,
     .search-header .nav-tabs .nav-item {
         width: auto;
@@ -5507,9 +5502,7 @@ a.follower-icon:hover {
         padding: 4px;
         font-size: 14px;
     }
-    .select-order {
-        bottom: 12.9%;
-    }
+  
 }
 
 

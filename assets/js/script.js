@@ -640,3 +640,5 @@ $("body").on("click", ".Mobviewexistpally-btn", function(e) {
      }
  }
 /*------ MORE-ICON-CLICK-MODAL-JS-END -------*/
+
+
