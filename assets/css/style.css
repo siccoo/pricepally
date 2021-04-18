@@ -3830,6 +3830,13 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    #Mobile-direct-Modalopn .modal-dialog,
+    #Mobile-processing-Modalopn .modal-dialog,
+    #Mobile-date-Modalopn .modal-dialog,
+    #Mobile-address-Modalopn .modal-dialog {
+        bottom: 0;
+        top: auto !important;
+    }
     .search-img {
         width: 60px;
         height: 60px;
@@ -4760,7 +4767,6 @@ a.follower-icon:hover {
     .bottommake-list .making-list {
         width: 90%;
     }
-  
 }
 
 @media (max-width:767.98px) {
