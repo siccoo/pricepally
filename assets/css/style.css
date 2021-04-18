@@ -4177,9 +4177,18 @@ a.follower-icon:hover {
         padding: 20px 0;
     }
     .foodsticky-bg {
-        background: #fcf3ed;
+        /* background: #fcf3ed; */
         transition: all 0.4s ease;
         padding: 20px 0 0 0;
+    }
+    .foodsticky-bg .tabs-fixed {
+        position: fixed;
+        top: 76px;
+        background: #fcf3ed;
+        z-index: 99;
+    }
+    .foodsticky-bg .mobilefoodTab-view {
+        padding-top: 67px;
     }
     .foodsticky-bg .row.food-bg {
         background: #fff;
@@ -4284,7 +4293,7 @@ a.follower-icon:hover {
         background: #FBFBFB;
         bottom: 0;
         width: 100%;
-        z-index: 1024;
+        z-index: 1;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
         height: 90px;
         padding: 10px 0 0 0;
@@ -4295,9 +4304,9 @@ a.follower-icon:hover {
         width: 100%;
         z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        height: 34%;
+        /* height: 34%; */
         padding: 10px 0 0 0;
-        bottom: 0;
+        bottom: 90px;
     }
     .bottommake-list .making-list {
         position: fixed;
@@ -4598,6 +4607,12 @@ a.follower-icon:hover {
     }
     .modal.modal-bottom.fade.show .modal-dialog {
         bottom: 0;
+        top: 0;
+    }
+    #Mobile-direct-Modalopn .modal-dialog,
+    #Mobile-processing-Modalopn .modal-dialog {
+        bottom: 0;
+        top: auto !important;
     }
     .modal.modal-bottom.fade .modal-dialog {
         bottom: -100%;
@@ -4745,12 +4760,7 @@ a.follower-icon:hover {
     .bottommake-list .making-list {
         width: 90%;
     }
-    .modal-backdrop { 
-        z-index: 1 !important; 
-}
-.modal { 
-    z-index: 99 !important; 
-}
+  
 }
 
 @media (max-width:767.98px) {
