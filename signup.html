@@ -9,7 +9,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
 
-    <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/css/intlTelInput.css'>
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -105,6 +105,13 @@
                             <div class="input-group mb-4">
                                 <input type="text"  class="form-control" />                                 
                             </div>
+                            <label>Phone Number</label>
+                            <div class="input-group mb-4">
+                              <input type="tel" id="phone" required="required" class="form-control">
+                              <div class="invalid-feedback">
+                                You must enter a valid mobile number
+                              </div>
+                            </div>
                             <label>Referral Code</label>
                             <div class="input-group mb-4">
                                 <input type="text"  class="form-control" />                                 
@@ -176,13 +183,46 @@
            </div>
        </section>
     </main>
-    <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src='assets/js/owl.carousel.jquery.js'></script>
-    <script src='assets/js/owl.carousel.min.js'></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
-    <script src="assets/js/multislider.min.js"></script>
+    <script src="assets/js/multislider.min.js"></script>   
+    <script src='https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/intlTelInput.js'></script>
+<script>
+        //comment out the iti section to see the default bootstrap error display
+
+var input = document.querySelector("#phone");
+var iti = window.intlTelInput(input, {
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/utils.js",
+});
+
+// store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+window.iti = iti;
+
+
+
+//Bootstrap test form feedback
+'use strict';
+window.addEventListener('load', function() {
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+
+      console.log(form.checkValidity());
+
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+}, false);
+</script>
+ 
 </body>
 </html>

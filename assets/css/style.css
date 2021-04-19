@@ -3830,10 +3830,18 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    #Mobile-add-Modalopn .modal-dialog,
     #Mobile-direct-Modalopn .modal-dialog,
     #Mobile-processing-Modalopn .modal-dialog,
     #Mobile-date-Modalopn .modal-dialog,
-    #Mobile-address-Modalopn .modal-dialog {
+    #Mobile-address-Modalopn .modal-dialog,
+    #takeaction-Modalopn .modal-dialog,
+    #viewtracking-Modalopn .modal-dialog,
+    #sharelist-bottom_modal .modal-dialog,
+    #Mobselect-bottom .modal-dialog,
+    #Mobcartsuccessfull-Modalopn .modal-dialog,
+    #Mobexistpally-Modalopn .modal-dialog,
+    #Mobviewexistpally-Modalopn .modal-dialog{
         bottom: 0;
         top: auto !important;
     }
@@ -4193,10 +4201,12 @@ a.follower-icon:hover {
         top: 76px;
         background: #fcf3ed;
         z-index: 99;
+        max-width: 100%;
+        width: 100%;
     }
-    .foodsticky-bg .mobilefoodTab-view {
+    /* .foodsticky-bg .mobilefoodTab-view {
         padding-top: 67px;
-    }
+    } */
     .foodsticky-bg .row.food-bg {
         background: #fff;
     }
@@ -4287,13 +4297,12 @@ a.follower-icon:hover {
     }
     .select-order {
         position: fixed;
-        background: #FBFBFB;
+        background: #FCFCFC;
         width: 100%;
         z-index: auto;
-        box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        height: 18%;
-        padding: 10px 0 0 0;
-        bottom: 0;
+        box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);      
+        padding: 10px  0;
+        bottom: 90px;
     }
     .mobile-footer {
         position: fixed;
@@ -4329,9 +4338,8 @@ a.follower-icon:hover {
         width: 100%;
         z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        height: 74px;
         padding: 10px 0 0 0;
-        bottom: 9%;
+        bottom: 90px;
     }
     .mobile-icon {
         padding: 0 42px;
@@ -4770,6 +4778,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:767.98px) {
+    .select-order {
+        bottom: 80px;
+    }
     #my-followers .MS-controls {
         top: 32%;
     }
@@ -5545,6 +5556,9 @@ a.follower-icon:hover {
     .copy-bg {
         padding: 4px;
         font-size: 14px;
+    }
+    .makelist-form .justfiy-content-start {
+        width: 70%;
     }
 }
 

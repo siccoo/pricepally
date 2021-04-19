@@ -1757,73 +1757,76 @@
         <!------ FOOD-ITEMS-MOBILE-SECTION-START ------>
         <div class="fixed-food">
             <section class="food-items-bg  d-block d-lg-none mobilefoodTab-view">
-                <div class="container tabs-fixed">
-                    <div class="d-flex">
-                        <div class=" justify-content-start">
-                            <h4 class="mb-3 heading mobile-head">Food Items</h4>
+                <div class="tabs-fixed">
+                    <div class="container ">
+                        <div class="d-flex">
+                            <div class=" justify-content-start">
+                                <h4 class="mb-3 heading mobile-head">Food Items</h4>
+                            </div>
+                            <div class=" ml-auto justify-content-end">
+                                <p class="mb-0" data-toggle="modal" data-target="#fillter-modal"> <span class="material-icons align-top pr-2">
+                                        filter_list
+                                    </span class="align-top">Filter</p>
+                            </div>
                         </div>
-                        <div class=" ml-auto justify-content-end">
-                            <p class="mb-0" data-toggle="modal" data-target="#fillter-modal"> <span class="material-icons align-top pr-2">
-                                    filter_list
-                                </span class="align-top">Filter</p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-5">
+                                <ul class="nav nav-tabs foodtabs" id="foodTab" role="tablist">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" id="" data-toggle="tab" href="#mobile-pally" role="tab"
+                                            aria-controls="mobilepally" aria-selected="true">Pally Deals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="mobile-recommended-tab" data-toggle="tab"
+                                            href="#mobile-recommended" role="tab" aria-controls="mobile-recommended"
+                                            aria-selected="false">Recommended</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="mobile-pre-orders-tab" data-toggle="tab"
+                                            href="#mobile-pre-orders" role="tab" aria-controls="mobile-pre-orders"
+                                            aria-selected="false">Pre Orders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-lg-7">
+                                <ul class="list-unstyled mb-0 select-bg float-right d-none d-lg-block">
+                                    <li class="d-inline-block">
+                                        <div class="form-group mb-0">
+                                            <select class="form-control">
+                                                <option>Categories</option>
+                                                <option>Soup & stew ingredients</option>
+                                                <option>Foodstuffs</option>
+                                                <option>Meat, Poultry & Seafood</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <div class="form-group mb-0">
+                                            <select class="form-control">
+                                                <option>Sub Categories</option>
+                                                <option>Grains
+                                                </option>
+                                                <option>Tubers & Roots
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <div class="form-group mb-0">
+                                            <select class="form-control">
+                                                <option>Sort By: Price (Low to High)</option>
+                                                <option>Price (Low to High)</option>
+                                                <option>Price (High to Low)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        <hr class="border-bottom">
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <ul class="nav nav-tabs foodtabs" id="foodTab" role="tablist">
-                                <li class="nav-item ">
-                                    <a class="nav-link active" id="" data-toggle="tab" href="#mobile-pally" role="tab"
-                                        aria-controls="mobilepally" aria-selected="true">Pally Deals</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="mobile-recommended-tab" data-toggle="tab"
-                                        href="#mobile-recommended" role="tab" aria-controls="mobile-recommended"
-                                        aria-selected="false">Recommended</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="mobile-pre-orders-tab" data-toggle="tab"
-                                        href="#mobile-pre-orders" role="tab" aria-controls="mobile-pre-orders"
-                                        aria-selected="false">Pre Orders</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12 col-lg-7">
-                            <ul class="list-unstyled mb-0 select-bg float-right d-none d-lg-block">
-                                <li class="d-inline-block">
-                                    <div class="form-group mb-0">
-                                        <select class="form-control">
-                                            <option>Categories</option>
-                                            <option>Soup & stew ingredients</option>
-                                            <option>Foodstuffs</option>
-                                            <option>Meat, Poultry & Seafood</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block">
-                                    <div class="form-group mb-0">
-                                        <select class="form-control">
-                                            <option>Sub Categories</option>
-                                            <option>Grains
-                                            </option>
-                                            <option>Tubers & Roots
-                                            </option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block">
-                                    <div class="form-group mb-0">
-                                        <select class="form-control">
-                                            <option>Sort By: Price (Low to High)</option>
-                                            <option>Price (Low to High)</option>
-                                            <option>Price (High to Low)</option>
-                                        </select>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr class="border-bottom">
                 </div>
+               
                 <div class="food-bg">
                     <div class="container">
                         <div class="row ">
@@ -3280,8 +3283,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
-    <script>
-    </script>
+    
 </body>
 
 </html>
