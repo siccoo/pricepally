@@ -3659,6 +3659,14 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
+    .webfoodTab-view .pally-inner {
+        min-height: 460px;
+    }
+    .food-items-bg .select-bg .form-control {
+        font-size: 14px;
+        height: 40px;
+        padding: 2px 4px;
+    }
     /* #unavailable-modal, #viewdetails-modal, #trackorder-modal{
         height: 62.6%;
     }
@@ -3830,6 +3838,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .update-password button.yellow-bg, .login-bg button.yellow-bg {
+        width: 100%;
+    }
     #Mobile-add-Modalopn .modal-dialog,
     #Mobile-direct-Modalopn .modal-dialog,
     #Mobile-processing-Modalopn .modal-dialog,
@@ -3841,6 +3852,7 @@ a.follower-icon:hover {
     #Mobselect-bottom .modal-dialog,
     #Mobcartsuccessfull-Modalopn .modal-dialog,
     #Mobexistpally-Modalopn .modal-dialog,
+    #review_Modal .modal-dialog,    
     #Mobviewexistpally-Modalopn .modal-dialog{
         bottom: 0;
         top: auto !important;
@@ -3914,7 +3926,7 @@ a.follower-icon:hover {
         top: 33%;
     }
     #MobfollowingSlider .MS-controls {
-        top: 63%;
+        top: 61%;
     }
     #MobfolloersSlider .MS-controls .MS-left,
     #MobfollowingSlider .MS-controls .MS-left {
@@ -4785,7 +4797,7 @@ a.follower-icon:hover {
         top: 32%;
     }
     #my-following .MS-controls {
-        top: 62%;
+        top: 60%;
     }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
@@ -4890,9 +4902,9 @@ a.follower-icon:hover {
 }
 
 @media (max-width:675px) {
-    #my-followers .MS-controls .MS-right,
-    #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
         right: 14%;
+        display: none;
     }
     .Mobviewexistpally-bottom-modal .justify-content-start {
         width: 30%;
@@ -5224,7 +5236,10 @@ a.follower-icon:hover {
         padding: 8px 4px;
     }
     #MobfollowingSlider .MS-controls {
-        top: 60%;
+        top: 57%;
+    }
+    .followers-inner {
+        padding: 6px 4px;
     }
     .copy-bg {
         padding: 6px;
@@ -5343,6 +5358,12 @@ a.follower-icon:hover {
 }
 
 @media (max-width:360px) {
+    #my-followers .MS-controls {
+        top: 43%;
+    }
+    #MobfollowingSlider .MS-controls {
+        top: 76%;
+    }
     .Mobprofile-wrapper .brown-btn {
         padding: 4px 8px;
     }
@@ -5360,7 +5381,7 @@ a.follower-icon:hover {
         width: 94%;
     }
     .social-view .social-btn {
-        padding: 10px 0px 10px 40px;
+        padding: 10px 0px 10px 60px;
     }
     .continueguest-wrapper p.grey-text {
         font-size: 14px;
