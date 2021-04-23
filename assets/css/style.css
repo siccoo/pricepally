@@ -178,15 +178,18 @@ div#moreModal-wrapper {
 
 
 /* ----- HEADER_CSS_START ------ */
+
 .b-logo {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
 }
+
 .navigation-wrap a.navbar-brand {
     width: 50px;
     height: 50px;
 }
+
 .mobile-header {
     display: none;
 }
@@ -439,6 +442,12 @@ span.yellow_cir {
     color: #828282;
 }
 
+.sharepermissionModal .grey-text {
+    color: #828282;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .mylist-wrapper .grey-text {
     color: #828282;
     font-size: 14px;
@@ -473,6 +482,7 @@ span.yellow_cir {
     padding: 40px 0;
 }
 
+
 /* #categoiresSlider .MS-content .item img {
     width: 100%;
     height: 100px;
@@ -484,6 +494,7 @@ span.yellow_cir {
     height: auto;
     object-fit: scale-down;
 }
+
 .hero_wrapper .carousel-indicators li {
     width: 12px;
     height: 12px;
@@ -525,10 +536,12 @@ span.yellow_cir {
 
 
 /* ----- CATEGORIES_SECTION_CSS_START ------- */
+
 .heading {
     color: #262626;
     font-weight: 400;
 }
+
 .categ-text {
     background: #fffaef;
     height: 60px;
@@ -537,11 +550,13 @@ span.yellow_cir {
     margin: -34px 0 0 0;
     padding: 8px 0 0 0;
 }
+
 .categ-text p {
     font-size: 14px;
     font-weight: 500;
     padding: 8px 0 0 0;
 }
+
 .list-text {
     color: #828282;
     font-size: 14px;
@@ -839,9 +854,14 @@ span.yellow_cir {
 .green-bg,
 .red-bg {
     font-size: 14px;
-    padding: 6px 14px;
+    padding: 6px 6px 6px 1px;
     font-weight: 700;
     text-decoration: none;
+    border-radius: 4px;
+}
+
+.webfoodTab-view small {
+    font-size: 11px;
 }
 
 .green-bg {
@@ -881,11 +901,11 @@ span.yellow_cir {
 
 .pally-inner {
     color: #333333;
-    min-height: 480px;
+    min-height: 430px;
 }
 
 .recommended-bg .pally-inner {
-    min-height: 420px;
+    min-height: 410px;
 }
 
 .inner-head {
@@ -893,6 +913,7 @@ span.yellow_cir {
     color: #262626;
     font-size: 18px;
 }
+
 a.red-bg:hover {
     text-decoration: none;
     color: #FF0000;
@@ -900,6 +921,7 @@ a.red-bg:hover {
 
 .pally-inner h6 {
     font-weight: 400;
+    font-size: 14px;
 }
 
 .inner-head h5 {
@@ -927,7 +949,7 @@ a.red-bg:hover {
 .load-bg.text-center {
     border: 1px solid #B3561B;
     width: 350px;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 5px;
     line-height: 40px;
 }
@@ -1037,7 +1059,7 @@ a.red-bg:hover {
 }
 
 .recommended-bg .rating-widget {
-    width: 80%;
+    width: 72%;
 }
 
 .btneffects-bg {
@@ -1147,6 +1169,12 @@ a.red-bg:hover {
     margin: 0 auto;
     text-align: center;
     padding: 40px 0 20px 0;
+}
+
+.media-img {
+    width: 100%;
+    height: 130px;
+    object-fit: scale-down;
 }
 
 
@@ -1409,6 +1437,7 @@ h5.white-head {
     border: none;
     text-align: center;
     width: 40%;
+    background: transparent;
 }
 
 .yellow-btn {
@@ -1756,9 +1785,7 @@ li.start-clr {
     }
 }
 
-@media (max-width: 991px) {
-    
-}
+@media (max-width: 991px) {}
 
 @media (max-width: 767px) {
     #similarSlider .MS-content .item,
@@ -1893,6 +1920,11 @@ li.start-clr {
     height: 100%;
 }
 
+.simhead s {
+    color: #828282;
+    font-size: 15px;
+}
+
 .simhead {
     color: #333333;
 }
@@ -2000,7 +2032,7 @@ li.start-clr {
 
 .fa-fw {
     text-align: center;
-    width: 20px !important;
+    width: 18px !important;
 }
 
 .review-content section.rating-widget {
@@ -2202,6 +2234,10 @@ div#pallyorderModal .addbutton-bg {
     font-size: 14px;
 }
 
+.selectadd-content .rdio label:before {
+    border: 2px solid #333333;
+}
+
 .rdio label:before {
     width: 18px;
     height: 18px;
@@ -2300,9 +2336,9 @@ div#pallyorderModal .addbutton-bg {
     opacity: 0.1;
 }
 
- .cart-inner .border-bottom {
+.cart-inner .border-bottom {
     border-bottom: 2px solid #F2F2F2 !important;
-} 
+}
 
 .light-brown {
     color: #AD8565;
@@ -2337,6 +2373,12 @@ div#pallyorderModal .addbutton-bg {
     height: 44px;
     font-weight: 600;
     color: #B3561B !important;
+}
+
+.pally-content span.material-icons-outlined {
+    transform: rotate( -90deg);
+    font-size: 16px;
+    vertical-align: text-top;
 }
 
 
@@ -2462,6 +2504,12 @@ div#pallyorderModal .addbutton-bg {
 
 .brown-clr {
     color: #B3561B !important;
+}
+
+.savemake-list .brown-text {
+    color: #B3561B !important;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .brown-text {
@@ -2833,7 +2881,7 @@ form.makelist-form {
 }
 
 .mylist-btn {
-    margin: 300px 0 0 0;
+    margin: 300px 0 20px 0;
 }
 
 .createlist-btn {
@@ -2844,7 +2892,7 @@ form.makelist-form {
 .savemake-list {
     border: 1px solid #AAAAAA;
     border-radius: 4px;
-    padding: 14px;
+    padding: 20px 16px;
     box-shadow: 0 0 2px 1px hsl(0deg 0% 0% / 16%);
 }
 
@@ -2855,11 +2903,12 @@ form.makelist-form {
 }
 
 .share-btn .yellow-bg {
-    width: 376px;
+    width: 462px;
+    height: 46px;
 }
 
 .share-btn {
-    margin: 0 auto 40px;
+    margin: 20px auto 40px;
 }
 
 .delivery-form input.form-control {
@@ -3674,6 +3723,10 @@ a.follower-icon:hover {
     overflow-y: scroll;
 }
 
+.form-marign {
+    margin: 40px 0 0 0;
+}
+
 
 /* ======= LOGIN-PAGE-CSS-END ====== */
 
@@ -3792,6 +3845,9 @@ a.follower-icon:hover {
     .foodtabs a {
         font-size: 16px;
     }
+    .foodtabs .active {
+        padding: 8px 8px 0 0;
+    }
     .select-bg li {
         width: 32%;
     }
@@ -3870,12 +3926,16 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .form-marign {
+        margin: 12px 0 0 0;
+    }
     .media-img {
         width: 100%;
         height: 130px;
         object-fit: scale-down;
     }
-    .update-password button.yellow-bg, .login-bg button.yellow-bg {
+    .update-password button.yellow-bg,
+    .login-bg button.yellow-bg {
         width: 100%;
     }
     #Mobile-add-Modalopn .modal-dialog,
@@ -3889,8 +3949,8 @@ a.follower-icon:hover {
     #Mobselect-bottom .modal-dialog,
     #Mobcartsuccessfull-Modalopn .modal-dialog,
     #Mobexistpally-Modalopn .modal-dialog,
-    #review_Modal .modal-dialog,    
-    #Mobviewexistpally-Modalopn .modal-dialog{
+    #review_Modal .modal-dialog,
+    #Mobviewexistpally-Modalopn .modal-dialog {
         bottom: 0;
         top: auto !important;
     }
@@ -4349,8 +4409,8 @@ a.follower-icon:hover {
         background: #FCFCFC;
         width: 100%;
         z-index: auto;
-        box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);      
-        padding: 10px  0;
+        box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
+        padding: 10px 0;
         bottom: 90px;
     }
     .mobile-footer {
@@ -4877,11 +4937,11 @@ a.follower-icon:hover {
     .recommended-bg .justify-content-start {
         width: 40%;
     }
-    .green-bg,
+    /* .green-bg,
     .red-bg {
         font-size: 12px;
         padding: 4px 10px;
-    }
+    } */
     .simhead {
         font-size: 14px;
         margin-top: 8px !important;
@@ -4953,7 +5013,8 @@ a.follower-icon:hover {
         padding: 8px 0 0 0;
         width: 100%;
     }
-    #my-followers .MS-controls .MS-right, #my-following .MS-controls .MS-right {
+    #my-followers .MS-controls .MS-right,
+    #my-following .MS-controls .MS-right {
         right: 14%;
         display: none;
     }
