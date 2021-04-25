@@ -118,9 +118,19 @@ body {
 .ordersummary-modal h4.modal-title,
 #trackorder-modal h4.modal-title,
 #unavailable-modal h4.modal-title,
-#viewdetails-modal h4.modal-title {
+#viewdetails-modal h4.modal-title,
+#editprofile h4.modal-title,
+#addnewaddress h4.modal-title {
     font-weight: 400;
     color: #262626;
+}
+
+.listfillter-modal-bg h4.modal-title {
+    color: #262626;
+}
+
+.listfillter-modal-bg i {
+    font-size: 22px;
 }
 
 .ordersummary-modal h5 {
@@ -456,7 +466,13 @@ span.yellow_cir {
     color: #828282;
 }
 
-.sharepermissionModal .grey-text {
+.followers-bg h5.grey-text,
+.following-bg h5.grey-text {
+    color: #333333;
+}
+
+.sharepermissionModal .grey-text,
+.sharelist-bottom .grey-text {
     color: #828282;
     font-weight: 400;
     font-size: 14px;
@@ -584,6 +600,10 @@ span.yellow_cir {
     border: 1px solid #B3561B;
     border-radius: 5px;
     box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+}
+
+.foodstuff-wrapper section.rating-widget {
+    width: 92%;
 }
 
 .foodmobile-view {
@@ -804,6 +824,12 @@ span.yellow_cir {
     margin: 0 0 2px 0;
 }
 
+.booknow-modal-bottom .modal-w p,
+#preorderModal .modal-w p {
+    color: #333333;
+    font-size: 14px;
+}
+
 .preordermodal-text h4 {
     color: #4F4F4F;
     font-weight: 700;
@@ -923,7 +949,7 @@ span.yellow_cir {
 }
 
 .recommended-bg .pally-inner {
-    min-height: 410px;
+    min-height: 400px;
 }
 
 .inner-head {
@@ -1070,6 +1096,7 @@ a.red-bg:hover {
     border-bottom: 2px solid #b3561b !important;
     padding: 8px 8px 0 8px;
     color: #b3561b !important;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .saveproducts-wrapper .foodtabs .active {
@@ -1829,11 +1856,11 @@ li.start-clr {
 #followingSlider .MS-controls .MS-right {
     margin-top: -33px;
     position: absolute;
-    top: 50%;
+    top: 56%;
     color: #4F4F4F;
     background: #ffffff;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 14px rgb(0 0 0 / 16%);
     border: none;
@@ -1863,8 +1890,8 @@ li.start-clr {
 #similarSlider1 .MS-controls .MS-right i,
 #folloersSlider .MS-controls .MS-right i,
 #followingSlider .MS-controls .MS-right i {
-    font-size: 28px;
-    line-height: 46px;
+    font-size: 22px;
+    line-height: 36px;
     text-align: center;
     margin: 0 auto;
     padding: 2px 0 0 2px;
@@ -1878,7 +1905,7 @@ li.start-clr {
 }
 
 #followingSlider .MS-controls .MS-left {
-    left: -400px;
+    left: -388px;
 }
 
 #followingSlider .MS-controls .MS-right {
@@ -2981,6 +3008,26 @@ form.makelist-form {
 
 /* ------- PROFILE-PAGE-CSS-START ------- */
 
+.profile-wrapper h4 {
+    font-weight: 400;
+    color: #333333;
+    font-size: 20px;
+}
+
+.profile-wrapper h6 {
+    color: #333333;
+    font-weight: 400;
+}
+
+.address-wrapper .material-icons,
+.address-wrapper .material-icons-outlined {
+    color: #828282;
+}
+
+.address-wrapper p.grey-text {
+    font-size: 14px;
+}
+
 #folloersSlider .MS-content,
 #followingSlider .MS-content {
     overflow: hidden;
@@ -3045,7 +3092,7 @@ form.makelist-form {
 
 #my-followers .MS-controls .MS-left,
 #folloersSlider .MS-controls .MS-left {
-    left: -397px;
+    left: -386px;
 }
 
 #my-followers .MS-controls .MS-right,
@@ -3068,19 +3115,19 @@ form.makelist-form {
     top: -51%;
     color: #4F4F4F;
     background: #ffffff;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 14px rgb(0 0 0 / 16%);
 }
 
 .profile-wrapper {
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
     max-height: 100%;
 }
 
 .changepass-wrapper {
-    margin: 20px 0 60px 0;
+    margin: 0 0 60px 0;
     max-height: 100%;
 }
 
@@ -3146,6 +3193,7 @@ form.makelist-form {
 .input-group {
     border: 2px solid #AAAAAA;
     border-radius: 4px;
+    margin-bottom: 0;
 }
 
 .phone-list select {
@@ -3172,10 +3220,22 @@ select:focus {
 
 .editpro-form .form-group {
     width: 400px;
+    margin-bottom: 8px;
 }
 
 .editprofile-modal {
     padding: 30px;
+}
+
+.profile-wrapper h2 {
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.editpro-form label {
+    color: #767676;
+    margin-bottom: 0px;
+    font-size: 14px;
 }
 
 
@@ -3793,6 +3853,10 @@ a.follower-icon:hover {
 }
 
 @media (max-width:1199.98px) {
+    #my-followers .MS-controls .MS-left,
+    #my-followers .MS-controls .MS-right {
+        top: -40%;
+    }
     .webfoodTab-view .pally-inner {
         min-height: 460px;
     }
@@ -3975,6 +4039,29 @@ a.follower-icon:hover {
 }
 
 @media (max-width:991.98px) {
+    .changepass-wrapper input {
+        background: transparent;
+    }
+    .editpro-form label {
+        color: #333333;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+    .profilemodal-header h5 {
+        font-weight: 400;
+    }
+    .mobile-list-header i {
+        font-size: 20px;
+        vertical-align: middle;
+    }
+    .profile-font {
+        font-size: 20px;
+        color: #333333;
+        font-weight: 500;
+    }
+    .profilemodal-header i {
+        font-size: 20px;
+    }
     .form-marign {
         margin: 12px 0 0 0;
     }
@@ -4089,6 +4176,7 @@ a.follower-icon:hover {
         border-radius: 50%;
         box-shadow: none;
         border: none;
+        display: none;
     }
     #MobfollowingSlider .MS-controls .MS-right {
         top: 0;
@@ -4109,7 +4197,11 @@ a.follower-icon:hover {
     }
     .Mobprofile-wrapper {
         background: #FCFCFC;
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 120px;
+    }
+    .Mobaddress-bg.Mobprofile-wrapper {
+        padding-bottom: 140px;
     }
     .saveproducts-wrapper {
         margin: 20px 0 80px 0;
@@ -4153,7 +4245,7 @@ a.follower-icon:hover {
         background-size: 100% 100%;
         color: #fff;
         width: 80%;
-        margin: 90px auto;
+        margin: 22px auto;
     }
     .review-content .success-box {
         left: 38%;
@@ -5048,11 +5140,11 @@ a.follower-icon:hover {
 }
 
 @media (max-width:675px) {
-    #categoiresSlider .MS-content .item img {
+    /* #categoiresSlider .MS-content .item img {
         width: 100%;
         height: 60px;
         object-fit: scale-down;
-    }
+    } */
     .categ-text {
         background: #fffaef;
         height: auto;
@@ -5222,7 +5314,8 @@ a.follower-icon:hover {
         display: block;
     }
     #categoiresSlider .MS-content .item {
-        width: 30.8%;
+        width: 32.8%;
+        margin: 0 10px 0 0;
     }
     .box-outline {
         padding: 30px 6px 0 6px;
