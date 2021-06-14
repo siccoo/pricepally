@@ -434,7 +434,7 @@ span.yellow_cir {
     max-height: 171px;
     overflow-x: hidden;
     position: absolute;
-    width: 100%;
+    width: 73%;
     background: #ffffff;
     z-index: 1;
     padding: 10px;
@@ -868,6 +868,10 @@ span.yellow_cir {
 .heart-icon {
     position: relative;
     float: left;
+}
+
+.products-img-wrapper .heart-icon .red-clr {
+    color: #FF4747;
 }
 
 .saveproducts-wrapper .heart-icon .red-clr {
@@ -3354,9 +3358,9 @@ select:focus {
     color: #4F4F4F;
 }
 
-.mangeadd-wrapper {
+/*.mangeadd-wrapper {
     height: 57vh;
-}
+}*/
 
 
 /*------- MANGE-ADDRESS-PAGE-CSS-END ------- */
