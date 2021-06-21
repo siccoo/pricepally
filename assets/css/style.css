@@ -408,7 +408,78 @@ span.yellow_cir {
     border-radius: 50%;
     font-size: 18px;
 }
-
+/*******address-popup-start*******/
+.address-modal {
+    max-width: 1000px;
+    top: 1px;
+    left: -8px;
+}
+.address-modal h4 {
+    font-size: 22px;
+    line-height: 26px;
+    width: 100%;
+    color: #333333;
+}
+.address-modal .modal-header {
+    border-bottom: 0;
+}
+.address-modal label {
+    color: #333333;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+.address-modal input, .address-modal select {
+    border: 2px solid #AAAAAA;
+    height: 45px;
+    line-height: 41px;
+    padding: 0 15px;
+    color: #333333;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+}
+.address-modal .modal-content{
+    border: 0;
+}
+.address-btn a {
+    padding: 0px 15px;
+    height: 45px;
+    line-height: 45px;
+    width: 40%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.address-btn{
+    margin-top: 35px;
+}
+.address-modal .modal-footer button {
+    color: #EB5757;
+    font-size: 14px;
+    font-weight: 500;
+}
+.address-modal .modal-footer {
+    justify-content: center;
+    padding-top: 0;
+    border: 0;
+}
+.address-modal .form-group {
+    margin-bottom: 10px;
+}
+header .nav-item sup {
+    height: 20px;
+    width: 20px;
+    background-color: #FAB814;
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 600;
+    right: 3px;
+    top: -15px;
+}
+/*******address-popup-end*******/
 @media (max-width:720px) {
     .drop-menu {
         float: right;
