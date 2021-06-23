@@ -666,6 +666,10 @@ header .nav-item sup {
     margin-bottom: 90px;
 }
 /*******cart-emptypage-end*******/
+.date-picker input {
+    background-color: transparent;
+    border: 0;
+}
 
 @media (max-width:720px) {
     .drop-menu {
@@ -1255,6 +1259,7 @@ a.red-bg:hover {
     min-height: 180px;
     object-fit: scale-down;
     max-width: 100%;
+    max-height: 180px;
 }
 
 
@@ -2719,6 +2724,7 @@ div#pallyorderModal .addbutton-bg {
 .checktop-text h2 {
     font-size: 24px;
     font-weight: 700;
+    word-break: break-word;
 }
 
 .checkout-wrapper .border-right {
