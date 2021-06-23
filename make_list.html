@@ -531,7 +531,161 @@
 
                             <div class="mylist-btn text-center">
                                 <p class="mb-0">Done compiling the list?</p>
-                                <button type="button" class="yellow-bg text-uppercase">checkout</button>
+                                <button type="button" class="yellow-bg text-uppercase" data-toggle="modal" data-target="#make_list_checkout">checkout</button>
+
+
+
+
+
+
+<div class="modal fade makelistmodal-bg make_list_mobile" id="make_list_checkout">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="p-4 ">
+                        <h5 class="modal-title">Checkout</h5>
+                    </div>
+                    <div class="modal-body pt-0 pb-4 pl-4 pr-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="Delivery-tab-mobile" data-toggle="tab" href="#Delivery-mobile" role="tab" aria-controls="Delivery" aria-selected="true">Delivery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab-mobile" data-toggle="tab" href="#Payment-mobile" role="tab" aria-controls="Payment" aria-selected="false">Payment</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Delivery-mobile" role="tabpanel" aria-labelledby="Delivery-tab-mobile">
+                                <form class="delivery-form mt-4">
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter fullname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Email Address</label>
+                                        <input type="text" class="form-control" placeholder="Enter email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Coop Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter coop number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0  grey-text">Coop Delivery Address</label>
+                                        <input type="text" class="form-control" placeholder="This will show up once you fill the comp number" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Delivery Address (Optional)</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-0 grey-text">Optional Delivery Note/Order Instructions</label>
+                                        <textarea class="form-control" rows="3" placeholder="Type something..."></textarea>
+                                    </div>
+                                    <div class="makkelist-btn m-auto  text-center">
+                                        <div class="mb-3">
+                                            <button type="button" class="yellow-bg text-uppercase">Next</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="Payment-mobile" role="tabpanel" aria-labelledby="Payment-tab-mobile">
+                                <div class="payment-wrapper mt-4">
+                                    <div class="box-shadow p-3 mb-3">
+                                        <div class="row">
+                                            <div class="col-6 text-left">
+                                                <p class="mb-2">Shipping</p>
+                                                <p class="mb-2">Total</p>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <p class="mb-1">N1,000</p>
+                                                <h5 class="mb-1 text-right">N100,000</h5>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="check-bg mb-2">
+                                            <label class="pay-check pointer">
+                                                <input type="checkbox">Pay some amount from my wallet
+                                                <span class="check_box_ex"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow pr-3 pl-3 pb-2 pt-3 mb-3 pointer">
+                                        <div class="row mt-1 applycouponmodal">
+                                            <div class="col-9">
+                                                <h6 class="mb-0 text-left">Apply coupon</h6>
+                                            </div>
+                                            <div class="col-3 text-right">
+                                                <span class="material-icons ">east</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow p-3 mb-3">
+                                        <h6 class="text-uppercase text-secondary mb-3">payment method</h6>
+                                        <div class="rdio rdio-primary radio-inline mb-4 directbankbtn">
+                                            <input name="radio" value="2" id="directbnk" type="radio">
+                                            <label for="directbnk">
+                                                Direct Bank Transfer
+                                            </label>
+                                        </div>
+                                        <div class="rdio rdio-primary radio-inline mb-4">
+                                            <input name="radio" value="2" id="paystack" type="radio">
+                                            <label for="paystack">
+                                                Paystack
+                                            </label>
+                                        </div>
+                                        <div class="rdio rdio-primary radio-inline mb-4">
+                                            <input name="radio" value="2" id="paylater" type="radio">
+                                            <label for="paylater">
+                                                Buy now, pay later
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="makkelist-btn m-auto  text-center">
+                                    <div class="mb-3">
+                                        <button type="button" class="yellow-bg text-uppercase">PROCEED TO PAY</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="addclose text-center m-auto">
+                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </div>
                             <hr>
 

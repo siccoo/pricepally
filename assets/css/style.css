@@ -670,7 +670,48 @@ header .nav-item sup {
     background-color: transparent;
     border: 0;
 }
-
+.pro-detail-star .star {
+    z-index: 0;
+}
+.followers-inner li h6{
+    font-size: 16px;
+}
+.followers-inner .follow-btn{
+    font-size: 14px;
+}
+.molile-modal-btn button {
+    width: 100%;
+}
+.frequently-tab .accordion-bg .card {
+    padding-right: 30px;
+}
+.frequently-tab .accordion-bg .card span {
+    position: static !important;
+}
+.frequently-tab .accordion-bg .accordion-title i {
+    height: auto !important;
+    top: 15px !important;
+}
+/********************/
+#similar-products.similarproducts-bg .MS-controls {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+}
+#similar-products.similarproducts-bg #similarSlider {
+    position: relative;
+}
+#similar-products.simproducts-img-bg{
+  margin-bottom: 0 !important;
+  box-shadow: none;
+}
+.manage-address .address-wrapper{
+    height: 195px;
+    margin-bottom: 30px;
+}
+.fixedsidebar-header {
+    z-index: -1;
+}
 @media (max-width:720px) {
     .drop-menu {
         float: right;
@@ -2146,6 +2187,9 @@ li.start-clr {
     .empty_car-block {
         margin-bottom: 50px;
     }
+    .address-modal{
+        left: 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2173,6 +2217,18 @@ li.start-clr {
     .inner_empty-cart {
         width: 50%;
     }
+    #review .modal {
+        bottom: 0;
+        top: auto;
+        height: auto;
+    }
+    .make_list_mobile label {
+        display: block;
+        text-align: left;
+    }
+    .make_list_mobile h5{
+        text-align: left;
+    }
 
 }
 
@@ -2197,6 +2253,16 @@ li.start-clr {
     }
     .inner_empty-cart {
         width: 70%;
+    }
+    .home_slider .carousel-item {
+        height: auto;
+    }
+    .mobile_address_modal .modal-content {
+        background-color: #FCFCFC;
+    }
+    .mobile_address_modal .modal-header {
+        background-color: #ffffff;
+        box-shadow: 0px 2px 13px 0px #0000000d;
     }
 }
 
@@ -5835,6 +5901,9 @@ a.follower-icon:hover {
     .inner_empty-cart h5 {
         font-size: 16px;
     }
+    .accout-slider .item{
+        margin: 0 !important;
+    }
 }
 
 @media (max-width:460px) {
@@ -5865,6 +5934,12 @@ a.follower-icon:hover {
     }
     #Mobaccordion .accordion-body p {
         font-size: 14px;
+    }
+    #Mobile-date-Modalopn p{
+        font-size: 14px;
+    }
+    .frequently-tab .accordion-bg .card {
+        padding-right: 20px;
     }
 }
 
@@ -5923,6 +5998,18 @@ a.follower-icon:hover {
     }
     .inner_empty-cart{
         padding: 0 15px;
+    }
+    .mobile_address_modal .address-btn a{
+        width: 100%;
+    }
+    #Mobile-add-Modalopn h5 {
+        font-size: 16px;
+        margin: 0;
+        line-height: 34px;
+    }
+    #Mobile-add-Modalopn button{
+        padding-bottom: 8px;
+        font-size: 14px;
     }
 }
 
