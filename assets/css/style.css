@@ -477,7 +477,8 @@ header .nav-item sup {
     color: #000000;
     font-weight: 600;
     right: 3px;
-    top: -15px;
+    top: 0;
+    position: absolute;
 }
 /*******address-popup-end*******/
 
@@ -709,9 +710,101 @@ header .nav-item sup {
     height: 195px;
     margin-bottom: 30px;
 }
-.fixedsidebar-header {
-    z-index: -1;
+/*******Return-policy-page-Start*******/
+.return_policy_block {
+    padding: 0 0 60px 0;
 }
+.return_policy_block h2 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+.return_policy_block p {
+    color: #4F4F4F;
+}
+.shipping-wrap{
+    background-color: #fcb415;
+    padding: 30px 0;
+}
+.inner-shipping-wrap i {
+    font-family: 'FontAwesome';
+    font-size: 40px;
+    color: #ffffff;
+}
+.inner-shipping-wrap h4, .inner-shipping-wrap p, .inner-shipping-wrap p a {
+    color: #ffffff;
+}
+.inner-shipping-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+.shipping-content{
+    margin-left: 30px;
+}
+.shipping-content h4 {
+    margin-bottom: 3px;
+    font-size: 24px;
+}
+.shipping-content p{
+    margin-bottom: 0;
+}
+.terms-wrap h6 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+}
+.return_policy_block img {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.return_policy_block img {
+    width: 100%;
+    margin-bottom: 40px;
+    min-height: 350px;
+    max-height: 350px;
+}
+/*******Return-policy-page-end*******/
+.user_profile_content button {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 25px;
+}
+
+/***********ms-control-slider-start************/
+.profile-slider {
+    position: relative;
+}
+.profile-slider button.MS-left {
+    left: 0 !important;
+    margin-top: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+.profile-slider button.MS-right {
+    right: 0 !important;
+    margin-top: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+.profile-slider .MS-controls {
+    left: -20px !important;
+    right: -20px !important;
+    margin-top: 0;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.profile-slider .item {
+    width: 31.8% !important;
+}
+.profile-slider .follow-img {
+    width: 60px;
+    height: 60px;
+}
+/***********ms-control-slider-end************/
+
+
+
+
 @media (max-width:720px) {
     .drop-menu {
         float: right;
@@ -2229,6 +2322,26 @@ li.start-clr {
     .make_list_mobile h5{
         text-align: left;
     }
+    .shipping-content {
+        margin-left: 10px;
+    }
+    .inner-shipping-wrap i{
+        font-size: 26px;
+    }
+    .shipping-content h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .shipping-content p{
+        font-size: 15px;
+    }
+    .return_policy_block {
+        padding: 40px 0;
+    }
+    .shipping-wrap {
+        margin-bottom: 90px;
+    }
+    
 
 }
 
@@ -2263,6 +2376,25 @@ li.start-clr {
     .mobile_address_modal .modal-header {
         background-color: #ffffff;
         box-shadow: 0px 2px 13px 0px #0000000d;
+    }
+    .shipping-wrap {
+        margin-bottom: 80px;
+    }
+    .inner-shipping-wrap {
+        margin-bottom: 20px;
+    }
+    .shipping-content h4 {
+        font-size: 20px;
+    }
+    .shipping-content {
+        margin-left: 20px;
+    }
+    .inner-shipping-wrap i {
+        font-size: 28px;
+    }
+    .privacy_policy_block li strong {
+        font-weight: 700;
+        font-size: 18px;
     }
 }
 
@@ -2449,11 +2581,11 @@ li.start-clr {
     font-weight: 700;
 }
 
-.fixedsidebar-header {
-    position: fixed;
+.sticky-sidebar.fixedsidebar-header {
+    position: sticky;
     top: 80px;
+    z-index: 0;
 }
-
 .removefixed-header {
     position: absolute !important;
     top: 936px;
@@ -5658,6 +5790,9 @@ a.follower-icon:hover {
         padding: 0 0 0 50px;
         max-width: 100%;
     }
+    .return_policy_block h2{
+        font-size: 26px;
+    }
 }
 
 @media(max-width:570px) {
@@ -5712,9 +5847,7 @@ a.follower-icon:hover {
     .pally-bg .justify-content-start {
         width: 32%;
     }
-    /* .checkout-footer {
-        bottom: 11%;
-    } */
+    
 }
 @media (max-width:575px) {
     .inner-user img {
@@ -5735,6 +5868,22 @@ a.follower-icon:hover {
     }
     .inner_empty-cart {
         width: 80%;
+    }
+    .return_policy_block {
+        padding: 30px 0;
+    }
+    .return_policy_block h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .return_policy_block p{
+        font-size: 14px;
+    }
+    .privacy_policy_block li strong{
+        font-size: 15px;
+    }
+    .privacy_policy_block ol {
+        padding-left: 15px;
     }
 
 }
