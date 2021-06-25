@@ -759,8 +759,8 @@ header .nav-item sup {
 .return_policy_block img {
     width: 100%;
     margin-bottom: 40px;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 250px;
+    max-height: 250px;
 }
 /*******Return-policy-page-end*******/
 .user_profile_content button {
@@ -2574,7 +2574,6 @@ li.start-clr {
     background: #fff;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 4px hsl(0deg 0% 0% / 6%);
 }
 
 .addclose span {
