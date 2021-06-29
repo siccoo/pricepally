@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
 
     <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>
@@ -224,7 +225,7 @@
                                 </div>
                             </div>
                             <div id="folloersSlider" class="dvslider">
-                                <div class="MS-controls">
+                                <div class="MS-controls" id="followers_arrow">
                                     <button class="MS-left"><i class='material-icons'>west</i></button>
                                     <button class="MS-right"><i class='material-icons'>east</i></button>
                                 </div>
@@ -239,7 +240,6 @@
                                                 <li class="d-inline-block"><a href="my-followers.html" class="follow-btn text-uppercase">Follow
                                                 </a></li>
                                             </ul>
-
                                         </div>
                                     </div>
                                     <div class="item">
@@ -253,9 +253,9 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="item">
+                                   <div class="item">
                                         <div class="followers-inner">
-                                            <ul class="list-unstyled mb-0">
+                                            <ul id="follerersid" class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers3.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
                                                     <h6>Guy Hawkins</h6>
@@ -266,7 +266,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="followers-inner">
-                                            <ul class="list-unstyled mb-0">
+                                            <ul id="follerersid" class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
                                                     <h6>Florence Jackson</h6>
@@ -279,7 +279,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="followers-inner">
-                                            <ul class="list-unstyled mb-0">
+                                            <ul id="follerersid" class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers2.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
                                                     <h6>Courtney Henry</h6>
@@ -347,13 +347,13 @@
                                 </div>
                             </div>
                             <div id="followingSlider" class="dvslider">
-                                <div class="MS-controls">
+                                <div class="MS-controls" id="following_arrow">
                                     <button class="MS-left"><i class='material-icons'>west</i></button>
                                     <button class="MS-right"><i class='material-icons'>east</i></button>
                                 </div>
                                 <div class="MS-content">
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -366,7 +366,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers2.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -377,7 +377,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers3.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -388,7 +388,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -401,7 +401,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers2.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -412,7 +412,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers3.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -423,7 +423,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers1.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -435,7 +435,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers2.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -446,7 +446,7 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="followers-inner">
+                                        <div class="followers-inner follower_wrap">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="d-inline-block pr-2"> <img class="follow-img" src="assets/images/followers3.jpg" alt="follwers-img1"></li>
                                                 <li class="d-inline-block pr-4">
@@ -490,7 +490,7 @@
             </div>
             <hr class="border-bottom">
             <div class="container">
-                <div id="my-followers" class="accout-slider followers-bg mb-4 mt-4">
+                <!-- <div id="my-followers" class="accout-slider followers-bg mb-4 mt-4">
                     <h5 class="grey-text">My Followers (345)</h5>
                     <div id="MobfolloersSlider" class="dvslider">
                         <div class="MS-controls">
@@ -637,7 +637,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!------ MOBILE-VIEW-PROFILE-SECTION-END ------>
@@ -1016,11 +1016,13 @@
 
     </main>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightslider.js"></script>
     <script src="assets/js/script.js"></script>
-    <!-- <script src="assets/js/multislider.js"></script>
-    <script src="assets/js/multislider.min.js"></script> -->
+    <script src="assets/js/multislider.js"></script>
+    <script src="assets/js/multislider.min.js"></script>
 </body>
 
 </html>

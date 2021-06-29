@@ -263,7 +263,7 @@ $(".progress-bar").each(function(i) {
 $(document).ready(function() {
     $('#similarSlider').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -272,7 +272,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#similarSlider1').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -360,30 +360,64 @@ $("body").on("click", ".track-btn", function(e) {
 
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
+// cc
+$(document).ready(function() {
+    console.log($('.followers-inner').length);
+    if($('.followers-inner').length>3){
+        $('#folloersSlider').multislider({
+            interval: 4000,
+            slideAll: false,
+            duration: 1000,
+            hoverPause: true,
+            loop: true,
+         });
+        
+    }else{
+       var arrows= $('#followers_arrow');
+        for (var i=0;i<arrows.length;i+=1){
+          arrows[i].style.display = 'none';
+        }
+    }
+  
+});
 
 $(document).ready(function() {
-    $('#folloersSlider').multislider({
-        interval: 4000,
-        slideAll: true,
-        duration: 1000,
-        hoverPause: true
-
-    });
+    console.log($('.follower_wrap').length);
+    if($('.follower_wrap').length>3){
+        $('#followingSlider').multislider({
+            interval: 4000,
+            slideAll: false,
+            duration: 1000,
+            hoverPause: true,
+            loop: true,
+         });
+        
+    }else{
+       var arrows= $('#following_arrow');
+        for (var i=0;i<arrows.length;i+=1){
+          arrows[i].style.display = 'none';
+        }
+    }
+  
 });
-$(document).ready(function() {
-    $('#followingSlider').multislider({
-        interval: 4000,
-        slideAll: true,
-        duration: 1000,
-        hoverPause: true
 
-    });
-});
+
+
+
+// $(document).ready(function() {
+//     $('#followingSlider').multislider({
+//         interval: 4000,
+//         slideAll: false,
+//         duration: 1000,
+//         hoverPause: true
+
+//     });
+// });
 
 $(document).ready(function() {
     $('#mediaSlider').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -393,7 +427,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#categoiresSlider').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -405,7 +439,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#MobfolloersSlider').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -414,7 +448,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#MobfollowingSlider').multislider({
         interval: 4000,
-        slideAll: true,
+        slideAll: false,
         duration: 1000,
         hoverPause: true
 
@@ -641,4 +675,13 @@ $("body").on("click", ".Mobviewexistpally-btn", function(e) {
  }
 /*------ MORE-ICON-CLICK-MODAL-JS-END -------*/
 
+
+// $('#lightSlider').lightSlider({
+//     gallery: true,
+//     item: 2.3,
+//     loop:true,
+//     slideMargin: 20,
+//     thumbItem: 9,
+//     slideMove:2
+// });
 
