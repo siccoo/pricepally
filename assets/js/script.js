@@ -360,25 +360,25 @@ $("body").on("click", ".track-btn", function(e) {
 
 
 
-$(document).ready(function() {
-    console.log($('.item').length);
-    if($('.item').length>3){
-        $('#categoiresSlider').multislider({
-            interval: 4000,
-            slideAll: false,
-            duration: 1000,
-            hoverPause: true,
-            loop: true,
-         });
+// $(document).ready(function() {
+//     console.log($('.item').length);
+//     if($('.item').length>3){
+//         $('#categoiresSlider').multislider({
+//             interval: 4000,
+//             slideAll: false,
+//             duration: 1000,
+//             hoverPause: true,
+//             loop: true,
+//          });
         
-    }else{
-       var arrows= $('#category_arrow');
-        for (var i=0;i<arrows.length;i+=1){
-          arrows[i].style.display = 'none';
-        }
-    }
+//     }else{
+//        var arrows= $('#category_arrow');
+//         for (var i=0;i<arrows.length;i+=1){
+//           arrows[i].style.display = 'none';
+//         }
+//     }
   
-});
+// });
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
 // cc
