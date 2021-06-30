@@ -358,6 +358,26 @@ $("body").on("click", ".track-btn", function(e) {
 
 /*------ ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 
+/********other-user-profile-slider********/
+$(document).ready(function() {
+    console.log($('.other-followers-inner').length);
+    if($('.other-followers-inner').length>3){
+        $('#other-follower').multislider({
+            interval: 4000,
+            slideAll: false,
+            duration: 1000,
+            hoverPause: true,
+            loop: true,
+         });
+        
+    }else{
+       var arrows= $('#other-arrow');
+        for (var i=0;i<arrows.length;i+=1){
+          arrows[i].style.display = 'none';
+        }
+    }
+  
+});
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
 // cc
@@ -400,8 +420,6 @@ $(document).ready(function() {
     }
   
 });
-
-
 
 
 // $(document).ready(function() {
@@ -675,13 +693,4 @@ $("body").on("click", ".Mobviewexistpally-btn", function(e) {
  }
 /*------ MORE-ICON-CLICK-MODAL-JS-END -------*/
 
-
-// $('#lightSlider').lightSlider({
-//     gallery: true,
-//     item: 2.3,
-//     loop:true,
-//     slideMargin: 20,
-//     thumbItem: 9,
-//     slideMove:2
-// });
 
