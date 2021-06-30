@@ -895,8 +895,15 @@ footer h6 {
 .inner_manage_address_wrap input:checked + label:before{
     border-color: #B3561B;
 }
-
-
+#cartsuessfullopnmodal .modal-dialog .modal-content {
+    padding-top: 50px;
+}
+#social-links li {
+    padding-right: 20px;
+}
+#social-links li a{
+    font-size: 40px;
+}
 
 /***************category-slider-start***************/
 .listingslider .item{
@@ -2716,6 +2723,7 @@ li.start-clr {
     background: #fff;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0px 1px 8px 0px rgba(121 56 14 / 11%);
 }
 
 .addclose span {
@@ -4289,6 +4297,9 @@ a.follower-icon:hover {
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
+}
+.refer-main {
+    position: relative !important;
 }
 
 /* ------- REFER AND EARN-PAGE-CSS-END -------- */
