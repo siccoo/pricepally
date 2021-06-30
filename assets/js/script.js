@@ -358,11 +358,12 @@ $("body").on("click", ".track-btn", function(e) {
 
 /*------ ORDER (VIEW-DETAILS-CLICK-MODAL)-MODAL-JS-START ------*/
 
-/********other-user-profile-slider********/
+
+
 $(document).ready(function() {
-    console.log($('.other-followers-inner').length);
-    if($('.other-followers-inner').length>3){
-        $('#other-follower').multislider({
+    console.log($('.item').length);
+    if($('.item').length>3){
+        $('#categoiresSlider').multislider({
             interval: 4000,
             slideAll: false,
             duration: 1000,
@@ -371,7 +372,7 @@ $(document).ready(function() {
          });
         
     }else{
-       var arrows= $('#other-arrow');
+       var arrows= $('#category_arrow');
         for (var i=0;i<arrows.length;i+=1){
           arrows[i].style.display = 'none';
         }
