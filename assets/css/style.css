@@ -921,9 +921,20 @@ footer h6 {
     right: -635px !important;
 }
 /***************category-slider-end***************/
+/**********************/
+header nav.navbar {
+    padding-right: 0;
+}
+header .navigation-wrap .nav-item:last-child a.nav-link {
+    padding-right: 0;
+    margin: 0;
+}
+.listingslider .MS-controls {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-
-
+/**********************/
 
 
 
