@@ -933,7 +933,26 @@ header .navigation-wrap .nav-item:last-child a.nav-link {
     top: 50%;
     transform: translateY(-50%);
 }
-
+#categoires-bg .item img {
+    min-height: 130px;
+    height: 130px;
+}
+.refer-main {
+    position: relative !important;
+    height: 50px;
+    line-height: 44px;
+    padding: 0 12px;
+}
+.hero_wrapper_space {
+    padding-top: 0;
+}
+.manage-address {
+    padding-left: 15px;
+}
+.manage-address h6 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 /**********************/
 
 
@@ -4305,11 +4324,13 @@ a.follower-icon:hover {
 .refer_icon {
     position: absolute;
     right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 8px;
 }
 .refer-main {
     position: relative !important;
+    height: 50px;
+    line-height: 44px;
+    padding: 0 12px;
 }
 
 /* ------- REFER AND EARN-PAGE-CSS-END -------- */
