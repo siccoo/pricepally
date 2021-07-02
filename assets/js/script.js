@@ -492,13 +492,13 @@ $(document).ready(function() {
     }
 
 
-    $(".file-upload").on('change', function() {
-        readURL(this);
-    });
+    // $(".file-upload").on('change', function() {
+    //     readURL(this);
+    // });
 
-    $(".upload-button").on('click', function() {
-        $(".file-upload").click();
-    });
+    // $(".upload-button").on('click', function() {
+    //     $(".file-upload").click();
+    // });
 });
 
 /*------ EDIT-PROFILE-JS-END ***/
@@ -695,3 +695,14 @@ $("body").on("click", ".Mobviewexistpally-btn", function(e) {
 /*------ MORE-ICON-CLICK-MODAL-JS-END -------*/
 
 
+$('.scrool-bar .nav-link').on('click', function(event) {
+            event.preventDefault();
+            var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-90
+                }, 800, 'swing', function () {
+                    $(document).on("scroll", onScroll);
+                });
+          });
