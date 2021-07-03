@@ -3967,12 +3967,10 @@ form.makelist-form {
 .edit-image:hover {
     transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
-
 .upload-button:hover {
     transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
     color: #999;
 }
-
 .phone-list li:first-child {
     padding: 0;
     border-right: 1px solid #ccc;
@@ -3989,7 +3987,6 @@ form.makelist-form {
     border: none;
     background: transparent;
 }
-
 .phone-list input.form-control {
     box-shadow: none;
     background: transparent;
