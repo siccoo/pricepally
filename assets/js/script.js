@@ -97,7 +97,7 @@ $('.sub').click(function() {
 
 /* ------ RATING-JS-START -------*/
 $(document).ready(function() {
-    $('.stars li').on('mouseover', function() {
+    $('.stars11 li').on('mouseover', function() {
         var onStar = parseInt($(this).data('value'), 10);
         $(this).parent().children('li.star').each(function(e) {
             if (e < onStar) {
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 
     /* 2. Action to perform on click */
-    $('.stars li').on('click', function() {
+    $('.stars11 li').on('click', function() {
         var onStar = parseInt($(this).data('value'), 10); // The star currently selected
         var stars = $(this).parent().children('li.smallstar');
 
