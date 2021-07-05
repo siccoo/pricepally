@@ -1068,9 +1068,11 @@ form .subcategories_list select {
     width: 100%;
 }
 .modal-open .modal{
-    padding-right: 0;
+    padding-right: 0 !important;
 }
-
+.categories_list {
+    margin-bottom: 80px;
+}
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
   width: 100%;
@@ -2099,6 +2101,7 @@ h5.white-head {
 
 .product-breadcrumb .breadcrumb {
     background: transparent;
+    padding: 0;
 }
 
 .product-breadcrumb .active {
@@ -2489,7 +2492,7 @@ li.start-clr {
     position: relative;
     vertical-align: top;
     border-right: none;
-    width: 42%;
+    width: 40%;
     margin: 0 20px 0 0;
 }
 
