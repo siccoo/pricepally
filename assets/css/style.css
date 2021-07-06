@@ -771,6 +771,7 @@ footer h6 {
 }
 .orderlist .small-text p{
     border-radius: 5px;
+    margin: 0;
 }
 .inner_manage_address_wrap input {
   padding: 0;
@@ -824,7 +825,7 @@ footer h6 {
 }
 /***************category-slider-start***************/
 .listingslider .item{
-    width: 18% !important;
+    width: 19% !important;
     background: transparent !important;
     border: 0 !important;
 }
@@ -835,7 +836,7 @@ footer h6 {
     left: -520px !important;
 }
 .listingslider .MS-right {
-    right: -600px !important;
+    right: -630px !important;
 }
 .listingslider .item img{
     border: 1px solid transparent;
@@ -887,7 +888,7 @@ footer h6 {
     height: 40px;
     background-color: #262626;
     color: #ffffff;
-    line-height: 38px;
+    line-height: 40px;
     text-align: center;
     border-radius: 4px;
     font-size: 22px;
@@ -937,7 +938,7 @@ footer h6 {
 .inner_contact_wrap:before {
     content: '';
     position: absolute;
-    width: 400px;
+    width: 30%;
     height: 160px;
     background-color: #B3751B;
     left: 0;
@@ -1009,8 +1010,8 @@ header .navigation-wrap .nav-item:last-child a.nav-link {
     margin: 0;
 }
 #categoires-bg .item img {
-    min-height: 130px;
-    height: 130px;
+    min-height: 140px;
+    height: 140px;
 }
 .refer-main {
     position: relative !important;
@@ -1073,6 +1074,9 @@ form .subcategories_list select {
 .categories_list {
     margin-bottom: 80px;
 }
+.works_wrap img {
+    width: 100%;
+}
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
   width: 100%;
@@ -1133,6 +1137,68 @@ img.carmeraedit.upload-button {
   opacity: 1;
 }
 /**********profle-picture-change-end*************/
+.make_list_block p {
+    color: #4F4F4F;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 2px;
+}
+.make_list_block h6{
+    margin-bottom: 0;
+    color: #262626;
+}
+.total_wrap p {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+.total_wrap p span {
+    color: #828282;
+    font-size: 14px;
+}
+.total_wrap {
+    border-bottom: 1px solid #AAAAAA;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 8px;
+}
+.form-group input {
+    width: 48.5%;
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 4px !important;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 12px;
+}
+.form-group input:last-child {
+    margin-right: 0;
+}
+.join-bg input {
+    width: 100% !important;
+    border-radius: 4px !important;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 12px;
+}
+.join-bg {
+    display: block;
+}
+.join-btn {
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+.join-btn span {
+    border-radius: 4px !important;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+header .material-icons-outlined, header .material-icons{
+    font-size: 28px;
+}
 
 /***********new-changes-end***********/
 @media (max-width:720px) {
@@ -1737,8 +1803,9 @@ a.red-bg:hover {
     border: 1px solid #B3561B;
     color: #B3561B;
     font-weight: 700;
-    padding: 4px 12px;
-    height: 32px;
+    padding: 0px 12px;
+    height: 33px;
+    line-height: 30px;
     font-size: 14px;
 }
 
@@ -1788,7 +1855,7 @@ a.red-bg:hover {
 
 .foodtabs .active {
     border-bottom: 2px solid #b3561b !important;
-    padding: 11px 8px 0 8px;
+    padding: 12px 8px 0 8px;
     color: #b3561b !important;
     border-radius: 5px 5px 0px 0px;
 }
@@ -1874,8 +1941,8 @@ a.red-bg:hover {
 }
 
 .food-items-bg .border-bottom {
-    border-bottom: 1px solid #dee2e6!important;
-    margin: -3px 0 0 0;
+    border-bottom: 0 !important;
+    margin: -2px 0 0 0;
 }
 
 .select-bg li {
@@ -2545,6 +2612,10 @@ li.start-clr {
     .address-modal{
         left: 0;
     }
+    .select-bg .form-control {
+        padding: 0 2px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -3210,7 +3281,7 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .checktop-text h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     word-break: break-word;
 }
@@ -3454,7 +3525,7 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .order-table .brown-clr {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
 }
 
@@ -3796,7 +3867,7 @@ form.makelist-form {
 }
 
 .mylist-btn {
-    margin: 300px 0 20px 0;
+    margin: 140px 0 30px 0;
 }
 
 .createlist-btn {
@@ -4190,15 +4261,12 @@ select:focus {
     margin: 2px;
 }
 
-.border-bg li:first-child {
-    background: #FFF1E8;
+.border-bg li {
     padding: 10px 14px;
 }
-
-.border-bg li:last-child {
-    padding: 4px 12px;
+.pagination li.active {
+    background-color: #FFF1E8;
 }
-
 .pagination-bg .page-link {
     color: #333333;
 }
