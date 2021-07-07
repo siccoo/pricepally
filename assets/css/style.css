@@ -1166,11 +1166,11 @@ img.carmeraedit.upload-button {
     border-bottom: 1px solid #AAAAAA;
     margin-bottom: 20px;
 }
-.form-group {
+footer .form-group {
     margin-bottom: 8px;
 }
-.form-group input {
-    width: 100%;
+footer .form-group input {
+    width: 48.5%;
     display: inline-block;
     margin-right: 6px;
     border-radius: 4px !important;
@@ -1178,7 +1178,7 @@ img.carmeraedit.upload-button {
     line-height: 45px;
     padding: 0 12px;
 }
-.form-group input:last-child {
+footer .form-group input:last-child {
     margin-right: 0;
 }
 .join-bg input {
