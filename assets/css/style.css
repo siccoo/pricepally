@@ -1080,6 +1080,9 @@ form .subcategories_list select {
 #applycouponopnmodal .form-group input {
     width: 100%;
 }
+.phone-list input {
+    width: 100%;
+}
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
   width: 100%;
@@ -1167,7 +1170,7 @@ img.carmeraedit.upload-button {
     margin-bottom: 8px;
 }
 .form-group input {
-    width: 48.5%;
+    width: 100%;
     display: inline-block;
     margin-right: 6px;
     border-radius: 4px !important;
