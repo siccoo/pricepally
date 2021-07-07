@@ -1077,6 +1077,9 @@ form .subcategories_list select {
 .works_wrap img {
     width: 100%;
 }
+#applycouponopnmodal .form-group input {
+    width: 100%;
+}
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
   width: 100%;
@@ -1805,7 +1808,7 @@ a.red-bg:hover {
     font-weight: 700;
     padding: 0px 12px;
     height: 33px;
-    line-height: 30px;
+    line-height: 33px;
     font-size: 14px;
 }
 
@@ -3796,11 +3799,13 @@ div#pallyorderModal .addbutton-bg {
 form.makelist-form .form-control {
     border: 2px solid #AAAAAA;
     height: 50px;
+    width: 100%;
 }
 
 .makelist-form label {
     color: #767676;
     font-size: 14px;
+    display: block;
 }
 
 form.makelist-form {
