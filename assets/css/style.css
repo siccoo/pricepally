@@ -1205,7 +1205,11 @@ footer .form-group input:last-child {
 header .material-icons-outlined, header .material-icons{
     font-size: 28px;
 }
-
+.apply-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
 /***********new-changes-end***********/
 @media (max-width:720px) {
     .drop-menu {
