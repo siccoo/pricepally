@@ -337,7 +337,7 @@ span.yellow_cir {
 }
 /*******address-popup-start*******/
 .address-modal {
-    max-width: 1000px;
+    max-width: 982px;
     top: 1px;
     left: -8px;
 }
@@ -1012,6 +1012,7 @@ header .navigation-wrap .nav-item:last-child a.nav-link {
 #categoires-bg .item img {
     min-height: 140px;
     height: 140px;
+    width: 100%
 }
 .refer-main {
     position: relative !important;
@@ -1209,6 +1210,18 @@ header .material-icons-outlined, header .material-icons{
     width: 100%;
     text-align: center;
     margin-top: 20px;
+}
+.foodstuff-wrapper h4.heading {
+    margin-bottom: 0;
+}
+.foodstuff-wrapper .row {
+    align-items: center;
+}
+.orderlist .page-item.disabled .page-link1 {
+    color: #333333;
+}
+.orderlist .page-item.disabled .page-link{
+    color: #333333;
 }
 /***********new-changes-end***********/
 @media (max-width:720px) {

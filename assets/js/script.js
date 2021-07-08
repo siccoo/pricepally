@@ -384,7 +384,7 @@ $("body").on("click", ".track-btn", function(e) {
 // cc
 $(document).ready(function() {
     console.log($('.followers-inner').length);
-    if($('.followers-inner').length>3){
+    if($('.followers-inner').length>2){
         $('#folloersSlider').multislider({
             interval: 4000,
             slideAll: false,
@@ -404,7 +404,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     console.log($('.follower_wrap').length);
-    if($('.follower_wrap').length>3){
+    if($('.follower_wrap').length>2){
         $('#followingSlider').multislider({
             interval: 4000,
             slideAll: false,
@@ -776,3 +776,29 @@ $('.scrool-bar .nav-link').on('click', function(event) {
                     $(document).on("scroll", onScroll);
                 });
           });
+
+
+
+
+
+
+
+window.addEventListener('click', function(e){   
+  if (document.getElementById('search_bars').contains(e.target)){
+    // Clicked in box
+    
+    var dropdownssearch= $('#scrolling');
+    for (var i=0;i<dropdownssearch.length;i++){
+      dropdownssearch[i].style.display = 'block';
+    }
+    //$('#scrolling').style.display = 'block';
+  } else{
+    // Clicked outside the box
+    var dropdownssearch= $('#scrolling');
+    for (var i=0;i<dropdownssearch.length;i++){
+      dropdownssearch[i].style.display = 'none';
+
+    }
+    
+  }
+});
