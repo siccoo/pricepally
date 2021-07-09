@@ -1236,7 +1236,7 @@ header .material-icons-outlined, header .material-icons{
     align-items: center;
 }
 .search-recommended {
-    margin-top: 60px;
+    margin: 60px 0;
 }
 .no-result-found img {
     width: 100%;
