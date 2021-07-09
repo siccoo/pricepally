@@ -237,7 +237,7 @@ input:focus {
     border: 1px solid #AAAAAA;
     width: 280px;
     border-radius: 4px;
-    padding: 4px 0 4px 5px;
+    padding: 7px 0 7px 5px;
 }
 .saerch-bar span.material-icons {
     vertical-align: middle;
@@ -1224,6 +1224,71 @@ header .material-icons-outlined, header .material-icons{
     color: #333333;
 }
 /***********new-changes-end***********/
+/***********new-pages-style-start***********/
+.outer_search {
+    display: flex;
+    align-items: center;
+}
+.outer_search button {
+    margin-left: 4px;
+}
+.search-recommended .row {
+    align-items: center;
+}
+.search-recommended {
+    margin-top: 60px;
+}
+.no-result-found img {
+    width: 100%;
+}
+.no-result-found h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+.no-result-found p{
+    text-align: center;
+}
+.search-recommended .web-head{
+    display: block;
+}
+.no-result-found {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.user-search-bar h4 {
+    margin: 0;
+}
+.user-search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    width: 70%;
+}
+.mobile-search{
+    display: none;
+}
+.blank_page img {
+    width: 325px;
+}
+.blank_page h4 {
+    margin-bottom: 20px;
+}
+.search-recommended button {
+    width: 100%;
+}
+.link-expired {
+    width: 340px;
+}
+.orderlist .alert-dark {
+    background-color: #D1FFE5;
+    color: #17693A;
+}
+#applycouponopnmodal ul {
+    margin-bottom: 0;
+}
+/***********new-pages-style-end***********/
 @media (max-width:720px) {
     .drop-menu {
         float: right;
@@ -2744,6 +2809,24 @@ li.start-clr {
     .inner_contact_wrap:before{
         top: 95px;
     }
+    .mobile-search .saerch-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6px;
+}
+.mobile-search{
+    display: block;
+}
+.outer_search{
+    display: none;
+}
+.user-search-bar{
+    display: block;
+}
+.user-block h4{
+    padding: 0 15px;
+}
 }
 
 @media (max-width: 767px) {
@@ -4641,7 +4724,7 @@ a.follower-icon:hover {
     color: #333333;
 }
 
-.logslider-content P {
+.logslider-content p {
     color: #4F4F4f;
 }
 
@@ -6309,6 +6392,12 @@ a.follower-icon:hover {
     }
     .contact-text-block {
         margin-top: 30px;
+    }
+    .blank_page img {
+        width: 100%;
+    }
+    .link-expired {
+        width: 100%;
     }
 }
 
