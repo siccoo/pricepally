@@ -418,8 +418,8 @@ header .nav-item sup {
 }
 .inner-user img {
     max-width: 60px;
-    height: 55px;
-    width: 100%;
+    height: 60px;
+    width: 60px;
     display: inline-block;
     border-radius: 50px;
 }
@@ -825,7 +825,7 @@ footer h6 {
 }
 /***************category-slider-start***************/
 .listingslider .item{
-    width: 19% !important;
+    width: 18.29% !important;
     background: transparent !important;
     border: 0 !important;
 }
@@ -1041,7 +1041,11 @@ form .subcategories_list select {
 .webfoodTab-view form .form-group {
     position: relative;
     border: 2px solid #EFEDED;
-    padding: 0 30px 0 0px;
+}
+.webfoodTab-view form .form-group select {
+    padding: 0 30px 0 15px;
+    z-index: 0;
+    background-color: transparent;
 }
 .webfoodTab-view form .form-group:before {
     content: '\f107';
@@ -1059,8 +1063,7 @@ form .subcategories_list select {
     }
 .user-block .inner-user span a {
     text-transform: uppercase;
-    font-size: 12px;
-    padding: 0 12px;
+    font-size: 14px;
 }
 .profile-wrapper .sidebar li:last-child {
     border-bottom: 0;
@@ -1223,6 +1226,19 @@ header .material-icons-outlined, header .material-icons{
 .orderlist .page-item.disabled .page-link{
     color: #333333;
 }
+.login-content .brown-btn {
+    height: 34px;
+    line-height: 34px;
+}
+.addresslist .col-lg-6 {
+    border-bottom: 1px solid rgb(242 242 242);
+}
+.addresslist ul{
+    padding: 18px 0;
+}
+.addresslist .col-lg-6:nth-child(even) {
+    border-right: 1px solid #F2F2F2;
+}
 /***********new-changes-end***********/
 /***********new-pages-style-start***********/
 .outer_search {
@@ -1288,7 +1304,29 @@ header .material-icons-outlined, header .material-icons{
 #applycouponopnmodal ul {
     margin-bottom: 0;
 }
+.profile-wrapper ul {
+        margin-bottom: 0;
+    }
+    .sidebar{
+        margin-bottom: 20px;
+    }
 /***********new-pages-style-end***********/
+@media (min-width:1697px) {
+    .refer-wrapper{
+        min-height: auto !important;
+        margin-bottom: 30px
+    }
+    .profile-wrapper {
+        margin: 20px 0 10px 0;
+    }
+    .profile-wrapper h2 {
+        margin: 0 0 10px 0;
+    }
+    
+    .sidebar li {
+        padding: 8px 0 4px 8px;
+    }
+}
 @media (max-width:720px) {
     .drop-menu {
         float: right;
@@ -1367,7 +1405,7 @@ header .material-icons-outlined, header .material-icons{
 }
 .search-items {
     border-bottom: 1px solid #F2F2F2;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 .order-table .border-bottom {
     border-bottom: 2px solid #dee2e6!important;
@@ -1381,7 +1419,7 @@ header .material-icons-outlined, header .material-icons{
     font-size: 14px;
 }
 .search-users{
-    padding: 10px;
+    /*s*/
 }
 /* ---SEARCH-LIST-CSS-END ----- */
 /* ------ HEADER_CSS_END ------ */
@@ -1943,7 +1981,6 @@ a.red-bg:hover {
 
 .foodtabs .active {
     border-bottom: 2px solid #b3561b !important;
-    padding: 12px 8px 0 8px;
     color: #b3561b !important;
     border-radius: 5px 5px 0px 0px;
 }
@@ -2005,7 +2042,7 @@ a.red-bg:hover {
 /* ------ BUTTON-HOVER-EFFECTS-CSS-END ------ */
 
 .select-bg {
-    margin: 35px 0 0 0;
+    margin: 38px 0 0 0;
 }
 
 .food-items-bg .select-bg .form-control {
@@ -2632,6 +2669,13 @@ li.start-clr {
         margin-bottom: 19px;
         margin-top: -58px !important;
         right: 0px !important;
+    }
+    #categoires-bg .item img {
+        min-height: 65px;
+        height: 65px;
+    }
+    .user-search-bar{
+        width: 100%;
     }
 
 }
@@ -3291,7 +3335,7 @@ div#pallyorderModal .addbutton-bg {
 /***** RADIO BUTTON STYLES *****/
 .rdio {
     position: relative;
-    margin: 0 0 12px 0;
+    margin: 0;
 }
 
 .rdio input[type="radio"] {
@@ -3306,7 +3350,7 @@ div#pallyorderModal .addbutton-bg {
 .rdio label {
     padding-left: 10px;
     cursor: pointer;
-    margin: -26px 0 6px 20px;
+    margin: -26px 0 0px 20px;
     display: block;
     font-size: 16px;
 }
@@ -3858,7 +3902,7 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .makelist-wrapper {
-    padding: 40px 0;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -4242,7 +4286,7 @@ select:focus {
 }
 
 .profile-wrapper h2 {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     font-weight: 400;
 }
 .editpro-form label {
@@ -4316,6 +4360,8 @@ select:focus {
 .Mobprofile-wrapper .brown-clr {
     font-size: 14px;
     padding: 10px 6px 10px 10px;
+    background-color: transparent;
+    text-transform: uppercase;
 }
 
 .changepass-wrapper label,
@@ -4377,6 +4423,7 @@ select:focus {
 }
 .pagination-bg .page-link {
     color: #333333;
+    border: 0;
 }
 
 .pagination-bg .page-link:hover {
@@ -4509,7 +4556,7 @@ a.follower-icon:hover {
 
 .refer-inner {
     border: 1px solid #E0E0E0;
-    padding: 30px 60px;
+    padding: 25px 60px;
     border-radius: 5px;
     box-shadow: 0 0 1px 1px hsl(0deg 0% 0% / 5%);
 }
@@ -6505,6 +6552,10 @@ a.follower-icon:hover {
     #Mobile-add-Modalopn button{
         padding-bottom: 8px;
         font-size: 14px;
+    }
+    #categoires-bg .item img {
+        min-height: auto;
+        height: auto;
     }
 }
 

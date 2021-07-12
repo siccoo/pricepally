@@ -783,20 +783,42 @@ $('.scrool-bar .nav-link').on('click', function(event) {
 
 
 
+// window.addEventListener('click', function(e){   
+//   if (document.getElementById('search_bars').contains(e.target)){
+//     // Clicked in box
+    
+//     var dropdownssearch= $('#scrolling');
+//     for (var i=0;i<dropdownssearch.length;i++){
+//       dropdownssearch[i].style.display = 'block';
+//     }
+//     //$('#scrolling').style.display = 'block';
+//   } else{
+//     // Clicked outside the box
+//     var dropdownssearch= $('#scrolling');
+//     for (var i=0;i<dropdownssearch.length;i++){
+//       dropdownssearch[i].style.display = 'none';
+
+//     }
+    
+//   }
+// });
+
 window.addEventListener('click', function(e){   
   if (document.getElementById('search_bars').contains(e.target)){
     // Clicked in box
     
     var dropdownssearch= $('#scrolling');
     for (var i=0;i<dropdownssearch.length;i++){
-      dropdownssearch[i].style.display = 'block';
+      dropdownssearch[i].setAttribute(
+   "style", "display: block; padding: 10px;");
     }
     //$('#scrolling').style.display = 'block';
   } else{
     // Clicked outside the box
     var dropdownssearch= $('#scrolling');
     for (var i=0;i<dropdownssearch.length;i++){
-      dropdownssearch[i].style.display = 'none';
+      dropdownssearch[i].setAttribute(
+   "style", "display: none; padding: 0px;");
 
     }
     
