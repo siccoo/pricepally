@@ -234,10 +234,10 @@ input:focus {
     outline: none;
 }
 .saerch-bar {
-    border: 1px solid #AAAAAA;
+    border: 2px solid #AAAAAA;
     width: 280px;
     border-radius: 4px;
-    padding: 7px 0 7px 5px;
+    padding: 6px 0 6px 5px;
 }
 .saerch-bar span.material-icons {
     vertical-align: middle;
@@ -1267,6 +1267,7 @@ header .material-icons-outlined, header .material-icons{
 }
 .search-recommended .web-head{
     display: block;
+    margin: 0;
 }
 .no-result-found {
     width: 270px;
@@ -1281,7 +1282,7 @@ header .material-icons-outlined, header .material-icons{
     align-items: center;
     margin-bottom: 30px;
     justify-content: space-between;
-    width: 70%;
+    width: 64%;
 }
 .mobile-search{
     display: none;
@@ -1310,6 +1311,15 @@ header .material-icons-outlined, header .material-icons{
     }
     .sidebar{
         margin-bottom: 20px;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navigation-wrap .row {
+        align-items: center;
+    }
+    .simproducts-inner {
+        margin-bottom: 20px !important;
     }
 /***********new-pages-style-end***********/
 @media (min-width:1697px) {
@@ -1832,7 +1842,7 @@ header .material-icons-outlined, header .material-icons{
 
 .pally-inner {
     color: #333333;
-    min-height: 430px;
+    min-height: 385px;
 }
 
 .recommended-bg .pally-inner {
@@ -2045,7 +2055,9 @@ a.red-bg:hover {
 .select-bg {
     margin: 38px 0 0 0;
 }
-
+.search-recommended .select-bg {
+    margin: 8px 0 0 0;
+}
 .food-items-bg .select-bg .form-control {
     border-bottom: 1px solid #EFEDED;
 }
