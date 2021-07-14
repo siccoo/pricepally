@@ -237,7 +237,7 @@ input:focus {
     border: 2px solid #AAAAAA;
     width: 280px;
     border-radius: 4px;
-    padding: 3px 0 3px 3px;
+    padding: 4px 0 4px 4px;
 }
 .saerch-bar span.material-icons {
     vertical-align: middle;
@@ -1258,8 +1258,8 @@ header span.toggle {
 }
 .outer_search button {
     margin-left: 4px;
-    height: 35px;
-    line-height: 16px;
+    height: 32px;
+    line-height: 14px;
     font-size: 13px;
 }
 .search-recommended .row {
@@ -2921,7 +2921,6 @@ li.start-clr {
     #folloersSlider .MS-content .item,
     #followingSlider .MS-content .item {
         width: 100%;
-        margin: 0;
     }
     .inner-user {
         padding: 20px 10px;
