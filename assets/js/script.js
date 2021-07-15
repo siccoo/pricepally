@@ -151,8 +151,8 @@ $(function() {
 
     $('.star').click(function() {
 
-        $(this).children('.selected').addClass('is-animated');
-        $(this).children('.selected').addClass('pulse');
+        // $(this).children('.selected').addClass('is-animated');
+        // $(this).children('.selected').addClass('pulse');
 
         var target = this;
 
@@ -164,46 +164,48 @@ $(function() {
         starClicked = true;
     })
 
-    $('.half').click(function() {
-        if (starClicked == true) {
-            setHalfStarState(this)
-        }
-        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    // $('.half').click(function() {
+    //     if (starClicked == true) {
+    //         //setHalfStarState(this)
+    //     }
+    //     $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-        $(this).closest('.rating-main').data('vote', $(this).data('value'));
-        calculateAverage()
-        console.log(parseInt($(this).data('value')));
+    //     $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    //     calculateAverage()
+    //     console.log( $(this).data('value'));
 
-    })
+    // })
 
-    $('.full').click(function() {
-        if (starClicked == true) {
-            setFullStarState(this)
-        }
-        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    // $('.full').click(function() {
+    //     if (starClicked == true) {
+    //         //setFullStarState(this)
+    //     }
+    //     $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-        $(this).find('js-average').text(parseInt($(this).data('value')));
+    //     $(this).find('js-average').text(parseInt($(this).data('value')));
 
-        $(this).closest('.rating-main').data('vote', $(this).data('value'));
-        calculateAverage()
+    //     $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    //     calculateAverage()
 
-        console.log(parseInt($(this).data('value')));
-    })
+    //     console.log(parseInt($(this).data('value')));
+    // })
 
-    $('.half').hover(function() {
-        if (starClicked == false) {
-            setHalfStarState(this)
-        }
+    // $('.half').hover(function() {
+    //     if (starClicked == false) {
+    //         //setHalfStarState(this)
+    //     }
 
-    })
+    // })
 
-    $('.full').hover(function() {
-        if (starClicked == false) {
-            setFullStarState(this)
-        }
-    })
+    // $('.full').hover(function() {
+    //     if (starClicked == false) {
+    //        // setFullStarState(this)
+    //     }
+    // })
 
 })
+/*------ MAIN-RATING-VIEW-LIST-JS-END -------*/
+
 
 function updateStarState(target) {
     $(target).parent().prevAll().addClass('animate');
@@ -824,3 +826,6 @@ window.addEventListener('click', function(e){
     
   }
 });
+
+
+
