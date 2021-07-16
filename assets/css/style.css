@@ -1335,7 +1335,9 @@ header span.toggle {
     display: inline-block;
     margin-left: 5px;
 }
-
+.proddetails-wrapper .simple-gallery {
+    height: 360px;
+}
 
 
 
