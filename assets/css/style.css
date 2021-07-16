@@ -1535,7 +1535,16 @@ fieldset.rate-review label {
 
 
 
-
+.search-recommended .product-breadcrumb .breadcrumb {
+    margin: 0;
+}
+.search-row-align {
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.search-recommended h6.inner-head {
+    margin: 15px 0 30px 0 !important;
+}
 
 /***********new-changes-end***********/
 /***********new-pages-style-start***********/
@@ -1554,7 +1563,7 @@ fieldset.rate-review label {
     align-items: center;
 }
 .search-recommended {
-    margin: 60px 0;
+    margin: 40px 0;
 }
 .no-result-found img {
     width: 100%;
