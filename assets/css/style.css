@@ -1139,6 +1139,7 @@ footer .input-group.join-bg {
 }
 form.makelist-form h3 {
     color: #4F4F4F;
+    font-size: 34px;
 }
 .box-shadow p {
     font-weight: 500;
@@ -1154,7 +1155,9 @@ form.makelist-form h3 {
 .webhero-view {
     padding-right: 10px;
 }
-
+.makelist-wrapper h4.heading {
+    font-size: 32px;
+}
 
 
 
@@ -4315,6 +4318,7 @@ form.makelist-form .form-control {
 
 form.makelist-form {
     width: 84%;
+    padding-top: 10px;
 }
 
 .makelist-form .addbutton-bg {

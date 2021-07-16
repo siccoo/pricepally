@@ -875,4 +875,5 @@ window.addEventListener('click', function(e){
   // Added for Demo
   let rating = $(this).index() + 1;
   $('#currentRating').html( "<small>Rating: <b>" + rating + "</b></small>" );
+  console.log(rating);
 });
