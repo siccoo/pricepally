@@ -165,44 +165,44 @@ $(function() {
     })
 
 // cc
-    $('.half').click(function() {
-        if (starClicked == true) {
-            setHalfStarState(this)
-        }
-        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    // $('.half').click(function() {
+    //     if (starClicked == true) {
+    //         setHalfStarState(this)
+    //     }
+    //     $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-        $(this).closest('.rating-main').data('vote', $(this).data('value'));
-        calculateAverage()
-        console.log( $(this).data('value'));
+    //     $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    //     calculateAverage()
+    //     console.log( $(this).data('value'));
 
-    })
+    // })
 
-    $('.full').click(function() {
-        if (starClicked == true) {
-            setFullStarState(this)
-        }
-        $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
+    // $('.full').click(function() {
+    //     if (starClicked == true) {
+    //         setFullStarState(this)
+    //     }
+    //     $(this).closest('.rating-main').find('.js-score').text($(this).data('value'));
 
-        $(this).find('js-average').text(parseInt($(this).data('value')));
+    //     $(this).find('js-average').text(parseInt($(this).data('value')));
 
-        $(this).closest('.rating-main').data('vote', $(this).data('value'));
-        calculateAverage()
+    //     $(this).closest('.rating-main').data('vote', $(this).data('value'));
+    //     calculateAverage()
 
-        console.log(parseInt($(this).data('value')));
-    })
+    //     console.log(parseInt($(this).data('value')));
+    // })
 
-    $('.half').hover(function() {
-        if (starClicked == false) {
-            //setHalfStarState(this)
-        }
+    // $('.half').hover(function() {
+    //     if (starClicked == false) {
+    //         //setHalfStarState(this)
+    //     }
 
-    })
+    // })
 
-    $('.full').hover(function() {
-        if (starClicked == false) {
-           // setFullStarState(this)
-        }
-    })// cc
+    // $('.full').hover(function() {
+    //     if (starClicked == false) {
+    //        // setFullStarState(this)
+    //     }
+    // })// cc
 
 })
 /*------ MAIN-RATING-VIEW-LIST-JS-END -------*/

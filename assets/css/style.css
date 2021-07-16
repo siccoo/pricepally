@@ -1326,8 +1326,15 @@ header span.toggle {
 .login-wrapper .list-unstyled.phone-list, .editpro-form .form-control, .input-group {
     background-color: #ffffff;
 }
-
-
+.score-all span {
+    color: #828282;
+    font-size: 14px;
+    vertical-align: super;
+}
+.score-all {
+    display: inline-block;
+    margin-left: 5px;
+}
 
 
 
