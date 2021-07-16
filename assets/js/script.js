@@ -265,16 +265,17 @@ $(".progress-bar").each(function(i) {
 
 $(document).ready(function() {
     $('#similarSlider').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
         hoverPause: true
+
 
     });
 });
 $(document).ready(function() {
     $('#similarSlider1').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
         hoverPause: true
@@ -854,3 +855,24 @@ window.addEventListener('click', function(e){
  //                alert("Not iPhone!");
  //                document.location.href = 'please-open-from-an-iphone.html';
  //        };
+
+
+
+
+
+
+
+
+
+
+
+
+ $('.starRating span').click(function(){
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  $(this).parent().addClass('starRated');
+  
+  // Added for Demo
+  let rating = $(this).index() + 1;
+  $('#currentRating').html( "<small>Rating: <b>" + rating + "</b></small>" );
+});

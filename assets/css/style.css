@@ -731,7 +731,7 @@ header .nav-item sup {
     right: -20px !important;
     margin-top: 0;
     bottom: auto;
-    top: 50%;
+    top: 54px !important;
     transform: translateY(-50%);
 }
 .profile-slider .item {
@@ -1154,6 +1154,103 @@ form.makelist-form h3 {
 .webhero-view {
     padding-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Star Rating Styles */
+.starRating span {
+    color: #888888;
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    padding-right: 20px;
+    font-size: 24px;
+}
+.starRating span:last-child {
+  padding-right: 0;
+}
+.starRating i {
+  transition: opacity 0.4s;
+}
+.starRating .fa-star {
+  color: #FAB814;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.starRating span:hover ~ span,
+.starRated span.active ~ span {
+  color: #ccc;
+}
+.starRating:hover .fa-star,
+.starRating span:hover ~ span .fa-star-o {
+  opacity: 1 !important;
+}
+.starRating:hover .fa-star-o,
+.starRating span:hover ~ span .fa-star {
+  opacity: 0 !important;
+}
+.starRated .fa-star,
+.starRated span.active ~ span .fa-star-o {
+  opacity: 1;
+}
+.starRated .fa-star-o,
+.starRated span.active ~ span .fa-star {
+  opacity: 0;
+}
+
+.starRating {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
   width: 100%;
@@ -1399,7 +1496,12 @@ fieldset.rate-review label {
     font-weight: 400;
 }
 
-
+#similar-products.similarproducts-bg .MS-controls {
+    margin-top: 0;
+    top: 50% !important;
+    position: absolute;
+    transform: translateY(-50%);
+}
 
 
 
@@ -3265,13 +3367,17 @@ li.start-clr {
 #followingSlider .MS-controls .MS-left {
     left: -360px;
 }
-
-#followingSlider .MS-controls .MS-left {
-    left: -388px;
+#similarSlider .MS-controls .MS-left{
+    left: -24px;
 }
-
+#followingSlider .MS-controls .MS-left {
+    left: -24px;
+}
+#followingSlider .MS-controls{
+    top: 65px;
+}
 #followingSlider .MS-controls .MS-right {
-    right: -490px;
+    right: -24px;
 }
 
 @media (max-width: 991px) {
@@ -3287,6 +3393,9 @@ li.start-clr {
 #similarSlider1 .MS-controls .MS-right,
 #folloersSlider .MS-controls .MS-right {
     right: -410px;
+}
+#similarSlider .MS-controls .MS-right{
+    right: -24px;
 }
 @media (max-width: 991px) {
     #similarSlider .MS-controls .MS-right,
