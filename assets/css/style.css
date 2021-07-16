@@ -830,7 +830,7 @@ footer h6 {
 }
 /***************category-slider-start***************/
 .listingslider .item{
-    width: 18.29% !important;
+    width: 18.2% !important;
     background: transparent !important;
     border: 0 !important;
 }
@@ -1102,6 +1102,12 @@ form .subcategories_list select {
 .review-rate-wrap .star {
     font-size: 42px;
     margin-right: 15px;
+}
+footer .input-group.join-bg {
+    background-color: transparent;
+}
+.score span {
+    color: #828282;
 }
 /**********profle-picture-change-start*************/
 .profile-pic-wrapper {
@@ -2459,7 +2465,6 @@ h5.white-head {
 
 .detil-heart a span {
     font-size: 40px;
-    color: #FF4747;
 }
 
 .grey-bg {
@@ -3355,6 +3360,7 @@ li.start-clr {
 .review-content .dark-grey {
     color: #4F4F4F;
     font-size: 14px;
+    display: block;
 }
 
 .pallyfriends-bg {
