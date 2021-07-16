@@ -1395,7 +1395,9 @@ fieldset.rate-review label {
     align-items: center;
 }
 
-
+.sidebar-scroll h6 {
+    font-weight: 400;
+}
 
 
 
