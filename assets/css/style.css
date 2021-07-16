@@ -1013,13 +1013,13 @@ header .search-dropdown{
 }
 /***********contact-page-end***********/
 /**********new-changes-start************/
-.pally-content ul {
+.pally-content ul.pallylist-bg {
     position: absolute;
     left: 48px;
     right: 0;
     bottom: 36px;
 }
-.pally-content button {
+.pally-slot-btn{
     margin-top: 50px;
 }
 h6.inner-head {
