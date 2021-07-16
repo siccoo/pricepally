@@ -1012,6 +1012,15 @@ header .search-dropdown{
 }
 /***********contact-page-end***********/
 /**********new-changes-start************/
+.pally-content ul {
+    position: absolute;
+    left: 48px;
+    right: 0;
+    bottom: 36px;
+}
+.pally-content button {
+    margin-top: 50px;
+}
 h6.inner-head {
     margin: 15px 0 30px 0;
 }
@@ -1494,6 +1503,9 @@ fieldset.rate-review label {
     .food-items-bg .row {
         align-items: flex-end;
     }
+    .pally-content{
+        position: relative;
+    }
 /***********new-pages-style-end***********/
 @media (min-width:1697px) {
     .refer-wrapper{
@@ -1967,15 +1979,15 @@ fieldset.rate-review label {
 
 .green-bg,
 .red-bg {
-    font-size: 14px;
-    padding: 6px 6px 6px 1px;
+    font-size: 12px;
+    padding: 4px 4px 4px 1px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 4px;
 }
 
 .webfoodTab-view small {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .green-bg {
@@ -1992,7 +2004,7 @@ fieldset.rate-review label {
 }
 
 .simhead {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .pallylist-bg img.list-img {
@@ -2005,14 +2017,15 @@ fieldset.rate-review label {
 }
 
 .pally-left {
-    margin: 0 -18px 0 0;
+    margin: 0 -50px 0 0;
 }
 
 .pallylist-bg li small {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 100px;
     font-size: 12px;
     color: #4F4F4F;
 }
+
 
 .pally-inner {
     color: #333333;/*
@@ -2040,7 +2053,8 @@ a.red-bg:hover {
 .inner-head h5 {
     font-weight: 500;
     color: #333;
-    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 3px !important;
 }
 
 .products-img-wrapper {
@@ -2048,6 +2062,7 @@ a.red-bg:hover {
     height: 100%;
     box-shadow: 0 0 1px 1px hsl(0deg 0% 0% / 5%);
     border-radius: 5px;
+    margin-bottom: 8px !important;
 }
 
 .product-img {
@@ -3343,6 +3358,7 @@ li.start-clr {
 .removefixed-header {
     position: absolute !important;
     top: 936px;
+    z-index: -1;
 }
 .sticky-sidebar section.rating-widget {
     width: 64%;
