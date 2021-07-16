@@ -3091,6 +3091,14 @@ li.start-clr {
     border: 1px solid #BDBDBD;
     margin: 0 10px;
 }
+.pally-content ul.pallylist-bg {
+    position: absolute;
+    left: 48px;
+    right: -30px;
+}
+.pallylist-bg li small {
+    margin: 0 0 0 100px;
+    }
 }
 
 @media (max-width: 767px) {
