@@ -845,12 +845,12 @@ window.addEventListener('click', function(e){
 //     });
 //   });
 
- if (window.navigator.userAgent.indexOf('iPhone') != -1) {
-            if (window.navigator.standalone == true) {
-                window.location = "myapp://myparam";
-            } else {
-                document.write("please save this to your home screen");
-        };} else {
-                alert("Not iPhone!");
-                document.location.href = 'please-open-from-an-iphone.html';
-        };
+ // if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+ //            if (window.navigator.standalone == true) {
+ //                window.location = "myapp://myparam";
+ //            } else {
+ //                document.write("please save this to your home screen");
+ //        };} else {
+ //                alert("Not iPhone!");
+ //                document.location.href = 'please-open-from-an-iphone.html';
+ //        };

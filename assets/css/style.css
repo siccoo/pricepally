@@ -1344,7 +1344,6 @@ header span.toggle {
 .progress-bar-wrapper span {
     font-weight: 400;
     color: #4F4F4F;
-    margin-right: 5px;
 }
 
 
@@ -1392,7 +1391,9 @@ fieldset.rate-review label {
 .rate-review label:focus ~ input:checked ~ label /* highlight previous selected stars */ { color: #FAB814;  } 
 
 
-
+.process-review{
+    align-items: center;
+}
 
 
 
@@ -2756,7 +2757,8 @@ h5.white-head {
 }
 
 .progress-bar-width {
-    width: 85%;
+    width: 65%;
+    margin: 0 12px;
 }
 
 .review-text h6 {
