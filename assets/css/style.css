@@ -1013,7 +1013,15 @@ header .search-dropdown{
 }
 /***********contact-page-end***********/
 /**********new-changes-start************/
-<<<<<<< HEAD
+#sharepermissionModal .selectadd-content .rdio {
+    margin-bottom: 18px;
+}
+.edit_list {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+}
 .pagination .page-link {
     padding: 0;
 }
@@ -1032,15 +1040,6 @@ header .search-dropdown{
 }
 .makelist-wrapper h4.heading {
     font-size: 36px !important;
-}
-.pally-content ul.pallylist-bg {
-    position: absolute;
-    left: 48px;
-    right: 0;
-    bottom: 36px;
-}
-.pally-slot-btn{
-    margin-top: 50px;
 }
 h6.inner-head {
     margin: 15px 0 30px 0;
@@ -1178,7 +1177,9 @@ form.makelist-form h3 {
 .makelist-wrapper h4.heading {
     font-size: 32px;
 }
-
+.checkout-wrapper .radiobuttons .rdio {
+    margin-bottom: 15px;
+}
 
 
 
@@ -1711,6 +1712,10 @@ fieldset.rate-review label {
     color: #828282;
     font-weight: 400;
     font-size: 14px;
+    margin-bottom: 10px !important;
+}
+.sharepermissionModal .refer-main{
+    margin-bottom: 15px !important;
 }
 .mylist-wrapper .grey-text {
     color: #828282;
@@ -2141,11 +2146,11 @@ fieldset.rate-review label {
 }
 
 .pally-left {
-    margin: 0 -50px 0 0;
+    margin: 0 -18px 0 0;
 }
 
 .pallylist-bg li small {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 20px;
     font-size: 12px;
     color: #4F4F4F;
 }
@@ -3230,13 +3235,8 @@ li.start-clr {
     border: 1px solid #BDBDBD;
     margin: 0 10px;
 }
-.pally-content ul.pallylist-bg {
-    position: absolute;
-    left: 48px;
-    right: -30px;
-}
 .pallylist-bg li small {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 20px;
     }
 }
 
@@ -3435,7 +3435,7 @@ li.start-clr {
 .MS-controls {
     position: relative;
     top: 100px;
-    z-index: 9999;
+    z-index: 9;
     left: 0;
     bottom: 0;
     right: 0;
@@ -3728,9 +3728,11 @@ div#pallyorderModal .addbutton-bg {
 
 .cart-wrapper h6 {
     font-size: 14px;
-    font-weight: 500;
 }
-
+.cart-wrapper .remove-address p {
+    font-size: 14px;
+    margin: 0 !important;
+}
 .cart-wrapper a:hover h6 {
     color: #625300;
 }
@@ -3865,6 +3867,7 @@ div#pallyorderModal .addbutton-bg {
 .checkout-head {
     color: #625300;
     font-weight: 400;
+    font-size: 32px;
 }
 
 .checkout-wrapper .rdio-primary input[type="radio"]:checked+label:before {
@@ -4390,6 +4393,7 @@ form.makelist-form {
     border: none;
     border-radius: 5px;
     width: 100%;
+    font-size: 14px;
 }
 
 .share-ic a {
@@ -4465,7 +4469,7 @@ form.makelist-form {
 }
 
 .share-btn {
-    margin: 20px auto 40px;
+    margin: 20px auto 50px;
 }
 
 .delivery-form input.form-control {
