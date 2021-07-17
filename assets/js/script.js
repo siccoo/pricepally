@@ -861,19 +861,44 @@ window.addEventListener('click', function(e){
 
 
 
-
-
-
-
-
-
- $('.starRating span').click(function(){
-  $(this).siblings().removeClass('active');
-  $(this).addClass('active');
-  $(this).parent().addClass('starRated');
-  
-  // Added for Demo
-  let rating = $(this).index() + 1;
-  $('#currentRating').html( "<small>Rating: <b>" + rating + "</b></small>" );
-  console.log(rating);
+$(".newadress").click(function(){
+  $(".dd-manage-add").addClass("active-popup");
 });
+
+$(".newadress").click(function(){
+  $(".modal-backdrop").addClass("active-popup-fade");
+});
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  var ratingElem = $('.rating input[name="star"]');
+
+  ratingElem.change(function() {
+    if (this.checked) {
+      $(this).parent().addClass("active");
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

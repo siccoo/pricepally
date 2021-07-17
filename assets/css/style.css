@@ -379,6 +379,7 @@ span.yellow_cir {
 }
 .address-modal .modal-content{
     border: 0;
+    padding: 20px;
 }
 .address-btn a {
     padding: 0px 15px;
@@ -388,6 +389,9 @@ span.yellow_cir {
     text-align: center;
     display: block;
     margin: 0 auto;
+}
+.free-days-delivery h6 {
+    font-weight: 500;
 }
 .address-btn{
     margin-top: 35px;
@@ -1181,9 +1185,18 @@ form.makelist-form h3 {
     margin-bottom: 15px;
 }
 
+.active-popup {
+    z-index: 0!important;
+    display: none !important;
+}
+.active-popup-fade {
+    opacity: 0 !important;
+    display: none;
+}
 
-
-
+.bd-selectadd-modal-lg .modal-content {
+    padding: 20px;
+}
 
 
 
@@ -4748,7 +4761,7 @@ select:focus {
 }
 
 .address-wrapper.add-new {
-    padding: 65px 0;
+    padding: 80px 0;
 }
 
 .add-new span.material-icons {
@@ -4758,6 +4771,7 @@ select:focus {
 .address-wrapper.add-new a {
     color: #4F4F4F;
 }
+
 
 /*------- MANGE-ADDRESS-PAGE-CSS-END ------- */
 /* ------- CHANGE-PASSWORD-PAGE-CSS-START ------- */
