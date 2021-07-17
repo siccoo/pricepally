@@ -721,7 +721,7 @@ header .nav-item sup {
     transform: translateY(-50%);
 }
 .profile-slider button.MS-right {
-    right: 0 !important;
+    right: -30px !important;
     margin-top: 0 !important;
     top: 50% !important;
     transform: translateY(-50%);
@@ -3092,6 +3092,15 @@ li.start-clr {
     .inner-user a {
         margin-left: 0px;
     }
+    .accout-slider h5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .accout-slider i {
+        font-family: 'FontAwesome';
+    }
     .inner-user .btn {
         font-size: 12px;
     }
@@ -3237,6 +3246,9 @@ li.start-clr {
     #folloersSlider .MS-content .item,
     #followingSlider .MS-content .item {
         width: 100%;
+    }
+    .accout-slider h5{
+        padding: 0;
     }
     #my-followers .MS-controls, #MobfollowingSlider .MS-controls {
         display: none;
@@ -5299,14 +5311,14 @@ a.follower-icon:hover {
     .address-wrapper {
         padding: 12px 12px 0 8px;
     }
-    #my-followers .MS-controls .MS-left,
+    /*#my-followers .MS-controls .MS-left,
     #my-following .MS-controls .MS-left {
         left: -335px;
     }
     #my-followers .MS-controls .MS-right,
     #my-following .MS-controls .MS-right {
         right: -413px;
-    }
+    }*/
     #folloersSlider .MS-content .item,
     #followingSlider .MS-content .item {
         width: 52%;
