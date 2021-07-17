@@ -1013,6 +1013,28 @@ header .search-dropdown{
 }
 /***********contact-page-end***********/
 /**********new-changes-start************/
+<<<<<<< HEAD
+.pagination .page-link {
+    padding: 0;
+}
+.makelist-form .search-dropdown{
+    margin-top: -37px;
+    padding-top: 15px;
+}
+.makelist .row {
+    align-items: center;
+}
+.makelist h6{
+    margin: 0;
+}
+.makelist .border-bottom{
+    margin-top: 10px;
+}
+.makelist-wrapper h4.heading {
+    font-size: 36px !important;
+}
+=======
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 .pally-content ul.pallylist-bg {
     position: absolute;
     left: 48px;
@@ -1155,9 +1177,13 @@ form.makelist-form h3 {
 .webhero-view {
     padding-right: 10px;
 }
+<<<<<<< HEAD
+
+=======
 .makelist-wrapper h4.heading {
     font-size: 32px;
 }
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 
 
 
@@ -1436,7 +1462,11 @@ header span.toggle {
     margin-left: 5px;
 }
 .proddetails-wrapper .simple-gallery {
+<<<<<<< HEAD
+    height: 380px;
+=======
     height: 360px;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 .review-customer{
     align-items: center;
@@ -1444,6 +1474,10 @@ header span.toggle {
 .progress-bar-wrapper span {
     font-weight: 400;
     color: #4F4F4F;
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 
 
@@ -2386,9 +2420,15 @@ a.red-bg:hover {
     left: 48%;
 }
 
+<<<<<<< HEAD
+/*.foodstuff-wrapper .pally-inner {
+    min-height: 400px;
+}*/
+=======
 .foodstuff-wrapper .pally-inner {
     min-height: 400px;
 }
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 
 /* ----- FOOD-ITEMS_SECTION_CSS_END ------- */
 /* ----- PARTNER & MEDIA-SECTION-CSS-START ----- */
@@ -3072,6 +3112,13 @@ li.start-clr {
     .inner-user .btn {
         font-size: 12px;
     }
+<<<<<<< HEAD
+    #MobfollowingSlider .follow-img, #my-following .follow-img{
+        box-shadow: none;
+        background-color: transparent;
+    }
+=======
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
     .user-block {
         padding: 40px 0 100px 0;
     }
@@ -3211,6 +3258,15 @@ li.start-clr {
     #followingSlider .MS-content .item {
         width: 100%;
     }
+<<<<<<< HEAD
+    #my-followers .MS-controls, #MobfollowingSlider .MS-controls {
+        display: none;
+    }
+    #my-followers .MS-controls, #MobfollowingSlider .MS-controls {
+        display: none;
+    }
+=======
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
     .inner-user {
         padding: 20px 10px;
         margin-bottom: 20px;
@@ -3465,7 +3521,11 @@ li.start-clr {
     background: #fff;
     padding: 10px;
     border-radius: 5px;
+<<<<<<< HEAD
+    box-shadow: 0px 1px 8px 0px rgba(121 56 14 / 15%);
+=======
     box-shadow: 0px 1px 8px 0px rgba(121 56 14 / 11%);
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 .addclose span {
     font-weight: 700;
@@ -3727,8 +3787,13 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .rdio label:before {
+<<<<<<< HEAD
+    width: 17px;
+    height: 17px;
+=======
     width: 18px;
     height: 18px;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
     position: absolute;
     top: 1px;
     left: 0;
@@ -3752,12 +3817,21 @@ div#pallyorderModal .addbutton-bg {
 .rdio input[type="radio"]:checked+label::after {
     content: '';
     position: absolute;
+<<<<<<< HEAD
+    top: 6px;
+    left: 5px;
+    display: inline-block;
+    font-size: 6px;
+    width: 7px;
+    height: 7px;
+=======
     top: 5px;
     left: 4px;
     display: inline-block;
     font-size: 11px;
     width: 10px;
     height: 10px;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
     background-color: #B3561B;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -4318,7 +4392,11 @@ form.makelist-form .form-control {
 
 form.makelist-form {
     width: 84%;
+<<<<<<< HEAD
+    padding-top: 15px;
+=======
     padding-top: 10px;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 
 .makelist-form .addbutton-bg {
@@ -4762,10 +4840,21 @@ select:focus {
 
 .page-item.disabled .page-link {
     border: none;
+<<<<<<< HEAD
+    padding: 0;
+}
+.pagination .page-item {
+    padding: 0 15px;
+}
+.page-item:last-child .page-link {
+    border: none;
+    padding: 0;
+=======
 }
 
 .page-item:last-child .page-link {
     border: none;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 
 .border-bg {
@@ -4796,8 +4885,14 @@ select:focus {
     box-shadow: none;
 }
 .pagination-bg span {
+<<<<<<< HEAD
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 29px;
+=======
     font-size: 16px;
     vertical-align: middle;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
 }
 
 .follower-icon span {
@@ -5684,7 +5779,11 @@ a.follower-icon:hover {
     }
     #my-followers .MS-controls,
     #MobfollowingSlider .MS-controls {
+<<<<<<< HEAD
+        display: none;
+=======
         display: block;
+>>>>>>> 3d922eedceaceb0c2c8e53dc754a212400dcc283
     }
     .MS-controls {
         display: none;
