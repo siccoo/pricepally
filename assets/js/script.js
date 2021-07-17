@@ -390,7 +390,7 @@ $(document).ready(function() {
     console.log($('.followers-inner').length);
     if($('.followers-inner').length>2){
         $('#folloersSlider').multislider({
-            interval: 4000,
+            interval: 0,
             slideAll: false,
             duration: 1000,
             hoverPause: true,
@@ -410,7 +410,7 @@ $(document).ready(function() {
     console.log($('.follower_wrap').length);
     if($('.follower_wrap').length>2){
         $('#followingSlider').multislider({
-            interval: 4000,
+            interval: 0,
             slideAll: false,
             duration: 1000,
             hoverPause: true,

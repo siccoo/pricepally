@@ -1,0 +1,30 @@
+> product detail page add small tag "per bunch" ₦250.00 , facebook icon change in round shape, add .process-review cls ---
+> search user page .product-breadcrumb remove mb-5 in row , "0 Available Deals" (text) remove and .Search result! dropdown remove ---
+> make a list add .list_content class and p tag ---  , remove 0 in price----
+> cart page add .sub-total cls p tag ----
+< Index page .box-outline! replace mt-3 to mt-4 , available deals! and remove mb-3 mt-3, add .review-customer cls 
+> product detail page (review-popup) .ratingForm ???? pending my side
+
+
+
+
+
+
+
+
+
+> Index page = available deals! and remove mb-3 mt-3------
+> search-recommended page add .search-row-align cls-----
+> save-makelist page = add .edit_list cls----
+> cart-page add new address poupup label select field replce in input field, add .dd-manage-add cls----
+
+
+
+
+
+
+
+
+
+
+cart page = chk free delivery date popup == free-days-delivery! remove disabled value in input field
