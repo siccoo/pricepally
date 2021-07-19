@@ -926,7 +926,20 @@ $(document).ready(function() {
 //   });
 
 
+$(document).ready(function()
+        {
+            $('#date').bootstrapMaterialDatePicker
+            ({
+                  weekStart : 0,
+                time: false,
 
+                format: "dddd, DDdd MMMM YYYY",
+                disabledDays: [7],
+                disabledDates: ["2021-07-22"]
+            });
+
+            $.material.init()
+        });
 
 
 

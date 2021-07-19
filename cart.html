@@ -360,7 +360,7 @@
 <!--                             <input type="text" class="datepicker"> -->
                         <div class="form-control-wrapper">
                             <input type="text" id="date" class="form-control float-rightoating-label" placeholder="">
-                            <i id="date" class="fa fa-calendar-o form-control float-rightoating-label" aria-hidden="true" ></i>
+                            <i id="date" class="fa fa-calendar-o form-control float-rightoating-label date_set" aria-hidden="true" ></i>
                         </div>
                         </div>
 
@@ -673,12 +673,10 @@
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group">
                             <label>Nearby Location</label>
-                            <div class="select-wrap">
                                 <div class="select-wrap">
                                 <select>
                                     <option>Abule Egba (Agbado Ijaye Rd.)</option>
                                 </select>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -755,16 +753,17 @@
                         <h5 class="modal-title">Payment</h5>
                     </div>
                     <div class="modal-body pt-0 pb-4 pl-4 pr-4">
-                        <div class="box-shadow p-`3 mb-3">
-                            <p class="sub-total">₦79,200</p>
+                        <div class="box-shadow p-3 mb-3">
                             <div class="row">
                                 <div class="col-lg-6">
+                                    <p class="mb-2">Sub Total</p>
                                     <p class="mb-2">Shipping</p>
                                     <p class="mb-2">Coupon</p>
                                     <p class="mb-2">Wallet</p>
                                     <strong class="mb-2">Total</strong>
                                 </div>
                                 <div class="col-lg-6 text-right">
+                                    <p class="mb-1">₦1767,000</p>
                                     <p class="mb-1">₦1,000</p>
                                     <p class="mb-1">-₦1,800</p>
                                     <p class="mb-1">-₦20,000</p>
@@ -1656,48 +1655,6 @@
         });
     </script>
 
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $('#date').bootstrapMaterialDatePicker
-            ({
-                time: false,
-                clearButton: true
-            });
-
-           
-
-            $('#date-format').bootstrapMaterialDatePicker
-            ({
-                format: 'dddd DD MMMM YYYY - HH:mm'
-            });
-            $('#date-fr').bootstrapMaterialDatePicker
-            ({
-                format: 'DD/MM/YYYY HH:mm',
-                lang: 'fr',
-                weekStart: 1, 
-                cancelText : 'ANNULER',
-                nowButton : true,
-                switchOnClick : true
-            });
-
-            $('#date-end').bootstrapMaterialDatePicker
-            ({
-                weekStart: 0, format: 'DD/MM/YYYY HH:mm'
-            });
-            $('#date-start').bootstrapMaterialDatePicker
-            ({
-                weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime : true
-            }).on('change', function(e, date)
-            {
-                $('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
-            });
-
-            $('#min-date').bootstrapMaterialDatePicker({ format : 'DD/MM/YYYY HH:mm', minDate : new Date() });
-
-            $.material.init()
-        });
-        </script>
 </body>
 
 </html>

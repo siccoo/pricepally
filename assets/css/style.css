@@ -502,7 +502,10 @@ header .nav-item sup {
     align-items: center;
 }
 .home_slider .carousel-item {
-    height: 335px;
+    height: 344px;
+}
+.home_slider .carousel-item img {
+    height: 100%;
 }
 /******user-page-end******/
 /******review-poup-start******/
@@ -990,6 +993,7 @@ header .search-dropdown{
 }
 .contact-text-block form textarea{
     height: 130px;
+    resize: none;
 }
 .contact-text-block form {
     margin-top: 30px;
@@ -1029,6 +1033,26 @@ header .search-dropdown{
     width: 385px;
     margin-top: 20px;
 }
+.form-control-wrapper {
+    position: relative;
+    width: 52%;
+}
+.form-control-wrapper .form-group {
+    position: relative;
+    z-index: 1;
+}
+.form-control-wrapper i {
+    position: absolute;
+    top: 5px;
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+    left: 225px;
+    color: #B3561B;
+    font-size: 20px;
+    width: auto;
+}
+
 /***********contact-page-end***********/
 /**********new-changes-start************/
 #sharepermissionModal .selectadd-content .rdio {
@@ -1782,6 +1806,9 @@ fieldset.rate-review label {
     .profile-wrapper h2 {
         margin: 0 0 10px 0;
     }
+    .mylist-btn {
+        margin: 80px 0 30px 0 !important;
+    }
     
     .sidebar li {
         padding: 8px 0 4px 8px;
@@ -2462,7 +2489,8 @@ a.red-bg:hover {
 }
 
 .saveproducts-wrapper .foodtabs .active {
-    padding: 0;
+    padding-bottom: 7px;
+    margin-bottom: -1px;
 }
 
 .recommended-bg .rating-widget {
@@ -3205,9 +3233,21 @@ li.start-clr {
     #similarSlider .MS-content .item {
         width: 50%;
     }
+    .no-ratings p {
+        margin-bottom: 7px;
+    }
     .inner-user a.btn{
         margin-right: 0;
         padding: 0 10px;
+    }
+    .product_list .inner-head h5 {
+        min-height: 40px;
+    }
+    .saveproducts-wrapper .foodtabs .active {
+        padding-bottom: 8px;
+    }
+    .home_slider .carousel-item {
+        height: 294px;
     }
     .inner-user img {
         max-width: 50px;
@@ -3245,6 +3285,7 @@ li.start-clr {
         border: 0.9px solid #B3561B;
         overflow: hidden;
     }
+    
 }
 
 @media (max-width: 991px) {
@@ -3559,6 +3600,7 @@ li.start-clr {
 }
 #followingSlider .MS-controls{
     top: 65px;
+    z-index: -1;
 }
 #followingSlider .MS-controls .MS-right {
     right: -24px;
@@ -4647,7 +4689,9 @@ form.makelist-form {
     border: none;
     border-bottom: 2px solid #B3561B !important;
 }
-
+.nav-tabs .nav-item{
+    margin-bottom: 1px !important;
+}
 .makelistmodal-bg .nav-tabs .nav-link:focus,
 .makelistmodal-bg .nav-tabs .nav-link:hover {
     border-color: #dee2e6 #dee2e6 #fff;
@@ -5457,9 +5501,7 @@ a.follower-icon:hover {
     #my-followers .MS-controls .MS-right {
         top: -40%;
     }
-    .webfoodTab-view .pally-inner {
-        min-height: 460px;
-    }
+    
     .food-items-bg .select-bg .form-control {
         font-size: 14px;
         height: 40px;
@@ -5475,6 +5517,9 @@ a.follower-icon:hover {
         width: 50px;
         height: 50px;
     }
+    .pally-content .brown-btn {
+    border: 0.8px solid #B3561B;
+}
     .address-wrapper {
         padding: 12px 12px 0 8px;
     }
@@ -5553,7 +5598,7 @@ a.follower-icon:hover {
         font-size: 16px;
     }
     .foodtabs .active {
-        padding: 8px 8px 0 0;
+        padding: 8px 8px 5px 0;
         padding-top: 0;
     }
     .select-bg li {
