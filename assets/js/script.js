@@ -831,6 +831,31 @@ window.addEventListener('click', function(e){
 
 
 
+
+window.addEventListener('click', function(e){   
+  if (document.getElementById('search_bars').contains(e.target)){
+    // Clicked in box
+    
+    var dropdownssearch= $('#scrollings');
+    for (var i=0;i<dropdownssearch.length;i++){
+      dropdownssearch[i].setAttribute(
+   "style", "display: block; padding: 10px;");
+    }
+    //$('#scrolling').style.display = 'block';
+  } else{
+    // Clicked outside the box
+    var dropdownssearch= $('#scrollings');
+    for (var i=0;i<dropdownssearch.length;i++){
+      dropdownssearch[i].setAttribute(
+   "style", "display: none; padding: 0px;");
+
+    }
+    
+  }
+});
+
+
+
 // $(".star").click(function(){
 //   $(".rating-main").addClass("active");
 //    $(".rating-main").removeClass("active");
