@@ -440,6 +440,7 @@ header .nav-item sup {
     width: 60px;
     display: inline-block;
     border-radius: 50px;
+    object-fit: cover;
 }
 .inner-user {
     border: 1px solid #BDBDBD;
@@ -1115,6 +1116,10 @@ header nav.navbar {
 form .subcategories_list select {
     background-color: transparent !important;
 }
+.phone-list {
+    height: 45px;
+    overflow: hidden;
+}
 .webfoodTab-view form select {
     -webkit-appearance: none;
     border: 0 !important;
@@ -1385,8 +1390,14 @@ form.makelist-form h3 {
 .no-ratings p {
     margin-bottom: 14px;
 }
-
-
+.make_list_price .seaarch-img {
+    min-height: 28px;
+    width: 30px;
+    object-fit: cover;
+}
+.detil-heart {
+    text-align: right;
+}
 
 
 
@@ -1772,6 +1783,7 @@ fieldset.rate-review label {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 12px 0;
 }
 .mobile-search{
     display: none;
@@ -1880,13 +1892,14 @@ fieldset.rate-review label {
     min-height: 30px;
     width: 40px;
     border-radius: 5px;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 .small-img {
     min-height: 30px;
     width: 40px;
+    height: 40px;
     border-radius: 5px;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 .search-dropdown h5 {
     font-size: 16px;
@@ -1924,7 +1937,7 @@ fieldset.rate-review label {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 .search-items {
     border-bottom: 1px solid #F2F2F2;
@@ -1956,7 +1969,7 @@ fieldset.rate-review label {
 #categoiresSlider .MS-content .item img {
     width: 100%;
     height: 125px;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 .hero_wrapper .carousel-indicators li {
     width: 12px;
@@ -2847,6 +2860,7 @@ h5.white-head {
 
 .detil-heart a span {
     font-size: 40px;
+    color: #4F4F4F;
 }
 
 .grey-bg {
@@ -3328,6 +3342,9 @@ li.start-clr {
 }
 
 @media (max-width: 991px) {
+    body{
+        background-color: #fcfcfc;
+    }
     .inner-user {
         padding: 20px 3px;
     }
@@ -3475,6 +3492,41 @@ li.start-clr {
 .pallylist-bg li small {
     margin: 0 0 0 20px;
     }
+    /*******mobile-style******/
+    .mobilehero-view {
+        margin-top: 30px;
+    }
+    .mobile-header .d-flex {
+        align-items: center;
+    }
+    .inner-head h5 {
+        min-height: auto;
+    }
+    .pally-content h6 {
+        font-size: 12px;
+    }
+    .green-bg, .red-bg {
+        font-size: 12px;
+    }
+    .mobiletabcontent .pally-inner {
+        margin-bottom: 0;
+    }
+    .mobile-product {
+        margin-bottom: 15px;
+    }
+    .mobile-product .products-img-wrapper {
+        width: 150px !important;
+    }
+    .foodstuff-listing .pally-inner{
+        margin-bottom: 0;
+    }
+    .mobile-list-header .justify-content-start a {
+        display: flex;
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -3569,6 +3621,8 @@ li.start-clr {
         font-size: 12px;
         font-weight: 500;
     }
+    
+
 }
 
 #similarSlider .MS-controls button:hover,
@@ -3862,9 +3916,16 @@ div#Mobpaymyself {
 
 .pally-box input.form-control {
     width: 20%;
-    border-radius: 12px;
-    border: 1px solid #E0E0E0;
-    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #AAAAAA;
+    height: 44px;
+    color: #333333;
+}
+#paymyself label {
+    margin-bottom: 10px !important;
+}
+.pally-box.form-group label {
+    margin-bottom: 10px !important;
 }
 
 .pallysplit-content select.form-control {
@@ -4197,7 +4258,7 @@ div#pallyorderModal .addbutton-bg {
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
 .modal-w .yellow-bg,
@@ -5219,7 +5280,7 @@ a.follower-icon:hover {
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 0 1px 1px hsl(0deg 0% 0% / 15%);
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
 .refer-inner p {
@@ -5994,13 +6055,10 @@ a.follower-icon:hover {
         display: block;
     }
     .hero_wrapper {
-        padding: 20px 0;
+        padding: 15px 0;
     }
     .categoires_wrapper {
         margin: 16px 0 30px 0 !important;
-    }
-    .food-bg {
-        background: #fff;
     }
     .login-w {
         max-width: 400px;
@@ -6051,21 +6109,23 @@ a.follower-icon:hover {
         width: 42%;
     }
     .pally-bg .justify-content-start {
-        width: 20%;
+        margin-right: 15px;
     }
     .recommended-bg .justify-content-start {
-        width: 30%;
+        margin-right: 15px;
     }
     .preorder-bg .justify-content-start {
-        width: 22%;
+        margin-right: 15px;
     }
     .recommended-bg .products-img-wrapper {
-        height: 180px;
+        height: 170px;
         width: 100%;
     }
     .product-img {
         height: 100%;
         width: 100%;
+        max-height: 170px;
+        min-height: 170px;
     }
     .Mobviewexistpally-bottom-modal .product-img {
         height: 200px;
@@ -6077,14 +6137,13 @@ a.follower-icon:hover {
     .recommended-bg .pally-inner {
         min-height: auto;
     }
-    .foodstuff-listing .product-img {
-        max-height: 170px;
-        width: 300px;
-        max-width: 122px;
-    }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 34%;
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+    .mobile-product .rating-main{
+        text-align: left;
     }
     .success-box {
         left: 70%;
@@ -6129,7 +6188,6 @@ a.follower-icon:hover {
         margin-bottom: 0;
     }
     .mobile-search {
-        background-color: #ffffff;
         transition: all 0.4s ease;
         margin: 10px 0 0 0;
     }
@@ -6141,11 +6199,12 @@ a.follower-icon:hover {
     .foodsticky-bg {
         /* background: #fcf3ed; */
         transition: all 0.4s ease;
-        padding: 20px 0 0 0;
+        padding: 0px 0 0 0;
+        margin-top: -15px;
     }
     .foodsticky-bg .tabs-fixed {
         position: fixed;
-        top: 76px;
+        top: 85px;
         background: #fcf3ed;
         z-index: 99;
         max-width: 100%;
@@ -6760,14 +6819,10 @@ a.follower-icon:hover {
     }
     .recommended-bg .rating-widget,
     .foodstuff-listing .rating-widget {
-        width: 50%;
+        width: 35%;
     }
-    .preorder-bg .justify-content-start {
-        width: 30%;
-    }
-    .recommended-bg .justify-content-start {
-        width: 40%;
-    }
+    
+    
     .simhead {
         font-size: 12px;
         margin-top: 8px !important;
@@ -6816,9 +6871,6 @@ a.follower-icon:hover {
     }
     .review-text section.rating-widget {
         width: 66%;
-    }
-    .pally-bg .justify-content-start {
-        width: 30%;
     }
 }
 
@@ -6908,9 +6960,6 @@ a.follower-icon:hover {
     .success-box {
         left: 62%;
     }
-    .pally-bg .justify-content-start {
-        width: 32%;
-    }
     
 }
 @media (max-width:575px) {
@@ -6949,8 +6998,41 @@ a.follower-icon:hover {
     .privacy_policy_block ol {
         padding-left: 15px;
     }
+    /******mobile-style******/
+    .mobilehero-view {
+        margin-top: 16px;
+    }
+    .mobilehero-view .col-6:last-child {
+        padding-left: 8px;
+    }
+    .mobilehero-view .col-6:first-child {
+        padding-right: 8px;
+    }
+    .pally-content h6{
+        font-size: 12px;
+    }
+     .mobilefoodTab-view .brown-btn {
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+    }
+    .home_slider .carousel-item img {
+        height: 170px;
+    }
+    .viewall-btn{
+        font-size: 12px;
+    }
+    .mobiletabcontent h6.inner-head {
+        margin: 15px 0 20px 0 !important;
+        font-size: 16px;
+    }
+    .pally-content small {
+        font-size: 82%;
+    }
+    .mobile-product .products-img-wrapper {
+        width: 120px !important;
+    }
     
-
 }
 @media (max-width:530px) {
     .categoires_wrapper .container {
@@ -6975,9 +7057,7 @@ a.follower-icon:hover {
     #similarSlider1 .MS-content .item {
         width: 90%;
     }
-    .recommended-bg .justify-content-start {
-        width: 56%;
-    }
+    
     .listfillter-modal-bg select.form-control {
         border: 2px solid #aaaa;
         width: 80%;
@@ -7034,10 +7114,7 @@ a.follower-icon:hover {
     .box-outline {
         padding: 30px 6px 0 6px;
     }
-    .recommended-bg .rating-widget,
-    .foodstuff-listing .rating-widget {
-        width: 58%;
-    }
+    
     .success-box {
         left: 70%;
     }
@@ -7085,10 +7162,7 @@ a.follower-icon:hover {
         width: 140px;
         height: 140px;
     }
-    .recommended-bg .rating-widget,
-    .foodstuff-listing .rating-widget {
-        width: 68%;
-    }
+   
     .foodtabs .nav-link {
         padding: 8px 28px;
     }
@@ -7128,6 +7202,41 @@ a.follower-icon:hover {
     .link-expired {
         width: 100%;
     }
+    .mobile-product .products-img-wrapper {
+        height: 150px;
+    }
+    .mobile-product .product-img {
+        max-height: 150px;
+        min-height: 150px;
+    }
+    .mobile-product .justify-content-start {
+        margin-right: 5px;
+    }
+    .mobile-product .pally-content h6 {
+        font-size: 12px;
+    }
+    .mobile-product .pallylist-bg img.list-img {
+        width: 25px;
+        height: 25px;
+    }
+    .mobilefoodTab-view .brown-btn {
+        font-size: 10px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .pally-content span.material-icons-outlined{
+        font-size: 14px;
+    }
+    .green-bg, .red-bg {
+        font-size: 11px !important;
+        padding: 2px 10px !important;
+    }
+    .heart-icon span.material-icons{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width:460px) {
@@ -7145,7 +7254,7 @@ a.follower-icon:hover {
         margin-left: 0.8rem!important;
     }
     .products-img-wrapper {
-        height: 180px;
+        height: 170px;
     }
     .review-text .success-box {
         left: 30%;
@@ -7288,9 +7397,7 @@ a.follower-icon:hover {
     .mx-4 {
         margin-left: 0.8rem!important;
     }
-    .preorder-bg .justify-content-start {
-        width: 40%;
-    }
+    
     .pally-content h6 {
         font-size: 14px;
         font-weight: 400;
@@ -7514,10 +7621,7 @@ a.follower-icon:hover {
     .mobile-icon p.mb-0 {
         font-size: 14px;
     }
-    .mobilefoodTab-view .brown-btn {
-        padding: 4px 8px;
-        font-size: 13px;
-    }
+   
     .text-red {
         font-size: 13px;
         margin-bottom: 4px !important;
@@ -7556,7 +7660,8 @@ a.follower-icon:hover {
         width: 280px;
     }
     .foodstuff-mobile .brown-btn {
-        padding: 4px 8px !important;
+        padding: 0px 8px !important;
+        font-size: 12px;
     }
     .heading {
         font-size: 16px;
