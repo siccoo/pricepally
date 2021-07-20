@@ -1398,8 +1398,16 @@ form.makelist-form h3 {
 .detil-heart {
     text-align: right;
 }
-
-
+.simproducts-inner .simproducts-img-bg a {
+    display: block;
+}
+.simproducts-inner .simproducts-img-bg{
+    overflow: hidden;
+}
+.process-review .no-ratings {
+    position: absolute;
+    top: 0;
+}
 
 
 
@@ -2303,6 +2311,7 @@ fieldset.rate-review label {
     line-height: 45px;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 20px;
+    cursor: pointer;
 }
 .heart-icon .red-clr {
     color: red !important;
@@ -2719,6 +2728,7 @@ a.red-bg:hover {
     color: #fff;
     padding: 40px 0 20px 0;
     position: relative;
+    z-index: 1;
 }
 
 .footer-wrapper h5 {
@@ -3735,7 +3745,6 @@ li.start-clr {
 #similarSlider p,
 #similarSlider1 p {
     white-space: normal;
-    font-weight: 700;
 }
 .simproducts-img-bg {
     width: 300px;
