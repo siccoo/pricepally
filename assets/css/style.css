@@ -2918,7 +2918,12 @@ h5.white-head {
 .scrool-bar .nav-link {
     color: #262626;
 }
-
+.login-wrapper .row {
+    align-items: end;
+}
+#loginslider {
+    margin-top: 20px;
+}
 .rating {
     position: relative;
     text-align: left;
@@ -3255,6 +3260,17 @@ li.start-clr {
 @media (max-width: 1199px) {
     #similarSlider .MS-content .item {
         width: 50%;
+    }
+    .addbutton-bg input {
+        width: 30%;
+        font-size: 12px;
+    }
+    .cart-img, .order-img {
+        width: 45px;
+        height: 50px;
+    }
+    .cart-inner .row {
+        align-items: center;
     }
     .no-ratings p {
         margin-bottom: 7px;
@@ -7390,7 +7406,7 @@ a.follower-icon:hover {
         padding: 4px 10px;
     }
     .simhead {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 8px !important;
     }
     .pally-content .mb-3,
