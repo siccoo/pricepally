@@ -1273,6 +1273,9 @@ form.makelist-form h3 {
     font-size: 14px;
     color: #333333;
 }
+.inner-head h5 {
+    min-height: 40px;
+}
 .addnewaddress-modal #country_code {
     margin: 0;
 }
@@ -1464,6 +1467,26 @@ img.carmeraedit.upload-button {
 .review-popup .addclose small {
     font-weight: 500;
 }
+.process-review .rating-text {
+    margin-bottom: 0;
+}
+
+.review_list .review-text h6 {
+    font-size: 14px;
+    margin-top: 6px;
+}
+.review_list .review-text p.grey-text {
+    margin-top: 20px !important;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.review_list .row {
+    align-items: center;
+}
+.review_list .text-message {
+    font-size: 14px;
+    margin-top: 4px;
+}
 /**********profle-picture-change-end*************/
 .make_list_block p {
     color: #4F4F4F;
@@ -1591,7 +1614,7 @@ header span.toggle {
 }
 .proddetails-wrapper .simple-gallery {
     height: 380px;
-    height: 360px;
+    height: 376px;
 }
 .review-customer{
     align-items: center;
@@ -1600,7 +1623,6 @@ header span.toggle {
     font-weight: 400;
     color: #4F4F4F;
     font-size: 14px;
-
 }
 .sidebar li a{
     color: #333333;
@@ -1739,7 +1761,7 @@ fieldset.rate-review label {
 .user-search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     justify-content: space-between;
     width: 70%;
 }
@@ -2352,7 +2374,7 @@ a.red-bg:hover {
 
 .pally-inner h6 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .inner-head h5 {
@@ -2683,6 +2705,7 @@ a.red-bg:hover {
     background: #262626;
     color: #fff;
     padding: 40px 0 20px 0;
+    position: relative;
 }
 
 .footer-wrapper h5 {
@@ -2889,7 +2912,7 @@ h5.white-head {
 .scrool-bar .nav-link.active,
 .scrool-bar .show>.nav-link {
     background-color: #FFF1E8;
-    color: #B3561B;
+    color: #572B00;
 }
 
 .scrool-bar .nav-link {
@@ -3600,7 +3623,7 @@ li.start-clr {
 }
 #followingSlider .MS-controls{
     top: 65px;
-    z-index: -1;
+    z-index: 1;
 }
 #followingSlider .MS-controls .MS-right {
     right: -24px;
@@ -3994,8 +4017,25 @@ div#pallyorderModal .addbutton-bg {
     margin: 0px;
 }
 
-.rdio input[type="radio"]:disabled+label:before {
+.rdio input[type="radio"]:checked+label::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    display: inline-block;
+    font-size: 10px;
+    width: 8px;
+    height: 8px;
+    top: 6px;
+    left: 5px;
+    display: inline-block;
+    font-size: 7px;
+    width: 8px;
+    height: 8px;
     background-color: #B3561B;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
 .rdio input[type="radio"]:checked+label::after {
@@ -5026,6 +5066,7 @@ select:focus {
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     padding: 10px
+    color: #333333;
 }
 
 .page-item.disabled .page-link {
@@ -6712,7 +6753,7 @@ a.follower-icon:hover {
         width: 40%;
     }
     .simhead {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 8px !important;
         margin-bottom: 6px !important;
     }
