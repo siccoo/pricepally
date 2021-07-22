@@ -735,14 +735,14 @@ header .nav-item sup {
     transform: translateY(-50%);
 }
 .profile-slider button.MS-right {
-    right: -30px !important;
+    right: 0px !important;
     margin-top: 0 !important;
     top: 50% !important;
     transform: translateY(-50%);
 }
 .profile-slider .MS-controls {
-    left: -20px !important;
-    right: -20px !important;
+    left: 0px !important;
+    right: 0px !important;
     margin-top: 0;
     bottom: auto;
     top: 54px !important;
@@ -1408,7 +1408,12 @@ form.makelist-form h3 {
     position: absolute;
     top: 0;
 }
-
+.sticky-sidebar .pally-content .alert-heading {
+    text-align: center;
+}
+#rowCountPally1562127746 {
+    padding-left: 0;
+}
 
 
 
@@ -3348,6 +3353,15 @@ li.start-clr {
         border: 0.9px solid #B3561B;
         overflow: hidden;
     }
+    footer .form-group input {
+        width: 48.2%;
+    }
+    .cart-wrapper .addbutton-bg {
+        width: 95%;
+    }
+    .cart-inner a h6 {
+        padding-left: 5px;
+    }
     
 }
 
@@ -3357,6 +3371,142 @@ li.start-clr {
     }
     .inner-user {
         padding: 20px 3px;
+    }
+
+    .manage-address-btn {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 110px;
+        width: 45%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+.manage-mark {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+.manage-mark .address-wrapper {
+    padding-top: 0;
+}
+
+/* Hide the browser's default checkbox */
+.manage-mark input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.manage-mark:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.manage-mark input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.manage-mark input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.manage-mark .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 15px;
+    border: solid #B3561B;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(
+45deg
+);
+    -ms-transform: rotate(45deg);
+    transform: rotate(
+45deg
+);
+}
+.manage-mark .checkmark{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    form.editpro-form {
+        margin-top: 20px;
+    }
+    .mobilecart-wrapper .d-flex {
+        align-items: center;
     }
     .inner-user a {
         margin-left: 0px;
@@ -3502,9 +3652,18 @@ li.start-clr {
 .pallylist-bg li small {
     margin: 0 0 0 20px;
     }
+    .user-search-bar {
+        width: 100%;
+    }
+    .mobile-list-header a {
+        width: 100% !important;
+    }
     /*******mobile-style******/
     .mobilehero-view {
         margin-top: 30px;
+    }
+    .user-inner-wrap li{
+        padding: 0 15px;
     }
     .mobile-header .d-flex {
         align-items: center;
@@ -3630,6 +3789,15 @@ li.start-clr {
         padding: 6px 25px !important;
         font-size: 12px;
         font-weight: 500;
+    }
+    .mobile-search .container {
+        padding: 0;
+    }
+    .sticky-bg .container{
+        padding: 0 15px;
+    }
+    .user-block h4 {
+        padding: 0;
     }
     
 
@@ -4866,6 +5034,14 @@ form.makelist-form {
 #followingSlider .MS-content {
     overflow: hidden;
     white-space: nowrap;
+    width: 98%;
+    margin: 0 auto;
+}
+#followingSlider .MS-controls .MS-left {
+    left: 0;
+}
+#followingSlider .MS-controls .MS-right {
+    right: 0;
 }
 
 .sidebar {
@@ -4935,6 +5111,7 @@ form.makelist-form {
 #my-following .MS-content .item {
     background: #FCFCFC;
     border-radius: 5px;
+    margin: 0 22px 0 0;
 }
 
 #my-followers .MS-controls .MS-left,
@@ -5709,7 +5886,8 @@ a.follower-icon:hover {
         width: 60%;
     }
     .navbar-light .navbar-nav .nav-link {
-        padding: 6px 2px;
+        padding: 6px 5px;
+        margin: 0 3px;
     }
     .box-outline {
         height: 135px;
@@ -6988,6 +7166,9 @@ a.follower-icon:hover {
     .profile-name{
         margin-left: 5px !important;
     }
+    .manage-address-btn{
+        width: 55%;
+    }
     .inner_empty-cart {
         width: 80%;
     }
@@ -7246,6 +7427,30 @@ a.follower-icon:hover {
         line-height: 35px;
         font-size: 18px;
     }
+    .manage-address-btn {
+        width: 85%;
+    }
+    .address-text p {
+        font-size: 14px;
+    }
+    .warning-bg p{
+        font-size: 14px;
+    }
+    .orders-wrpper .text-dark {
+        font-size: 14px;
+    }
+    .orders-wrpper .box-shadow p {
+        font-size: 12px;
+    }
+    .border-bg li {
+        padding: 10px 9px;
+    }
+    .Page .navigation ul {
+        display: flex;
+    }
+    .pagination .page-item {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width:460px) {
@@ -7282,6 +7487,9 @@ a.follower-icon:hover {
     }
     .frequently-tab .accordion-bg .card {
         padding-right: 20px;
+    }
+    .user-block .saerch-bar {
+        width: 100%;
     }
 }
 
