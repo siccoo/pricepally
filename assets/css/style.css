@@ -3422,7 +3422,9 @@ li.start-clr {
     .coupon-content .box-shadow p {
         font-weight: 400;
     }
-
+    #Mobile-date-Modalopn {
+        overflow-y: scroll;
+    }
 
 
 
