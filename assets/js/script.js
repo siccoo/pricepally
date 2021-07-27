@@ -457,6 +457,17 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    $('#categoires-bg').multislider({
+        interval: 4000,
+        slideAll: false,
+        duration: 1000,
+        hoverPause: true
+
+    });
+});
+
+
 
 $(document).ready(function() {
     $('#MobfolloersSlider').multislider({

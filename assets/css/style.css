@@ -856,7 +856,7 @@ header .search-dropdown{
 }
 /***************category-slider-start***************/
 .listingslider .item{
-    width: 18.2% !important;
+    width: 18% !important;
     background: transparent !important;
     border: 0 !important;
 }
@@ -1429,7 +1429,6 @@ form.makelist-form h3 {
     top: 3px;
     font-size: 14px;
 }
-
 
 
 
@@ -2322,7 +2321,7 @@ fieldset.rate-review label {
 .heart-icon span.material-icons {
     position: absolute;
     color: #ffffff;
-    background: rgb(0 0 0 / 60%);
+    background: rgb(0 0 0 / 40%);
     width: 48px;
     height: 48px;
     text-align: center;
@@ -3365,9 +3364,10 @@ li.start-clr {
         padding: 0 2px;
         font-size: 14px;
     }
-    .listingslider .item {
-        width: 17.9% !important;
+    .categories_list .listingslider .item {
+        width: 17.7% !important;
     }
+    
     .brown-btn{
         border: 0.9px solid #B3561B;
         overflow: hidden;
@@ -3391,6 +3391,9 @@ li.start-clr {
     .cart-wrapper h6 {
         font-size: 13px;
     }
+    .process-review .no-ratings {
+        top: 20px;
+    }
     
 }
 
@@ -3401,7 +3404,6 @@ li.start-clr {
     .inner-user {
         padding: 20px 3px;
     }
-
     .manage-address-btn {
         position: fixed;
         left: 0;
@@ -3412,6 +3414,22 @@ li.start-clr {
     }
     .user-block h4{
         padding: 0;
+    }
+    .simhead {
+        margin-top: 4px !important;
+        margin-bottom: 2px !important;
+    }
+    .simproducts-inner .simproducts-img-bg a{
+        height: 100%;
+    }
+    .simproducts-inner .pally-inner img{
+        margin-bottom: 0 !important;
+    }
+    .simproducts-inner .pally-inner{
+        margin-bottom: 0;
+    }
+    .simproducts-inner {
+        margin-bottom: 0px !important;
     }
     section.savemakelist-wrapper {
         margin-bottom: 175px;
@@ -3425,13 +3443,63 @@ li.start-clr {
     #Mobile-date-Modalopn {
         overflow-y: scroll;
     }
-
-
-
-
-
-
-
+    .process-review .no-ratings {
+        left: 0;
+        right: 0;
+        top: 48px;
+    }
+    .process-review .score {
+        margin: -16px 0 0 0;
+    }
+    .process-review .rating-main{
+        text-align: center !important;
+    }
+    .process-review .rating-view .rating-main .star {
+        top: 40px;
+    }
+    .process-review .score-rating{
+        font-size: 40px;
+    }
+    .mobilecart-wrapper {
+        margin-bottom: 220px;
+    }
+    .categories_list .listingslider .item {
+        width: 16.9% !important;
+    }
+    .follow-btn.text-uppercase{
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+    .refer-inner h1.brown-clr{
+        margin: 10px 0;
+    }
+    .refer-img {
+        margin-bottom: 25px !important;
+    }
+    .mobile-list-header a span {
+        font-weight: 500;
+    }
+    .prodetails-content h4 small {
+        font-size: 14px;
+    }
+    .referral-link {
+        font-weight: 400;
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .Mobprofile-wrapper h5 a span{
+        vertical-align: sub;
+    }
+    .mobile-product .products-img-wrapper{
+        margin-bottom: 0 !important;
+    }
+    .mobile-viewproducts .similarproducts-bg h5 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
 
 
 .manage-mark {
@@ -3556,7 +3624,8 @@ li.start-clr {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 30px 0 0;
+        font-size: 16px;
     }
     .accout-slider i {
         font-family: 'FontAwesome';
@@ -3686,6 +3755,9 @@ li.start-clr {
     min-height: 90px;
     height: 90px;
 }
+#categoires-bg .item img:hover{
+    border-color: transparent;
+}
 #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item{
     border: 1px solid #BDBDBD;
     margin: 0 10px;
@@ -3722,7 +3794,7 @@ li.start-clr {
         margin-bottom: 0;
     }
     .mobile-product {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .mobile-product .products-img-wrapper {
         width: 150px !important;
@@ -3831,21 +3903,27 @@ li.start-clr {
         font-size: 12px;
         font-weight: 500;
     }
-    .mobile-search .container {
-        padding: 0;
-    }
     .sticky-bg .container{
         padding: 0 15px;
     }
     .user-block h4 {
         padding: 0;
     }
-    .mobile-search .container {
-        padding-left: 0;
-    }
     .orders-footer{
-        bottom: 80px;
+        bottom: 80px !important;
     }
+    .checkout-btn .yellow-bg{
+        padding: 8px;
+    }
+    .foodstuff-listing .mobile-product .rating-widget {
+        width: 100%;
+    }
+    .Mobprofile-wrapper h5 a span {
+        padding-right: 10px !important;
+        font-size: 20px;
+    }
+
+    
 
 }
 
@@ -5961,7 +6039,7 @@ a.follower-icon:hover {
     }
     .inner-head h5,
     .pally-inner h5 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .pally-inner {
         min-height: 410px;
@@ -5983,8 +6061,6 @@ a.follower-icon:hover {
     }
     
     .maxi {
-        width: 440px;
-        height: 300px;
         object-fit: cover;
     }
     .yellow-btn {
@@ -6024,7 +6100,6 @@ a.follower-icon:hover {
     }
     .refer-inner {
         padding: 30px 20px;
-        background: #fff;
     }
 }
 
@@ -6045,7 +6120,7 @@ a.follower-icon:hover {
     }
     .mobile-list-header i {
         font-size: 20px;
-        vertical-align: middle;
+        vertical-align: sub;
     }
     .profile-font {
         font-size: 20px;
@@ -6187,7 +6262,7 @@ a.follower-icon:hover {
     #my-followers .MS-content .item,
     #folloersSlider .MS-content .item,
     #my-following .MS-content .item {
-        padding: 16px 0;
+        padding: 25px 0;
     }
     #folloersSlider .MS-content .item,
     #followingSlider .MS-content .item,
@@ -7045,7 +7120,7 @@ a.follower-icon:hover {
     }
     #MobfolloersSlider .MS-content .item,
     #MobfollowingSlider .MS-content .item {
-        width: 48%;
+        width: 49%;
         margin: 0 10px 0 0;
     }
     .myself-content .addbutton-bg {
@@ -7284,6 +7359,25 @@ a.follower-icon:hover {
     .mobile-product .products-img-wrapper {
         width: 120px !important;
     }
+    .progress-bar-width {
+        width: 80%;
+    }
+    #MobfolloersSlider .MS-content .item, #MobfollowingSlider .MS-content .item {
+        width: 48%;
+    }
+    .mobile-product .products-img-wrapper {
+        height: 130px;
+        margin-bottom: 0 !important;
+    }
+    .mobile-product .product-img {
+        max-height: 130px;
+        min-height: 130px;
+    }
+    .mobile-viewproducts .similarproducts-bg h5 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
     
 }
 @media (max-width:530px) {
@@ -7304,6 +7398,9 @@ a.follower-icon:hover {
         padding: 0 0 0 20px;
     }
     .maxi {
+        height: 300px;
+    }
+    .proddetails-wrapper .simple-gallery{
         height: 300px;
     }
     #similarSlider1 .MS-content .item {
@@ -7481,7 +7578,7 @@ a.follower-icon:hover {
     }
     .green-bg, .red-bg {
         font-size: 11px !important;
-        padding: 2px 10px !important;
+        padding: 2px 6px !important;
     }
     .heart-icon span.material-icons{
         width: 35px;
@@ -7552,6 +7649,26 @@ a.follower-icon:hover {
     }
     .user-block .saerch-bar {
         width: 100%;
+    }
+    .progress-bar-wrapper span{
+        font-size: 12px;
+    }
+    .brown-btn{
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .yellow-bg{
+        font-size: 12px;
+    }
+    .no-ratings p{
+        font-size: 13px;
+    }
+    .profile-font {
+        font-size: 16px;
+    }
+    .mobile-list-header span.material-icons {
+        font-size: 22px;
     }
 }
 
@@ -7628,11 +7745,11 @@ a.follower-icon:hover {
 }
 
 @media (max-width:390px) {
-    #my-followers .MS-content .item,
+    /*#my-followers .MS-content .item,
     #folloersSlider .MS-content .item,
     #my-following .MS-content .item {
         padding: 8px 4px;
-    }
+    }*/
     #MobfollowingSlider .MS-controls {
         top: 57%;
     }
@@ -7660,6 +7777,9 @@ a.follower-icon:hover {
     .loginwith-text {
         width: 32%;
         margin: -26px 0 auto 118px;
+    }
+    div#pallyorderModal .addbutton-bg {
+        width: 40%;
     }
     #resetModal .modal-content {
         padding: 10px;
@@ -7689,7 +7809,7 @@ a.follower-icon:hover {
         margin-bottom: 4px !important;
     }
     .foodtabs .nav-link {
-        padding: 8px 14px;
+        padding: 8px 11px;
     }
     .simproducts-inner .ml-4.justify-content-end {
         margin-left: 0.6rem !important;
@@ -7706,6 +7826,9 @@ a.follower-icon:hover {
     }
     .inner_empty-cart {
         width: 100%;
+    }
+    .mobile-logo {
+        width: 105px;
     }
 }
 
@@ -7735,7 +7858,7 @@ a.follower-icon:hover {
         height: 70px;
     }
     .progress-bar-width {
-        width: 76%;
+        width: 70%;
     }
     .review-text .success-box {
         left: 38%;
@@ -7824,6 +7947,9 @@ a.follower-icon:hover {
     .making-list a {
         font-size: 14px;
     }
+    .home_slider .carousel-item img {
+        height: 150px;
+    }
 }
 
 @media (max-width:330px) {
@@ -7891,9 +8017,7 @@ a.follower-icon:hover {
     .load-bg.text-center {
         width: 280px;
     }
-    .progress-bar-width {
-        width: 74%;
-    }
+    
     .review-text .success-box {
         left: 40%;
     }
