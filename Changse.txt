@@ -1,2 +1,7 @@
->> manage address page = add label tag and .manage-mark cls ___ <input type="checkbox"> <span class="checkmark"></span>  (add),
-add .manage-address-btn cls
+1> cart page = add trash icon in header and add <p class="text-danger delete-icon pointer">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </p>  this 
+
+2> cart page = add .bd-selectadd-modal-lg all line add in html
+remove Cooperative Address! and replace hr tag
+replace Mobile-add-Modalopn! button

@@ -1429,7 +1429,16 @@ form.makelist-form h3 {
     top: 3px;
     font-size: 14px;
 }
-
+.mobilecart-wrapper .delete-icon {
+    margin: 0;
+    text-align: right;
+    display: block;
+}
+.mobilecart-wrapper .delete-icon i {
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 3px;
+}
 
 
 
@@ -3442,6 +3451,9 @@ li.start-clr {
     }
     #Mobile-date-Modalopn {
         overflow-y: scroll;
+    }
+    .process-review .star {
+        top: 72px !important;
     }
     .process-review .no-ratings {
         left: 0;
@@ -7717,7 +7729,7 @@ a.follower-icon:hover {
         padding: 0 0 0 10px;
     }
     .progress-bar-width {
-        width: 80%;
+        width: 70%;
     }
     .mobile-wallet-bg .follow-btn {
         padding: 6px 12px;
