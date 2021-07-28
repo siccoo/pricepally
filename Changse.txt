@@ -5,3 +5,13 @@
 2> cart page = add .bd-selectadd-modal-lg all line add in html
 remove Cooperative Address! and replace hr tag
 replace Mobile-add-Modalopn! button
+
+
+
+
+index page = remove deals in food-items
+
+offseason add cls .clr-red n span tag
+
+product-detail page = add .write-review cls
+setloader btn After 6 Reviews Set Loader in desktop  and 3 Reviews Set Loader in mobile

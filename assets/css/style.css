@@ -1439,6 +1439,25 @@ form.makelist-form h3 {
     font-size: 22px;
     padding-top: 3px;
 }
+.clr-red {
+    color: #FF0000;
+}
+
+.write-review {
+    font-weight: 700 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3413,6 +3432,12 @@ li.start-clr {
     .inner-user {
         padding: 20px 3px;
     }
+    .prodetails-content hr {
+        margin-top: 0;
+    }
+    .dd-manage-add .modal-w.m-auto {
+        width: 55%;
+    }
     .manage-address-btn {
         position: fixed;
         left: 0;
@@ -3476,7 +3501,7 @@ li.start-clr {
         margin-bottom: 220px;
     }
     .categories_list .listingslider .item {
-        width: 16.9% !important;
+        width: 21% !important;
     }
     .follow-btn.text-uppercase{
         padding: 6px 14px;
@@ -3501,6 +3526,10 @@ li.start-clr {
         margin-bottom: 15px;
         margin-top: 30px;
     }
+    #descrption {
+        margin: 30px 0px !important;
+        padding-right: 0;
+    }
     .Mobprofile-wrapper h5 a span{
         vertical-align: sub;
     }
@@ -3511,6 +3540,27 @@ li.start-clr {
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 15px;
+    }
+    #delivery-address .rdio {
+        margin: 10px 0;
+    }
+    .foodstuff-listing {
+        margin-bottom: 100px;
+    }
+    .rating-widget423 {
+        margin-bottom: 0 !important;
+    }
+    .mobile-product .simhead{
+        margin-top: 7px !important;
+    }
+    .no-ratings p{
+        font-size: 14px;
+    }
+    .mobilefoodTab-view {
+        padding-bottom: 100px;
+    }
+    .select-order .d-flex {
+        align-items: center;
     }
 
 
@@ -3816,6 +3866,7 @@ li.start-clr {
     }
     .mobile-list-header .justify-content-start a {
         display: flex;
+        align-items: center;
         width: 95%;
         white-space: nowrap;
         overflow: hidden;
@@ -3899,10 +3950,10 @@ li.start-clr {
     .listingslider .item {
         width: 37% !important;
     }
-    #categoires-bg .item img {
+    /* #categoires-bg .item img {
         min-height: 130px;
         height: 130px;
-    }
+    } */
     .inner-user a.btn{
         font-size: 12px;
     }
@@ -6651,7 +6702,7 @@ a.follower-icon:hover {
         width: 100%;
         z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        padding: 10px 0 0 0;
+        padding: 20px 0 0 0;
         bottom: 90px;
     }
     .bottommake-list .making-list {
@@ -6887,6 +6938,7 @@ a.follower-icon:hover {
     }
     .select-order span.material-icons {
         font-size: 40px;
+        line-height: 45px;
     }
     .addbutton-bg {
         width: 70%;
@@ -7113,7 +7165,8 @@ a.follower-icon:hover {
 }
 @media (max-width:767.98px) {
     .select-order {
-        bottom: 80px;
+        bottom: 82px;
+        padding: 15px 0;
     }
     #my-followers .MS-controls {
         top: 32%;
@@ -7335,8 +7388,24 @@ a.follower-icon:hover {
         padding-left: 15px;
     }
     /******mobile-style******/
+    .proddetails-wrapper {
+        padding: 25px 0 0 0;
+    }
+    .dd-manage-add .modal-w.m-auto {
+        width: 100%;
+    }
+    .checkout-btn .yellow-bg{
+        padding: 10px;
+    }
     .mobilehero-view {
         margin-top: 16px;
+    }
+    .categories_list .listingslider .item {
+        width: 28% !important;
+    }
+    #categoires-bg .item img {
+        min-height: 130px;
+        height: 130px;
     }
     .bottommake-list .making-list{
         width: 85%;
@@ -7596,7 +7665,7 @@ a.follower-icon:hover {
         width: 35px;
         height: 35px;
         line-height: 35px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .manage-address-btn {
         width: 85%;
@@ -7682,6 +7751,9 @@ a.follower-icon:hover {
     .mobile-list-header span.material-icons {
         font-size: 22px;
     }
+    .categories_list .listingslider .item {
+        width: 34% !important;
+    }
 }
 
 @media(max-width:430px) {
@@ -7703,6 +7775,9 @@ a.follower-icon:hover {
     }
     .review-content .success-box {
         left: 66%;
+    }
+    .prodetails-content .no-ratings {
+        margin-top: 5px;
     }
     .prodetails-content .success-box {
         left: 30%;
@@ -7857,7 +7932,7 @@ a.follower-icon:hover {
         width: 320px;
     }
     .sidebar-scroll .grey-text {
-        font-size: 14px;
+        font-size: 13px;
     }
     .yellow-btn {
         width: 230px;
