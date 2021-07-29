@@ -3454,6 +3454,9 @@ li.start-clr {
     .mobile-search .saerch-bar{
         height: 48px;
     }
+    .mobile-logo {
+        width: 180px;
+    }
     .search-outer-wrap a i {
         font-size: 18px;
         vertical-align: middle !important;
@@ -3604,6 +3607,8 @@ li.start-clr {
         left: auto;
         right: auto;
         margin: auto !important;
+        position: absolute;
+        bottom: 0;
     }
     .checkout-bottom .modal-content, .couponapply-bottom .modal-content, .profile-bottom .modal-content, .changepass-bottom .modal-content, .address-bottom .modal-conten{
         height: auto !important;
@@ -7997,7 +8002,7 @@ a.follower-icon:hover {
         width: 100%;
     }
     .mobile-logo {
-        width: 132px;
+        width: 150px;
     }
 }
 
