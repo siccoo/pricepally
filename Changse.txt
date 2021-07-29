@@ -26,3 +26,16 @@ setloader btn After 6 Reviews Set Loader in desktop  and 3 Reviews Set Loader in
 
 
 make a list page = add div .make-form-select
+
+index page = saerch-bar! remove search btn in mobile
+
+#categoires-bg! __.row remove mb3
+
+heading mobile-head! replace mb-3 to mb-2
+
+
+
+search btn style = filter_list remove, add cls .search-outer-wrap  , add <button class="yellow-bg">SEARCH</button> 
+
+
+Mobheader-fixed! remove h5 tag
