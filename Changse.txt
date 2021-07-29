@@ -27,13 +27,15 @@ make a list page = add div .make-form-select
 
 index page = saerch-bar! remove search btn in mobile
 
+search btn style = filter_list remove, add cls .search-outer-wrap  , add <button class="yellow-bg">SEARCH</button> 
+
 #categoires-bg! __.row remove mb3
 
 heading mobile-head! replace mb-3 to mb-2
 
 
 
-search btn style = filter_list remove, add cls .search-outer-wrap  , add <button class="yellow-bg">SEARCH</button> 
+
 
 
 Mobheader-fixed! remove h5 tag 
@@ -44,7 +46,7 @@ add cls .booknow-modal-bottom , same cls add in 2nd popop near cartsuessfull-bg!
 
 
 
-
+cart-page = add cls booknow-modal-bottom
 
 
 
