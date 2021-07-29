@@ -3598,6 +3598,19 @@ li.start-clr {
     .select-order .d-flex {
         align-items: center;
     }
+    .modal .modal-dialog {
+        top: auto !important;
+        transform: none !important;
+        left: auto;
+        right: auto;
+        margin: auto !important;
+    }
+    .checkout-bottom .modal-content, .couponapply-bottom .modal-content, .profile-bottom .modal-content, .changepass-bottom .modal-content, .address-bottom .modal-conten{
+        height: auto !important;
+    }
+    .dd-manage-add .modal-content {
+        height: auto;
+    }
 
 
 .manage-mark {
@@ -4698,6 +4711,8 @@ div#pallyorderModal .addbutton-bg {
 .changepass-bottom .modal-content,
 .address-bottom .modal-conten {
     background-color: #FCFCFC;
+}
+.checkout-bottom .modal-content{
     height: 100vh !important;
 }
 
