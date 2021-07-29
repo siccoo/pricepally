@@ -1440,13 +1440,15 @@ form.makelist-form h3 {
     padding-top: 3px;
 }
 .clr-red {
-    color: #FF0000;
+    color: #f7cece;
 }
 
 .write-review {
     font-weight: 700 !important;
 }
-
+.clr-gr {
+    color: #0DA54E;
+}
 
 
 
@@ -5051,6 +5053,20 @@ form.makelist-form .form-control {
     border: 2px solid #AAAAAA;
     height: 50px;
     width: 100%;
+    appearance: none;
+}
+.make-form-select{
+    position: relative;
+}
+.make-form-select:before {
+    content: '\e5cf';
+    position: absolute;
+    right: 15px;
+    font-family: 'Material Icons';
+    color: #AAAAAA;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
 }
 
 .makelist-form label {

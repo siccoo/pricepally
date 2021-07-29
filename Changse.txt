@@ -15,3 +15,14 @@ offseason add cls .clr-red n span tag
 
 product-detail page = add .write-review cls
 setloader btn After 6 Reviews Set Loader in desktop  and 3 Reviews Set Loader in mobile
+
+
+
+
+
+
+
+
+
+
+make a list page = add div .make-form-select
