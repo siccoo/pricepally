@@ -3614,9 +3614,7 @@ li.start-clr {
     .modal .modal-dialog {
         top: auto !important;
         transform: none !important;
-        left: auto;
-        right: auto;
-        margin: auto !important;
+        margin: 0 !important;
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -3624,9 +3622,13 @@ li.start-clr {
     .checkout-bottom .modal-content, .couponapply-bottom .modal-content, .profile-bottom .modal-content, .changepass-bottom .modal-content, .address-bottom .modal-conten{
         height: auto !important;
     }
-    .dd-manage-add .modal-content {
-        height: auto;
+    div#Mobile-date-Modalopn .modal-dialog {
+        top: auto !important;
+        bottom: 0;
+        position: absolute;
+        z-index: 9999;
     }
+    
 
 
 .manage-mark {
@@ -7499,6 +7501,12 @@ a.follower-icon:hover {
         padding: 20px 5px;
         margin-bottom: 15px;
     }
+    .full-btn {
+        width: 85%;
+    }
+    .full-btn .select-delivery-date {
+        width: 100% !important;
+    }
     .user-block h4 {
         margin-bottom: 15px;
         font-size: 22px;
@@ -7609,6 +7617,16 @@ a.follower-icon:hover {
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 10px;
+    }
+    .addbutton-bg input{
+        font-size: 16px;
+        width: 40% !important;
+    }
+    .addbutton-bg {
+        width: 55%;
+    }
+    .mobile-logo {
+        width: 130px;
     }
     
 }
@@ -8065,9 +8083,7 @@ a.follower-icon:hover {
     .inner_empty-cart {
         width: 100%;
     }
-    .mobile-logo {
-        width: 150px;
-    }
+    
 }
 
 @media (max-width:375px) {

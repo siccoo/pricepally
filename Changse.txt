@@ -46,22 +46,28 @@ add cls .booknow-modal-bottom , same cls add in 2nd popop near cartsuessfull-bg!
 
 
 --------
-cart-page = add cls booknow-modal-bottom
+cart-page = add cls booknow-modal-bottom =====
 
 
 
 
 
-logo, terms, privacy-policy, about-us, contact-us, covid-policy banner images repalce.
+logo, terms, privacy-policy, about-us, contact-us, covid-policy banner images repalce.====
 
 
-remove pt-3 near 90,000
+remove pt-3 near 90,000 ====
 
-whn cart empty then show this cls otherwise nh .empty-mobile-cart-wrapper
-
-
-
-change password page= add cls .change-password-wrap
+whn cart empty then show this cls otherwise nh .empty-mobile-cart-wrapper =====
 
 
-mobile more navigation add profile 
+
+change password page= add cls .change-password-wrap===
+
+
+mobile more navigation add profile (index-page)====
+
+
+
+user page = .mobile-search! remove container div
+
+cart page = add .full-btn cls 
