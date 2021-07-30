@@ -3449,6 +3449,10 @@ li.start-clr {
     .search-outer-wrap {
         width: 100%;
     }
+    .dd-manage-add .modal-dialog .modal-content {
+        position: absolute;
+        bottom: 0;
+    }
     .contact-banner img{
         height: 200px;
     }

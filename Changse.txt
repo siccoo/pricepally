@@ -71,3 +71,21 @@ mobile more navigation add profile (index-page)====
 user page = .mobile-search! remove container div
 
 cart page = add .full-btn cls 
+
+
+
+
+add id id="Mobile-add-Modalopn" near dd-manage address
+
+
+
+
+
+.dd-manage-add .modal-dialog .modal-content {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+remove #Mobile-add-Modalopn
