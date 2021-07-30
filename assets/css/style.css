@@ -507,6 +507,8 @@ header .nav-item sup, footer .mobile-icon sup {
 }
 .home_slider .carousel-item {
     height: 344px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .home_slider .carousel-item img {
     height: 100%;
@@ -1436,7 +1438,7 @@ form.makelist-form h3 {
     padding-top: 3px;
 }
 .clr-red {
-    color: #f7cece;
+    color: #FF0000;
 }
 
 .write-review {
@@ -3452,6 +3454,8 @@ li.start-clr {
     }
     #cartsuessfullopnmodal .modal-dialog .modal-content {
         padding-top: 10px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
     }
     .search-outer-wrap a {
         display: flex;
@@ -3628,7 +3632,11 @@ li.start-clr {
         position: absolute;
         z-index: 9999;
     }
-    
+    div#pallyorderModal .modal-content {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 20px 20px 0px 0px;
+    }
 
 
 .manage-mark {
@@ -4423,10 +4431,7 @@ div#Mobpaymyself {
     width: 400px;
 }
 
-div#pallyorderModal .modal-content {
-    width: 90%;
-    margin: 0 auto;
-}
+
 
 div#pallyorderModal label {
     font-size: 14px;
@@ -4476,8 +4481,9 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .cartsuessfull-bg .modal-content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .small-text {
@@ -6399,10 +6405,12 @@ a.follower-icon:hover {
         padding-top: 120px;
     }
     .mobile-icon span.yellow_cir {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
         position: absolute;
         top: 3px;
+        font-size: 12px;
     }
     .making-list {
         margin: 0 auto;
@@ -7490,6 +7498,9 @@ a.follower-icon:hover {
         height: 50px;
         margin-right: 2px !important;
     }
+    .address-modal .address-btn a {
+        width: 100%;
+    }
     #similarSlider .MS-content .item, #similarSlider1 .MS-content .item, #folloersSlider .MS-content .item, #followingSlider .MS-content .item {
         padding: 10px 0 !important;
     }
@@ -8035,7 +8046,7 @@ a.follower-icon:hover {
         margin: -26px 0 auto 118px;
     }
     div#pallyorderModal .addbutton-bg {
-        width: 40%;
+        width: 45%;
     }
     #resetModal .modal-content {
         padding: 10px;
