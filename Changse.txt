@@ -110,7 +110,7 @@ Paystack selected
 
 label spelling
 
-cart page = add disabled in payment tab, search --(address mobile!) and remove mobile text in popup
+cart page = add disabled in payment tab, search --(address mobile!) and remove mobile text in popup--
 
 index-page = remove row near text-center .btneffects-bg! and  add .filter-main-btn cls , remove .align-top cls near .material-icons, add .clearfix .mb-0 cls
 
