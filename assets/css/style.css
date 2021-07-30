@@ -656,6 +656,7 @@ header .nav-item sup, footer .mobile-icon sup {
     top: 50%;
     transform: translateY(-50%);
     margin-top: -50px;
+    pointer-events: none;
 }
 #similar-products.similarproducts-bg #similarSlider {
     position: relative;
@@ -1061,6 +1062,17 @@ header .search-dropdown{
 
 /***********contact-page-end***********/
 /**********new-changes-start************/
+#similarSlider .MS-controls .MS-left{
+    pointer-events: visible;
+}
+#similarSlider .MS-controls .MS-right{
+    pointer-events: visible;
+}
+.empty-cart-make-list{
+    text-align: center;
+    padding-top: 100px;
+    display: none;
+}
 #sharepermissionModal .selectadd-content .rdio {
     margin-bottom: 18px;
 }
@@ -3511,6 +3523,83 @@ li.start-clr {
         width: 45%;
         margin: 0 auto;
     }
+    #fillter-modal .select-bg li {
+        border: 0;
+        width: 100%;
+        float: left;
+        margin: 10px 0;
+    }
+    #fillter-modal .select-bg select {
+        border: 2px solid #aaaa;
+        border-radius: 4px;
+        height: 38px;
+        color: #495057;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+    #fillter-modal .filter-main-btn .btneffects-bg {
+        width: 100%;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    #fillter-modal .filter-main-btn .btneffects-bg button {
+        width: 100%;
+    }
+    #fillter-modal .select-bg {
+        margin-top: 0;
+    }
+    .filter-main-btn .btneffects-bg button {
+        padding: 0;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .cartsuessfull-bg .modal-content{
+        border-radius: 20px 20px 0px 0px;
+    }
+    #fillter-modal .modal-content .select-bg {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #fillter-modal .modal-title i {
+        vertical-align: sub;
+    }
+    .mobile_address_modal .modal-header {
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .mobile-search-food h6 {
+        font-weight: 400;
+        color: #333333;
+        font-size: 16px;
+        margin: 0;
+    }
+    #Mobile-couponapply-Modalopn .modal-dialog {
+        bottom: 0;
+        position: absolute;
+    }
+    .result-found-wrap {
+        margin: 10px 0 20px 0!important;
+    }
+    .mobile-search-food .d-flex {
+        align-items: center;
+    }
+    .mobile-search-food .search-img {
+        width: 30px;
+        height: 30px;
+    }
+    .phone-list-mobile li:first-child {
+        width: 100px;
+    }
+    .phone-list-mobile li:last-child {
+        width: 100%;
+        margin-left: 5px;
+    }
+    .phone-list-mobile {
+        display: flex;
+        align-items: center;
+    }
     .user-block h4{
         padding: 0;
     }
@@ -3765,14 +3854,43 @@ li.start-clr {
 .change-password-wrap{
     background-color: transparent !important;
 }
+#mobile-food-item .mobile-product .product-img, #mobile-recommended .mobile-product .product-img{
+    max-height: 152px;
+    min-height: 152px;
+}
+#mobile-food-item .mobile-product .products-img-wrapper, #mobile-recommended .mobile-product .products-img-wrapper{
+    width: 125px !important;
+    height: 152px;
+}
+#mobile-food-item .pally-content .inner-head h5, #mobile-recommended .pally-content .inner-head h5{
+    font-size: 16px;
+}
+#mobile-food-item .mobile-product .simhead, #mobile-recommended .mobile-product .simhead{
+    font-size: 14px;
+}
+#mobile-food-item .mobile-product button, #mobile-recommended .mobile-product button {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
 
 
 
-
-
-
-
-
+#mobile-pally .mobile-product .product-img {
+    max-height: 170px;
+    min-height: 170px;
+}
+#mobile-pally .mobile-product .products-img-wrapper {
+    height: 170px;
+}
+#mobile-pally .mobile-product .pally-content h5 {
+    font-size: 14px !important;
+}
+#mobile-pally .mobile-product button {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
 
 
 
@@ -3984,7 +4102,7 @@ li.start-clr {
         margin-bottom: 0;
     }
     .mobile-product {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
         align-items: center;
     }
     .mobile-product .products-img-wrapper {
@@ -4126,6 +4244,7 @@ li.start-clr {
     .contact-banner img{
         display: none;
     }
+    
 
     
 
@@ -4496,8 +4615,8 @@ div#pallyorderModal .addbutton-bg {
 .cartsuessfull-bg .modal-content {
     width: 100%;
     margin: 0 auto;
-    border-radius: 20px 20px 0px 0px;
 }
+
 
 .small-text {
     font-size: 14px;
@@ -7524,6 +7643,10 @@ a.follower-icon:hover {
     .inner-user {
         padding: 20px 5px;
         margin-bottom: 15px;
+    }
+    #fillter-modal .modal-content .select-bg {
+        width: 100%;
+        margin: 0 auto;
     }
     .full-btn {
         width: 85%;

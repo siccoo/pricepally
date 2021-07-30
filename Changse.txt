@@ -101,4 +101,21 @@ remove #Mobile-add-Modalopn
 
 
 
-remove .modal-bottom cls
+remove .modal-bottom cls, add #manage-mobile-popup and data-target in btn, add .addclose cls in btn
+
+Paystack selected
+
+
+
+
+label spelling
+
+cart page = add disabled in payment tab, search --(address mobile!) and remove mobile text in popup
+
+index-page = remove row near text-center .btneffects-bg! and  add .filter-main-btn cls , remove .align-top cls near .material-icons, add .clearfix .mb-0 cls
+
+add cls .mobile-search-food! and remove price in h6 tag , near d-flex replace mb-4 to mb-3 , add .result-found-wrap cls , remove .mb-2 cls in h6 tag
+
+make-list page = whn list is empty then show this cls .empty-cart div  mobile and desktop
+
+saved-make-list page = add .edit_list cls
