@@ -3453,6 +3453,15 @@ li.start-clr {
         position: absolute;
         bottom: 0;
     }
+    #manage-mobile-popup .modal-dialog {
+        max-width: 100%;
+    }
+    #manage-mobile-popup .molile-modal-btn {
+        margin-top: 30px!important;
+    }
+    #manage-mobile-popup .addclose {
+        padding-bottom: 0;
+    }
     .contact-banner img{
         height: 200px;
     }

@@ -89,3 +89,16 @@ add id id="Mobile-add-Modalopn" near dd-manage address
 
 
 remove #Mobile-add-Modalopn
+
+
+
+
+
+
+
+
+
+
+
+
+remove .modal-bottom cls
