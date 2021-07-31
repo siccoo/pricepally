@@ -1098,10 +1098,14 @@ header .search-dropdown{
     margin-top: 10px;
 }
 .makelist-wrapper h4.heading {
-    font-size: 36px !important;
+    font-size: 32px !important;
 }
 h6.inner-head {
     margin: 15px 0 30px 0;
+}
+.cart-img {
+    width: 45px !important;
+    height: 45px !important;
 }
 header nav.navbar {
     padding-right: 0;
@@ -1470,9 +1474,21 @@ form.makelist-form h3 {
     height: 80vh;
     overflow-y: scroll;
 }
-
-
-
+.empty-cart-make-list{
+    padding-bottom: 100px;
+}
+.prodetails-content .score-all {
+    vertical-align: text-bottom;
+}
+.pallyModelShow .addclose {
+    margin: 0 auto;
+}
+.pallyModelShow .btn-save-cart {
+    width: 100%;
+}
+.pallyModelShow .form-group, .pallyModelShow .form-group ul {
+    margin-bottom: 0;
+}
 
 
 
@@ -1783,9 +1799,9 @@ fieldset.rate-review label {
     position: absolute;
     transform: translateY(-50%);
 }
-
-
-
+.orders-wrapper .pagination {
+    margin-top: 40px;
+}
 .search-recommended .product-breadcrumb .breadcrumb {
     margin: 0;
 }
@@ -1820,8 +1836,9 @@ fieldset.rate-review label {
     width: 100%;
 }
 .no-result-found h4 {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .no-result-found p{
     text-align: center;
@@ -1831,9 +1848,9 @@ fieldset.rate-review label {
     margin: 0;
 }
 .no-result-found {
-    width: 270px;
+    width: 425px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 140px;
 }
 .user-search-bar h4 {
     margin: 0;
@@ -1845,9 +1862,12 @@ fieldset.rate-review label {
 .user-search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     justify-content: space-between;
     width: 70%;
+}
+.categoires_wrapper {
+    margin-top: 60px !important;
 }
 .make_list_price p {
     margin: 0;
@@ -3463,6 +3483,9 @@ li.start-clr {
     .Mobmakelist-wrapper{
         padding-top: 20px !important;
     }
+    .prod-sidebar-wrapper #review {
+        padding-top: 25px;
+    }
     .dd-manage-add .modal-dialog .modal-content {
         position: absolute;
         bottom: 0;
@@ -3577,6 +3600,9 @@ li.start-clr {
         font-size: 16px;
         margin: 0;
     }
+    #reviewModal .modal-dialog {
+        max-width: 100%;
+    }
     #make-list-search .modal-body {
         padding: 0;
     }
@@ -3649,6 +3675,12 @@ li.start-clr {
     }
     .process-review .rating-main{
         text-align: center !important;
+    }
+    #pallyorderModal .modal-dialog {
+        max-width: 100%;
+    }
+    #pallyorderModal .pallyModelShow {
+        margin-top: 15px;
     }
     .process-review .rating-view .rating-main .star {
         top: 40px;
@@ -3758,8 +3790,36 @@ li.start-clr {
     #search-modal-make-list .tab-content {
         padding: 55px;
     }
-
-
+    .empty-cart-make-list{
+        padding: 40px 0;
+    }
+    .empty-cart-make-list p {
+        font-size: 14px !important;
+    }
+    .makelistMobile p {
+        font-size: 14px !important;
+    }
+    .share-ic span {
+        font-size: 22px !important;
+    }
+    .Mobmakelist-wrapper {
+        padding: 15px 0 100px;
+    }
+    .similarproducts-bg .rating-widget {
+        margin-bottom: 0 !important;
+    }
+    .similarproducts-bg .rating-widget .star {
+        margin-bottom: 0;
+    }
+    .similarproducts-bg .rating-main {
+        text-align: left !important;
+    }
+    .similarproducts-bg .pally-content span.material-icons-outlined.downarraw {
+        font-size: 13px;
+    }
+    .simproducts-inner h5 {
+        font-weight: 500 !important;
+    }
 
 
 
@@ -4140,7 +4200,7 @@ li.start-clr {
     }
     .mobile-product {
         margin-bottom: 23px;
-        align-items: center;
+        align-items: flex-start;
     }
     .mobile-product .products-img-wrapper {
         width: 150px !important;
@@ -4212,6 +4272,11 @@ li.start-clr {
     }
     .shipping-content {
         margin-left: 20px;
+    }
+    .select-wrap:before {
+        top: 28%;
+        transform: translateY(-28%);
+        font-size: 16px;
     }
     .inner-shipping-wrap i {
         font-size: 28px;
@@ -7015,7 +7080,7 @@ a.follower-icon:hover {
         width: 100%;
         z-index: auto;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
-        padding: 20px 0 0 0;
+        padding: 20px 0 8px 0;
         bottom: 90px;
     }
     .bottommake-list .making-list {
@@ -7411,7 +7476,6 @@ a.follower-icon:hover {
         height: auto;
     }
     .Mobmakelist-wrapper {
-        padding: 40px 0 100px;
         height: auto;
     }
     .Mobmakelist-wrapper .list-img {
@@ -7670,12 +7734,16 @@ a.follower-icon:hover {
     .address-modal .address-btn a {
         width: 100%;
     }
-    #similarSlider .MS-content .item, #similarSlider1 .MS-content .item, #folloersSlider .MS-content .item, #followingSlider .MS-content .item {
-        padding: 10px 0 !important;
-    }
     .return_policy_block img {
         min-height: 105px;
         max-height: 105px;
+    }
+    .no-result-found h4{
+        font-size: 22px;
+    }
+    .no-result-found{
+        margin-top: 100px;
+        width: 340px;
     }
     .inner-user {
         padding: 20px 5px;
@@ -7722,6 +7790,9 @@ a.follower-icon:hover {
     }
     .search-header {
         height: 104px !important;
+    }
+    .select-order button {
+        padding: 12px;
     }
     /******mobile-style******/
     .proddetails-wrapper {
@@ -8107,6 +8178,9 @@ a.follower-icon:hover {
     .categories_list .listingslider .item {
         width: 38% !important;
     }
+    #review h5 {
+        white-space: nowrap;
+    }
 }
 
 @media(max-width:430px) {
@@ -8324,6 +8398,9 @@ a.follower-icon:hover {
     .myself-content .addbutton-bg {
         width: 44%;
     }
+    .no-result-found{
+        width: 100%;
+    }
     .address-bottom .modal-w .yellow-bg,
     .address-bottom .addclose,
     .date-bottom .modal-w .yellow-bg,
@@ -8374,7 +8451,7 @@ a.follower-icon:hover {
         width: 90%;
     }
     .load-bg.text-center {
-        width: 330px;
+        width: 225px;
     }
     .saveproducts-wrapper .foodtabs .nav-link.active {
         padding: .5rem 0.3rem !important;
@@ -8452,10 +8529,6 @@ a.follower-icon:hover {
     .prodetails-content .success-box {
         left: 42%;
     }
-    .load-bg.text-center {
-        width: 280px;
-    }
-    
     .review-text .success-box {
         left: 40%;
     }

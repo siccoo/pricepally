@@ -119,3 +119,25 @@ add cls .mobile-search-food! and remove price in h6 tag , near d-flex replace mb
 make-list page = whn list is empty then show this cls .empty-cart div  mobile and desktop
 
 saved-make-list page = add .edit_list cls
+
+
+
+
+
+
+
+
+
+
+
+= label spelling.
+= make-list-popup., this text in p tag "Friends can add to this list when you share it with them."! div s bhr nikalna hai
+= make list page = Make a List! near h4 tag and near heading cls remove pl-4
+prodect-detail page= #search-modal! replace pr-3 to pr-2
+= 404 page= logo blur, mobile-search! div remove, profile picture justify-content-end! div remove
+= saved product msg show
+= odrer page = pagination! k sth remove .justify-content-end cls
+= order page = add Sub Total! mobile and desktop
+== https://dev.pricepally.com/payment/success?order_id=492512    add .purchase-block cls near modal-dialog , delete close button of this page
+
+449,

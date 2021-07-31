@@ -896,13 +896,13 @@ window.addEventListener('click', function(e){
 
 
 
-$(".newadress").click(function(){
-  $(".dd-manage-add").addClass("active-popup");
-});
+// $(".newadress").click(function(){
+//   $(".dd-manage-add").addClass("active-popup");
+// });
 
-$(".newadress").click(function(){
-  $(".modal-backdrop").addClass("active-popup-fade");
-});
+// $(".newadress").click(function(){
+//   $(".modal-backdrop").addClass("active-popup-fade");
+// });
 
 
 
