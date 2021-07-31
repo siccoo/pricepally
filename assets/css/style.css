@@ -1489,7 +1489,10 @@ form.makelist-form h3 {
 .pallyModelShow .form-group, .pallyModelShow .form-group ul {
     margin-bottom: 0;
 }
-
+.makelist h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
 
 
 
@@ -3472,6 +3475,13 @@ li.start-clr {
     .terms-wrap {
         padding-top: 0 !important;
     }
+    .makelistMobile h6 {
+        padding: 0 !important;
+        font-size: 14px;
+    }
+    .mylist-btn p {
+        margin-bottom: 5px !important;
+    }
     .return_policy_block img {
         min-height: 200px;
         max-height: 200px;
@@ -3479,6 +3489,39 @@ li.start-clr {
     }
     .search-outer-wrap {
         width: 100%;
+    }
+    .makelistMobile h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .search-recommended .pally-inner .products-img-wrapper {
+        width: 125px;
+        margin-right: 10px;
+        height: 152px;
+    }
+    .search-recommended .pally-inner .products-img-wrapper img{
+        min-height: 152px;
+        max-height: 152px;
+    }
+    .search-recommended .rating-widget{
+        width: 100%;
+    }
+    .search-recommended .pally-inner {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .search-recommended {
+        margin: 40px 0 130px 0;
+    }
+    #Mobile-direct-Modalopn .modal-dialog {
+        position: absolute;
+    }
+    #Mobile-direct-Modalopn #modal-content{
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .mobile-product .rating-widget11 {
+        margin-bottom: 0 !important;
     }
     .Mobmakelist-wrapper{
         padding-top: 20px !important;
@@ -3720,6 +3763,9 @@ li.start-clr {
     #descrption {
         margin: 30px 0px !important;
         padding-right: 0;
+    }
+    .purchase-block .modal-w {
+        width: 80%;
     }
     .Mobprofile-wrapper h5 a span{
         vertical-align: sub;
@@ -4553,6 +4599,7 @@ li.start-clr {
 }
 .prodetails-content section.rating-widget {
     width: 100%;
+    padding-bottom: 10px;
 }
 .prodetails-content .success-box {
     left: 25%;
@@ -7543,7 +7590,7 @@ a.follower-icon:hover {
 @media (max-width:767.98px) {
     .select-order {
         bottom: 82px;
-        padding: 15px 0;
+        padding: 10px 0;
     }
     #my-followers .MS-controls {
         top: 32%;
@@ -8085,12 +8132,6 @@ a.follower-icon:hover {
         font-size: 11px !important;
         padding: 2px 6px !important;
     }
-    .heart-icon span.material-icons{
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 20px;
-    }
     .manage-address-btn {
         width: 85%;
     }
@@ -8126,6 +8167,9 @@ a.follower-icon:hover {
     }
     .foodtabs .nav-link {
         padding: 8px 20px;
+    }
+    .purchase-block .brown-btn {
+        height: 40px;
     }
     .foodstuff-listing .ml-4,
     .mx-4 {
