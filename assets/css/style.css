@@ -628,6 +628,7 @@ header .nav-item sup, footer .mobile-icon sup {
 .date-picker input {
     background-color: transparent;
     border: 0;
+    width: 240px;
 }
 .pro-detail-star .star {
     z-index: 0;
@@ -3478,6 +3479,9 @@ li.start-clr {
     .makelistMobile h6 {
         padding: 0 !important;
         font-size: 14px;
+    }
+    .deliverydate-bg {
+        margin-bottom: 60px;
     }
     .address-modal .modal-header{
         box-shadow: none;
@@ -7855,6 +7859,12 @@ a.follower-icon:hover {
         padding: 12px;
     }
     /******mobile-style******/
+    #moreModal-wrapper span.yellow_cir {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
     .proddetails-wrapper {
         padding: 25px 0 0 0;
     }
@@ -8214,6 +8224,9 @@ a.follower-icon:hover {
     .progress-bar-wrapper span{
         font-size: 12px;
     }
+    .moremodal-header button.yellow-bg {
+        width: 130px;
+    }
     .brown-btn{
         height: 28px;
         line-height: 28px;
@@ -8527,6 +8540,9 @@ a.follower-icon:hover {
     .address-bottom h5 {
         font-size: 16px;
         margin: 4px 0 0 0;
+    }
+    .addbutton-bg input {
+        width: 35% !important;
     }
     .select-bottom-modal .modal-body {
         padding: 8px 10px !important;

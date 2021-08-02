@@ -149,8 +149,11 @@ saved-make-list page = add .edit_list cls
 449, 513, 519, 524, 627, 657, 658, 
 
 
-Fix search result page on mobile, orders page pagination, order-summary popup, 404 page fix image, 
+Fix search result page on mobile, orders page pagination, order-summary popup, 404 page fix image, edit and share link fix on mobile, 
+cart page fix input field in add new address popup
 
 
 nn
-server-error page, link-expired page = remove !mobile-search div and profile picture
+1> server-error page, link-expired page = remove !mobile-search div and profile picture 
+2> index page = add this id- #list-fillter-modal popup, replace data-target #fillter-modal  to #list-fillter-modal 
+3> add more page
