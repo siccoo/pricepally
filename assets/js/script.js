@@ -471,16 +471,17 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#MobfolloersSlider').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
         hoverPause: true
 
     });
 });
+
 $(document).ready(function() {
     $('#MobfollowingSlider').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
         hoverPause: true

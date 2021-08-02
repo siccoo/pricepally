@@ -860,7 +860,7 @@ header .search-dropdown{
 }
 /***************category-slider-start***************/
 .listingslider .item{
-    width: 18% !important;
+    width: 23.4% !important;
     background: transparent !important;
     border: 0 !important;
 }
@@ -1113,9 +1113,29 @@ header nav.navbar {
     padding: 2px 0 2px 0;
 }
 #categoires-bg .item img {
-    min-height: 170px;
-    height: 170px;
+    min-height: 200px;
+    height: 200px;
     width: 100%
+}
+.update-password {
+    margin-top: 30px !important;
+    margin-bottom: 65px;
+}
+#addnewaddress .modal-content {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+#addnewaddress .modal-header h4 {
+    color: #262626;
+    font-size: 28px;
+    font-weight: 400;
+}
+#addnewaddress .close {
+    opacity: 1;
+}
+#addnewaddress .close span {
+    font-size: 32px;
+    color: #000000 !important;
 }
 .refer-main {
     position: relative !important;
@@ -3384,6 +3404,12 @@ li.start-clr {
         width: 30%;
         font-size: 12px;
     }
+    .cart-inner a h6{
+        margin-top: 0;
+    }
+    .cart-inner .row {
+        align-items: flex-start;
+    }
     .cart-img, .order-img {
         width: 45px;
         height: 50px;
@@ -3414,9 +3440,6 @@ li.start-clr {
     }
     .inner-user a{
         font-size: 14px;
-    }
-    .inner-user {
-        padding: 25px 5px;
     }
     .inner_empty-cart h5 {
         font-size: 18px;
@@ -3479,6 +3502,9 @@ li.start-clr {
     .makelistMobile h6 {
         padding: 0 !important;
         font-size: 14px;
+    }
+    .user-search-bar h4{
+        display: none;
     }
     .deliverydate-bg {
         margin-bottom: 60px;
@@ -3587,9 +3613,6 @@ li.start-clr {
     }
     .delivery-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
         margin-bottom: -1px;
-    }
-    .inner-user {
-        padding: 20px 3px;
     }
     .prodetails-content hr {
         margin-top: 0;
@@ -4102,7 +4125,7 @@ li.start-clr {
         background-color: transparent;
     }
     .user-block {
-        padding: 40px 0 100px 0;
+        padding: 15px 0 100px 0;
     }
     .user-block h4 {
     margin-bottom: 20px;
