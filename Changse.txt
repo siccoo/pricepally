@@ -160,7 +160,8 @@ nn
 
 
 
-
+worked on refer and earn page , cart page manage address popup and Fix margin issues 
+worked on home page navigation and header section
 
 
 
