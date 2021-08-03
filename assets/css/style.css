@@ -964,7 +964,7 @@ header .search-dropdown{
     border-radius: 4px;
     margin-bottom: 8px;
     box-shadow: 0px 10.072813987731934px 77.82637023925781px 0px #66646405;
-    box-shadow: 0px 24.206371307373047px 142.55020141601562px 0px #66646407;
+    box-shadow: 0px 24.206371307373047px 142.55020141601562px 0px #64575707;
     box-shadow: 0px 45.57844924926758px 192.96267700195312px 0px #66646409;
     box-shadow: 0px 81.30416107177734px 229.89002990722656px 0px #6664640B;
     box-shadow: 0px 152.07049560546875px 266.9782409667969px 0px #6664640D;
@@ -974,6 +974,9 @@ header .search-dropdown{
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 0;
+}
+.cart-inner .row .row .col-lg-8 {
+    padding-left: 0;
 }
 .inner_contact_wrap{
     position: relative;
@@ -4844,7 +4847,16 @@ div#pallyorderModal .addbutton-bg {
 
 .cart-wrapper h6 {
     font-size: 14px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
+.cart-inner .row .row {
+    align-items: center;
+}
+.cart-inner .pallylist-bg {
+    margin: 0;
+}
+
 .cart-wrapper .remove-address p {
     font-size: 14px;
     margin: 0 !important;
@@ -5985,7 +5997,7 @@ select:focus {
     background: #FCFCFC;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
-    padding: 10px
+    padding: 10px;
     color: #333333;
 }
 
@@ -6128,6 +6140,7 @@ a.follower-icon:hover {
 
 .refer-inner p {
     color: #4F4F4F;
+    word-break: break-word;
 }
 
 .refer-inner strong {

@@ -149,12 +149,33 @@ saved-make-list page = add .edit_list cls
 449, 513, 519, 524, 627, 657, 658, 
 
 
-Fix search result page on mobile, orders page pagination, order-summary popup, 404 page fix image, edit and share link fix on mobile, 
-cart page fix input field in add new address popup
 
 
 nn
 1> server-error page, link-expired page = remove !mobile-search div and profile picture 
-2> index page = add this id- #list-fillter-modal popup, replace data-target #fillter-modal  to #list-fillter-modal 
 3> add more page
 4> delete user text in user page, following page
+
+
+
+
+
+
+
+
+
+
+
+.date-picker.update-free-date-delivery {
+    position: relative;
+}
+
+position: absolute;
+    background: transparent;
+    border: 0;
+    right: 0;
+    color: #B3561B;
+    width: 45px;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
