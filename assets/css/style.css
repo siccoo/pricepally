@@ -624,6 +624,9 @@ header .nav-item sup, footer .mobile-icon sup {
 .empty_car-block {
     margin-bottom: 90px;
 }
+.addresslist ul li:last-child {
+    float: right;
+}
 /*******cart-emptypage-end*******/
 .date-picker input {
     background-color: transparent;
@@ -3501,6 +3504,9 @@ li.start-clr {
     }
     .user-block .mobile-search.sticky-bg .saerch-bar {
         margin: 0 auto;
+    }
+    .follwers-wrapper .pagination {
+        justify-content: center !important;
     }
     .makelistMobile h6 {
         padding: 0 !important;
