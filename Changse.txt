@@ -157,3 +157,4 @@ nn
 1> server-error page, link-expired page = remove !mobile-search div and profile picture 
 2> index page = add this id- #list-fillter-modal popup, replace data-target #fillter-modal  to #list-fillter-modal 
 3> add more page
+4> delete user text in user page, following page

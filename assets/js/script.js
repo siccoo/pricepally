@@ -557,7 +557,7 @@ $(document).on("change", ".uploadProfileInput", function () {
           // );
 
           // Clear input after upload
-          $(triggerInput).val("");
+        //   $(triggerInput).val("");
 
           setTimeout(() => {
             $(wrapper).find('[role="alert"]').remove();
@@ -569,7 +569,7 @@ $(document).on("change", ".uploadProfileInput", function () {
           // );
 
           // Clear input after upload
-          $(triggerInput).val("");
+        //   $(triggerInput).val("");
           setTimeout(() => {
             $(wrapper).find('[role="alert"]').remove();
           }, 3000);

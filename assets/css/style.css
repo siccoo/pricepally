@@ -3499,6 +3499,9 @@ li.start-clr {
     .terms-wrap {
         padding-top: 0 !important;
     }
+    .user-block .mobile-search.sticky-bg .saerch-bar {
+        margin: 0 auto;
+    }
     .makelistMobile h6 {
         padding: 0 !important;
         font-size: 14px;
@@ -8206,6 +8209,9 @@ a.follower-icon:hover {
 @media (max-width:460px) {
     #Mobaccordion .accordion-title {
         font-size: 14px;
+    }
+    .user-block .mobile-search.sticky-bg {
+        padding: 20px 15px;
     }
     .myself-content .addbutton-bg {
         width: 40%;
