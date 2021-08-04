@@ -275,7 +275,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
     $('#similarSlider1').multislider({
-        interval: 0,
+        interval: 4000,
         slideAll: false,
         duration: 1000,
         hoverPause: true
@@ -426,6 +426,7 @@ $(document).ready(function() {
   
 });
 
+
 // $(document).ready(function() {
 //     $('#followingSlider').multislider({
 //         interval: 4000,
@@ -471,7 +472,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#MobfolloersSlider').multislider({
-        interval: 0,
+        interval: 4000,
         slideAll: false,
         duration: 1000,
         hoverPause: true
@@ -481,7 +482,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#MobfollowingSlider').multislider({
-        interval: 0,
+        interval: 4000,
         slideAll: false,
         duration: 1000,
         hoverPause: true

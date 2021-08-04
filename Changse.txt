@@ -180,3 +180,15 @@ position: absolute;
     padding: 0;
     text-align: center;
     line-height: 25px;
+
+
+
+
+    04-08-2021
+
+    cart page = add .mobile-calender cls [add calander icon in mobile], add . align-cart-wrap cls in chkout popup    https://prnt.sc/1izp95j
+    index-page = add start rating number
+    saved-product page = https://prnt.sc/1iy9wz8  replace mb-3 to mb2 
+    return-policy, privacy-policy, terms and condition page = remove .justify-content-end cls div and add back icon [ <i class="material-icons pr-2">west</i> ]
+    order page = add .mobile-summary cls and remove hr tag
+    order page popup order summart view order popup= add clases .refer-main , .refer-link, refer_icon, add .align-cart-wrap cls
