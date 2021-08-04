@@ -3559,6 +3559,36 @@ li.start-clr {
     body{
         background-color: #fcfcfc;
     }
+    #existpallyModal ul.existbck-arrow {
+        position: fixed;
+        z-index: 1;
+        background-color: #ffffff;
+        left: 1px;
+        right: 1px;
+        padding: 10px;
+        line-height: 10px;
+    }
+    .existing_pallies_list .products-img-wrapper {
+        width: 125px;
+        margin-right: 10px;
+        height: 152px;
+        min-height: 152px;
+    }
+    .existing_pallies_list .pally-inner {
+        display: flex;
+    }
+    .existing_pallies_list .products-img-wrapper img {
+        min-height: 152px;
+    }
+    #existpallyModal .modal-header {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        position: relative;
+    }
+    .existing_pallies_list {
+        margin-top: 70px;
+    }
     .terms-wrap {
         padding-top: 0 !important;
     }
@@ -4933,7 +4963,12 @@ div#pallyorderModal .addbutton-bg {
 }
 
 .existpallybg .modal-dialog {
-    max-width: 800px;
+    max-width: 645px;
+}
+.existpallybg .modal-content {
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .list-view {
     width: 40px;

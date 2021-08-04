@@ -192,3 +192,6 @@ position: absolute;
     return-policy, privacy-policy, terms and condition page = remove .justify-content-end cls div and add back icon [ <i class="material-icons pr-2">west</i> ]
     order page = add .mobile-summary cls and remove hr tag
     order page popup order summart view order popup= add clases .refer-main , .refer-link, refer_icon, add .align-cart-wrap cls
+
+
+    
