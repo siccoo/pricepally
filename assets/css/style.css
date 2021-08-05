@@ -1551,8 +1551,8 @@ form.makelist-form h3 {
 .pallyModelShow .addclose {
     margin: 0 auto;
 }
-.pallyModelShow .btn-save-cart {
-    width: 100%;
+.pallyModelShow .btn-save-cart, .pallyModelShow .addclose {
+    width: 100% !important;
 }
 .pallyModelShow .form-group, .pallyModelShow .form-group ul {
     margin-bottom: 0;
@@ -1799,8 +1799,7 @@ header span.toggle {
     margin-left: 5px;
 }
 .proddetails-wrapper .simple-gallery {
-    height: 380px;
-    height: 376px;
+    height: 387px;
 }
 .review-customer{
     align-items: center;
@@ -3348,7 +3347,7 @@ li.start-clr {
     color: #FAB814;
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 85px;
 }
 
 @media (max-width: 767px) {
@@ -3844,7 +3843,7 @@ li.start-clr {
     }
     .phone-list-mobile li:last-child {
         width: 100%;
-        margin-left: 5px;
+        margin-left: -2px;
     }
     .phone-list-mobile {
         display: flex;
@@ -4456,7 +4455,8 @@ li.start-clr {
         display: none;
     }
     .product_list .rating-widget .success-box {
-        left: 82%;
+        left: 85px;
+        line-height: 25px;
     }
     .inner-user {
         padding: 20px 10px;
@@ -7146,9 +7146,6 @@ a.follower-icon:hover {
     .mobile-product .rating-main{
         text-align: left;
     }
-    .success-box {
-        left: 70%;
-    }
     .recommended-bg .justify-content-end,
     .foodstuff-listing .justify-content-end {
         width: 100%;
@@ -7964,9 +7961,7 @@ a.follower-icon:hover {
     .foodtabs .nav-link {
         padding: 8px 34px;
     }
-    .success-box {
-        left: 62%;
-    }
+    
     
 }
 @media (max-width:575px) {
@@ -8234,9 +8229,6 @@ a.follower-icon:hover {
         padding: 30px 6px 0 6px;
     }
     
-    .success-box {
-        left: 70%;
-    }
     .mobile-icon {
         padding: 0 10px;
     }
@@ -8839,7 +8831,6 @@ a.follower-icon:hover {
         color: #ccc;
     }
     .success-box {
-        left: 64%;
         font-size: 15px;
     }
     div#preorderModal .modal-w .yellow-bg,

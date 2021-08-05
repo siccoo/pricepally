@@ -164,7 +164,9 @@ worked on refer and earn page , cart page manage address popup and Fix margin is
 worked on home page navigation and header section
 
 
-
+/*
+Fix add new address popup phone number input field in cart page, order page: remove share icon in order summary popup,
+make list page: add total in mobile and replace image, saved product page: add star rating desktop and responsive and also fix star rating in product page
 
 
 .date-picker.update-free-date-delivery {
@@ -194,4 +196,9 @@ position: absolute;
     order page popup order summart view order popup= add clases .refer-main , .refer-link, refer_icon, add .align-cart-wrap cls
 
 
-    
+    05-08-2021
+    order-page = Mobdetails-back Mobheader-fixed! remove .justfiy-content-start div [remove share icon]
+    make-list page = done compiling! add .total_wrap div in mobile and change img  empty-box
+    saved product page, product-detail = add start rating mobile and desktop .success-box!
+
+    https://prnt.sc/1jcaeg0    discuss with rizwan
