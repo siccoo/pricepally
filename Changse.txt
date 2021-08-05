@@ -167,6 +167,7 @@ worked on home page navigation and header section
 /*
 Fix add new address popup phone number input field in cart page and remove shipping price in mobile, order page: remove share icon in order summary popup,
 make list page: add total in mobile and replace image, saved product page: add star rating desktop and responsive and also fix star rating in product page
+Fix edit profile popup in my accout profile page , Add attribute amount on order summary page, Fix style of manage address page.
 
 
 .date-picker.update-free-date-delivery {
@@ -203,5 +204,10 @@ position: absolute;
 
     https://prnt.sc/1jcaeg0    discuss with rizwan
 
-
+cart page =
     Shipping: ₦1,000!  remove div .justify-content-start, add cls .total-cart-price
+    
+    selectadd-bg! replce col-lg-6 to col-lg-12 and add text-center cls same div
+
+
+    order page = Attribute type goes here (N500)! add this line

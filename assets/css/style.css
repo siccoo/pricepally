@@ -794,13 +794,14 @@ footer h6 {
     width: 33%;
     display: inline-block;
     padding: 0 7px;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .refer-link {
     white-space: nowrap;
     overflow: hidden;
     margin-right: 80px;
 }
+
 .orderlist .small-text p{
     border-radius: 5px;
     margin: 0;
@@ -1087,8 +1088,15 @@ header .search-dropdown{
 #pallyorderModal .modal-w button, #pallyorderModal .modal-w .addclose {
     width: 100%;
 }
-
-
+.ordersummary-modal .items-bg p {
+    color: #828282;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.manage-address .addresslist ul li:first-child {
+    width: 33%;
+    padding-right: 0;
+}
 
 
 
@@ -1878,6 +1886,7 @@ fieldset.rate-review label {
 }
 .dd-manage-add .addclose small {
     padding: 10px 0;
+    display: block;
 }
 
 .sidebar-scroll h6 {
@@ -3563,6 +3572,9 @@ li.start-clr {
 @media (max-width: 991px) {
     body{
         background-color: #fcfcfc;
+    }
+    .profile-bottom .modal-body {
+        padding-bottom: 55px !important;
     }
     #existpallyModal ul.existbck-arrow {
         position: fixed;
