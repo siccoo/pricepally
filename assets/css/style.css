@@ -3573,6 +3573,10 @@ li.start-clr {
         padding: 10px;
         line-height: 10px;
     }
+    .total-cart-price {
+        width: 100%;
+        text-align: center;
+    }
     .existing_pallies_list .products-img-wrapper {
         width: 125px;
         margin-right: 10px;

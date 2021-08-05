@@ -165,7 +165,7 @@ worked on home page navigation and header section
 
 
 /*
-Fix add new address popup phone number input field in cart page, order page: remove share icon in order summary popup,
+Fix add new address popup phone number input field in cart page and remove shipping price in mobile, order page: remove share icon in order summary popup,
 make list page: add total in mobile and replace image, saved product page: add star rating desktop and responsive and also fix star rating in product page
 
 
@@ -202,3 +202,6 @@ position: absolute;
     saved product page, product-detail = add start rating mobile and desktop .success-box!
 
     https://prnt.sc/1jcaeg0    discuss with rizwan
+
+
+    Shipping: ₦1,000!  remove div .justify-content-start, add cls .total-cart-price
