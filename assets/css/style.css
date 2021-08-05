@@ -794,14 +794,13 @@ footer h6 {
     width: 33%;
     display: inline-block;
     padding: 0 7px;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 .refer-link {
     white-space: nowrap;
     overflow: hidden;
     margin-right: 80px;
 }
-
 .orderlist .small-text p{
     border-radius: 5px;
     margin: 0;
@@ -1093,10 +1092,7 @@ header .search-dropdown{
     font-size: 14px;
     margin-bottom: 0;
 }
-.manage-address .addresslist ul li:first-child {
-    width: 33%;
-    padding-right: 0;
-}
+
 
 
 

@@ -204,10 +204,6 @@ position: absolute;
 
     https://prnt.sc/1jcaeg0    discuss with rizwan
 
-cart page =
-    Shipping: ₦1,000!  remove div .justify-content-start, add cls .total-cart-price
-    
-    selectadd-bg! replce col-lg-6 to col-lg-12 and add text-center cls same div
+cart page = Shipping: ₦1,000!  remove div .justify-content-start, add cls .total-cart-price , selectadd-bg! replce col-lg-6 to col-lg-12 and add text-center cls same div
 
-
-    order page = Attribute type goes here (N500)! add this line
+order page = Attribute type goes here (N500)! add this line
