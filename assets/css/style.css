@@ -1873,6 +1873,12 @@ fieldset.rate-review label {
 .process-review{
     align-items: center;
 }
+.dd-manage-add .addclose {
+    padding: 0;
+}
+.dd-manage-add .addclose small {
+    padding: 10px 0;
+}
 
 .sidebar-scroll h6 {
     font-weight: 400;
