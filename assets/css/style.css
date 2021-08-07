@@ -1095,7 +1095,9 @@ header .search-dropdown{
 .manage-address ul {
     width: 100%;
 }
-
+.editprofile-modal .update-profile {
+    margin-top: 22px;
+}
 
 
 
@@ -3582,6 +3584,9 @@ li.start-clr {
         right: 1px;
         padding: 10px;
         line-height: 10px;
+    }
+    .editprofile-modal .update-profile {
+        margin-top: 40px;
     }
     .total-cart-price {
         width: 100%;

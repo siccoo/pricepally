@@ -207,3 +207,23 @@ position: absolute;
 cart page = Shipping: ₦1,000!  remove div .justify-content-start, add cls .total-cart-price , selectadd-bg! replce col-lg-6 to col-lg-12 and add text-center cls same div
 
 order page = Attribute type goes here (N500)! add this line
+
+
+07-08-21
+
+Please Remove 3 dots From Edit Profile In Right Side (HTML) -
+Set Margin Between Corporate Id And Update ID -
+Logo Is Not Clear Of Camera In Edit Profile (Mobile Web)-
+Scroll Issue In My Profile 
+Logo All Search (Not Clear Logos)
+Banner Is Not Clear 
+Tittle Is Not Highlighting (Orders) Mobile Web
+Attribute Amount In Cart (HTML)
+
+
+
+
+
+
+
+edit profile page = more_vert! and remove .pl-1 .ml-auto div, camera image change conver to svg.
