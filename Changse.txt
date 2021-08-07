@@ -185,7 +185,7 @@ position: absolute;
     line-height: 25px;
 /***********/
 Fix spacing issues and remove three dots of edit profile in mobile replace camera logo png to svg , Add attribute amount in order page, 
-My account profile and Other user profile fix scroll issue, 
+My account profile and Other user profile fix scroll issue, Hightlight navigation order page link. replace logo in search page.
 
 
 
@@ -216,11 +216,11 @@ order page = Attribute type goes here (N500)! add this line
 Please Remove 3 dots From Edit Profile In Right Side (HTML) -
 Set Margin Between Corporate Id And Update ID -
 Logo Is Not Clear Of Camera In Edit Profile (Mobile Web)-
-Scroll Issue In My Profile 
-Logo All Search (Not Clear Logos)
-Banner Is Not Clear 
-Tittle Is Not Highlighting (Orders) Mobile Web
-Attribute Amount In Cart (HTML)
+Scroll Issue In My Profile -
+Logo All Search (Not Clear Logos) -
+Banner Is Not Clear -
+Tittle Is Not Highlighting (Orders) Mobile Web -
+Attribute Amount In Cart (HTML) -
 
 
 
@@ -235,4 +235,7 @@ edit profile page = more_vert! and remove .pl-1 .ml-auto div, camera image chang
 order page = add <p>Attribute type goes here (N500)</p>  , add .order-summary-mobile cls 
 other user profile page = add .MobfollowingSlider cls
 my account profile page = add .mob-followers-inner cls
+
+
+
 51 feedback
