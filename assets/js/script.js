@@ -427,6 +427,34 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function() {
+    console.log($('.mob-followers-inner').length);
+    if($('.mob-followers-inner').length>2){
+        $('#MobfolloersSlider').multislider({
+            interval: 4000,
+            slideAll: false,
+            duration: 1000,
+            hoverPause: true
+
+        });
+    }
+});
+
+$(document).ready(function() {
+    console.log($('.mob-following-inner').length);
+    if($('.mob-following-inner').length>2){
+        $('#MobfollowingSlider').multislider({
+            interval: 4000,
+            slideAll: false,
+            duration: 1000,
+            hoverPause: true
+
+        });
+    }   
+});
+
+
 // $(document).ready(function() {
 //     $('#followingSlider').multislider({
 //         interval: 4000,
@@ -436,6 +464,9 @@ $(document).ready(function() {
 
 //     });
 // });
+
+
+
 
 $(document).ready(function() {
     $('#mediaSlider').multislider({
@@ -470,25 +501,7 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function() {
-    $('#MobfolloersSlider').multislider({
-        interval: 4000,
-        slideAll: false,
-        duration: 1000,
-        hoverPause: true
 
-    });
-});
-
-$(document).ready(function() {
-    $('#MobfollowingSlider').multislider({
-        interval: 4000,
-        slideAll: false,
-        duration: 1000,
-        hoverPause: true
-
-    });
-});
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
 /*------ EDIT-PROFILE-JS-START ***/

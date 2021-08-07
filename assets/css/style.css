@@ -3585,6 +3585,10 @@ li.start-clr {
         padding: 10px;
         line-height: 10px;
     }
+    .order-summary-mobile p {
+        color: #828282;
+        font-size: 12px;
+    }
     .editprofile-modal .update-profile {
         margin-top: 40px;
     }
@@ -8476,9 +8480,17 @@ a.follower-icon:hover {
     }
 }
 
+
+
 @media(max-width:430px) {
     #Mobaccordion .accordion-title i {
         width: auto;
+    }
+    .order-summary-mobile small {
+        font-size: 70%;
+    }
+    .order-summary-mobile h6 {
+        font-size: 14px;
     }
     .mobile-wallet-bg {
         padding: 10px 14px !important;

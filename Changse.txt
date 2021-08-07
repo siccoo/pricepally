@@ -183,7 +183,9 @@ position: absolute;
     padding: 0;
     text-align: center;
     line-height: 25px;
-
+/***********/
+Fix spacing issues and remove three dots of edit profile in mobile replace camera logo png to svg , Add attribute amount in order page, 
+My account profile and Other user profile fix scroll issue, 
 
 
 
@@ -226,4 +228,11 @@ Attribute Amount In Cart (HTML)
 
 
 
+
+
+
 edit profile page = more_vert! and remove .pl-1 .ml-auto div, camera image change conver to svg.
+order page = add <p>Attribute type goes here (N500)</p>  , add .order-summary-mobile cls 
+other user profile page = add .MobfollowingSlider cls
+my account profile page = add .mob-followers-inner cls
+51 feedback
