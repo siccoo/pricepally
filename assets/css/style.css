@@ -1587,7 +1587,13 @@ form.makelist-form h3 {
 .freq-wrapper .collapse p {
     padding-right: 40px !important;
 }
-
+#checkpayeModal .addclose small {
+    padding: 10px !important;
+    display: block;
+}
+#checkpayeModal .addclose {
+    padding: 0;
+}
 
 
 
