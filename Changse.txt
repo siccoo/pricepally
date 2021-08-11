@@ -238,4 +238,70 @@ my account profile page = add .mob-followers-inner cls
 
 
 
-51 feedback
+
+/*
+
+
+
+
+
+FAQ Content change mobile and desktop.
+Privacy-policy content change.
+Search image replce png to svg.
+Update css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PENDING CONTENT
+[
+Payment
+How do I make payment?
+You can pay online via Paystack or directly to our bank account.
+Can I pay on delivery?
+All order payments are confirmed before orders are dispatched for delivery
+How can I apply a coupon/discount code?
+If you have a coupon code, you can apply right at checkout to enjoy your discount.
+
+
+Refer & Earn 
+What does Refer & Earn mean?
+How can I qualify for earning on Pricepally?
+Where is my Wallet?
+
+Mobile Apps
+Do you have a Mobile App? 
+Answer: Yes! The mobile app is available ONLY on Android and iOS.
+Click here to download for IOS (insert hyperlink)
+Click here to download on Android (insert hyperlink)
+
+Safety & Security 
+How safe is Pricepally? (more deliberation)
+Does Pricepally have an office?
+Yes! We are located at 619 Ikorodu Rd, Ikosi Ketu, Lagos
+Contact Number: +2347045000137
+Email: hello@pricepally.com
+Is my card information secure?
+Your security is our foremost priority, so we work with a PCIDSS-compliant payment processor, Paystack, to handle your card details. 
+Your card details are highly safe and are warehoused where they can never be compromised.
+Please see our Privacy Policy for more.
+]

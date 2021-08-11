@@ -1581,7 +1581,7 @@ form.makelist-form h3 {
 .rating-widget .success-box {
     color: #828282;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 40px;
     line-height: 32px;
 }
 .freq-wrapper .collapse p {
@@ -2186,7 +2186,7 @@ fieldset.rate-review label {
     width: 100%;
     height: 160px;
     background: #fff;
-    padding: 60px 0 0 0;
+    padding: 40px 5px 0 5px;
 }
 .hero-content a {
     color: #373737;
@@ -2367,6 +2367,7 @@ fieldset.rate-review label {
 .rating-view {
     position: relative;
     z-index: auto;
+    margin-top: 10px;
 }
 
 .stat-bar-rating {
@@ -4386,7 +4387,6 @@ li.start-clr {
     .contact-text-block form label {
         font-size: 14px;
     }
-    .contact-text-block{}
     .inner_contact_wrap:before{
         top: 95px;
     }
@@ -4408,7 +4408,7 @@ li.start-clr {
 .user-block h4{
     padding: 0 15px;
 }
-.saerch-bar span.material-icons{
+.saerch-bar span.material-icons{ 
     font-size: 18px;
 }
 #categoires-bg .item img {
@@ -4496,6 +4496,10 @@ li.start-clr {
     .inner-user {
         padding: 20px 10px;
         margin-bottom: 20px;
+    }
+    .rating-widget .success-box {
+        margin-left: 23px;
+        line-height: 24px;
     }
     #Viewdetail-Modalopn .refer-link {
         padding: 0 !important;
