@@ -253,10 +253,17 @@ Update css
 
 
 
+12-08-21
+
+stop auto scroll categories item in desktop
 
 
+1> replace link expired image png to svg
+2> search-result image change png to svg
+3> add (Optional) in sign-up page
+4> change faq content
 
-
+4> search bar rating 
 
 
 

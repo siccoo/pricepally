@@ -3583,6 +3583,12 @@ li.start-clr {
     .profile-bottom .modal-body {
         padding-bottom: 55px !important;
     }
+    #deliveryTabContent #Mobfood-tab .d-flex {
+        align-items: center;
+    }
+    #deliveryTabContent #Mobfood-tab .d-flex h6 {
+        margin-bottom: 0 !important;
+    }
     #existpallyModal ul.existbck-arrow {
         position: fixed;
         z-index: 1;
@@ -3591,6 +3597,10 @@ li.start-clr {
         right: 1px;
         padding: 10px;
         line-height: 10px;
+    }
+    .addnewaddress-modal input, .addnewaddress-modal select {
+        width: 100% !important;
+        border: 2px solid #AAAAAA;
     }
     .order-summary-mobile p {
         color: #828282;
@@ -8488,6 +8498,12 @@ a.follower-icon:hover {
     #review h5 {
         white-space: nowrap;
     }
+    .freq-wrapper .collapse p{
+        font-size: 14px;
+    }
+    .freq-wrapper h4 {
+        font-size: 23px;
+    }
 }
 
 
@@ -8727,14 +8743,14 @@ a.follower-icon:hover {
         width: 94%;
     }
     .social-view .social-btn {
-        padding: 10px 0px 10px 60px;
+        padding: 10px 0px 10px 40px;
     }
     .continueguest-wrapper p.grey-text {
         font-size: 14px;
     }
     .loginwith-text {
-        width: 38%;
-        margin: -26px 0 auto 94px;
+        width: 42%;
+        margin: -26px 0 auto 72px;
     }
     #resetModal .modal-content {
         padding: 0;

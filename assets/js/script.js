@@ -480,10 +480,11 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#categoiresSlider').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
-        hoverPause: true
+        hoverPause: true,
+        isVertical : true,
 
     });
 });
@@ -491,7 +492,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#categoires-bg').multislider({
-        interval: 4000,
+        interval: 0,
         slideAll: false,
         duration: 1000,
         hoverPause: true
