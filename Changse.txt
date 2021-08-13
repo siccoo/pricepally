@@ -316,7 +316,8 @@ Please see our Privacy Policy for more.
 
 order navogation panding
 
-
+Fix start rating of product detail page, no result found error message show in user page, show attribute price and text in cart page, Fix pagination of order page,
+ correct spelling of directions in manage address popup., Fix design of write review button in product detail page, Fix spacing issues of checkout popop in cart page.
 
 
 
@@ -338,3 +339,14 @@ discuss 796, 779, 798
 
 minakshi123
 123456
+
+
+
+
+mobile:
+width = 164
+height = 121
+
+desktop: 
+width = 281
+height = 172

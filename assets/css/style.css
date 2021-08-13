@@ -1135,7 +1135,9 @@ header .search-dropdown{
     text-align: center;
     width: 100% !important;
 }
-
+.user-block .friendstlist p {
+    text-align: center;
+}
 
 
 
