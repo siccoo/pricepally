@@ -1098,11 +1098,43 @@ header .search-dropdown{
 .editprofile-modal .update-profile {
     margin-top: 22px;
 }
-
-
-
-
-
+.review_list a.write-review {
+    background-color: #ffffff !important;
+    height: 32px;
+    line-height: 32px;
+    box-shadow: 0px 1px 8px 0px #79380e14;
+    padding: 0 10px;
+}
+.unfollow-btn.btn {
+    color: #4F4F4F !important;
+}
+#reviewModal .success-box-review {
+    display: none !important;
+}
+.attribute-price {
+    color: #828282;
+    font-size: 12px;
+    margin: 0;
+}
+.deliverydate-bg.update-free-date-delivery-mobile {
+    margin-bottom: 15px;
+}
+.no-address-found {
+    max-width: 100%;
+    border: 0 !important;
+    flex: inherit;
+    text-align: center;
+}
+.no-address-found ul {
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+}
+.no-address-found ul li {
+    text-align: center;
+    width: 100% !important;
+}
 
 
 
@@ -1685,7 +1717,7 @@ img.carmeraedit.upload-button {
 }
 .review_list .text-message {
     font-size: 14px;
-    margin-top: 4px;
+    margin-top: 0px;
 }
 /**********profle-picture-change-end*************/
 .make_list_block p {
@@ -3619,6 +3651,9 @@ li.start-clr {
         height: 152px;
         min-height: 152px;
     }
+    .review_list .review-text .success-box {
+        left: 65px;
+    }
     .existing_pallies_list .pally-inner {
         display: flex;
     }
@@ -4492,6 +4527,9 @@ li.start-clr {
     }
     .accout-slider h5{
         padding: 0;
+    }
+    .review_list .review-text .success-box {
+        left: 85px;
     }
     #my-followers .MS-controls, #MobfollowingSlider .MS-controls {
         display: none;
@@ -6853,6 +6891,7 @@ a.follower-icon:hover {
     .mobile-list-header i {
         font-size: 20px;
         vertical-align: sub;
+        margin-right: 8px;
     }
     .profile-font {
         font-size: 20px;

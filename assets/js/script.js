@@ -495,8 +495,7 @@ $(document).ready(function() {
         interval: 0,
         slideAll: false,
         duration: 1000,
-        hoverPause: true
-
+        hoverPause: true,
     });
 });
 

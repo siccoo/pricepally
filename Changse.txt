@@ -322,4 +322,19 @@ order navogation panding
 
 13-08-21
 
-https://prnt.sc/1ntler3 add rating-widget cls 
+1> product-detail page =  https://prnt.sc/1ntler3 add rating-widget cls 
+2> https://prnt.sc/1nypwm6  no result found error show
+3> order page pagination
+4 cart page = add .attribute-price cls in p tag
+
+discuss 796, 779, 798
+
+781 Directions spelling
+
+
+
+
+
+
+minakshi123
+123456
