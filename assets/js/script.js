@@ -859,7 +859,7 @@ window.addEventListener('click', function(e){
 
 
 window.addEventListener('click', function(e){   
-  if (document.getElementById('search_bars').contains(e.target)){
+  if (document.getElementById('search_bars_list').contains(e.target)){
     // Clicked in box
     
     var dropdownssearch= $('#scrollings');

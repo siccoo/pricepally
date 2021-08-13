@@ -269,7 +269,7 @@ stop auto scroll categories item in desktop
 
 
 
-
+Fix Frequently asked questions page content, Replace search-result and link-expired image, Add optional text in  Sign-up page, Fix start rating in search page 
 
 
 
@@ -312,3 +312,14 @@ Your security is our foremost priority, so we work with a PCIDSS-compliant payme
 Your card details are highly safe and are warehoused where they can never be compromised.
 Please see our Privacy Policy for more.
 ]
+
+
+order navogation panding
+
+
+
+
+
+13-08-21
+
+https://prnt.sc/1ntler3 add rating-widget cls 
