@@ -350,3 +350,25 @@ height = 121
 desktop: 
 width = 281
 height = 172
+
+
+
+
+
+16-08-21
+101 =  https://prnt.sc/1pkoaxe
+
+
+category-slider
+ add cls .wrapper-slider and .items
+
+cart-page:
+ change this to delivery and remove address,
+ Change this to delivery time
+ add .manage-headiing cls and add back icon
+
+ Partners & Media:
+ clickable
+
+ index:
+ remove Available Deals and replce items available
