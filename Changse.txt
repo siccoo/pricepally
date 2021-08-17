@@ -353,22 +353,24 @@ height = 172
 
 
 
-
+Fix categoires slider mouse move, Replace Available Deals to Items Available, Partners & Media Make clickable, Fix unfollow btn on profile page, Fix attribute amount on cart page
+ and change text delivery and delivery time, Fix Manage Address heading in select another address popup, Fix search list in make a list page, Fix user list in home page and user page,
+ rafer and earn and make list section change in index page., More page heading fixed., Fix arrows on profile page, Fix text size and font on proceed to pay popup.
 
 16-08-21
-101 =  https://prnt.sc/1pkoaxe
+101 =  https://prnt.sc/1pkoaxe ==
 
 
 category-slider
- add cls .wrapper-slider and .items
+ add cls .wrapper-slider and .items ==
 
 cart-page:
- change this to delivery and remove address,
- Change this to delivery time
- add .manage-headiing cls and add back icon
+ change this to delivery and remove address, ==
+ Change this to delivery time ==
+ add .manage-headiing cls and add back icon ==
 
  Partners & Media:
- clickable
+ clickable ==
 
  index:
- remove Available Deals and replce items available
+ remove Available Deals and replce items available ==

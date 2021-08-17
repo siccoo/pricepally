@@ -1116,6 +1116,10 @@ header .search-dropdown{
     color: #828282;
     font-size: 12px;
     margin: 0;
+    text-align: left;
+}
+.wallet-popup.show {
+    background-color: rgb(0 0 0 / 45%);
 }
 .deliverydate-bg.update-free-date-delivery-mobile {
     margin-bottom: 15px;
@@ -1159,13 +1163,39 @@ header .search-dropdown{
 .list-make-bg h6, .list-make-bg p {
     color: #ffffff !important;
 }
+.cart-inner h6 {
+    text-align: left;
+}
 
 
-
-
-
-
-
+.wallet-popup li {
+    color: #333333;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.wallet-popup label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+.wallet-popup .form-group span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #4F4F4F;
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+}
+.apply-text button {
+    width: 100%;
+}
+.apply-text .addclose {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    margin-top: 12px !important;
+}
 
 
 
@@ -3665,6 +3695,25 @@ li.start-clr {
     }
     .review-text .success-box {
         left: 185px;
+    }
+    .wallet-popup li{
+        margin-bottom: 0;
+    }
+    .progress-bar-wrapper {
+        margin-top: 30px;
+    }
+    .wallet-popup .modal-dialog .modal-content {
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px;
+    }
+    .modal.wallet-popup .modal-dialog{
+        left: 0;
+        right: 0;
+        margin: 0 auto !important;
+    }
+    .apply-text .addclose {
+        padding: 6px 0;
+        font-size: 16px;
     }
     .dd-manage-add .edit-text a {
         background-color: #ffffff !important;
