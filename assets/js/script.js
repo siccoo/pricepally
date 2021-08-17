@@ -17,6 +17,8 @@ $(window).on('scroll', function() {
         }
     })
     
+
+
     /* ------ dropdown-menu-js-start ------ */
 $(document).ready(function() {
     //the trigger on hover when cursor directed to this class
@@ -385,6 +387,9 @@ $("body").on("click", ".track-btn", function(e) {
 // });
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-START ***/
+
+
+
 // cc
 $(document).ready(function() {
     console.log($('.followers-inner').length);
@@ -546,7 +551,6 @@ const move = (e) => {
 })();
 
 /*************mosue-move-script-end***************/
-
 
 
 
@@ -1024,7 +1028,53 @@ $(document).ready(function()
 
 
 
+/******************owl-carousel-start********************* */
 
+/***********category-slider-start*********/
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel();
+//   });
+//   var owl = $('.category');
+//   owl.owlCarousel({
+//       autoplay:false,
+//       margin:20,
+//       loop:true,
+//       nav:true,
+//       dots:false,
+  
+//         responsive:{
+//             0:{
+//                 items:2.5,
+//                 nav:true,
+//                 margin:10,
+//             },
+//             600:{
+//                 items:4
+//             },
+//             1000:{
+//                 items:4,
+//           }
+//         }
+//   });
+
+
+
+
+
+
+
+
+
+
+
+/***********category-slider-end*********/
+
+
+
+
+
+
+/******************owl-carousel-end********************* */
 
 
 

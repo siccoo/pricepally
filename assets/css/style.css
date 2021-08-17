@@ -1196,7 +1196,65 @@ header .search-dropdown{
     font-size: 18px;
     margin-top: 12px !important;
 }
-
+.owl-carousel .owl-nav button span{
+    display: none;
+}
+.owl-carousel{
+    display: block;
+}
+.owl-carousel .owl-nav button {
+    position: relative;
+    top: 50%;
+    color: #4F4F4F;
+    background: #ffffff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(0 0 0 / 16%);
+    border: none;
+    pointer-events: auto;
+}
+.owl-carousel .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.owl-carousel .owl-next:before {
+    content: '\f1df';
+    display: inline-block;
+    position: absolute;
+    font-size: 24px;
+    color: #4F4F4F;
+    z-index: 9999;
+    font-family: 'Material Icons';
+    text-align: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 0 auto;
+}
+.owl-carousel .owl-prev:before {
+    content: '\f1e6';
+    display: inline-block;
+    position: absolute;
+    font-size: 24px;
+    color: #4F4F4F;
+    z-index: 9999;
+    font-family: 'Material Icons';
+    text-align: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 0 auto;
+}
 
 
 
@@ -3690,6 +3748,9 @@ li.start-clr {
     body{
         background-color: #fcfcfc;
     }
+    .owl-carousel .owl-nav{
+        display: none !important;
+    }
     .profile-bottom .modal-body {
         padding-bottom: 55px !important;
     }
@@ -4209,6 +4270,7 @@ li.start-clr {
         padding: 0 10px !important;
         left: 0;
         right: 0;
+        max-height: 85% !important;
     }
     #search-modal-make-list .search-dropdown .search-items{
         border: 0;
@@ -5025,7 +5087,7 @@ li.start-clr {
 }
 
 .owl-nav {
-    display: none;
+    display: block !important;
 }
 
 .owl-carousel {
@@ -7078,6 +7140,9 @@ a.follower-icon:hover {
     }
     .search-modal-bg .tab-content {
         padding: 120px 10px 0;
+    }
+    #search-modal-make-list .search-header {
+        height: 60px !important;
     }
     .search-header {
         height: 100px;

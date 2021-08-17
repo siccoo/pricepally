@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href="assets/fonts/material_fonts.css">
     <link rel='stylesheet' href="assets/css/owl.carousel.min.css">
@@ -84,8 +85,6 @@
                                         </div>
                                     </li>
                                 </ul>
-
-
                             </div>
                             <div class=" col-8 col-sm-7 col-md-7 ">
                                 <nav class="navbar navbar-expand-md navbar-light float-right text-center ">
@@ -364,57 +363,52 @@
                             <a href="#" class="text-uppercase brown-text viewall-btn">View All</a>
                         </div>
                     </div>
-                    <div id="folloersSlider" class="dvslider listingslider wrapper-slider">
-                        <div class="MS-controls" id="followers_arrow">
-                            <button class="MS-left"><i class='material-icons'>west</i></button>
-                            <button class="MS-right"><i class='material-icons'>east</i></button>
-                        </div>
-                        <div class="MS-content items">
+                    <div id="folloersSlider" class="dvslider">
+
+                        <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/foodstuff-img.png">
-                                </a>
+                                    <a href="listing.html">
+                                        <img src="assets/images/foodstuff-img.png">
+                                    </a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                <div class="followers-inner">
+                                    <a href="listing.html">
+                                        <img src="assets/images/packfood_img.png">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/packfood_img.png">
-                                </a>
-                            </div>
-                            </div>
-                            <div class="item">
-                                <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/fruits-img.png">
-                                </a>
-                            </div>
+                                    <a href="listing.html">
+                                        <img src="assets/images/fruits-img.png">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
                                 <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/packfood_img.png">
-                                </a>
-                            </div>
-                            </div>
-                            <div class="item">
-                                <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/foodstuff-img.png">
-                                </a>
-                            </div>
+                                    <a href="listing.html">
+                                        <img src="assets/images/packfood_img.png">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
                                 <div class="followers-inner">
-                                <a href="listing.html">
-                                    <img src="assets/images/packfood_img.png">
-                                </a>
-                            </div>
+                                    <a href="listing.html">
+                                        <img src="assets/images/foodstuff-img.png">
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
+
+                
+                
             </div>
         </section>
 
@@ -3687,6 +3681,27 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/multislider.js"></script>
     <script src="assets/js/multislider.min.js"></script>
+
+<script>
+    
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:2.5
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+
+</script>
 
 </body>
 

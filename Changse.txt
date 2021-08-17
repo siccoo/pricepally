@@ -374,3 +374,18 @@ cart-page:
 
  index:
  remove Available Deals and replce items available ==
+
+
+
+ product detail similarSlider! remove wrapper-slider and items cls in desktop
+
+
+    touch-action: manipulation;  search
+
+
+
+    1 = Wallet popup 
+    2 = product detail progress bar
+
+
+    make list keyboardopen and text clear
