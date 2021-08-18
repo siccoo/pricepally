@@ -1255,7 +1255,9 @@ header .search-dropdown{
     left: 0;
     margin: 0 auto;
 }
-
+.wallet-popup ul {
+    margin: 0;
+}
 
 
 
@@ -3748,8 +3750,34 @@ li.start-clr {
     body{
         background-color: #fcfcfc;
     }
+    .make-list-empty-search {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .make-list-empty-search p {
+        font-weight: 500;
+        color: #262626;
+        font-size: 16px;
+        margin-top: 10px;
+    }
     .owl-carousel .owl-nav{
         display: none !important;
+    }
+    .addresslist .col-lg-6:nth-child(even) {
+        border-right: 0;
+    }
+    .addresslist p {
+        font-size: 14px;
+    }
+    .orders-wrpper .box-shadow .text-dark {
+        color: #219653 !important;
+    }
+    .moremodal-bg ul {
+        margin-top: 150px;
     }
     .profile-bottom .modal-body {
         padding-bottom: 55px !important;
@@ -4270,7 +4298,7 @@ li.start-clr {
         padding: 0 10px !important;
         left: 0;
         right: 0;
-        max-height: 85% !important;
+        max-height: 92% !important;
     }
     #search-modal-make-list .search-dropdown .search-items{
         border: 0;
@@ -5704,7 +5732,10 @@ div#pallyorderModal .addbutton-bg {
 
 .orders-wrapper {
     height: 100%;
-    margin: 0 0 140px 0;
+    margin: 0 0 80px 0;
+}
+.orders-wrapper .pagination{
+    margin-top: 35px;
 }
 
 .modal .modal-dialog-aside {
@@ -7137,6 +7168,7 @@ a.follower-icon:hover {
         font-size: 16px;
         padding: 0;
         background: transparent;
+        margin-left: 10px;
     }
     .search-modal-bg .tab-content {
         padding: 120px 10px 0;
@@ -8259,6 +8291,15 @@ a.follower-icon:hover {
         height: 50px;
         margin-right: 2px !important;
     }
+    .wallet-content{
+        padding: 10px;
+    }
+    .orders-wrpper .pagination {
+        margin-top: 35px;
+    }
+    .wallet-content p {
+        font-size: 14px;
+    }
     .mobilehero-view .box-outline h6{
         font-size: 20px;
     }
@@ -8375,6 +8416,7 @@ a.follower-icon:hover {
     }
     .checkout-btn .yellow-bg{
         padding: 10px;
+        margin-bottom: 12px !important;
     }
     .mobilehero-view {
         margin-top: 16px;
@@ -8671,7 +8713,7 @@ a.follower-icon:hover {
         font-size: 12px;
     }
     .border-bg li {
-        padding: 10px 9px;
+        padding: 5px 5px;
     }
     .Page .navigation ul {
         display: flex;

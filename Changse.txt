@@ -389,3 +389,23 @@ cart-page:
 
 
     make list keyboardopen and text clear
+
+
+    Fix categoires slider, Fix wallet popup, Fix pogress bar in product detail page, Fix similarSlider in product detail page 
+
+    1> fund wallet =
+    2> More page
+    3> add rating-widget cls in rocommended tab https://prnt.sc/1q9lyah
+    4> order page pagination
+
+
+
+1> view all in profile page =   https://prnt.sc/1q9oi7l  es page m inner-user cls add krne or 2 div ko span tag m rakhna hai
+
+   2>  unfollow-btn cls add in profile page
+
+
+    3> add make-search img and add .make-list-empty-search cls and div
+
+
+
