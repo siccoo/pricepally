@@ -8305,6 +8305,14 @@ a.follower-icon:hover {
         height: 50px;
         margin-right: 2px !important;
     }
+    .pally-frnds .item img {
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 28px !important;
+    }
+    .pally-frnds .item p {
+        font-size: 12px !important;
+    }
     .wallet-content{
         padding: 10px;
     }
