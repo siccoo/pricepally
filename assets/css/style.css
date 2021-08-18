@@ -8070,6 +8070,7 @@ a.follower-icon:hover {
     }
     .moremodal-bg{
         transform: none;
+        z-index: 9999;
     }
 }
 
