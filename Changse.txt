@@ -410,7 +410,7 @@ cart-page:
 
 Fix unfollow button in profile page, Fix design of follower and following page, change content of FAQ page, Add empty image in make list search bar, change content of checkout,
 chnage content Shop by category and All Food Items in home, Fix customer reviews section in product detail page, Set deesign of more page, change color of 'IN PROGRESS' text  
-and Fix navigation of order page, Fix start reviews in recommended tab, Fix space of contact admin button, 
+and Fix navigation of order page, Fix start reviews in recommended tab, Fix space of contact admin button,  
 
 
 repalce in cart page   normal delivery to Standard delivery
@@ -428,4 +428,4 @@ faq content change
 
 
 
-.pally-frnds!  and remove  d-none d-lg-block
+.pally-frnds cls [search]  and remove  d-none d-lg-block

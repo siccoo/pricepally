@@ -3771,6 +3771,9 @@ li.start-clr {
         top: 50%;
         transform: translateY(-50%);
     }
+    .dd-manage-add.show {
+        background-color: rgb(0 0 0 / 50%);
+    }
     .myfollowers{
         margin-bottom: 0!important;
     }
