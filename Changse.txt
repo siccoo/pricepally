@@ -413,3 +413,10 @@ repalce in cart page   normal delivery to Standard delivery
 
 Please change to Shop by category
 This to All Food Items
+
+
+product-detail-page = add .review-list-wrap cls near row
+
+cart page= CHOOSE DELIVERY DATE to DELIVERY TIME in desktop
+
+faq content change
