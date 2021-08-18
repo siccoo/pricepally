@@ -409,3 +409,7 @@ cart-page:
 
 
 
+repalce in cart page   normal delivery to Standard delivery
+
+Please change to Shop by category
+This to All Food Items
