@@ -164,7 +164,7 @@ div#moreModal-wrapper {
 /* ------ COMMAN-CSS-END ------- */
 /* ----- HEADER_CSS_START ------ */
 .select-bg {
-    margin: 40px 0 0 0 !important;
+    margin: 0px 0 0 0 !important;
 }
 .b-logo {
     width: 100%;
@@ -1265,7 +1265,9 @@ header .search-dropdown{
     margin: 0;
 }
 
-
+#media-bg {
+    margin-bottom: 15px !important;
+}
 
 
 
@@ -2150,7 +2152,7 @@ fieldset.rate-review label {
     width: 70%;
 }
 .categoires_wrapper {
-    margin-top: 40px !important;
+    margin-top: 30px !important;
 }
 .make_list_price p {
     margin: 0;
@@ -2962,9 +2964,6 @@ a.red-bg:hover {
 }
 /* ------ BUTTON-HOVER-EFFECTS-CSS-END ------ */
 
-.select-bg {
-    margin: 80px 0 0 0;
-}
 .search-recommended .select-bg {
     margin: 8px 0 0 0;
 }
@@ -7072,9 +7071,7 @@ a.follower-icon:hover {
     .select-bg li {
         width: 32%;
     }
-    .select-bg {
-        margin: 38px 0 0 0;
-    }
+ 
     .inner-head h5,
     .pally-inner h5 {
         font-size: 14px;
@@ -7416,7 +7413,7 @@ a.follower-icon:hover {
         padding: 15px 0;
     }
     .categoires_wrapper {
-        margin: 16px 0 30px 0 !important;
+        margin: 16px 0 0px 0 !important;
     }
     .login-w {
         max-width: 400px;
