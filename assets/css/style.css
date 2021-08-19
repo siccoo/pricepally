@@ -164,7 +164,7 @@ div#moreModal-wrapper {
 /* ------ COMMAN-CSS-END ------- */
 /* ----- HEADER_CSS_START ------ */
 .select-bg {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0 0 !important;
 }
 .b-logo {
     width: 100%;
