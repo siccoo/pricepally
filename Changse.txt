@@ -429,3 +429,7 @@ faq content change
 
 
 .pally-frnds cls [search]  and remove  d-none d-lg-block
+
+remve food item in responsive
+
+tab content change
