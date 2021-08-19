@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     $("#pally-frds").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 5,
         autoplay: true,
         nav: false,

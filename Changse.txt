@@ -426,7 +426,8 @@ cart page= CHOOSE DELIVERY DATE to DELIVERY TIME in desktop
 faq content change
 
 
-
+Fix pally friends slider in pally detail page, Fix Partner and media slider in home page , Remove food item text in home page, tab content chnage in home page, Fix category spacing,
+Fix position of refer and earn page, Fix spacing issues of cart page.
 
 .pally-frnds cls [search]  and remove  d-none d-lg-block
 
