@@ -1,4 +1,26 @@
+/**************pally-friends-slider-start************ */
 
+$(document).ready(function () {
+    $("#pally-frds").owlCarousel({
+        loop: true,
+        margin: 5,
+        autoplay: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            800: {
+                items: 2,
+            },
+            1400: {
+                items: 3,
+              }
+            }
+    });
+});
+
+/**************pally-friends-slider-start************ */
 /*------ fixed-header-js-start ------ */
 $(window).on('scroll', function() {
         if ($(window).scrollTop()) {
@@ -469,6 +491,8 @@ $(document).ready(function() {
 
 //     });
 // });
+
+
 
 
 
@@ -1031,35 +1055,26 @@ $(document).ready(function()
 /******************owl-carousel-start********************* */
 
 /***********category-slider-start*********/
-// $(document).ready(function(){
-//     $(".owl-carousel").owlCarousel();
-//   });
-//   var owl = $('.category');
-//   owl.owlCarousel({
-//       autoplay:false,
-//       margin:20,
-//       loop:true,
-//       nav:true,
-//       dots:false,
-  
-//         responsive:{
-//             0:{
-//                 items:2.5,
-//                 nav:true,
-//                 margin:10,
-//             },
-//             600:{
-//                 items:4
-//             },
-//             1000:{
-//                 items:4,
-//           }
-//         }
-//   });
 
 
 
-
+//   $('.owl-carousel').owlCarousel({
+//             loop: true,
+//             margin: 5,
+//             autoplay: true,
+//             nav: true,
+//             responsive: {
+//                 0: {
+//                     items: 2
+//                 },
+//                 800: {
+//                     items: 2
+//                 },
+//                 14000: {
+//                     items: 3
+//                 }
+//             }
+//         })
 
 
 

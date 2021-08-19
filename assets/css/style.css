@@ -901,6 +901,9 @@ header .search-dropdown{
     color: #4F4F4F;
 }
 /***********how-it-work-page-end***********/
+#pally-frds .owl-nav {
+    display: none !important;
+}
 /***********contact-page-start***********/
 .contact-banner img {
     width: 100%;
@@ -1335,8 +1338,8 @@ header nav.navbar {
     padding: 2px 0 2px 0;
 }
 #categoires-bg .item img {
-    min-height: 200px;
-    height: 200px;
+    min-height: 230px;
+    height: 230px;
     width: 100%
 }
 .update-password {
@@ -2147,7 +2150,7 @@ fieldset.rate-review label {
     width: 70%;
 }
 .categoires_wrapper {
-    margin-top: 60px !important;
+    margin-top: 40px !important;
 }
 .make_list_price p {
     margin: 0;
@@ -3313,8 +3316,11 @@ h5.white-head {
     color: #262626;
 }
 .login-wrapper .row {
-    align-items: end;
+    align-items: inherit;
 }
+/* .signup-bg .row{
+    align-items: inherit;
+} */
 #loginslider {
     margin-top: 20px;
 }
@@ -3661,12 +3667,20 @@ li.start-clr {
     #similarSlider .MS-content .item {
         width: 50%;
     }
+    .webfoodTab-view form .form-group:before{
+        font-size: 14px;
+        right: 2px;
+    }
     .addbutton-bg input {
         width: 30%;
         font-size: 12px;
     }
     .cart-inner a h6{
         margin-top: 0;
+    }
+    #categoires-bg .item img {
+        min-height: 210px;
+        height: 210px;
     }
     .cart-inner .row {
         align-items: flex-start;
@@ -3762,6 +3776,13 @@ li.start-clr {
         box-shadow: 0px 1px 8px 0px #79380e26 !important;
         font-size: 14px !important;
         font-weight: 500;
+    }
+    #categoires-bg .item img {
+        min-height: 165px;
+        height: 165px;
+    }
+    .refer-inner{
+        margin-top: 125px;
     }
     .make-list-empty-search {
         text-align: center;
@@ -4524,7 +4545,10 @@ li.start-clr {
     font-size: 12px;
 }
 
-
+.moremodal-bg{
+    height: 100%;
+    padding-bottom: 70px;
+}
 
 
 
@@ -4760,6 +4784,10 @@ li.start-clr {
     }
     .accout-slider h5{
         padding: 0;
+    }
+    #categoires-bg .item img {
+        min-height: 150px;
+        height: 150px;
     }
     .review_list .review-text .success-box {
         left: 85px;
@@ -6942,9 +6970,9 @@ a.follower-icon:hover {
     }
     
     .food-items-bg .select-bg .form-control {
-        font-size: 14px;
+        font-size: 12px;
         height: 40px;
-        padding: 2px 4px;
+        padding: 2px 20px;
     }
     form.makelist-form {
         width: 100%;
@@ -7095,12 +7123,6 @@ a.follower-icon:hover {
     }
     .review-text section.rating-widget {
         width: 50%;
-    }
-    #similarSlider .MS-controls .MS-left {
-        left: -298px;
-    }
-    #similarSlider .MS-controls .MS-right {
-        right: -366px;
     }
     .progress-bar-width {
         width: 82%;
@@ -7645,7 +7667,7 @@ a.follower-icon:hover {
         background: #FBFBFB;
         bottom: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 99999;
         box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
         height: 90px;
         padding: 10px 0 0 0;

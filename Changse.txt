@@ -433,3 +433,13 @@ faq content change
 remve food item in responsive
 
 tab content change
+
+
+
+/************/
+add #pally-frds id and remove 1 item in pally slider
+
+
+https://prnt.sc/1qbjkgn change profile picture
+
+more active discuss
