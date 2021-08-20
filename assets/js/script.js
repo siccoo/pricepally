@@ -1,3 +1,59 @@
+
+$('.sharing_preference').change(function() {
+     var sharing_preference = $('input[name="delivery_type"]:checked').val();
+    // console.log("minakshi");
+    if(sharing_preference == 'Morning'){
+        // var day = '<?php echo date('l', strtotime(" +2 day")); ?>';
+        // var dayHolyday = '<?php echo date('d', strtotime(" +2 day")); ?>';
+        // if(day == 'Sunday'){
+        //     var delivery_date = '<?php echo date('l, d-m-Y', strtotime(" +4 day")); ?>';
+        // }else if(day == 'Monday'){
+        //     var delivery_date = '<?php echo date('l, d-m-Y', strtotime(" +3 day")); ?>';
+        // }else{
+        //     var delivery_date = '<?php echo date('l, d-m-Y', strtotime(" +2 day")); ?>';
+        // }
+        // $('.delivery-date').html(delivery_date);
+        // if(day == 'Sunday'){
+        //     var delivery_date_val = '<?php echo date('Y-m-d H:i:s', strtotime(" +4 day")); ?>';
+        // }else if(day == 'Monday'){
+        //     var delivery_date_val = '<?php echo date('Y-m-d H:i:s', strtotime(" +3 day")); ?>';
+        // }else{
+        //     var delivery_date_val = '<?php echo date('Y-m-d H:i:s', strtotime(" +2 day")); ?>';
+        // }
+        // $('#delivery_date').val(delivery_date_val);
+    }else{
+        // var day = '<?php echo date('l', strtotime(" +1 day")); ?>';
+        
+        // var dayHolyday = '<?php echo date('d', strtotime(" +1 day")); ?>';
+        // if(day == 'Sunday'){
+        //     var delivery_date = '<?php echo date('l, d-m-Y', strtotime(" +2 day")); ?>';
+        // }else{
+        //     var delivery_date = '<?php echo date('l, d-m-Y', strtotime(" +1 day")); ?>';
+        // }
+        // $('.delivery-date').html(delivery_date);
+        // if(day == 'Sunday'){
+        //     var delivery_date_val = '<?php echo date('Y-m-d H:i:s', strtotime(" +2 day")); ?>';
+        // }else{
+        //     var delivery_date_val = '<?php echo date('Y-m-d H:i:s', strtotime(" +1 day")); ?>';
+        // }
+        // $('#delivery_date').val(delivery_date_val);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************pally-friends-slider-start************ */
 
 $(document).ready(function () {
@@ -1090,7 +1146,6 @@ $(document).ready(function()
 
 
 /******************owl-carousel-end********************* */
-
 
 
 

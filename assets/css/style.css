@@ -1264,12 +1264,21 @@ header .search-dropdown{
 .wallet-popup ul {
     margin: 0;
 }
-
+#selectdateModal .addclose {
+    margin-bottom: 25px !important;
+    cursor: pointer;
+}
 #media-bg {
     margin-bottom: 15px !important;
 }
-
-
+.time-selection {
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+}
+.time-selection h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 
 

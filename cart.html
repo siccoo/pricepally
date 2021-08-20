@@ -334,16 +334,17 @@
                                 <h5 class="small-head mb-3 text-uppercase">delivery address</h5>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <div class="selectadd-bg">
-                                    <h6 class="light-brown text-uppercase pointer" class="btn btn-primary" data-toggle="modal" data-target=".bd-selectadd-modal-lg"> select another address
-                                    </h6>
-                                </div>
+                                
                             </div>
                         </div>
                         <h5>Home Address</h5>
                         <p class="mb-1">1, Tinubu street, Victoria Island, Lagos.</p>
                         <p>+2348106506979
                         </p>
+                        <div class="selectadd-bg text-center">
+                            <h6 class="light-brown text-uppercase pointer" class="btn btn-primary" data-toggle="modal" data-target=".bd-selectadd-modal-lg"> select another address
+                            </h6>
+                        </div>
                         <hr class="border-bottom">
                         <div class="row">
                             <div class="col-lg-6">
@@ -705,10 +706,11 @@
       </div>
     </div>
   </div>
+  <!-- -------free deliver-date-popup------- -->
   <!-- Add-new-Address-Modal-close -->
         <!------ SELECTED-ADDRESS-MODAL-END ------>
         <!------ FREE-DELIVERY-DATE-MODAL-START ------>
-        <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="p-4 ">
@@ -742,13 +744,79 @@
                         <div class="mb-3">
                             <button type="button" class="yellow-bg text-uppercase">Choose date</button>
                         </div>
-                        <div class="addclose text-center mt-2 mb-4">
-                            <small class="text-danger  text-uppercase pointer" data-dismiss="modal">Close</small>
+                        <div class="addclose text-center mt-2 mb-4" data-dismiss="modal">
+                            <small class="text-danger  text-uppercase pointer">Close</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+<!-- -------deliver-date-popup------- -->
+
+        <div class="modal fade" id="selectdateModal" tabindex="-1" role="dialog" aria-labelledby="selectdateModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="p-4 ">
+                        <h5 class="modal-title">Delivery Dates</h5>
+                        <p>Select your location and get your order delivered for free</p>
+                    </div>
+                    <div class="modal-body pl-4 pt-0 pr-4">
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="dateradio1" type="radio">
+                            <label for="dateradio1">
+                                <h6 class="mb-1">7th March 2021</h6>
+                                <p>Lekki and its environs</p>
+                            </label>
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-4">
+                            <input name="radio" value="2" id="dateradio2" type="radio">
+                            <label for="dateradio2">
+                                <h6 class="mb-1">27th March 2021</h6>
+                                <p>Ajah and its environs</p>
+                            </label>
+                        </div>
+                        <div class="rdio rdio-primary radio-inline mb-5">
+                            <input name="radio" value="2" id="dateradio3" type="radio">
+                            <label for="dateradio3">
+                                <h6 class="mb-1">5th April 2021</h6>
+                                <p>Ikeja and its environs</p>
+                            </label>
+                        </div>
+        
+                        <div class="time-selection">
+                            <h2>Delivery Slot</h2>
+                            <div class="row radiobuttons">
+                            <div class="col-lg-6">
+                                <div class="rdio rdio-primary radio-inline">
+                                    <input name="radio" value="1" id="morning-time" type="radio">
+                                    <label for="morning-time">Morning (10AM to 1PM)</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="rdio rdio-primary radio-inline">
+                                    <input name="radio" value="2" id="evening-time" type="radio">
+                                    <label for="evening-time">Evening (4PM to 8PM)</label>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                    <div class="modal-w m-auto mt-4 mb-3">
+                        <div class="mb-3">
+                            <button type="button" class="yellow-bg text-uppercase">Choose date</button>
+                        </div>
+                        <div class="addclose text-center mt-2 mb-4" data-dismiss="modal">
+                            <small class="text-danger  text-uppercase pointer">Close</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <!------ FREE-DELIVERY-DATE-MODAL-END ------>
         <!------ CHECKOUT-PAYMENT-MODAL-START ------>
         <div class="modal fade" id="checkpayeModal">

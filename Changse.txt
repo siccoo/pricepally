@@ -435,7 +435,7 @@ remve food item in responsive
 
 tab content change
 
-
+Fix select order type popup, add deliver-date-popup in cart page, Fix close button of check free delivery date popup.
 
 /************/
 add #pally-frds id and remove 1 item in pally slider
@@ -446,3 +446,7 @@ https://prnt.sc/1qbjkgn change profile picture
 more active discuss
 
 Partner and media slider 
+
+
+1>Add free dileviery poup
+1> add [data-dismiss="modal"] in addclose div, add .time-selection div
