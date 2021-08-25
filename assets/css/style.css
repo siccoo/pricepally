@@ -1279,7 +1279,9 @@ header .search-dropdown{
     font-size: 20px;
     margin-bottom: 20px;
 }
-
+#media_partner .owl-nav {
+    display: none !important;
+}
 
 
 

@@ -55,6 +55,31 @@ $('.sharing_preference').change(function() {
 
 
 /**************pally-friends-slider-start************ */
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+  var owl = $('#media_partner');
+  owl.owlCarousel({
+      autoplay:true,
+      margin:60,
+      loop:true,
+      nav:false,
+      dots:true,
+  
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            999:{
+                items:2,
+            },
+            1000:{
+                items:5
+          }
+        }
+  });
+
 
 $(document).ready(function () {
     $("#pally-frds").owlCarousel({
@@ -75,6 +100,11 @@ $(document).ready(function () {
             }
     });
 });
+
+
+
+
+
 
 /**************pally-friends-slider-start************ */
 /*------ fixed-header-js-start ------ */

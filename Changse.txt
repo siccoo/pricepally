@@ -450,3 +450,6 @@ Partner and media slider
 
 1>Add free dileviery poup
 1> add [data-dismiss="modal"] in addclose div, add .time-selection div
+
+
+
