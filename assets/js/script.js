@@ -40,7 +40,9 @@ $('.sharing_preference').change(function() {
     }
 });
 
-
+$(document).ready(function(){       
+    $('#city-modal').modal('show');
+     }); 
 
 
 
