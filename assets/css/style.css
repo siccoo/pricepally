@@ -1443,15 +1443,61 @@ header .search-dropdown{
 #city-modal .modal-header button{
     font-size: 35px;
 }
-
-
-
-
-
-
-
-
-
+.farm-supply-registration-block{
+    padding: 80px 0;
+}
+.farm-supply-registration-block h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.farm-supply-registration-block form {
+    background-color: #FCFCFC;
+    padding: 30px;
+    border-radius: 8px;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 35px;
+    box-shadow: 1px 1px 16px 0px rgb(0 0 0 / 6%);
+}
+.farm-supply-registration-block form label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+.farm-supply-registration-block .form-group input, .farm-supply-registration-block .form-group textarea{
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #495057;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #AAAAAA;
+}
+.farm-supply-registration-block .form-group textarea {
+    height: 100px;
+    padding: 10px 15px;
+    outline: none;
+}
+.form-radio{
+    display: inline-flex;
+}
+.form-radio input {
+    height: 27px !important;
+}
+.form-radio .rdio {
+    margin-right: 25px;
+}
+.form-radio .rdio label{
+    padding-left: 5px;
+}
+.farm-supply-registration-block .form-group {
+    margin-bottom: 20px;
+}
+.farm-supply-registration-block .form-group:last-child {
+    margin-bottom: 0;
+}
 
 /***********contact-page-end***********/
 /**********new-changes-start************/
@@ -4565,7 +4611,16 @@ li.start-clr {
     .simproducts-inner h5 {
         font-weight: 500 !important;
     }
-
+    .farm-supply-registration-block form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .farm-supply-registration-block h4{
+        display: none;
+    }
+    .farm-supply-registration-block {
+        padding: 10px 0 180px 0;
+    }
 
 
 
@@ -5138,7 +5193,12 @@ li.start-clr {
     .city-block form {
         padding: 30px 40px;
     }
-
+    .farm-supply-registration-block form{
+        padding: 20px;
+    }
+    .farm-supply-registration-block {
+        padding: 60px 0 80px 0;
+    }
     
 
 }
@@ -8750,7 +8810,24 @@ a.follower-icon:hover {
     .mobile-logo {
         width: 130px;
     }
-    
+    .farm-supply-registration-block form {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .farm-supply-registration-block .form-group input{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    .farm-supply-registration-block .form-group textarea{
+        padding: 10px;
+        font-size: 13px;
+    }
+    .farm-supply-registration-block form {
+        padding: 5px;
+    }
+    .farm-supply-registration-block {
+        padding: 55px 0 50px 0;
+    }
 }
 @media (max-width:530px) {
     .categoires_wrapper .container {

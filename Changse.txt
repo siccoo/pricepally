@@ -453,3 +453,6 @@ Partner and media slider
 
 
 
+add city popup in home page
+
+d Fix navigation of after login, Fix jira issues.

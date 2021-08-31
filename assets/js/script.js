@@ -40,75 +40,6 @@ $('.sharing_preference').change(function() {
     }
 });
 
-$(document).ready(function(){       
-    $('#city-modal').modal('show');
-     }); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**************pally-friends-slider-start************ */
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
-  var owl = $('#media_partner');
-  owl.owlCarousel({
-      autoplay:true,
-      margin:60,
-      loop:true,
-      nav:false,
-      dots:true,
-  
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            999:{
-                items:2,
-            },
-            1000:{
-                items:5
-          }
-        }
-  });
-
-
-$(document).ready(function () {
-    $("#pally-frds").owlCarousel({
-        loop: false,
-        margin: 5,
-        autoplay: true,
-        nav: false,
-        responsive: {
-            0: {
-                items: 2,
-            },
-            800: {
-                items: 2,
-            },
-            1400: {
-                items: 3,
-              }
-            }
-    });
-});
-
-
-
-
-
-
-/**************pally-friends-slider-start************ */
 /*------ fixed-header-js-start ------ */
 $(window).on('scroll', function() {
         if ($(window).scrollTop()) {
@@ -320,6 +251,75 @@ $(function() {
 /*------ MAIN-RATING-VIEW-LIST-JS-END -------*/
 
 
+$(document).ready(function(){       
+    $('#city-modal').modal('show');
+     }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************pally-friends-slider-start*************/
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+  var owl = $('#media_partner');
+  owl.owlCarousel({
+      autoplay:true,
+      margin:60,
+      loop:true,
+      nav:false,
+      dots:true,
+  
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            999:{
+                items:2,
+            },
+            1000:{
+                items:5
+          }
+        }
+  });
+
+
+$(document).ready(function () {
+    $("#pally-frds").owlCarousel({
+        loop: false,
+        margin: 5,
+        autoplay: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            800: {
+                items: 2,
+            },
+            1400: {
+                items: 3,
+              }
+            }
+    });
+});
+
+
+
+
+
+
+/**************pally-friends-slider-start************ */
 function updateStarState(target) {
     $(target).parent().prevAll().addClass('animate');
     $(target).parent().prevAll().children().addClass('star-colour');
