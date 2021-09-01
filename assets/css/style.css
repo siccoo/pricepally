@@ -635,7 +635,7 @@ header .nav-item sup, footer .mobile-icon sup {
 .date-picker input {
     background-color: transparent;
     border: 0;
-    width: 240px;
+    width: 265px;
 }
 .pro-detail-star .star {
     z-index: 0;
@@ -1056,7 +1056,7 @@ header .search-dropdown{
 }
 .form-control-wrapper {
     position: relative;
-    width: 52%;
+    width: 60%;
 }
 .form-control-wrapper .form-group {
     position: relative;
@@ -1068,10 +1068,10 @@ header .search-dropdown{
     background-color: transparent;
     border: 0;
     padding-left: 0;
-    left: 250px;
     color: #B3561B;
     font-size: 20px;
     width: auto;
+    right: 0;
 }
 .checkout-wrapper .form-control-wrapper i {
     top: -4px;
