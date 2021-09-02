@@ -170,7 +170,22 @@
                     </div>
                     <div class="form-group">
                         <label>Phone Number</label>
-                        <input type="number" placeholder="e.g(123456789)">
+
+                        <ul class="list-unstyled phone-list">
+                            <li class="d-inline-block">
+                                <div class="select-wrap">
+                                    <select name="country_code" id="country_code">
+                                        <option value="+234">+234</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="d-inline-block">
+                                <input type="text" class="form-control" maxlength="10" name="phone_number" id="phone_number" value="" placeholder="Phone Number">
+
+                            </li>
+                        </ul>
+
+
                     </div>
                     <div class="form-group">
                         <label>Email</label>

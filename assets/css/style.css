@@ -1475,6 +1475,30 @@ header .search-dropdown{
     border-radius: 4px;
     border: 2px solid #AAAAAA;
 }
+.farm-supply-registration-block .phone-list li {
+    height: 100%;
+}
+.farm-supply-registration-block .phone-list li .select-wrap {
+    display: block;
+    height: 100%;
+}
+.farm-supply-registration-block .phone-list {
+    display: flex;
+    align-items: center;
+}
+.farm-supply-registration-block #country_code {
+    height: 100%;
+    font-size: 14px;
+    color: #495057;
+}
+.farm-supply-registration-block .phone-list input {
+    height: 100% !important;
+}
+.farm-supply-registration-block .phone-list .select-wrap:before {
+    font-size: 14px;
+    right: 4px;
+    top: 30%;
+}
 .farm-btn{
     padding: 0 40px !important;
     height: 45px;
