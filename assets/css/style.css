@@ -1475,6 +1475,11 @@ header .search-dropdown{
     border-radius: 4px;
     border: 2px solid #AAAAAA;
 }
+.farm-btn{
+    padding: 0 40px !important;
+    height: 45px;
+    line-height: 45px;
+}
 .farm-supply-registration-block .form-group textarea {
     height: 100px;
     padding: 10px 15px;
