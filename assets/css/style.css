@@ -2010,7 +2010,12 @@ form.makelist-form h3 {
     text-align: right;
     margin-top: 2px;
 }
-
+.prodetails-content .out_of_stock {
+    margin: 0;
+    font-size: 28px !important;
+    font-weight: 400;
+    color: #828282;
+}
 
 
 
