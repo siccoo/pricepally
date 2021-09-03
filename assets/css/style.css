@@ -3913,6 +3913,10 @@ li.start-clr {
     #similarSlider .MS-content .item {
         width: 50%;
     }
+    .date-picker .form-control-wrapper {
+        position: relative;
+        width: 70%;
+    }
     .webfoodTab-view form .form-group:before{
         font-size: 14px;
         right: 2px;
