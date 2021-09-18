@@ -1288,10 +1288,14 @@ header .search-dropdown{
 
 /***********city-page************/
 .city-block{
-    padding: 80px 0;
     background-color: #F1F1F1;
-    height: 100vh;
+    height: 100%;
     position: relative;
+    overflow-x: hidden;
+}
+.inner-city-block{
+    height: 99.7vh;
+    padding: 40px 0;
 }
 .city-logo {
     text-align: center;
@@ -1314,7 +1318,14 @@ header .search-dropdown{
     height: 365px;
     position: relative;
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto;
 }
+
+
+
+
 .city-block form h4 {
     text-align: center;
     margin-bottom: 20px;
@@ -1410,21 +1421,21 @@ header .search-dropdown{
 .veg-1 {
     position: absolute;
     top: 170px;
-    left: 400px;
+    left: 10px;
 }
 .fish {
     position: absolute;
     bottom: 190px;
-    left: 400px;
+    left: 10px;
 }
 .fruits {
     position: absolute;
-    right: 22%;
+    right: 15px;
     top: 145px;
 }
 .veg-2 {
     position: absolute;
-    right: 25%;
+    right: 10px;
     bottom: 205px;
 }
 #city-modal .modal-dialog {
@@ -9121,9 +9132,6 @@ a.follower-icon:hover {
         font-size: 14px;
         height: 45px;
         line-height: 45px;
-    }
-    .city-block {
-        padding: 40px 0;
     }
 }
 
