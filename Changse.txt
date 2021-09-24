@@ -456,3 +456,16 @@ Partner and media slider
 add city popup in home page
 
 d Fix navigation of after login, Fix jira issues.
+
+
+
+
+
+
+
+/****do this on mobileres***/
+#categoires-bg h4 {
+    margin-bottom: 10px !important;
+}
+and.navigation-wrap .dropdown {z-index-999}
+

@@ -288,8 +288,8 @@ header .active {
     color: #828282;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
     margin: 0 0 0 -96px;
-    z-index: 2;
-}
+    z-index: 9999;
+}  
 .navigation-wrap .dropdown span.material-icons {
     vertical-align: middle;
     padding: 0 10px 0 0;
