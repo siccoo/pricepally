@@ -469,3 +469,15 @@ d Fix navigation of after login, Fix jira issues.
 }
 and.navigation-wrap .dropdown {z-index-999}
 
+
+
+
+
+
+https://prnt.sc/1tg0h9f
+
+
+
+
+add
+saved-makelist-page [view your list page]= .empty-cart-make-list div

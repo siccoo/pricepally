@@ -1295,7 +1295,7 @@ header .search-dropdown{
 }
 .inner-city-block{
     height: 99.7vh;
-    padding: 40px 0;
+    padding: 100px 0 40px 0;
 }
 .city-logo {
     text-align: center;
@@ -1386,8 +1386,8 @@ header .search-dropdown{
     font-weight: 700;
     border: 0;
     width: 100%;
-    height: 48px;
-    line-height: 48px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 5px;
     position: sticky;
     bottom: 0;
