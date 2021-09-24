@@ -288,7 +288,7 @@ header .active {
     color: #828282;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
     margin: 0 0 0 -96px;
-    z-index: 1;
+    z-index: 2;
 }
 .navigation-wrap .dropdown span.material-icons {
     vertical-align: middle;
@@ -5089,6 +5089,9 @@ li.start-clr {
     }
     .accout-slider h5{
         padding: 0;
+    }
+    #categoires-bg h4 {
+        margin-bottom: 10px;
     }
     #categoires-bg .item img {
         min-height: 150px;
