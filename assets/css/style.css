@@ -1440,6 +1440,10 @@ header .search-dropdown{
 }
 #city-modal .modal-dialog {
     max-width: 100%;
+    height: 100%;
+}
+#city-modal .modal-content {
+    height: 100%;
 }
 #city-modal .modal-body{
     padding: 0;
@@ -2027,8 +2031,18 @@ form.makelist-form h3 {
     font-weight: 400;
     color: #828282;
 }
-
-
+.makelist-wrapper .empty-cart-make-list {
+    width: 100%;
+}
+.ordersum-text h6 span {
+    float: right;
+    color: #B3561B;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.orders-wrpper .box-shadow p span {
+    color: #B3561B;
+}
 
 
 
@@ -9135,6 +9149,10 @@ a.follower-icon:hover {
         font-size: 14px;
         height: 45px;
         line-height: 45px;
+    }
+    .veg-2 {
+        right: 6%;
+        bottom: 145px;
     }
 }
 
