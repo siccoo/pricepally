@@ -4114,9 +4114,6 @@ li.start-clr {
     .orders-wrpper .box-shadow .text-dark {
         color: #219653 !important;
     }
-    .moremodal-bg ul {
-        margin-top: 150px;
-    }
     .profile-bottom .modal-body {
         padding-bottom: 55px !important;
     }
@@ -9546,7 +9543,6 @@ a.follower-icon:hover {
         width: 98%;
     }
     .simproducts-inner .success-box {
-        left: 72%;
         font-size: 14px;
     }
     .bottommake-list .making-list {
