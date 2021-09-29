@@ -40,6 +40,67 @@ $('.sharing_preference').change(function() {
     }
 });
 
+
+
+
+
+/*------ EDIT-PROFILE-JS-START ***/
+$(document).ready(function() {
+
+
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    $(".file-upload").on('change', function() {
+        readURL(this);
+    });
+
+    $(".upload-button").on('click', function() {
+        $(".file-upload").click();
+    });
+});
+
+
+
+// $(document).ready(function() {
+
+    
+//     var readURL = function(input) {
+//         if (input.files && input.files[0]) {
+//             var reader = new FileReader();
+
+//             reader.onload = function (e) {
+//                 $('.profile-pic').attr('src', e.target.result);
+//                 console.log('minakhsi')
+//             }
+    
+//             reader.readAsDataURL(input.files[0]);
+//         }
+//     }
+    
+
+//     $(".file-upload").on('change', function(){
+//         readURL(this);
+//     });
+    
+//     $(".upload-button").on('click', function() {
+//        $(".file-upload").click();
+//     });
+// });
+
+
+
+
+
 /*------ fixed-header-js-start ------ */
 $(window).on('scroll', function() {
         if ($(window).scrollTop()) {
@@ -677,32 +738,29 @@ const move = (e) => {
 
 
 /*------ FOLLOERS/FOLLOWING-SLIDER-JS-END ***/
-/*------ EDIT-PROFILE-JS-START ***/
-// $(document).ready(function() {
 
 
-//     var readURL = function(input) {
-//         if (input.files && input.files[0]) {
-//             var reader = new FileReader();
 
-//             reader.onload = function(e) {
-//                 $('.profile-pic').attr('src', e.target.result);
-//             }
 
-//             reader.readAsDataURL(input.files[0]);
+
+
+
+
+
+// function readURL(input) {
+//     if (input.files && input.files[0]) {
+//         var reader = new FileReader();
+//         reader.onload = function(e) {
+//             $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+//             $('#imagePreview').hide();
+//             $('#imagePreview').fadeIn(650);
 //         }
+//         reader.readAsDataURL(input.files[0]);
 //     }
-
-
-//     $(".file-upload").on('change', function() {
-//         readURL(this);
-//     });
-
-//     $(".upload-button").on('click', function() {
-//         $(".file-upload").click();
-//     });
+// }
+// $("#imageUpload").change(function() {
+//     readURL(this);
 // });
-
 /*------ EDIT-PROFILE-JS-END ***/
 
 
