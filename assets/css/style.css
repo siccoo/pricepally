@@ -1487,6 +1487,11 @@ header .search-dropdown{
     display: block;
     margin-bottom: 2px;
 }
+.farm-supply-registration-block .form-group input{
+    -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 .farm-supply-registration-block .form-group input, .farm-supply-registration-block .form-group textarea{
     display: block;
     width: 100%;
@@ -4681,6 +4686,13 @@ li.start-clr {
     }
     .farm-supply-registration-block {
         padding: 10px 0 180px 0;
+    }
+    .order-sum-content p span {
+        float: right;
+        color: #B3561B;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-right: 10px;
     }
 
 

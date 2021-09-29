@@ -499,3 +499,8 @@ https://prnt.sc/1tsxron     add dots
 
 
 da= Fix email address logo width and align cancel subscription popup button
+
+
+
+
+.order-sum-content search and add <span>Abuja</span> near Delivery address
