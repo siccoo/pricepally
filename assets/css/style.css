@@ -1443,8 +1443,8 @@ header .search-dropdown{
 }
 .veg-2 {
     position: absolute;
-    right: 10px;
-    bottom: 205px;
+    right: -65px;
+    bottom: -35px;
 }
 #city-modal .modal-dialog {
     max-width: 100%;
@@ -4047,11 +4047,7 @@ li.start-clr {
     .process-review .no-ratings {
         top: 20px;
     }
-    .veg-2 {
-        position: absolute;
-        right: 20%;
-        bottom: 115px;
-    }
+    
     .fruits {
         right: 12%;
     }
@@ -4064,13 +4060,7 @@ li.start-clr {
     .fruits{
         display: none;
     }
-    .veg-2{
-        display: block;
-    }
-    .veg-2 {
-        right: 8%;
-        bottom: 42px;
-    }
+    
     
 }
 
@@ -4561,6 +4551,9 @@ li.start-clr {
     }
     .mobile-list-header a span {
         font-weight: 500;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-right: 0 !important;
     }
     .prodetails-content h4 small {
         font-size: 14px;
@@ -5269,6 +5262,9 @@ li.start-clr {
     }
     .farm-supply-registration-block {
         padding: 60px 0 80px 0;
+    }
+    .veg-2 {
+        right: 0;
     }
     
 
@@ -9151,10 +9147,7 @@ a.follower-icon:hover {
         height: 45px;
         line-height: 45px;
     }
-    .veg-2 {
-        right: 6%;
-        bottom: 145px;
-    }
+   
 }
 
 @media (max-width:460px) {
@@ -9235,6 +9228,10 @@ a.follower-icon:hover {
     }
     .freq-wrapper h4 {
         font-size: 23px;
+    }
+    .select-city-wrap{
+        height: auto;
+        margin-bottom: 40px;
     }
 }
 
