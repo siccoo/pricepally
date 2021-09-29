@@ -481,3 +481,21 @@ https://prnt.sc/1tg0h9f
 
 add
 saved-makelist-page [view your list page]= .empty-cart-make-list div
+
+
+
+
+
+pp= Fix scroll issue on region popup and add region field in order page web and responive and also done on mobileres branch, Fix Star Rating Overlapping in similar-product section
+
+
+
+
+
+rizwan:
+https://prnt.sc/1tsxlmi     add dots
+
+https://prnt.sc/1tsxron     add dots
+
+
+da= Fix email address logo width and align cancel subscription popup button

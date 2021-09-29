@@ -1154,6 +1154,14 @@ header .search-dropdown{
     color: #828282;
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
 .refer-bg {
     background-image: url(../images/refer-bg.svg) !important;
     background-repeat: no-repeat !important;
@@ -8448,7 +8456,6 @@ a.follower-icon:hover {
     }
     .moremodal-bg{
         transform: none;
-        z-index: 9999;
     }
 }
 
