@@ -8162,7 +8162,6 @@ a.follower-icon:hover {
         background: #FBFBFB;
         box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
         padding: 10px 0;
-        position: fixed;
         width: 100%;
     }
     h5.morehead {
@@ -8450,9 +8449,6 @@ a.follower-icon:hover {
     .savemake-list ul {
         margin: 0;
         padding: 0;
-    }
-    .inner-more-wrap {
-        margin-top: 150px;
     }
     .moremodal-bg{
         transform: none;
