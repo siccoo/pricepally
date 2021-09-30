@@ -1387,6 +1387,9 @@ header .search-dropdown{
     top: 17px;
     left: 16px;
 }
+.mobile-footer .d-flex {
+    align-items: baseline;
+}
 .city-btn {
     background-color: #FFEBB9;
     color: #FAB814;
@@ -1555,7 +1558,12 @@ header .search-dropdown{
 .farm-supply-registration-block .form-group:last-child {
     margin-bottom: 0;
 }
-
+.addresslistMobile {
+    margin: 0;
+    z-index: -1;
+    position: relative;
+    padding-top: 10px !important;
+}
 
 
 
@@ -2007,6 +2015,7 @@ form.makelist-form h3 {
     z-index: 1;
     color: #828282;
     font-size: 20px;
+    pointer-events: none;
 }
 .phone-list .select-wrap:before {
     font-size: 17px;
@@ -9417,6 +9426,7 @@ a.follower-icon:hover {
     }
     .mobile_address_modal .address-btn a{
         width: 100%;
+        justify-content: center;
     }
     #Mobile-add-Modalopn h5 {
         font-size: 16px;
