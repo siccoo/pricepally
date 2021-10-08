@@ -1154,6 +1154,9 @@ header .search-dropdown{
     color: #828282;
     font-size: 14px;
 }
+.profile-block{
+    margin-top: 50px;
+}
 
 
 
@@ -1560,7 +1563,7 @@ header .search-dropdown{
 }
 .addresslistMobile {
     margin: 0;
-    z-index: -1;
+    z-index: 0;
     position: relative;
     padding-top: 10px !important;
 }

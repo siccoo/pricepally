@@ -504,3 +504,13 @@ da= Fix email address logo width and align cancel subscription popup button
 
 
 .order-sum-content search and add <span>Abuja</span> near Delivery address
+
+
+
+
+
+
+
+
+
+.profile-block cls in my-account-profile page
