@@ -8481,6 +8481,7 @@ a.follower-icon:hover {
         box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
         padding: 22px 10px 0 10px;
         height: 100px;
+        z-index: 99;
     }
     .ordersum-header,
     .Mobdetails-back {
