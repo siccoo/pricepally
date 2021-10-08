@@ -1155,7 +1155,7 @@ header .search-dropdown{
     font-size: 14px;
 }
 .profile-block{
-    margin-top: 50px;
+    margin-top: 50px !important;
 }
 
 
