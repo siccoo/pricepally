@@ -1157,7 +1157,9 @@ header .search-dropdown{
 .profile-block{
     margin-top: 50px !important;
 }
-
+.flogo {
+    width: 300px;
+}
 
 
 
