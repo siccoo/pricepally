@@ -1563,7 +1563,6 @@ header .search-dropdown{
 }
 .addresslistMobile {
     margin: 0;
-    z-index: 0;
     position: relative;
     padding-top: 10px !important;
 }
