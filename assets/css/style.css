@@ -288,7 +288,7 @@ header .active {
     color: #828282;
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
     margin: 0 0 0 -96px;
-    z-index: 9999;
+    z-index: 9998;
 }  
 .navigation-wrap .dropdown span.material-icons {
     vertical-align: middle;
@@ -6579,8 +6579,13 @@ form.makelist-form {
     height: 292px;
     overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y: auto;
 }
-
+.savemake-list ul {
+    height: 70%;
+    margin: 0;
+    overflow-y: auto;
+}
 .sharepermission-bg .modal-content {
     padding: 20px;
     max-width: 450px;
