@@ -186,7 +186,7 @@ ul.nav-pills {
     position: fixed;
 }
 .sticky-bg {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1024;
@@ -2618,6 +2618,7 @@ fieldset.rate-review label {
 .blog-img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .blog-top-text h4{
     font-size: 28px;
@@ -2635,12 +2636,13 @@ fieldset.rate-review label {
     overflow: hidden;
     height: 280px;
     margin-bottom: 20px;
+    position: relative;
 }
 p.blog-status {
     font-size: 14px;
     line-height: 18px;
     margin: 0;
-    color: #828282;
+    color: #828282 !important;
     padding-top: 15px;
 }
 .blog-text h4{
@@ -2661,13 +2663,192 @@ p.blog-status {
 .outer-blog-wrap .blog-img {
     margin: 0;
 }
-
-
-
-
-
+.blog-img span{
+    font-size: 12px;
+    color: #4F4F4F;
+    background-color: #F2F2F2;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    padding: 0 6px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.load-btn{
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+.load-btn a{
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #B3561B;
+    width: 380px;
+    color: #B3561B;
+    text-align: center;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+}
+.load-btn a:hover{
+    color: #B3561B;
+}
+.blog-section {
+    margin-bottom: 70px;
+}
+.blog-section .sidebar ul {
+    margin: 0;
+}
 /*********************new-blog-page-end**************************/
-
+/*********************blog-detail-page-start**************************/
+.blog-detail-block {
+    margin-top: 40px;
+}
+.blog-detail-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.blog-detail-img {
+    height: 470px;
+}
+.blog-content h2 {
+    font-size: 44px;
+    color: #262626;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.blog-content {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.blog-content h2 p {
+    font-size: 16px;
+    color: #828282;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+.blog-content p.blog-status {
+    text-align: center;
+}
+.blog-content h2 p span{
+    color: #B3561B;
+}
+.inner-blog-content p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 29px;
+    color: #262626;
+    margin-bottom: 30px;
+}
+.inner-blog-content h3 {
+    font-weight: 400;
+    text-align: left;
+    color: #262626;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.inner-blog-content .social-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.inner-blog-content .social-wrap p{
+    margin: 0;
+}
+.inner-blog-content .social-wrap p span {
+    vertical-align: middle;
+}
+.write-comment label, .write-comment textarea {
+    display: block;
+    text-align: left;
+}
+.write-comment textarea {
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+}
+.write-comment .btn {
+    padding: 0 10px;
+    height: 45px;
+    line-height: 45px;
+    width: 380px;
+    font-size: 14px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+.review-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+.review-user span {
+    color: #828282;
+    font-size: 16px;
+}
+.review-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.review-user h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #333333;
+}
+.reviews-section p{
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.reviews-section {
+    padding: 60px 0;
+}
+.load-btn .btn{
+    padding: 0 10px;
+}
+.reviews-section .load-btn {
+    margin-top: 0;
+}
+.blog-read-wrap h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 15px;
+}
+.blog-read-wrap .blog-text, .blog-read-wrap .blog-text p{
+    text-align: left;
+    padding-top: 0;
+}
+.blog-read-wrap .blog-text p{
+    font-size: 14px;
+}
+.blog-read-wrap .blog-text h4{
+    font-size: 22px
+}
+.inner-blog-content .social-wrap ul{
+    margin-bottom: 0;
+}
+/*********************blog-detail-page-end**************************/
 
 
 
@@ -4096,6 +4277,7 @@ li.start-clr {
     .bottommake-list.postion{
         bottom: 9% !important;
     }
+    
 
 }
 
@@ -4247,6 +4429,21 @@ li.start-clr {
     }
     .fruits{
         display: none;
+    }
+    .blog-top-text p {
+        line-height: 23px;
+    }
+    p.blog-status{
+        padding-top: 10px;
+    }
+    .blog-img{
+        height: 275px;
+    }
+    .blog-content h2 {
+        font-size: 34px;
+    }
+    .blog-content{
+        width: 75%;
     }
     
     
@@ -4877,9 +5074,12 @@ li.start-clr {
         text-transform: capitalize;
         padding-right: 10px;
     }
-
-
-
+    .blog-section {
+        margin-bottom: 140px;
+    }
+    .load-btn {
+        margin-top: 10px;
+    }
 
 
 
@@ -5283,6 +5483,12 @@ li.start-clr {
     .city-block form:after {
         left: 0;
         bottom: -30px;
+    }
+    .blog-content {
+        width: 100%;
+    }
+    .blog-read-wrap {
+        margin-bottom: 70px;
     }
 
 }
@@ -8698,9 +8904,57 @@ a.follower-icon:hover {
    
 }
 @media (max-width:767.98px) {
+    .load-btn a {
+        height: 40px;
+        line-height: 38px;
+        width: 250px;
+        font-size: 14px;
+    }
+    .blog-section {
+        margin-top: 24px!important;
+    }
+    .blog-img {
+        height: 165px;
+    }
     .select-order {
         bottom: 82px;
         padding: 10px 0;
+    }
+    .outer-blog-wrap .blog-img{
+        margin-bottom: 10px;
+    }
+    .blog-img{
+        margin-bottom: 10px;
+    }
+    .blog-text h4 {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+    .blog-top-text h4 {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+    p.blog-status {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+    .blog-section {
+        margin-bottom: 110px;
+    }
+    .outer-blog-wrap {
+        margin-bottom: 12px;
+    }
+    .blog-wrap {
+        margin: 12px 0;
+    }
+    .blog-top-text p{
+        margin: 0;
     }
     #my-followers .MS-controls {
         top: 32%;
@@ -8787,6 +9041,45 @@ a.follower-icon:hover {
     }
     .review-text section.rating-widget {
         width: 66%;
+    }
+    .blog-detail-img {
+        height: 160px;
+    }
+    .blog-content p.blog-status {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    .blog-content h2 {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .blog-content h2 p{
+        text-align: left;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .blog-content {
+        padding: 20px 0;
+    }
+    .inner-blog-content .social-wrap{
+        margin-bottom: 30px;
+    }
+    .blog-read-wrap .blog-text h4{
+        line-height: 26px;
+    }
+    .reviews-section p{
+        margin-bottom: 0;
+    }
+    .reviews-section .load-btn {
+        margin-top: 30px;
+    }
+    .review-user {
+        margin-bottom: 5px;
+        margin-top: 35px;
+    }
+    .reviews-section {
+        padding: 30px 0;
     }
 }
 
@@ -9363,6 +9656,18 @@ a.follower-icon:hover {
         font-size: 14px;
         height: 45px;
         line-height: 45px;
+    }
+    .write-comment .btn{
+        width: 100%;
+    }
+    .blog-detail-block {
+        margin-top: 24px;
+    }
+    .blog-content h2{
+        font-size: 20px;
+    }
+    .reviews-section .load-btn .btn{
+        width: 100%;
     }
    
 }
