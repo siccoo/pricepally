@@ -10203,3 +10203,14 @@ a.follower-icon:hover {
     height: 30px;
     background: #000;
 }
+.out_of_stock_block button {
+    color: #FF0000;
+    border-color: #FF0000;
+}
+.out_of_stock_block button:hover{
+    color: #FF0000 !important;
+    border-color: #FF0000;
+}
+.out_of_stock_block button.btn-effects::before {
+    background: transparent;   
+}

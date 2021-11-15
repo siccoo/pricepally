@@ -514,3 +514,17 @@ da= Fix email address logo width and align cancel subscription popup button
 
 
 .profile-block cls in my-account-profile page
+
+
+
+
+
+
+
+
+
+
+
+
+15-11-21
+add .out_of_stock_block cls in search-recommended page.
