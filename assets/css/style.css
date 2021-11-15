@@ -10205,11 +10205,11 @@ a.follower-icon:hover {
 }
 .out_of_stock_block button {
     color: #FF0000;
-    border-color: #FF0000;
+    border-color: transparent;
 }
 .out_of_stock_block button:hover{
     color: #FF0000 !important;
-    border-color: #FF0000;
+    border-color: transparent;
 }
 .out_of_stock_block button.btn-effects::before {
     background: transparent;   
