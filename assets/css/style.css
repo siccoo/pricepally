@@ -8910,6 +8910,10 @@ a.follower-icon:hover {
         width: 250px;
         font-size: 14px;
     }
+    .mobile-email{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
     .blog-section {
         margin-top: 24px!important;
     }
