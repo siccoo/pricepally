@@ -11,11 +11,43 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
+    <style>
+        .mobile-template{
+            display: none;
+        }
+        @media (max-width: 991px) {
+            .web-template{
+                display: none;
+            }
+            .mobile-template{
+                display: block;
+            }
+            tr, th, td{
+                padding: 10px 5px;
+                font-size: 13px;
+                text-align: left;
+            }
+            td{
+                color: #333333;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            .border-table tr td, .border-table tr th {
+                border-right: 1px solid #eee;
+                border-left: 1px solid #eee;
+            }
+        }
+        @media (max-width: 767px) {
+
+        }
+    </style>
+
 </head>
 
 <body style="font-family: 'Roboto', sans-serif; background: #f1f1f1;">
     <div class="es-wrapper-color">
-        <div style="width: 60%;background: #fbfbfb;box-shadow: 0 2px 8px hsl(0 0% 0% / 16%);margin: 0 auto;">
+        <div style="width: 60%;background: #fbfbfb;box-shadow: 0 2px 8px hsl(0 0% 0% / 16%);margin: 0 auto;" class="web-template">
             <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;">
                 <tr style="border-collapse:collapse;">
                     <td valign="top" style="padding:0;Margin:0;">
@@ -318,6 +350,108 @@
 
             </td>
             </tr>
+            </table>
+        </div>
+
+        <div class="mobile-template" style="background-color: #ffffff; padding: 10px 10px 30px 10px;">
+            <table width="100%";>
+                <tr>
+                    <td style="text-align:center; padding-bottom: 5px;">
+                        <a href="#"><img class="flogo" src="assets/images/main-logo.svg" alt="logo.png" style="width:200px"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center; padding-bottom: 10px;">
+                        <a href="#"><img class="flogo" src="assets/images/tick.png" alt="logo.png" style="width:60px"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 22px; color: #333333; font-weight: 600; text-align: center; padding-bottom: 5px;">Thank You For Your Order!</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color: #777777; text-align: center; line-height: 24px; padding-bottom: 20px;">This is a receipt confirmation for your order made today. We really appreciate your patronage. Please check below the list of items you ordered and your scheduled delivery, we will be in touch if anything changes.</td>
+                </tr>
+            </table>
+            <table width="100%"; class="border-table">
+                <tr style="background-color: #eeeeee;">
+                    <th>Order Confirmation #</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td>Test Product</td>
+                    <td>₦1,000</td>
+                    <td>₦1,000</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td>Unit Price (100kg)</td>
+                    <td>₦1,000</td>
+                    <td>₦1,000</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td>Test Product</td>
+                    <td>₦1,000</td>
+                    <td>₦1,000</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td>Shipping + Handling</td>
+                    <td>₦1,000</td>
+                    <td>₦2,000</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>₦1,000</td>
+                    <td>₦2,000</td>
+                </tr>
+                <tr style="border-top: 2px solid #eee; border-bottom: 2px solid #eee;">
+                    <th>TOTAL</th>
+                    <th colspan="2">₦6,000</th>
+                </tr>
+            </table>
+            <table width="100%"; style="border-bottom: 2px solid #eee; margin-top: 20px;" class="border-table">
+                <tr style="border-bottom: 1px solid #eee; background-color: #eee;">
+                    <th>Delivery Address</th>
+                    <th>Estimated Delivery Date</th>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td>12A Mabinuori Dawodu Crescent Gbagada 11th Floor</td>
+                    <td>August 19th, 2020</td>
+                </tr>
+                <tr>
+                    <td>12A Mabinuori Dawodu Crescent Gbagada</td>
+                </tr>
+            </table>
+            <table width="100%"; style="margin-top: 20px;">
+                <tr style="display: grid;">
+                    <th style="font-size: 20px; color: #333333; text-align: center; width: 100%">Bank Information</th>
+                </tr>
+              <tr>
+                  <table width="100%";>
+                    <tr>
+                        <th style="padding: 0 0 8px 0;">Account name:</th>
+                        <td style="text-align: right; padding: 0;">Pricepally Limited</td>
+                    </tr>
+                    <tr>
+                        <th style="padding: 0 0 8px 0;">Account number:</th>
+                        <td style="text-align: right; padding: 0;">2034799567</td>
+                    </tr>
+                    <tr>
+                        <th style="padding: 0 0 8px 0;">Bank::</th>
+                        <td style="text-align: right; padding: 0;">First bank of Nigeria</td>
+                    </tr>
+                  </table>
+              </tr>
+            </table>
+            <table width="100%"; style="margin-top: 30px;">
+                <tr>
+                    <td width="60px;" style="display: block; margin: 0 auto;"> <img src="assets/images/logo.png" alt="" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; padding: 0 0 5px 0;">12A Mabinuori Dawodu Crescent Gbagada</th>
+                </tr>
+                <tr>
+                    <th style="text-align: center; padding: 0;">Contact us: +2347045000137</th>
+                </tr>
             </table>
         </div>
 
