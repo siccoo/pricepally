@@ -4,6 +4,42 @@ import HomeLogo from "./assets/images/logo.svg";
 import SearchImg1 from "./assets/images/search-img1.jpg";
 import SearchImg2 from "./assets/images/search-img2.jpg";
 import ListImg1 from "./assets/images/list-img1.jpg";
+import ListImg3 from "./assets/images/list-img3.jpg";
+import MainLogo from "./assets/images/main-logo.svg";
+import ProfileImg from "./assets/images/profile_img.jpg";
+import ReferMoney from "./assets/images/refer-money.svg";
+import ListImg from "./assets/images/list.svg"; 
+import SliderImg1 from "./assets/images/slider1.jpg";
+import SliderImg2 from "./assets/images/slider2.jpg";
+import FoodStuffImg from "./assets/images/foodstuff-img.png";
+import PackFoodImg from "./assets/images/packfood_img.png";
+import FruitsImg from "./assets/images/fruits-img.png";
+import ProductImg1 from "./assets/images/Product-img1.jpg";
+import ProductImg2 from "./assets/images/Product-img2.png";
+import ProductImg3 from "./assets/images/Product-img3.png";
+import ProductImg4 from "./assets/images/Product-img4.png";
+import ProductImg5 from "./assets/images/Product-img5.png";
+import ProductImg6 from "./assets/images/Product-img6.png";
+import ProductImg7 from "./assets/images/Product-img7.png";
+import ProductImg8 from "./assets/images/Product-img8.png";
+import ProductImg9 from "./assets/images/Product-img9.png";
+import ProductImg10 from "./assets/images/Product-img10.png";
+import ProductImg11 from "./assets/images/Product-img11.png";
+import ProductImg12 from "./assets/images/Product-img12.png";
+import MediaImg1 from "./assets/images/media-img1.png";
+import MediaImg2 from "./assets/images/media-img2.png";
+import MediaImg3 from "./assets/images/media-img3.png";
+import AppStoreImg from "./assets/images/appstore.png";
+import GooglePlayImg from "./assets/images/playstore.png";
+import MobileImg from "./assets/images/download_mobile.png";
+import DedicatedImg from "./assets/images/dedicated-icon.svg";
+import ReturnImg from "./assets/images/return_icon.svg";
+import OnlineImg from "./assets/images/online-icon.svg";
+import FacebookIcon from "./assets/images/facebook.svg";
+import InstagramIcon from "./assets/images/instagram.svg";
+import TwitterIcon from "./assets/images/twitter.svg";
+import YoutubeIcon from "./assets/images/youtube.svg"
+
 
 function App() {
   return (
@@ -292,14 +328,14 @@ function App() {
             <div className=" justify-content-start">
               <img
                 className="mobile-logo"
-                src="assets/images/main-logo.svg"
+                src={MainLogo}
                 alt="mobile-logo"
               />
             </div>
             <div className=" ml-auto justify-content-end">
               <img
                 className="profile-img"
-                src="assets/images/profile_img.jpg"
+                src={ProfileImg}
                 alt="profile-img"
               />
             </div>
@@ -337,7 +373,7 @@ function App() {
                     <h6>Refer & Earn</h6>
                     <p>Invite a friend now</p>
                     <div className="home-list-img">
-                      <img src="assets/images/refer-money.svg" alt="" />
+                      <img src={ReferMoney} alt="" />
                     </div>
                   </div>
                 </a>
@@ -346,7 +382,7 @@ function App() {
                     <h6>Make a list</h6>
                     <p>Shop faster now</p>
                     <div className="home-list-img">
-                      <img src="assets/images/list.svg" alt="" />
+                      <img src={ListImg} alt="" />
                     </div>
                   </div>
                 </a>
@@ -385,35 +421,35 @@ function App() {
                   <div className="carousel-item active">
                     <img
                       className="d-block w-100"
-                      src="assets/images/slider1.jpg"
+                      src={SliderImg1}
                       alt="slider1.jpg"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
                       className="d-block w-100"
-                      src="assets/images/slider2.jpg"
+                      src={SliderImg2}
                       alt="slider2.jpg"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
                       className="d-block w-100"
-                      src="assets/images/slider1.jpg"
+                      src={SliderImg1}
                       alt="slider1.jpg"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
                       className="d-block w-100"
-                      src="assets/images/slider2.jpg"
+                      src={SliderImg2}
                       alt="slider2.jpg"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
                       className="d-block w-100"
-                      src="assets/images/slider1.jpg"
+                      src={SliderImg1}
                       alt="slider1.jpg"
                     />
                   </div>
@@ -457,7 +493,7 @@ function App() {
                         <h6>Refer &amp; Earn</h6>
                         <p>Invite a friend now</p>
                         <div className="home-list-img">
-                          <img src="assets/images/refer-money.svg" alt="" />
+                          <img src={ReferMoney} alt="" />
                         </div>
                       </div>
                     </a>
@@ -468,7 +504,7 @@ function App() {
                         <h6>Make a list</h6>
                         <p>Shop faster now</p>
                         <div className="home-list-img">
-                          <img src="assets/images/list.svg" alt="" />
+                          <img src={ListImg} alt="" />
                         </div>
                       </div>
                     </a>
@@ -503,35 +539,35 @@ function App() {
                 <div className="item">
                   <div className="followers-inner">
                     <a href="listing.html">
-                      <img src="assets/images/foodstuff-img.png" alt="" />
+                      <img src={FoodStuffImg} alt="" />
                     </a>
                   </div>
                 </div>
                 <div className="item">
                   <div className="followers-inner">
                     <a href="listing.html">
-                      <img src="assets/images/packfood_img.png" alt="" />
+                      <img src={PackFoodImg} alt="" />
                     </a>
                   </div>
                 </div>
                 <div className="item">
                   <div className="followers-inner">
                     <a href="listing.html">
-                      <img src="assets/images/fruits-img.png" alt="" />
+                      <img src={FruitsImg} alt="" />
                     </a>
                   </div>
                 </div>
                 <div className="item">
                   <div className="followers-inner">
                     <a href="listing.html">
-                      <img src="assets/images/packfood_img.png" alt="" />
+                      <img src={PackFoodImg} alt="" />
                     </a>
                   </div>
                 </div>
                 <div className="item">
                   <div className="followers-inner">
                     <a href="listing.html">
-                      <img src="assets/images/foodstuff-img.png" alt="" />
+                      <img src={FoodStuffImg} alt="" />
                     </a>
                   </div>
                 </div>
@@ -641,7 +677,7 @@ function App() {
                               </div>
                               <img
                                 className=" product-img mb-3"
-                                src="assets/images/Product-img1.jpg"
+                                src={ProductImg1}
                                 alt="Product-img1"
                               />
                             </a>
@@ -670,28 +706,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -721,7 +757,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img2.png"
+                                src={ProductImg2}
                                 alt="Product-img1"
                               />
                             </a>
@@ -750,28 +786,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -801,7 +837,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img3.png"
+                                src={ProductImg3}
                                 alt="Product-img1"
                               />
                             </a>
@@ -828,28 +864,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -879,7 +915,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img4.png"
+                                src={ProductImg4}
                                 alt="Product-img1"
                               />
                             </a>
@@ -908,28 +944,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -960,7 +996,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img5.png"
+                                src={ProductImg5}
                                 alt="Product-img1"
                               />
                             </a>
@@ -989,28 +1025,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1040,7 +1076,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img6.png"
+                                src={ProductImg6}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1066,28 +1102,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1117,7 +1153,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img7.png"
+                                src={ProductImg7}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1144,28 +1180,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1195,7 +1231,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img8.png"
+                                src={ProductImg8}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1224,28 +1260,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1275,7 +1311,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img9.png"
+                                src={ProductImg9}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1302,28 +1338,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1353,7 +1389,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img10.png"
+                                src={ProductImg10}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1380,28 +1416,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1431,7 +1467,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img11.png"
+                                src={ProductImg11}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1458,28 +1494,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1509,7 +1545,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img12.png"
+                                src={ProductImg12}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1538,28 +1574,28 @@ function App() {
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img2"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img3.jpg"
+                                  src={ListImg3}
                                   alt="list-img3"
                                 />
                               </li>
                               <li className="d-inline-block pally-left">
                                 <img
                                   className="list-img"
-                                  src="assets/images/list-img1.jpg"
+                                  src={ListImg1}
                                   alt="list-img1"
                                 />
                               </li>
@@ -1601,7 +1637,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img5.png"
+                                src={ProductImg5}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1687,7 +1723,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img6.png"
+                                src={ProductImg6}
                                 alt="Product-img6"
                               />
                             </a>
@@ -1786,7 +1822,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img3.png"
+                                src={ProductImg3}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1871,7 +1907,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img4.png"
+                                src={ProductImg4}
                                 alt="Product-img1"
                               />
                             </a>
@@ -1972,7 +2008,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img5.png"
+                                src={ProductImg5}
                                 alt="Product-img1"
                               />
                             </a>
@@ -2072,7 +2108,7 @@ function App() {
                               </div>
                               <img
                                 className="mb-3 product-img"
-                                src="assets/images/Product-img6.png"
+                                src={ProductImg6}
                                 alt="Product-img1"
                               />
                             </a>
@@ -4563,17 +4599,17 @@ function App() {
       </div>
       {/* <!------ FOOD-ITEMS-MOBILE-SECTION-START ------> */}
       {/* <!------ PARTNER & MEDIA SECTION-START ------> */}
-      <section className="media-wrapper  ml-2 mr-2 d-none d-lg-block">
+      <section className="media-wrapper d-none d-lg-block">
         <div className="container">
           <div id="media-bg" className="followers-bg mb-5">
             <h4 className="text-center mb-4">Partners & Media</h4>
-            <div className="owl-carousel owl-theme" id="media_partner">
+            <div className="owl-carousel owl-theme" id="media_partner" style={{display:"flex"}}>
               <div className="item">
                 <a href="/">
                   {" "}
                   <img
                     className="media-img"
-                    src="assets/images/media-img1.png"
+                    src={MediaImg1}
                     alt="media-img1"
                   />{" "}
                 </a>
@@ -4583,28 +4619,7 @@ function App() {
                   {" "}
                   <img
                     className="media-img"
-                    src="assets/images/media-img2.png"
-                    alt="media-img1"
-                  />{" "}
-                </a>
-              </div>
-
-              <div className="item">
-                <a href="/">
-                  {" "}
-                  <img
-                    className="media-img"
-                    src="assets/images/media-img3.png"
-                    alt="media-img1"
-                  />{" "}
-                </a>
-              </div>
-              <div className="item">
-                <a href="/">
-                  {" "}
-                  <img
-                    className="media-img"
-                    src="assets/images/media-img1.png"
+                    src={MediaImg2}
                     alt="media-img1"
                   />{" "}
                 </a>
@@ -4615,7 +4630,17 @@ function App() {
                   {" "}
                   <img
                     className="media-img"
-                    src="assets/images/media-img2.png"
+                    src={MediaImg3}
+                    alt="media-img1"
+                  />{" "}
+                </a>
+              </div>
+              <div className="item">
+                <a href="/">
+                  {" "}
+                  <img
+                    className="media-img"
+                    src={MediaImg1}
                     alt="media-img1"
                   />{" "}
                 </a>
@@ -4626,7 +4651,18 @@ function App() {
                   {" "}
                   <img
                     className="media-img"
-                    src="assets/images/media-img3.png"
+                    src={MediaImg2}
+                    alt="media-img1"
+                  />{" "}
+                </a>
+              </div>
+
+              <div className="item">
+                <a href="/">
+                  {" "}
+                  <img
+                    className="media-img"
+                    src={MediaImg3}
                     alt="media-img1"
                   />{" "}
                 </a>
@@ -4650,7 +4686,7 @@ function App() {
       </section>
       {/* <!------ PARTNER & MEDIA SECTION-END ------> */}
       {/* <!------ DOWNLOAD-APP-SECTION-START ------> */}
-      <section className="download-wrapper  ml-2 mr-2 d-none d-lg-block">
+      <section className="download-wrapper d-none d-lg-block">
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
@@ -4659,12 +4695,12 @@ function App() {
                 <ul className="list-unstyled">
                   <li className="d-inline-block">
                     <a href="/">
-                      <img src="assets/images/appstore.png" alt="appstore" />
+                      <img src={AppStoreImg} alt="" />
                     </a>
                   </li>
                   <li className="d-inline-block">
                     <a href="/">
-                      <img src="assets/images/playstore.png" alt="appstore" />
+                      <img src={GooglePlayImg} alt="appstore" />
                     </a>
                   </li>
                 </ul>
@@ -4673,7 +4709,7 @@ function App() {
             <div className="col-lg-8">
               <div className="download-img">
                 <img
-                  src="assets/images/download_mobile.png"
+                  src={MobileImg}
                   alt="download-img"
                 />
               </div>
@@ -4683,14 +4719,14 @@ function App() {
       </section>
       {/* <!------ DOWNLOAD-APP-SECTION-END ------> */}
       {/* <!------ DOWNLOAD-BOTTOM-SECTION-START ------> */}
-      <section className="download-bottom-bg  ml-2 mr-2 d-none d-lg-block">
+      <section className="download-bottom-bg d-none d-lg-block">
         <div className="container">
           <div className="row m-auto">
             <div className="col-lg-4">
               <div className="row">
                 <div className="col-lg-3 mt-2">
                   <embed
-                    src="assets/images/dedicated-icon.svg"
+                    src={DedicatedImg}
                     width="60px"
                     height="60px"
                   />
@@ -4705,7 +4741,7 @@ function App() {
               <div className="row">
                 <div className="col-lg-3 mt-2">
                   <embed
-                    src="assets/images/return_icon.svg"
+                    src={ReturnImg}
                     width="60px"
                     height="60px"
                   />
@@ -4720,7 +4756,7 @@ function App() {
               <div className="row">
                 <div className="col-lg-3 mt-2">
                   <embed
-                    src="assets/images/online-icon.png"
+                    src={OnlineImg}
                     width="60px"
                     height="60px"
                   />
@@ -4736,7 +4772,7 @@ function App() {
       </section>
       {/* <!------ DOWNLOAD-BOTTOM-SECTION-END ------> */}
       {/* <!------ FOOTER-SECTION-START ------> */}
-      <footer className="ml-2 mr-2 footer-wrapper d-none d-lg-block">
+      <footer className="footer-wrapper d-none d-lg-block">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
@@ -4838,16 +4874,16 @@ function App() {
               <ul className="list-unstyled social-icons">
                 <li className="d-inline-block">
                   <a href="/">
-                    <embed src="assets/images/facebook.svg" width="25px" />
+                    <embed src={FacebookIcon} width="25px" />
                   </a>
                   <a href="/">
-                    <embed src="assets/images/instagram.svg" width="25px" />
+                    <embed src={InstagramIcon} width="25px" />
                   </a>
                   <a href="/">
-                    <embed src="assets/images/twitter.svg" width="25px" />
+                    <embed src={TwitterIcon} width="25px" />
                   </a>
                   <a href="/">
-                    <embed src="assets/images/youtube.svg" width="25px" />
+                    <embed src={YoutubeIcon} width="25px" />
                   </a>
                 </li>
               </ul>
